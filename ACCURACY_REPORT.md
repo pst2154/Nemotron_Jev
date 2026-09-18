@@ -16,6 +16,8 @@ Nemotron passed 24/24 in each input variant. Boolean Brier score: 0.0035102. Mea
 
 The packaged container was independently rerun on the same 72 cases: **72/72**, zero errors, Boolean Brier 0.0035102, weighted-score MAE 0.0118480. This first run with fresh compiler caches had a 1,177.25 ms median; it is not a warmed-throughput measurement. The tiny score-MAE change did not change any predicted label. See `evaluation/container-results/` for the actual deployed-image results.
 
+The final `14b-v2` image, which restores the original eight-thread CPU setting, also passed **72/72**, with zero errors and the same Brier/score-MAE values as v1. Its median was **1,197.35 ms** in this run; the thread-setting change did not resolve the latency difference. Full final-image results are in `evaluation/container-v2-results/`. Neither the initial 328 ms run nor compiler warmup alone should be used to explain or promise current container performance.
+
 Historical results are supplied in `evaluation/historical-baseline.json`; they were not rerun concurrently. Hardware occupancy, serving paths, and timing differ, so latency is not a controlled speed comparison. The historical medians were 246.69 ms for DiffusionGemma and 289.18 ms for NanoJev.
 
 ## Reproduction and limitations

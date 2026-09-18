@@ -1,0 +1,37 @@
+{
+  "cases_sha256": "3f4edf51dd9a71dc12fb1172af89cc1a7ce53ae05a83ba34fc138a64d99ff36d",
+  "total": 72,
+  "correct": 72,
+  "errors": 0,
+  "median_ms": 1197.3465839982964,
+  "by_type": {
+    "choice": {
+      "correct": 24,
+      "total": 24
+    },
+    "noul": {
+      "correct": 24,
+      "total": 24
+    },
+    "score": {
+      "correct": 24,
+      "total": 24
+    }
+  },
+  "by_variant": {
+    "distractors": {
+      "correct": 24,
+      "total": 24
+    },
+    "injection": {
+      "correct": 24,
+      "total": 24
+    },
+    "short": {
+      "correct": 24,
+      "total": 24
+    }
+  },
+  "brier": 0.0035101887250966394,
+  "score_absolute_error": 0.011848016001749784
+}

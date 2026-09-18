@@ -7,7 +7,8 @@ COPY app/ /app/
 COPY launch.sh /app/launch.sh
 RUN chmod 0755 /app/launch.sh
 ENV CHECKPOINT_DIR=/models/checkpoint HF_HOME=/models/hf-cache PORT=8770 \
-    TRITON_CACHE_DIR=/tmp/nemotron-triton TORCHINDUCTOR_CACHE_DIR=/tmp/nemotron-inductor
+    TRITON_CACHE_DIR=/tmp/nemotron-triton TORCHINDUCTOR_CACHE_DIR=/tmp/nemotron-inductor \
+    OMP_NUM_THREADS=8
 EXPOSE 8770
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10m \
   CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8770/health', timeout=4)" || exit 1

@@ -2,7 +2,7 @@
 
 Ask typed questions about text or JSON and inspect model-derived probability distributions in a browser. One container runs the model, the original Decision Lab explorer, and a TypeSafe-shaped API.
 
-This is an experimental **Nemotron-Labs-Diffusion-14B adapter**, not Jev, an official TypeSafe service, or a calibrated replacement for Jev. The repository name describes its interface, not its model identity.
+This is an experimental adapter for the **dense Nemotron-Labs-Diffusion-14B model**, not a mixture-of-experts model, Jev, an official TypeSafe service, or a calibrated replacement for Jev. The repository name describes its interface, not its model identity.
 
 ## What works
 
@@ -16,21 +16,21 @@ The explorer includes samples, State and Questions editors, answer bars, a Noul 
 
 ## Prebuilt container
 
-Image: `ghcr.io/pst2154/nemotron-jev:14b-v1`
+Image: `ghcr.io/pst2154/nemotron-jev:14b-v2`
 
-Published digest: `sha256:9b189c07adb6ebced04c3f524f4556164e87aefb7ab50bb5e92fa7cd5d2537f4`.
+Published digest: `sha256:a1bf099bb919461659339f5bb8c1e962b3d3367ffe40c74fcb92c4c8c2b170ea`.
 
 The GHCR package is public. Anonymous access to the published manifest and digest has been verified; no GitHub login is required.
 
 ```bash
-docker pull ghcr.io/pst2154/nemotron-jev:14b-v1
+docker pull ghcr.io/pst2154/nemotron-jev:14b-v2
 docker volume create nemotron-models
 docker run -d --name nemotron-jev --gpus all --shm-size=8g \
   -p 127.0.0.1:8770:8770 -v nemotron-models:/models \
-  ghcr.io/pst2154/nemotron-jev:14b-v1
+  ghcr.io/pst2154/nemotron-jev:14b-v2
 ```
 
-For immutable deployments, replace the tag with `ghcr.io/pst2154/nemotron-jev@sha256:9b189c07adb6ebced04c3f524f4556164e87aefb7ab50bb5e92fa7cd5d2537f4`.
+For immutable deployments, replace the tag with `ghcr.io/pst2154/nemotron-jev@sha256:a1bf099bb919461659339f5bb8c1e962b3d3367ffe40c74fcb92c4c8c2b170ea`.
 
 ## Deploy from source
 
@@ -39,12 +39,12 @@ Tested on one H100 80 GB with Docker and NVIDIA Container Toolkit. Use a CUDA-13
 ```bash
 git clone https://github.com/pst2154/Nemotron_Jev.git
 cd Nemotron_Jev
-docker build -t nemotron-jev:14b-v1 .
+docker build -t nemotron-jev:14b-v2 .
 docker volume create nemotron-models
 docker run -d --name nemotron-jev --gpus all --shm-size=8g \
   -p 127.0.0.1:8770:8770 \
   -v nemotron-models:/models \
-  nemotron-jev:14b-v1
+  nemotron-jev:14b-v2
 docker logs -f nemotron-jev
 ```
 
@@ -103,6 +103,7 @@ Questions are independent and processed sequentially under one inference lock. M
 | `CHECKPOINT_DIR` | `/models/checkpoint` | Container model-cache location |
 | `HF_HOME` | `/models/hf-cache` | Container Hugging Face cache |
 | `SKIP_DOWNLOAD` | `0` | Set to `1` only with a complete existing checkpoint |
+| `OMP_NUM_THREADS` | `8` | CPU worker limit matching the original deployment |
 
 Limits: 512 questions, 16,384 prompt tokens per question, 2 MB request body, and tokenizer-dependent maximum number of candidate codes. Exceeding supported limits returns an error; inputs are not silently truncated. Chat supports up to 1,024 output tokens, with diffusion requests rounded up to a 32-token block boundary.
 
