@@ -1,0 +1,13 @@
+{
+  "model": "Nemotron-Labs-Diffusion-14B",
+  "image_manifest_digest": "sha256:9b189c07adb6ebced04c3f524f4556164e87aefb7ab50bb5e92fa7cd5d2537f4",
+  "description": "Original user-provided bash-question regression. Private inputs intentionally excluded. State was treated as data, never executed.",
+  "checks": ["HTTP success", "answer IDs match request IDs", "every Noul probability is finite and between zero and one"],
+  "runs": [
+    {"questions":10,"answers":10,"seconds":7.736884016005206,"passed":true},
+    {"questions":11,"answers":11,"seconds":7.742878742996254,"passed":true},
+    {"questions":306,"answers":306,"seconds":42.26863976599998,"passed":true}
+  ],
+  "accuracy_evaluated": false,
+  "notes": "Sequential scoring; compiler warmup may affect timings. This validates request handling, not label correctness or throughput parity."
+}

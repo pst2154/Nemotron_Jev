@@ -24,4 +24,10 @@ Run the evaluator documented in the README. All cases and per-case probabilities
 
 These are simple, correlated synthetic cases, already used for earlier model comparisons—not a blinded general-capability benchmark. Passing all 72 does not establish superiority, calibrated confidence, robust handling of unknown evidence, or adversarial resistance beyond these particular injections. The adapter's initial development smoke test misclassified a failed payout when category definitions overlapped; making the billing policy explicit changed the result. That development case was not added to or removed from this frozen evaluation.
 
-The original explorer's six samples returned valid distributions and rendered answer cards in a scripted DOM harness. That is a functional check, not an accuracy judgment on every sample. Large-question requests and container validation are separate from this 72-case accuracy result.
+The original explorer's six samples returned valid distributions and rendered answer cards in a scripted DOM harness. That is a functional check, not an accuracy judgment on every sample.
+
+## Large-question compatibility regression
+
+The original user-provided bash-command questionnaire completed with matching answer IDs and valid Noul probabilities at 10, 11, and 306 questions. Times were 7.74 s, 7.74 s, and **42.27 s**, respectively. Private inputs are not published; the non-sensitive test summary is in `evaluation/large-request-regression.json`. The bash command was state data, never executed.
+
+This resolves the request-shape/token-boundary failure mode, but **does not match DiffusionGemma throughput**. Nemotron currently evaluates questions sequentially. The earlier DiffusionGemma adapter processed this large request in roughly one second. The regression checks successful response structure, not correctness of all 306 labels. First-use compilation can also affect these timings.
