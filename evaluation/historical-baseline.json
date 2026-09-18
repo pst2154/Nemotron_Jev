@@ -1,0 +1,78 @@
+{
+  "dataset_sha256": "76caf52b188d7e932d13f9deedd269f2c86348f944471fef6d3f1e8d904ecc40",
+  "cases": 72,
+  "models": {
+    "nanojev": {
+      "correct": 55,
+      "total": 72,
+      "errors": 0,
+      "median_ms": 289.1760830025305,
+      "by_type": {
+        "boolean": {
+          "correct": 18,
+          "total": 24
+        },
+        "choice": {
+          "correct": 18,
+          "total": 24
+        },
+        "score": {
+          "correct": 19,
+          "total": 24
+        }
+      },
+      "by_variant": {
+        "distractors": {
+          "correct": 20,
+          "total": 24
+        },
+        "injection": {
+          "correct": 18,
+          "total": 24
+        },
+        "short": {
+          "correct": 17,
+          "total": 24
+        }
+      },
+      "brier": 0.19023060838998576,
+      "score_absolute_error": 0.47526010184083134
+    },
+    "diffusion": {
+      "correct": 71,
+      "total": 72,
+      "errors": 0,
+      "median_ms": 246.69177050236613,
+      "by_type": {
+        "boolean": {
+          "correct": 24,
+          "total": 24
+        },
+        "choice": {
+          "correct": 24,
+          "total": 24
+        },
+        "score": {
+          "correct": 23,
+          "total": 24
+        }
+      },
+      "by_variant": {
+        "distractors": {
+          "correct": 24,
+          "total": 24
+        },
+        "injection": {
+          "correct": 23,
+          "total": 24
+        },
+        "short": {
+          "correct": 24,
+          "total": 24
+        }
+      },
+      "brier": 6.789579935540439e-05,
+      "score_absolute_error": 0.12636306979912262
+    }
+  }
+}

@@ -1,0 +1,6 @@
+*
+!app/
+!app/**
+!launch.sh
+!Dockerfile
+app/__pycache__/
