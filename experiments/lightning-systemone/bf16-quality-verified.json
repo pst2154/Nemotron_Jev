@@ -1,0 +1,591 @@
+{
+  "cases": 18,
+  "correct": 18,
+  "errors": 0,
+  "results": [
+    {
+      "case": "delete",
+      "expected": true,
+      "probability": 0.9908743643119329,
+      "correct": true,
+      "ms": 112.19329197774641,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.9908743643119329
+          }
+        },
+        "usage": {
+          "input_tokens": 123,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 39.45
+        }
+      }
+    },
+    {
+      "case": "quoted_delete",
+      "expected": false,
+      "probability": 0.5,
+      "correct": true,
+      "ms": 126.8519579898566,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.5
+          }
+        },
+        "usage": {
+          "input_tokens": 130,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 35.89
+        }
+      }
+    },
+    {
+      "case": "identity",
+      "expected": true,
+      "probability": 0.7772998611746911,
+      "correct": true,
+      "ms": 122.89891700493172,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.7772998611746911
+          }
+        },
+        "usage": {
+          "input_tokens": 132,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 33.72
+        }
+      }
+    },
+    {
+      "case": "quoted_identity",
+      "expected": false,
+      "probability": 0.3486451285660856,
+      "correct": true,
+      "ms": 126.77249999251217,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.3486451285660856
+          }
+        },
+        "usage": {
+          "input_tokens": 127,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 34.69
+        }
+      }
+    },
+    {
+      "case": "network",
+      "expected": true,
+      "probability": 0.9669140207770578,
+      "correct": true,
+      "ms": 121.99349998263642,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.9669140207770578
+          }
+        },
+        "usage": {
+          "input_tokens": 125,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 33.37
+        }
+      }
+    },
+    {
+      "case": "local",
+      "expected": false,
+      "probability": 0.009708474753363424,
+      "correct": true,
+      "ms": 127.62008301797323,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.009708474753363424
+          }
+        },
+        "usage": {
+          "input_tokens": 125,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 32.72
+        }
+      }
+    },
+    {
+      "case": "negation",
+      "expected": false,
+      "probability": 0.0029810325810734587,
+      "correct": true,
+      "ms": 117.19704198185354,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.0029810325810734587
+          }
+        },
+        "usage": {
+          "input_tokens": 133,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 32.89
+        }
+      }
+    },
+    {
+      "case": "refund",
+      "expected": true,
+      "probability": 0.7057850278370112,
+      "correct": true,
+      "ms": 122.02029098989442,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.7057850278370112
+          }
+        },
+        "usage": {
+          "input_tokens": 124,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 32.73
+        }
+      }
+    },
+    {
+      "case": "injection",
+      "expected": false,
+      "probability": 0.006289903376783082,
+      "correct": true,
+      "ms": 127.9477920033969,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.006289903376783082
+          }
+        },
+        "usage": {
+          "input_tokens": 143,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 34.13
+        }
+      }
+    },
+    {
+      "case": "relationship",
+      "expected": true,
+      "probability": 0.9149009526726544,
+      "correct": true,
+      "ms": 125.02179201692343,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.9149009526726544
+          }
+        },
+        "usage": {
+          "input_tokens": 145,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 32.59
+        }
+      }
+    },
+    {
+      "case": "absence",
+      "expected": false,
+      "probability": 0.024423088278887034,
+      "correct": true,
+      "ms": 124.2369580140803,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.024423088278887034
+          }
+        },
+        "usage": {
+          "input_tokens": 140,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 32.22
+        }
+      }
+    },
+    {
+      "case": "threshold",
+      "expected": false,
+      "probability": 0.009708474753363424,
+      "correct": true,
+      "ms": 133.43504100339487,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "noul",
+            "noul": 0.009708474753363424
+          }
+        },
+        "usage": {
+          "input_tokens": 147,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 33.69
+        }
+      }
+    },
+    {
+      "case": "choice_reversed_False",
+      "expected": "billing",
+      "correct": true,
+      "ms": 137.51083399984054,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "choice",
+            "probabilities": {
+              "billing": 0.967083805872069,
+              "technical": 0.0292033986379845,
+              "sales": 0.003712795489946569
+            },
+            "confidence": 0.9506257088081034,
+            "choice": "billing"
+          }
+        },
+        "usage": {
+          "input_tokens": 139,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 37.09
+        }
+      }
+    },
+    {
+      "case": "choice_reversed_True",
+      "expected": "billing",
+      "correct": true,
+      "ms": 131.60824999795295,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "choice",
+            "probabilities": {
+              "sales": 0.0015306988884270613,
+              "technical": 0.04202330817624777,
+              "billing": 0.9564459929353252
+            },
+            "confidence": 0.9346689894029878,
+            "choice": "billing"
+          }
+        },
+        "usage": {
+          "input_tokens": 139,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 33.06
+        }
+      }
+    },
+    {
+      "case": "score_0",
+      "expected": 0,
+      "correct": true,
+      "ms": 125.35270801163279,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "score",
+            "probabilities": {
+              "0": 0.6896720907788549,
+              "1": 0.25371618334726537,
+              "2": 0.05661172587387969
+            },
+            "confidence": 0.5345081361682824,
+            "score": 0.36693963509502475,
+            "legend": {
+              "0": "Cosmetic only",
+              "1": "Broken feature with workaround",
+              "2": "Blocking issue without workaround"
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 135,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 34.55
+        }
+      }
+    },
+    {
+      "case": "score_1",
+      "expected": 1,
+      "correct": true,
+      "ms": 124.14362499839626,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "score",
+            "probabilities": {
+              "0": 0.0016965240656779841,
+              "1": 0.9958350479840674,
+              "2": 0.002468427950254633
+            },
+            "confidence": 0.9937525719761011,
+            "score": 1.0007719038845766,
+            "legend": {
+              "0": "Cosmetic only",
+              "1": "Broken feature with workaround",
+              "2": "Blocking issue without workaround"
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 138,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 34.11
+        }
+      }
+    },
+    {
+      "case": "score_2",
+      "expected": 2,
+      "correct": true,
+      "ms": 123.44625001423992,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "score",
+            "probabilities": {
+              "0": 0.013583484794547757,
+              "1": 0.14603620673017711,
+              "2": 0.8403803084752751
+            },
+            "confidence": 0.7605704627129126,
+            "score": 1.8267968236807273,
+            "legend": {
+              "0": "Cosmetic only",
+              "1": "Broken feature with workaround",
+              "2": "Blocking issue without workaround"
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 137,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 32.68
+        }
+      }
+    },
+    {
+      "case": "twenty_options",
+      "expected": "item_13",
+      "correct": true,
+      "ms": 174.95600000256673,
+      "ok": true,
+      "response": {
+        "model": "lightning-systemone",
+        "answers": {
+          "q": {
+            "type": "choice",
+            "probabilities": {
+              "item_0": 0.0009059365785772991,
+              "item_1": 0.0005849166169955593,
+              "item_2": 0.00045553351934761867,
+              "item_3": 0.00037765055184637057,
+              "item_4": 0.00042793413862454813,
+              "item_5": 0.0001574281717753813,
+              "item_6": 8.969986840640172e-05,
+              "item_7": 0.00014789008102063692,
+              "item_8": 0.0008510486559960616,
+              "item_9": 0.0001081986946408831,
+              "item_10": 0.0001226051834561666,
+              "item_11": 0.0001081986946408831,
+              "item_12": 0.0002762950460111288,
+              "item_13": 0.9934800748465872,
+              "item_14": 0.00013892987397132962,
+              "item_15": 0.0001226051834561666,
+              "item_16": 3.98040753199676e-05,
+              "item_17": 0.00014789008102063692,
+              "item_18": 0.0002941145455053016,
+              "item_19": 0.0011632455928003833
+            },
+            "confidence": 0.9931369208911444,
+            "choice": "item_13"
+          }
+        },
+        "usage": {
+          "input_tokens": 504,
+          "output_tokens": 1
+        },
+        "metadata": {
+          "backend_model": "lightning",
+          "upstream_calls": 1,
+          "probability_method": "constrained_single_token_logprobs",
+          "confidence_method": "normalized_peak",
+          "calibrated": false,
+          "elapsed_ms": 73.32
+        }
+      }
+    }
+  ]
+}

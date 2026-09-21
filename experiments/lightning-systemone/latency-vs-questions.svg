@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-label="Measured latency vs. number of questions">
+<rect width="1000" height="620" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#222;font-size:15px}.title{font-size:23px;font-weight:bold}.small{font-size:13px}</style>
+<text x="80" y="35" class="title">Measured latency vs. number of questions</text>
+<line x1="80" y1="485.0" x2="920" y2="485.0" stroke="#ddd"/>
+<text x="68" y="490.0" text-anchor="end">0</text>
+<line x1="80" y1="415.0" x2="920" y2="415.0" stroke="#ddd"/>
+<text x="68" y="420.0" text-anchor="end">1,000</text>
+<line x1="80" y1="345.0" x2="920" y2="345.0" stroke="#ddd"/>
+<text x="68" y="350.0" text-anchor="end">2,000</text>
+<line x1="80" y1="275.0" x2="920" y2="275.0" stroke="#ddd"/>
+<text x="68" y="280.0" text-anchor="end">3,000</text>
+<line x1="80" y1="205.0" x2="920" y2="205.0" stroke="#ddd"/>
+<text x="68" y="210.0" text-anchor="end">4,000</text>
+<line x1="80" y1="134.99999999999994" x2="920" y2="134.99999999999994" stroke="#ddd"/>
+<text x="68" y="139.99999999999994" text-anchor="end">5,000</text>
+<text x="93.1" y="508" text-anchor="middle">1</text>
+<text x="182.2" y="508" text-anchor="middle">12</text>
+<text x="279.4" y="508" text-anchor="middle">24</text>
+<text x="490.0" y="508" text-anchor="middle">50</text>
+<text x="692.5" y="508" text-anchor="middle">75</text>
+<text x="895.0" y="508" text-anchor="middle">100</text>
+<text x="500" y="539" text-anchor="middle">Number of questions</text>
+<text transform="translate(22 290) rotate(-90)" text-anchor="middle">Latency (ms)</text>
+<polyline points="93.1,474.1108 101.2,469.3319 117.4,466.436 149.8,453.472 182.2,445.681 279.4,412.4205 490.0,324.8673 692.5,213.54699999999997 895.0,120.98879999999997" fill="none" stroke="#757575" stroke-width="3"/>
+<circle cx="93.1" cy="474.1108" r="4" fill="#757575"><title>Lightning original · H100: 1 questions, 155.56 ms; 10/10 correct</title></circle>
+<circle cx="101.2" cy="469.3319" r="4" fill="#757575"><title>Lightning original · H100: 2 questions, 223.83 ms; 20/20 correct</title></circle>
+<circle cx="117.4" cy="466.436" r="4" fill="#757575"><title>Lightning original · H100: 4 questions, 265.2 ms; 40/40 correct</title></circle>
+<circle cx="149.8" cy="453.472" r="4" fill="#757575"><title>Lightning original · H100: 8 questions, 450.4 ms; 75/80 correct</title></circle>
+<circle cx="182.2" cy="445.681" r="4" fill="#757575"><title>Lightning original · H100: 12 questions, 561.7 ms; 114/120 correct</title></circle>
+<circle cx="279.4" cy="412.4205" r="4" fill="#757575"><title>Lightning original · H100: 24 questions, 1036.85 ms; 230/240 correct</title></circle>
+<circle cx="490.0" cy="324.8673" r="4" fill="#757575"><title>Lightning original · H100: 50 questions, 2287.61 ms; 453/500 correct</title></circle>
+<circle cx="692.5" cy="213.54699999999997" r="4" fill="#757575"><title>Lightning original · H100: 75 questions, 3877.9 ms; 647/750 correct</title></circle>
+<circle cx="895.0" cy="120.98879999999997" r="4" fill="#757575"><title>Lightning original · H100: 100 questions, 5200.16 ms; 820/1000 correct</title></circle>
+<text x="235" y="82" >Lightning original · H100</text>
+<line x1="195" y1="77" x2="225" y2="77" stroke="#757575" stroke-width="3"/>
+<polyline points="93.1,471.7063 101.2,468.8776 117.4,467.4608 149.8,468.0544 182.2,466.6663 279.4,459.254 490.0,450.6321 692.5,434.6693 895.0,426.2329" fill="none" stroke="#1768ac" stroke-width="3"/>
+<circle cx="93.1" cy="471.7063" r="4" fill="#1768ac"><title>Lightning BF16 cache · H100: 1 questions, 189.91 ms; 10/10 correct</title></circle>
+<circle cx="101.2" cy="468.8776" r="4" fill="#1768ac"><title>Lightning BF16 cache · H100: 2 questions, 230.32 ms; 20/20 correct</title></circle>
+<circle cx="117.4" cy="467.4608" r="4" fill="#1768ac"><title>Lightning BF16 cache · H100: 4 questions, 250.56 ms; 40/40 correct</title></circle>
+<circle cx="149.8" cy="468.0544" r="4" fill="#1768ac"><title>Lightning BF16 cache · H100: 8 questions, 242.08 ms; 74/80 correct</title></circle>
+<circle cx="182.2" cy="466.6663" r="4" fill="#1768ac"><title>Lightning BF16 cache · H100: 12 questions, 261.91 ms; 112/120 correct</title></circle>
+<circle cx="279.4" cy="459.254" r="4" fill="#1768ac"><title>Lightning BF16 cache · H100: 24 questions, 367.8 ms; 226/240 correct</title></circle>
+<circle cx="490.0" cy="450.6321" r="4" fill="#1768ac"><title>Lightning BF16 cache · H100: 50 questions, 490.97 ms; 462/500 correct</title></circle>
+<circle cx="692.5" cy="434.6693" r="4" fill="#1768ac"><title>Lightning BF16 cache · H100: 75 questions, 719.01 ms; 635/750 correct</title></circle>
+<circle cx="895.0" cy="426.2329" r="4" fill="#1768ac"><title>Lightning BF16 cache · H100: 100 questions, 839.53 ms; 798/1000 correct</title></circle>
+<text x="235" y="106" >Lightning BF16 cache · H100</text>
+<line x1="195" y1="101" x2="225" y2="101" stroke="#1768ac" stroke-width="3"/>
+<polyline points="93.1,451.1319 101.2,452.4192 117.4,452.1826 149.8,446.6603 182.2,445.7454 279.4,431.8511 490.0,404.61339999999996 692.5,367.421 895.0,343.397" fill="none" stroke="#218349" stroke-width="3"/>
+<circle cx="93.1" cy="451.1319" r="4" fill="#218349"><title>DiffusionGemma · L40S configured*: 1 questions, 483.83 ms; 10/10 correct</title></circle>
+<circle cx="101.2" cy="452.4192" r="4" fill="#218349"><title>DiffusionGemma · L40S configured*: 2 questions, 465.44 ms; 20/20 correct</title></circle>
+<circle cx="117.4" cy="452.1826" r="4" fill="#218349"><title>DiffusionGemma · L40S configured*: 4 questions, 468.82 ms; 40/40 correct</title></circle>
+<circle cx="149.8" cy="446.6603" r="4" fill="#218349"><title>DiffusionGemma · L40S configured*: 8 questions, 547.71 ms; 80/80 correct</title></circle>
+<circle cx="182.2" cy="445.7454" r="4" fill="#218349"><title>DiffusionGemma · L40S configured*: 12 questions, 560.78 ms; 120/120 correct</title></circle>
+<circle cx="279.4" cy="431.8511" r="4" fill="#218349"><title>DiffusionGemma · L40S configured*: 24 questions, 759.27 ms; 240/240 correct</title></circle>
+<circle cx="490.0" cy="404.61339999999996" r="4" fill="#218349"><title>DiffusionGemma · L40S configured*: 50 questions, 1148.38 ms; 500/500 correct</title></circle>
+<circle cx="692.5" cy="367.421" r="4" fill="#218349"><title>DiffusionGemma · L40S configured*: 75 questions, 1679.7 ms; 750/750 correct</title></circle>
+<circle cx="895.0" cy="343.397" r="4" fill="#218349"><title>DiffusionGemma · L40S configured*: 100 questions, 2022.9 ms; 1000/1000 correct</title></circle>
+<text x="235" y="130" >DiffusionGemma · L40S configured*</text>
+<line x1="195" y1="125" x2="225" y2="125" stroke="#218349" stroke-width="3"/>
+<polyline points="93.1,467.5231 101.2,466.4437 117.4,466.3835 149.8,464.9702 182.2,466.59839999999997 279.4,465.2929 490.0,465.4308 692.5,461.0789 895.0,461.4492" fill="none" stroke="#8545b5" stroke-width="3"/>
+<circle cx="93.1" cy="467.5231" r="4" fill="#8545b5"><title>TypeSafe Jev 1.13.0 · hosted API: 1 questions, 249.67 ms; 10/10 correct</title></circle>
+<circle cx="101.2" cy="466.4437" r="4" fill="#8545b5"><title>TypeSafe Jev 1.13.0 · hosted API: 2 questions, 265.09 ms; 20/20 correct</title></circle>
+<circle cx="117.4" cy="466.3835" r="4" fill="#8545b5"><title>TypeSafe Jev 1.13.0 · hosted API: 4 questions, 265.95 ms; 40/40 correct</title></circle>
+<circle cx="149.8" cy="464.9702" r="4" fill="#8545b5"><title>TypeSafe Jev 1.13.0 · hosted API: 8 questions, 286.14 ms; 80/80 correct</title></circle>
+<circle cx="182.2" cy="466.59839999999997" r="4" fill="#8545b5"><title>TypeSafe Jev 1.13.0 · hosted API: 12 questions, 262.88 ms; 120/120 correct</title></circle>
+<circle cx="279.4" cy="465.2929" r="4" fill="#8545b5"><title>TypeSafe Jev 1.13.0 · hosted API: 24 questions, 281.53 ms; 240/240 correct</title></circle>
+<circle cx="490.0" cy="465.4308" r="4" fill="#8545b5"><title>TypeSafe Jev 1.13.0 · hosted API: 50 questions, 279.56 ms; 500/500 correct</title></circle>
+<circle cx="692.5" cy="461.0789" r="4" fill="#8545b5"><title>TypeSafe Jev 1.13.0 · hosted API: 75 questions, 341.73 ms; 750/750 correct</title></circle>
+<circle cx="895.0" cy="461.4492" r="4" fill="#8545b5"><title>TypeSafe Jev 1.13.0 · hosted API: 100 questions, 336.44 ms; 1000/1000 correct</title></circle>
+<text x="235" y="154" >TypeSafe Jev 1.13.0 · hosted API</text>
+<line x1="195" y1="149" x2="225" y2="149" stroke="#8545b5" stroke-width="3"/>
+<text x="80" y="563" class="small">Median client-observed latency · 1,000 state tokens (Lightning tokenizer) · 10 trials · warmup excluded</text>
+<text x="80" y="586" class="small">*NVCF configured for L40S; placement not re-verified. Different network paths. H100 thermal throttling observed.</text>
+</svg>

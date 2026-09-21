@@ -1,0 +1,101 @@
+{
+  "method": "same-node HTTP with persistent connections, independent constrained one-token questions",
+  "model": "cached Lightning 3.5 NVFP4, modified MTP weights unused",
+  "config_sha256": "ef1d45a386aa623324915a473804b6d9c90c9b3f990dac014d0f580e61f55ec4",
+  "scenarios": [
+    {
+      "state_tokens": 1000,
+      "questions": 100,
+      "workers": 64,
+      "cache_case": "fresh_state",
+      "trials": 10,
+      "successes": 10,
+      "p50_ms": 775.99,
+      "p95_ms": 1247.79,
+      "correct_answers": 868,
+      "total_answers": 1000,
+      "rows": [
+        {
+          "ms": 903.6807960073929,
+          "correct": 89,
+          "usage": {
+            "input_tokens": 121890,
+            "output_tokens": 100
+          }
+        },
+        {
+          "ms": 872.8644149960019,
+          "correct": 85,
+          "usage": {
+            "input_tokens": 121890,
+            "output_tokens": 100
+          }
+        },
+        {
+          "ms": 804.2984759958927,
+          "correct": 81,
+          "usage": {
+            "input_tokens": 121890,
+            "output_tokens": 100
+          }
+        },
+        {
+          "ms": 768.4913459961535,
+          "correct": 90,
+          "usage": {
+            "input_tokens": 121890,
+            "output_tokens": 100
+          }
+        },
+        {
+          "ms": 744.2087950039422,
+          "correct": 82,
+          "usage": {
+            "input_tokens": 121890,
+            "output_tokens": 100
+          }
+        },
+        {
+          "ms": 728.41690700443,
+          "correct": 91,
+          "usage": {
+            "input_tokens": 121890,
+            "output_tokens": 100
+          }
+        },
+        {
+          "ms": 630.6034470035229,
+          "correct": 88,
+          "usage": {
+            "input_tokens": 121890,
+            "output_tokens": 100
+          }
+        },
+        {
+          "ms": 783.4838209964801,
+          "correct": 86,
+          "usage": {
+            "input_tokens": 121890,
+            "output_tokens": 100
+          }
+        },
+        {
+          "ms": 759.2960100009805,
+          "correct": 88,
+          "usage": {
+            "input_tokens": 121890,
+            "output_tokens": 100
+          }
+        },
+        {
+          "ms": 1247.7863340027397,
+          "correct": 88,
+          "usage": {
+            "input_tokens": 121890,
+            "output_tokens": 100
+          }
+        }
+      ]
+    }
+  ]
+}

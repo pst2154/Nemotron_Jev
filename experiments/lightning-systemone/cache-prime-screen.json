@@ -1,0 +1,28 @@
+{
+  "method": "100 questions, whole shared state preserved; one warmup plus 3 fresh-state trials per variant; selected-label logprobs; same-node",
+  "variants": [
+    {
+      "variant": "cache_prime",
+      "median_ms": 829.3365620047553,
+      "correct": 291,
+      "total": 300,
+      "rows": [
+        {
+          "ms": 832.2184569988167,
+          "correct": 99,
+          "input_tokens": 227690
+        },
+        {
+          "ms": 829.3365620047553,
+          "correct": 96,
+          "input_tokens": 227690
+        },
+        {
+          "ms": 805.6376299937256,
+          "correct": 96,
+          "input_tokens": 227690
+        }
+      ]
+    }
+  ]
+}

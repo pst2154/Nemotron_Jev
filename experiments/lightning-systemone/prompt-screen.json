@@ -1,0 +1,74 @@
+{
+  "method": "100 questions, whole shared state preserved; one warmup plus 3 fresh-state trials per variant; selected-label logprobs; same-node",
+  "variants": [
+    {
+      "variant": "original",
+      "median_ms": 3517.510930003482,
+      "correct": 244,
+      "total": 300,
+      "rows": [
+        {
+          "ms": 3331.565694999881,
+          "correct": 82,
+          "input_tokens": 121890
+        },
+        {
+          "ms": 3517.510930003482,
+          "correct": 82,
+          "input_tokens": 121890
+        },
+        {
+          "ms": 3552.749203008716,
+          "correct": 80,
+          "input_tokens": 121890
+        }
+      ]
+    },
+    {
+      "variant": "compact",
+      "median_ms": 3496.0311289905803,
+      "correct": 270,
+      "total": 300,
+      "rows": [
+        {
+          "ms": 3392.401286007953,
+          "correct": 91,
+          "input_tokens": 107190
+        },
+        {
+          "ms": 3496.0311289905803,
+          "correct": 89,
+          "input_tokens": 107190
+        },
+        {
+          "ms": 3539.3853970017517,
+          "correct": 90,
+          "input_tokens": 107190
+        }
+      ]
+    },
+    {
+      "variant": "question_first",
+      "median_ms": 4430.915670003742,
+      "correct": 300,
+      "total": 300,
+      "rows": [
+        {
+          "ms": 3966.3721149991034,
+          "correct": 100,
+          "input_tokens": 107190
+        },
+        {
+          "ms": 4430.915670003742,
+          "correct": 100,
+          "input_tokens": 107190
+        },
+        {
+          "ms": 4564.185042996542,
+          "correct": 100,
+          "input_tokens": 107190
+        }
+      ]
+    }
+  ]
+}

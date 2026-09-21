@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-label="100 questions: latency and observed correctness">
+<rect width="1000" height="620" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#222;font-size:15px}.title{font-size:23px;font-weight:bold}.small{font-size:13px}</style>
+<text x="80" y="35" class="title">100 questions: latency and observed correctness</text>
+<text x="80" y="90" >Lightning original · H100</text>
+<rect x="80" y="105" width="661.8385454545454" height="38" fill="#757575"/>
+<text x="753.8385454545454" y="130" >5,200 ms</text>
+<text x="80" y="168" >820/1,000 answers correct</text>
+<text x="80" y="200" >Lightning BF16 cache · H100</text>
+<rect x="80" y="215" width="106.84927272727273" height="38" fill="#1768ac"/>
+<text x="198.84927272727273" y="240" >840 ms</text>
+<text x="80" y="278" >798/1,000 answers correct</text>
+<text x="80" y="310" >DiffusionGemma · L40S configured*</text>
+<rect x="80" y="325" width="257.46000000000004" height="38" fill="#218349"/>
+<text x="349.46000000000004" y="350" >2,023 ms</text>
+<text x="80" y="388" >1,000/1,000 answers correct</text>
+<text x="80" y="420" >TypeSafe Jev 1.13.0 · hosted API</text>
+<rect x="80" y="435" width="42.81963636363636" height="38" fill="#8545b5"/>
+<text x="134.81963636363636" y="460" >336 ms</text>
+<text x="80" y="498" >1,000/1,000 answers correct</text>
+<text x="80" y="563" class="small">Median client-observed latency · 1,000 state tokens (Lightning tokenizer) · 10 trials · warmup excluded</text>
+<text x="80" y="586" class="small">*NVCF configured for L40S; placement not re-verified. Different network paths. H100 thermal throttling observed.</text>
+</svg>
