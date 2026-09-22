@@ -1,15 +1,25 @@
 # Nemotron Lightning typed decisions
 
-Experiments adapting Nemotron 3.5 Lightning to bounded classification: candidate-token
-scoring, Nimble-style LoRA training, and SemIf-style shared-prefix inference.
-The native scorer returns decisions without autoregressively generating answer text.
+Three separate experiments adapt Nemotron 3.5 Lightning to bounded classification.
 
-- [100-question trained-model benchmark](experiments/lightning-nimble/HUNDRED_QUESTIONS.md)
-- [Training, holdout accuracy, and SemIf workloads](experiments/lightning-nimble/SEMIF_LIGHTNING.md)
-- [Reproduction instructions](experiments/lightning-nimble/README.md)
-- [Earlier HTTP serving experiments](experiments/lightning-systemone/REPORT.md)
+| Experiment | Model and execution | Entry point |
+| --- | --- | --- |
+| 1. Original fast baseline | NVFP4, original short prompts, vLLM, one constrained token/question | [Baseline](experiments/lightning-systemone/README.md) |
+| 2. Nimble training / native scoring | BF16 base, trained LoRA and merged checkpoints; native candidate projection and shared-prefix tests | [Native experiment](experiments/lightning-nimble/README.md) |
+| 3. Combination — selected | Original NVFP4 + trained LoRA; original prompts and fast vLLM adapter | [Combination](experiments/lightning-combination/README.md) |
 
-The trained adapter scored **273/324 (84.26%)** on the frozen Nimble holdout;
+**Selected combination experiment for further testing:** original NVFP4 Lightning
+plus the trained rank-16 LoRA, original short prompts, and the fast vLLM adapter.
+It measured **837 ms median, 1,000/1,000 correct** on the original 100-question
+lookup workload. See the [configuration and controlled comparison](experiments/lightning-combination/REPORT.md).
+This selected vLLM path emits one constrained answer token per question; it is
+distinct from the native zero-generation experiment below.
+
+Each experiment keeps its own report and results. Experiment 3 deliberately
+reuses Experiment 1's immutable adapter and input fixture; Experiment 2's
+Nimble prompt format is **not** substituted into Experiment 3.
+
+In Experiment 2, the trained adapter scored **273/324 (84.26%)** on the frozen Nimble holdout;
 the merged BF16 checkpoint scored **270/324 (83.33%)**. Candidate probabilities
 are not calibrated confidence. These are research measurements, not a claim
 of equivalence to TypeSafe Jev or Bespoke-Nimble-9B.

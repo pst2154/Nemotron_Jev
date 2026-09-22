@@ -1,4 +1,9 @@
-# Trained Lightning: native candidate scoring
+# Experiment 2: Nimble fine-tuning and native candidate scoring
+
+This experiment owns the BF16 training, holdout evaluation, merged checkpoint
+tests, and native SemIf-style shared-prefix measurements. It is not the selected
+NVFP4/vLLM combination; that is [Experiment 3](../lightning-combination/README.md).
+The original fast untrained serving baseline is [Experiment 1](../lightning-systemone/README.md).
 
 See [100-question measurements](HUNDRED_QUESTIONS.md) and the detailed
 [training and SemIf report](SEMIF_LIGHTNING.md). This is a standalone research

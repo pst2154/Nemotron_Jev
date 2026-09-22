@@ -1,5 +1,11 @@
 # Faster 100-question scoring with Nemotron 3.5 Lightning
 
+**Combination follow-up:** the original fast NVFP4 setup plus our trained LoRA
+measured **837.22 ms and 1,000/1,000 correct**, versus **778.66 ms and 803/1,000**
+with the adapter off on the same fresh server. This is the selected configuration
+for further testing. See the [combination experiment](../lightning-combination/REPORT.md)
+for the unchanged prompts, recipe, raw results, and comparison limits.
+
 Measured September 21, 2026. Historical Lightning HTTP experiment. The old diffusion application has since been removed from this branch; comparison measurements below are retained as historical evidence. See the newer [trained native scorer benchmark](../lightning-nimble/HUNDRED_QUESTIONS.md).
 
 ## Result
