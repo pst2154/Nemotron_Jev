@@ -196,9 +196,9 @@ checks the UI/health routes, absence of chat generation, a 129-question response
 maximum-choice coverage, and rejection of oversized requests. The latter two large
 valid requests test the response contract, not semantic accuracy. The
 Python evaluator uses frozen cases and deterministic labels, not an LLM judge.
-The existing [accuracy report](ACCURACY_REPORT.md) and
-[raw results](evaluation/results/results.jsonl) describe the original native
-baseline, not the optimized implementation.
+See the [optimization report](OPTIMIZATION_REPORT.md) for current latency and
+accuracy measurements. The original native baseline's
+[raw results](evaluation/results/results.jsonl) are retained for reference.
 
 `evaluation/compare_backends.py` runs both implementations separately on the
 same GPU with identical prompts. It records accuracy, candidate distributions,
