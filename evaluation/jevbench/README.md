@@ -4,7 +4,48 @@ Target: [Benchmark Heaven Jev models](https://benchmarkheaven.com/jev-models),
 using [fstandhartinger/jevbench](https://github.com/fstandhartinger/jevbench).
 This is not the 324-example Nimble holdout or our 72-case regression suite.
 
-## Status
+## Current candidate: optimized answer ordering
+
+Use this image for the requested maintainer evaluation:
+
+`ghcr.io/pst2154/nemotron-jev@sha256:4dd795850f342183b9e54eb25b350682e63506043f8fd33dde2521d7ce6ae560`
+
+Tag: `14b-vllm-ordered-20260922`. Application source: `601e359`.
+The model, precision, vLLM revision, API, and hardware requirements are unchanged.
+This version orders answer options and reassigns their internal codes, then maps
+responses back to the original labels and score levels.
+
+```bash
+docker volume create nemotron-models
+docker run -d --name nemotron-jev-ordered --gpus all --shm-size=8g \
+  -p 127.0.0.1:8771:8770 -v nemotron-models:/models \
+  -e ISOLATE_REQUEST_CACHE=1 -e POSITION_ORDERING=1 \
+  ghcr.io/pst2154/nemotron-jev@sha256:4dd795850f342183b9e54eb25b350682e63506043f8fd33dde2521d7ce6ae560
+docker logs -f nemotron-jev-ordered
+# After startup, in another terminal:
+curl --fail http://127.0.0.1:8771/health
+```
+
+Run only one model server on the test GPU. Port 8771 separates the new candidate
+from any original service address. Verify health reports
+`position_ordering: length_overlap_rotate2_recode_v1` and
+`cache_policy: isolated_request`. Use the unchanged public harness commands below
+with `JEVBENCH_ENDPOINT=http://127.0.0.1:8771`. Run twice into separate fresh output
+directories and retain both results; do not select the better pass.
+
+The earlier implementation of this method scored **174/231 (75.32%)**, compared
+with 161/231 for input order. Both experimental passes reproduced identical
+probabilities. The published image passed 23 unit tests; all 231 prompt token
+sequences and synthetic-logit answer decoding matched that implementation.
+**A fresh full JevBench inference run of this exact published image has not yet
+been completed.** Maintainer accuracy and performance measurements are requested.
+
+Disclosure: the ordering rule was selected using public benchmark examples.
+The experimental result is not an independent held-out or official leaderboard
+score. See [method and measurements](../../POSITION_ORDERING.md). No model
+fine-tuning or probability calibration was added.
+
+## Original submission status
 
 - Submission candidate: Nemotron-Labs-Diffusion-14B, optimized vLLM decision readout.
 - Public container and H100 deployment instructions are available in the root README.
@@ -22,7 +63,7 @@ The pinned harness supplies 231 public items: 48 easy, 72 original/standard, and
 a complete leaderboard score or rank; maintainers must perform the remaining
 evaluation on their own infrastructure. Do not request their hidden labels.
 
-## Frozen candidate
+## Original frozen candidate (historical)
 
 | Component | Value |
 | --- | --- |
@@ -36,7 +77,7 @@ evaluation on their own infrastructure. Do not request their hidden labels.
 | Interface | Native Choice, Noul, Score; one masked position per question |
 | Limits | 16,384 prompt tokens, 62 options, 512 questions per request |
 
-Use the root deployment guide, adding `-e ISOLATE_REQUEST_CACHE=1` to `docker run`.
+For the original candidate, use its digest above with `-e ISOLATE_REQUEST_CACHE=1`.
 Retain all other image defaults. The model may already be loaded, but record that
 condition. Do not silently crop long inputs, change option order, tune prompts
 after seeing labels, repair malformed distributions, or retry selected failures.
@@ -107,7 +148,7 @@ credentials, internal addresses, and personal filesystem paths. Publish only
 sanitized reproducibility metadata and public-item evidence; retain originals
 privately. Do not publish the upstream manifest unchanged.
 
-## Submission checklist
+## Original submission checklist
 
 - [x] Application code license documented (MIT for original code).
 - [x] All 231 public items attempted with the frozen container, twice.
