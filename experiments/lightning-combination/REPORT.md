@@ -7,13 +7,6 @@ adapter, not the later shared-schema/native scoring experiment.
 
 ## Speed chart
 
-![HTTP latency versus question count for the baseline and trained NVFP4 combination](latency-vs-questions.svg)
-
-Dots show median end-to-end HTTP latency; whiskers extend to p95. Only **1 and
-100 questions** were measured for this combination, so no intermediate curve is
-implied. The chart uses the first controlled comparison, not the validation
-repeat. Regenerate from the raw results with `node make_chart.mjs`.
-
 For the original comparison, see the [original 100-question speed chart](../lightning-systemone/hundred-questions.svg).
 
 ![Original 100-question comparison: historical latency and correctness before the fine-tune](../lightning-systemone/hundred-questions.svg)
