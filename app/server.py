@@ -10,7 +10,12 @@ def main():
     from transformers import AutoTokenizer
     from vllm import LLM
     from vllm_scoring import evaluate
-    from scoring import candidate_codes
+    from scoring import POSITION_ORDERING, candidate_codes
+
+    ordering_setting = os.environ.get('POSITION_ORDERING', '1')
+    if ordering_setting not in ('0', '1'):
+        raise ValueError('POSITION_ORDERING must be 0 or 1')
+    position_ordering = ordering_setting == '1'
 
     checkpoint = os.environ.get('CHECKPOINT_DIR', '/models/checkpoint')
     tokenizer = AutoTokenizer.from_pretrained(
@@ -58,6 +63,7 @@ def main():
                                'model': 'Nemotron-Labs-Diffusion-14B',
                                'backend': 'vllm', 'modes': ['systemone'],
                                'cache_policy': 'isolated_request' if isolate_cache else 'shared',
+                               'position_ordering': POSITION_ORDERING if position_ordering else 'off',
                                'limits': {'max_questions': 512,
                                           'max_choices': len(candidate_codes(tokenizer)),
                                           'max_prompt_tokens': 16384}})
@@ -78,7 +84,8 @@ def main():
                     result = evaluate(
                         engine, tokenizer, body,
                         prime_shared_prefix=os.environ.get('PRIME_SHARED_PREFIX', '1') == '1',
-                        batch_tokenize=os.environ.get('BATCH_TOKENIZE', '1') == '1')
+                        batch_tokenize=os.environ.get('BATCH_TOKENIZE', '1') == '1',
+                        position_ordering=position_ordering)
                 self.send(200, result)
             except (ValueError, KeyError, TypeError) as exc:
                 self.send(400, {'error': {'message': str(exc),

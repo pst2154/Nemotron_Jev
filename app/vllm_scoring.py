@@ -8,15 +8,16 @@ never fed back into the model. All questions retain the native prompt format.
 import math
 import time
 
-from scoring import candidate_codes, prepare_questions
+from scoring import POSITION_ORDERING, candidate_codes, prepare_questions
 
 
 def evaluate(engine, tokenizer, payload, mask_token_id=100, prime_shared_prefix=False,
-             batch_tokenize=False):
+             batch_tokenize=False, position_ordering=True):
     from vllm import SamplingParams
 
     started = time.perf_counter()
-    prepared = prepare_questions(tokenizer, payload, batch_tokenize=batch_tokenize)
+    prepared = prepare_questions(tokenizer, payload, batch_tokenize=batch_tokenize,
+                                 position_ordering=position_ordering)
     codes = candidate_codes(tokenizer)
     prompts = []
     params = []
@@ -84,6 +85,7 @@ def evaluate(engine, tokenizer, payload, mask_token_id=100, prime_shared_prefix=
                     'engine_seconds': inferred_at - prepared_at,
                     'questions': len(answers)},
         'scoring': {'method': 'diffusion_masked_token_candidate_softmax',
+                    'position_ordering': POSITION_ORDERING if position_ordering else 'off',
                     'backend': 'vllm', 'confidence': 'maximum_candidate_probability',
                     'calibrated': False},
     }
