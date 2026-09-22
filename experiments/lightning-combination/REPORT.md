@@ -5,6 +5,15 @@ works: 837.22 ms median and 1,000/1,000 correct at 100 questions.** No new
 quantization was necessary. This is the original short-prompt System One
 adapter, not the later shared-schema/native scoring experiment.
 
+## Speed chart
+
+![HTTP latency versus question count for the baseline and trained NVFP4 combination](latency-vs-questions.svg)
+
+Dots show median end-to-end HTTP latency; whiskers extend to p95. Only **1 and
+100 questions** were measured for this combination, so no intermediate curve is
+implied. The chart uses the first controlled comparison, not the validation
+repeat. Regenerate from the raw results with `node make_chart.mjs`.
+
 | Configuration | 100-question HTTP median | HTTP p95 | Correct |
 | --- | ---: | ---: | ---: |
 | Historical original fast run | 839.53 ms | 961.04 ms | 798/1,000 |

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+<title id="title">Combination experiment: latency versus question count</title>
+<desc id="desc">HTTP median latency at 1 and 100 questions. Baseline: 190.06 and 778.66 milliseconds. Trained LoRA: 214.98 and 837.22 milliseconds. Whiskers extend to p95. Intermediate counts were not measured.</desc>
+<rect width="960" height="520" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#172033">
+<text x="60" y="38" font-size="23" font-weight="700">Fast NVFP4 Lightning + fine-tune</text>
+<text x="60" y="64" font-size="14" fill="#526174">Same original prompts · 1,000 state tokens · H100 · 10 trials per point</text>
+<line x1="105" x2="850" y1="410" y2="410" stroke="#e2e8f0"/>
+<text x="90" y="415" text-anchor="end" font-size="13" fill="#526174">0</text>
+<line x1="105" x2="850" y1="352" y2="352" stroke="#e2e8f0"/>
+<text x="90" y="357" text-anchor="end" font-size="13" fill="#526174">200</text>
+<line x1="105" x2="850" y1="294" y2="294" stroke="#e2e8f0"/>
+<text x="90" y="299" text-anchor="end" font-size="13" fill="#526174">400</text>
+<line x1="105" x2="850" y1="236" y2="236" stroke="#e2e8f0"/>
+<text x="90" y="241" text-anchor="end" font-size="13" fill="#526174">600</text>
+<line x1="105" x2="850" y1="178.00000000000003" y2="178.00000000000003" stroke="#e2e8f0"/>
+<text x="90" y="183.00000000000003" text-anchor="end" font-size="13" fill="#526174">800</text>
+<line x1="105" x2="850" y1="120" y2="120" stroke="#e2e8f0"/>
+<text x="90" y="125" text-anchor="end" font-size="13" fill="#526174">1000</text>
+<text x="29" y="270" transform="rotate(-90 29 270)" text-anchor="middle" font-size="14">HTTP latency (ms)</text>
+<circle cx="105" cy="91" r="5" fill="#2563eb"/><text x="118" y="96" font-size="14">NVFP4 baseline</text>
+<line x1="140" x2="140" y1="354.8826" y2="352.47270000000003" stroke="#2563eb" stroke-width="2"/>
+<line x1="135" x2="145" y1="352.47270000000003" y2="352.47270000000003" stroke="#2563eb" stroke-width="2"/>
+<circle cx="140" cy="354.8826" r="6" fill="#2563eb"/>
+<text x="127" y="360.8826" text-anchor="end" font-size="15" font-weight="700" fill="#2563eb">190 ms</text>
+<line x1="795" x2="795" y1="184.18860000000004" y2="176.782" stroke="#2563eb" stroke-width="2"/>
+<line x1="790" x2="800" y1="176.782" y2="176.782" stroke="#2563eb" stroke-width="2"/>
+<circle cx="795" cy="184.18860000000004" r="6" fill="#2563eb"/>
+<text x="782" y="190.18860000000004" text-anchor="end" font-size="15" font-weight="700" fill="#2563eb">779 ms</text>
+<circle cx="375" cy="91" r="5" fill="#16803c"/><text x="388" y="96" font-size="14">NVFP4 + trained LoRA</text>
+<line x1="160" x2="160" y1="347.6558" y2="344.6282" stroke="#16803c" stroke-width="2"/>
+<line x1="155" x2="165" y1="344.6282" y2="344.6282" stroke="#16803c" stroke-width="2"/>
+<circle cx="160" cy="347.6558" r="6" fill="#16803c"/>
+<text x="173" y="353.6558" text-anchor="start" font-size="15" font-weight="700" fill="#16803c">215 ms</text>
+<line x1="815" x2="815" y1="167.2062" y2="138.7572" stroke="#16803c" stroke-width="2"/>
+<line x1="810" x2="820" y1="138.7572" y2="138.7572" stroke="#16803c" stroke-width="2"/>
+<circle cx="815" cy="167.2062" r="6" fill="#16803c"/>
+<text x="828" y="173.2062" text-anchor="start" font-size="15" font-weight="700" fill="#16803c">837 ms</text>
+<text x="150" y="434" text-anchor="middle" font-size="14">1</text>
+<text x="805" y="434" text-anchor="middle" font-size="14">100</text>
+<text x="480" y="460" text-anchor="middle" font-size="15">Questions per System One request</text>
+<text x="60" y="490" font-size="13" fill="#526174">Dots: median. Whiskers: p95. Only 1 and 100 questions measured; no interpolated curve.</text>
+</g></svg>
