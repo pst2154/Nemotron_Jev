@@ -11,7 +11,9 @@ This is not the 324-example Nimble holdout or our 72-case regression suite.
 - The unchanged upstream `typesafe` adapter matches our `/v1/systemone` contract.
 - Upstream harness commit `51a8d73fa798aa337bb1b26abd10995c0ab847e9` passes all 90 pytest tests.
 - **Two public self-test passes completed: 161/231 correct in both.** See
-  [results and evidence](PUBLIC_RESULTS.md). No leaderboard request has been submitted.
+  [results and evidence](PUBLIC_RESULTS.md).
+- **Submitted for maintainer evaluation:** [JevBench issue #34](https://github.com/fstandhartinger/jevbench/issues/34).
+  Submission does not imply acceptance, an official score, or a leaderboard rank.
 - Original application code is MIT licensed; vLLM is Apache-2.0 and model weights
   retain the NVIDIA Nemotron Open Model License. These are separate grants.
 
@@ -112,8 +114,10 @@ privately. Do not publish the upstream manifest unchanged.
 - [x] Public summary and failure counts recorded without selecting favorable runs.
 - [x] Hardware, cache policy, network conditions, and unknown cost disclosed.
 - [x] Immutable image, model revision, and serving instructions provided.
-- [ ] Draft updated with actual results and reviewed before posting an issue.
+- [x] Submission updated with actual results and reviewed before posting an issue.
+- [x] Anonymous container access and public checkpoint metadata verified.
+- [x] Evaluation request posted as JevBench issue #34.
 
-The [issue draft](SUBMISSION_DRAFT.md) is preparation only, not a posted request.
+The [submitted issue body](SUBMISSION_DRAFT.md) is retained for reproducibility.
 The maintainers can pull the public image and run their own task lists through
 their existing `typesafe` adapter without access to our infrastructure.
