@@ -1,4 +1,4 @@
-"""Frozen ordering must move options, not their label-to-code assignments."""
+"""Frozen combined ordering must reassign codes and decode original semantics."""
 import copy
 import json
 import sys
@@ -48,17 +48,21 @@ class PositionOrderingTests(unittest.TestCase):
         self.assertEqual([o['code'] for o in order_options(self.tokenizer, options, set())],
                          ['C', 'D', 'A', 'B'])
 
-    def test_code_meaning_and_output_order_are_preserved(self):
+    def test_codes_are_reassigned_and_meanings_preserved(self):
         original = copy.deepcopy(self.payload)
         off = prepare_questions(self.tokenizer, self.payload, position_ordering=False)
         on = prepare_questions(self.tokenizer, self.payload, position_ordering=True)
         self.assertEqual(self.payload, original)
         for before, after in zip(off, on):
-            self.assertEqual(before[:4], after[:4])
+            self.assertEqual(before[:2], after[:2])
             old, new = rendered(before)['options'], rendered(after)['options']
-            self.assertEqual({o['code']: o for o in old}, {o['code']: o for o in new})
+            self.assertEqual({o['label']: o['meaning'] for o in old},
+                             {o['label']: o['meaning'] for o in new})
+            self.assertEqual([o['code'] for o in old], [o['code'] for o in new])
+            self.assertEqual(after[2], [o['label'] for o in new])
             self.assertNotEqual(old, new)
-        self.assertEqual([o['code'] for o in rendered(on[0])['options']], ['B', 'A', 'D', 'C'])
+        self.assertEqual([o['label'] for o in rendered(on[0])['options']],
+                         ['second', 'first', 'fourth', 'third'])
 
     def test_disabled_keeps_original_prompt_and_default_preparation(self):
         prepared = prepare_questions(self.tokenizer, self.payload, position_ordering=False)
@@ -81,7 +85,7 @@ class PositionOrderingTests(unittest.TestCase):
                    {'code': 'B', 'label': 'y', 'meaning': 'omega'}]
         self.assertEqual([o['code'] for o in order_options(self.tokenizer, options, {'alpha'})], ['B', 'A'])
 
-    def test_answers_use_original_codes_for_all_types(self):
+    def test_answers_decode_reassigned_codes_for_all_types(self):
         calls = []
         def generate(prompts, params, **kwargs):
             calls.append(prompts)
@@ -93,10 +97,14 @@ class PositionOrderingTests(unittest.TestCase):
             result = evaluate(SimpleNamespace(generate=generate), self.tokenizer, self.payload)
             off = evaluate(SimpleNamespace(generate=generate), self.tokenizer, self.payload, position_ordering=False)
         self.assertEqual(len(calls), 2)  # One engine call per three-question request.
-        self.assertEqual(result['answers'], off['answers'])
-        self.assertEqual(result['answers']['choice']['choice'], 'second')
-        self.assertGreater(result['answers']['noul']['noul'], .999)
-        self.assertAlmostEqual(result['answers']['score']['score'], 1)
+        self.assertEqual(off['answers']['choice']['choice'], 'second')
+        self.assertGreater(off['answers']['noul']['noul'], .999)
+        self.assertAlmostEqual(off['answers']['score']['score'], 1)
+        self.assertEqual(result['answers']['choice']['choice'], 'first')
+        self.assertLess(result['answers']['noul']['noul'], .001)
+        self.assertAlmostEqual(result['answers']['score']['score'], 2)
+        self.assertEqual(list(result['answers']['choice']['probabilities']),
+                         ['first', 'second', 'third', 'fourth'])
         self.assertEqual(result['answers']['score']['legend'], {'0': 'a', '1': 'bb', '2': 'ccc'})
         self.assertEqual(result['scoring']['position_ordering'], POSITION_ORDERING)
         self.assertEqual(off['scoring']['position_ordering'], 'off')

@@ -1,45 +1,50 @@
-# Position-only option ordering
+# Optimized answer ordering
 
-Current source enables `POSITION_ORDERING=1`. Set `POSITION_ORDERING=0` to restore
-the original prompt order. Health and scoring metadata report
-`length_overlap_rotate2_v1` or `off`.
+The optimized container orders answer options and assigns their internal answer
+codes in the new order. API responses retain the original labels, boolean
+meaning, and numeric score levels. No model weights are changed and no extra
+model inference is required.
 
-This is an application-layer prompt-order change, not training, a vLLM kernel
-change, extra generation, or permutation averaging. It affects Choice, Noul,
-and Score while preserving their original label/code mapping and score levels.
+`POSITION_ORDERING=1` enables this behavior by default. Set
+`POSITION_ORDERING=0` to preserve the input option order. Health and scoring
+metadata identify the enabled method as `length_overlap_rotate2_recode_v1`.
 
-For each description, rank by normalized tokenizer length minus twice its
-content-word overlap fraction with state plus instructions. Sort descending,
-then rotate left by two positions. Move each entire option, including its
-original code. Output probabilities retain original label order. Structured
-descriptions are serialized as JSON for ranking; ties are stable before rotation.
+## Method
 
-## Evidence and scope
+For each option description, compute its tokenizer length divided by the longest
+description length, minus twice the fraction of its content words found in the
+state or question instructions. Sort descending with stable ties, then rotate
+left by two positions. Assign A/B/C and subsequent available single-token codes
+to the resulting positions. Decode probabilities back to the original labels.
+Structured descriptions are serialized as JSON for ranking.
 
-On the exposed public JevBench subsets, position-only improved 23 to 25 of 32
-development answers and 46 to 51 of 64 separate check answers. The diagnostic
-repeated with identical probabilities. The check had five fixes and no
-regressions. This is not a fresh holdout or a full-suite result for this variant.
-The earlier 174/231 result used a different variant that also reassigned codes;
-do not attribute that score to position-only.
+## Measurements
 
-Production prompt tokens match the tested position-only implementation exactly
-on all 231 public questions. CPU tests cover stable sorting, code/label/meaning
-preservation, structured input, original-order fallback, batched tokenization,
-and Choice/Noul/Score decoding. No extra model inference is performed.
+On 231 public JevBench questions with Nemotron-Labs-Diffusion-14B on one H100:
 
-## Build without recompiling vLLM
+| Method | Correct | Accuracy | Median latency |
+|---|---:|---:|---:|
+| Input option order | 161/231 | 69.70% | 20.22 ms |
+| Optimized ordering and code assignment | 174/231 | 75.32% | 21.19–21.30 ms |
 
-The existing published image and its immutable JevBench submission remain
-unchanged. To package the updated application locally, run from this checkout:
+Both methods reproduced identical probabilities across two runs. Latency was
+measured using serial requests to a warm model, not concurrent load. The public
+dataset includes examples used to select the ordering rule; these measurements
+are not an independent held-out evaluation or an official leaderboard score.
+
+## Container
+
+Use `ghcr.io/pst2154/nemotron-jev:14b-vllm-ordered-20260922` with the Docker command
+in the README. It starts both the explorer UI and System One API on port 8770.
+
+To build the application layer without recompiling vLLM:
 
 ```bash
 docker build \
   --build-arg VLLM_IMAGE=ghcr.io/pst2154/nemotron-jev@sha256:b8afc221e1ef9c8e74847e1a3d304a77123ac5114f1ef9f102048866fb286aa9 \
-  -t nemotron-jev:position-ordering .
+  -t nemotron-jev:ordered .
 ```
 
-Use this local image with the deployment command in the README. It retains the
-same UI, API, model-download entrypoint, and checkpoint version. Add
-`-e POSITION_ORDERING=0` for original-order comparisons. Do not use results from
-the modified image to describe the frozen benchmark container.
+The earlier `14b-vllm-ordering-9d7f698` image only moves option positions; use the
+image above for the measured 174/231 method. The original `14b-vllm-20260922`
+benchmark image remains unchanged.

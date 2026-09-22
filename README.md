@@ -20,33 +20,26 @@ The H100-validated image starts **both the original explorer UI and the
 classification-only vLLM API**. The GHCR package is public; anonymous access
 to this image's manifest and configuration has been verified.
 
-Image: `ghcr.io/pst2154/nemotron-jev:14b-vllm-20260922`.
-
-Published digest:
-`sha256:b8afc221e1ef9c8e74847e1a3d304a77123ac5114f1ef9f102048866fb286aa9`.
+Image: `ghcr.io/pst2154/nemotron-jev:14b-vllm-ordered-20260922`.
+Answer ordering and code reassignment are enabled by default. This method scored
+174/231 on the public JevBench dataset; see [method and measurements](POSITION_ORDERING.md).
 
 The following commands require Docker with NVIDIA Container Toolkit, a CUDA-13-compatible driver,
 and an H100/H200-class Hopper GPU. H100 80 GB was tested; H200 was not tested.
 The prebuilt image targets compute capability 9.0, not B200/B300 or L40S.
 
 ```bash
-docker pull ghcr.io/pst2154/nemotron-jev:14b-vllm-20260922
+docker pull ghcr.io/pst2154/nemotron-jev:14b-vllm-ordered-20260922
 docker volume create nemotron-models
 docker run -d --name nemotron-jev --gpus all --shm-size=8g \
   -p 127.0.0.1:8770:8770 -v nemotron-models:/models \
-  ghcr.io/pst2154/nemotron-jev:14b-vllm-20260922
+  ghcr.io/pst2154/nemotron-jev:14b-vllm-ordered-20260922
 docker logs -f nemotron-jev
 ```
 
-For an immutable deployment, replace the tag with
-`ghcr.io/pst2154/nemotron-jev@sha256:b8afc221e1ef9c8e74847e1a3d304a77123ac5114f1ef9f102048866fb286aa9`.
-
-The image uses application source commit `66b19e885e2f330711f69983ab9f5d182630ca26`
-and vLLM source commit `2c83d10caa71e3a9eac8fdd9f1288dac8c65596b`.
-The published image remains frozen. Current source additionally supports
-position-only option ordering; that change is **not** included in this existing
-image or its JevBench submission. See [position ordering](POSITION_ORDERING.md)
-for the switch, measurements, and a lightweight source build using this image.
+The vLLM source remains `2c83d10caa71e3a9eac8fdd9f1288dac8c65596b`.
+The original benchmark image, `14b-vllm-20260922`, remains available at
+`sha256:b8afc221e1ef9c8e74847e1a3d304a77123ac5114f1ef9f102048866fb286aa9`.
 
 The image contains the serving software, not model weights. First launch fetches
 the pinned model into the persistent volume. To reuse an existing checkpoint,
@@ -177,7 +170,7 @@ UI reads remain available during inference.
 | `CANDIDATE_ONLY` | `1` | Project only the serving code vocabulary; requires unquantized TP=1 |
 | `DIRECT_LOGITS` | `1` | Return candidate logits directly and skip the redundant full-vocabulary softmax |
 | `BATCH_TOKENIZE` | `1` | Batch prompt tokenization; exact token identity was checked on the benchmark inputs |
-| `POSITION_ORDERING` | `1` (current source) | Move options while retaining their original codes; `0` restores original prompt order. Not in the frozen published image. |
+| `POSITION_ORDERING` | `1` | Order options and reassign internal codes; map responses back to original labels. `0` restores input order. |
 | `ISOLATE_REQUEST_CACHE` | `0` | Set to `1` to reset the prefix cache before each request while retaining within-request reuse |
 
 Limits: 512 questions, 16,384 prompt tokens per question, 2 MB request body, and

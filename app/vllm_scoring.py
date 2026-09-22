@@ -8,7 +8,7 @@ never fed back into the model. All questions retain the native prompt format.
 import math
 import time
 
-from scoring import POSITION_ORDERING, candidate_codes, prepare_questions
+from scoring import POSITION_ORDERING, candidate_codes, prepare_questions, pack_answer
 
 
 def evaluate(engine, tokenizer, payload, mask_token_id=100, prime_shared_prefix=False,
@@ -64,18 +64,7 @@ def evaluate(engine, tokenizer, payload, mask_token_id=100, prime_shared_prefix=
         weights = [math.exp(value - maximum) for value in values]
         denominator = sum(weights)
         probs = [weight / denominator for weight in weights]
-        top = max(range(len(probs)), key=probs.__getitem__)
-        if kind == 'noul':
-            answer = {'type': kind, 'noul': probs[1]}
-        else:
-            answer = {'type': kind, 'probabilities': dict(zip(labels, probs)),
-                      'confidence': probs[top]}
-            if kind == 'choice':
-                answer['choice'] = labels[top]
-            else:
-                answer['score'] = sum(i * p for i, p in enumerate(probs))
-                answer['legend'] = dict(zip(labels, descriptions))
-        answers[key] = answer
+        answers[key] = pack_answer(payload['questions'][key], labels, probs)
     return {
         'model': 'Nemotron-Labs-Diffusion-14B', 'answers': answers,
         'usage': {'input_tokens': sum(len(item[4]) for item in prepared),
