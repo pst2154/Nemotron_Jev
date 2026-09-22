@@ -1,6 +1,6 @@
 # Draft: bench request — Nemotron Diffusion Decision Lab (14B, vLLM)
 
-**Not submitted. Public self-test is pending.**
+**Draft only; not submitted.**
 
 Please consider a maintainer-run evaluation of Nemotron-Labs-Diffusion-14B using
 our classification-only vLLM serving implementation.
@@ -24,7 +24,14 @@ The server has no built-in authentication; bind locally or place it behind an
 authenticated proxy. No submitter-operated endpoint is needed for your run.
 
 Our previous regression and latency experiments are not JevBench scores.
-Public JevBench self-test results: **pending**. No hosted tariff, official score,
+The [public JevBench self-test](PUBLIC_RESULTS.md) completed two unchanged passes:
+**161/231 (69.70%)** both times: easy 48/48, standard 55/72, hard 58/111.
+All responses passed strict schema checks. Pass 1 median/p95 were 21.45/122.69 ms;
+pass 2 was 21.22/119.98 ms. These are serial same-node HTTP measurements on one
+H100, not Internet or leaderboard-adjusted timings. Model startup completed before
+testing, request caches were isolated, and all probability outputs were identical
+across passes. Overall public-set Brier was 0.433044 and ECE 0.136736.
+No hosted tariff, official score,
 rank, or held-out performance is claimed. Original application code is **MIT**;
 the vLLM fork is **Apache-2.0**; model weights are under the **NVIDIA Nemotron
 Open Model License**. These licenses do not replace one another.

@@ -9,9 +9,9 @@ This is not the 324-example Nimble holdout or our 72-case regression suite.
 - Submission candidate: Nemotron-Labs-Diffusion-14B, optimized vLLM decision readout.
 - Public container and H100 deployment instructions are available in the root README.
 - The unchanged upstream `typesafe` adapter matches our `/v1/systemone` contract.
-- Upstream harness commit `51a8d73fa798aa337bb1b26abd10995c0ab847e9` passes its 22 tests.
-- **No JevBench model evaluation has been run or submitted yet.**
-- The earlier H100 allocation expired. A fresh serving GPU is needed for the self-test.
+- Upstream harness commit `51a8d73fa798aa337bb1b26abd10995c0ab847e9` passes all 90 pytest tests.
+- **Two public self-test passes completed: 161/231 correct in both.** See
+  [results and evidence](PUBLIC_RESULTS.md). No leaderboard request has been submitted.
 - Original application code is MIT licensed; vLLM is Apache-2.0 and model weights
   retain the NVIDIA Nemotron Open Model License. These are separate grants.
 
@@ -57,7 +57,7 @@ the container digest separately; health metadata alone does not prove image
 identity. Outputs are placed in a fresh private temporary directory and retained
 even when the harness stops early. The expanded commands below are equivalent.
 
-Python 3.10 or newer is required. Run from the upstream checkout. Replace the
+Python 3.10 or newer and pytest are required. Run from the upstream checkout. Replace the
 example service URL with your local serving address. The fresh output directory
 is outside both repositories and must remain private: the upstream manifest
 records the endpoint. Credentials, when needed, stay in environment variables.
@@ -66,7 +66,10 @@ records the endpoint. Credentials, when needed, stay in environment variables.
 git clone https://github.com/fstandhartinger/jevbench.git
 cd jevbench
 git checkout 51a8d73fa798aa337bb1b26abd10995c0ab847e9
-python3 -m unittest discover -s tests -v
+python3 -m venv ../jevbench-venv
+source ../jevbench-venv/bin/activate
+python3 -m pip install pytest
+python3 -m pytest -q tests
 
 export JEVBENCH_ENDPOINT=http://127.0.0.1:8770
 JEVBENCH_RUN=$(mktemp -d)
@@ -105,9 +108,9 @@ privately. Do not publish the upstream manifest unchanged.
 ## Submission checklist
 
 - [x] Application code license documented (MIT for original code).
-- [ ] All 231 public items attempted with the frozen container.
-- [ ] Public summary and failure counts recorded without selecting favorable runs.
-- [ ] Hardware, cache policy, network conditions, and unknown cost disclosed.
+- [x] All 231 public items attempted with the frozen container, twice.
+- [x] Public summary and failure counts recorded without selecting favorable runs.
+- [x] Hardware, cache policy, network conditions, and unknown cost disclosed.
 - [x] Immutable image, model revision, and serving instructions provided.
 - [ ] Draft updated with actual results and reviewed before posting an issue.
 

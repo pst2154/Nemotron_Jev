@@ -4,7 +4,7 @@ set -euo pipefail
 
 if [[ "${1:-}" == "--help" ]]; then
   echo 'JEVBENCH_REPO=/path/to/pinned/jevbench JEVBENCH_ENDPOINT=http://127.0.0.1:8770 bash run_public.sh'
-  echo 'Requires Python 3.10+, git, and a running frozen candidate with ISOLATE_REQUEST_CACHE=1.'
+  echo 'Requires Python 3.10+, pytest, git, and a running frozen candidate with ISOLATE_REQUEST_CACHE=1.'
   exit 0
 fi
 
@@ -38,7 +38,7 @@ for key, value in expected.items():
 print('Serving health preflight passed; image identity must also be verified with Docker.')
 PY
 
-python3 -m unittest discover -s tests -q
+python3 -m pytest -q tests
 run_dir=$(mktemp -d "${TMPDIR:-/tmp}/nemotron-jevbench.XXXXXX")
 echo "Private evidence directory: $run_dir"
 tasks=datasets/public/easy.jsonl,datasets/public/original.jsonl,datasets/public/hard.jsonl
