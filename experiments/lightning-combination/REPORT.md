@@ -14,6 +14,14 @@ Dots show median end-to-end HTTP latency; whiskers extend to p95. Only **1 and
 implied. The chart uses the first controlled comparison, not the validation
 repeat. Regenerate from the raw results with `node make_chart.mjs`.
 
+For the original comparison, see the [original 100-question speed chart](../lightning-systemone/hundred-questions.svg).
+The combination preserves approximately the same measured latency: **839.53 ms
+originally versus 837.22 ms with the fine-tune**, while lookup correctness rose
+from **798/1,000 to 1,000/1,000**. These are separate runs on different H100
+variants, not a claim of identical performance; the same-server control below
+is the tighter comparison. The original chart remains historical evidence,
+not a chart of the fine-tuned model.
+
 | Configuration | 100-question HTTP median | HTTP p95 | Correct |
 | --- | ---: | ---: | ---: |
 | Historical original fast run | 839.53 ms | 961.04 ms | 798/1,000 |
