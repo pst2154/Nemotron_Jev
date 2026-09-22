@@ -14,27 +14,46 @@ This is an experimental adapter for the **dense Nemotron-Labs-Diffusion-14B mode
 
 The explorer includes samples, State and Questions editors, answer bars, a Noul marker, raw JSON, local history, and share links. Shared URLs contain the entered state and questions; do not share sensitive inputs.
 
-## Original baseline container
+## Optimized container
 
-The image below is the **original sequential native scorer**, not this branch's
-optimized vLLM implementation. An optimized image is being built and validated;
-use the source instructions below until its tested tag and digest are published.
+The H100-validated image starts **both the original explorer UI and the
+classification-only vLLM API**. The GHCR package is public; anonymous access
+to this image's manifest and configuration has been verified.
 
-Image: `ghcr.io/pst2154/nemotron-jev:14b-v2`
+Image: `ghcr.io/pst2154/nemotron-jev:14b-vllm-20260922`.
 
-Published digest: `sha256:a1bf099bb919461659339f5bb8c1e962b3d3367ffe40c74fcb92c4c8c2b170ea`.
+Published digest:
+`sha256:b8afc221e1ef9c8e74847e1a3d304a77123ac5114f1ef9f102048866fb286aa9`.
 
-The GHCR package is public. Anonymous access to the published manifest and digest has been verified; no GitHub login is required.
+The following commands require Docker with NVIDIA Container Toolkit, a CUDA-13-compatible driver,
+and an H100/H200-class Hopper GPU. H100 80 GB was tested; H200 was not tested.
+The prebuilt image targets compute capability 9.0, not B200/B300 or L40S.
 
 ```bash
-docker pull ghcr.io/pst2154/nemotron-jev:14b-v2
+docker pull ghcr.io/pst2154/nemotron-jev:14b-vllm-20260922
 docker volume create nemotron-models
 docker run -d --name nemotron-jev --gpus all --shm-size=8g \
   -p 127.0.0.1:8770:8770 -v nemotron-models:/models \
-  ghcr.io/pst2154/nemotron-jev:14b-v2
+  ghcr.io/pst2154/nemotron-jev:14b-vllm-20260922
+docker logs -f nemotron-jev
 ```
 
-For immutable deployments, replace the tag with `ghcr.io/pst2154/nemotron-jev@sha256:a1bf099bb919461659339f5bb8c1e962b3d3367ffe40c74fcb92c4c8c2b170ea`.
+For an immutable deployment, replace the tag with
+`ghcr.io/pst2154/nemotron-jev@sha256:b8afc221e1ef9c8e74847e1a3d304a77123ac5114f1ef9f102048866fb286aa9`.
+
+The image uses application source commit `66b19e885e2f330711f69983ab9f5d182630ca26`
+and vLLM source commit `2c83d10caa71e3a9eac8fdd9f1288dac8c65596b`.
+Later documentation-only commits do not change its runtime.
+
+The image contains the serving software, not model weights. First launch fetches
+the pinned model into the persistent volume. To reuse an existing checkpoint,
+mount its directory read-only at `/models/checkpoint` and set `SKIP_DOWNLOAD=1`.
+Keep a writable cache mount at `/models/hf-cache` when using a non-root user.
+The matched HTTP benchmark additionally sets `ISOLATE_REQUEST_CACHE=1`.
+
+The older `14b-v2` image is the **original sequential native scorer**, not the
+optimized implementation. Its unchanged digest is
+`sha256:a1bf099bb919461659339f5bb8c1e962b3d3367ffe40c74fcb92c4c8c2b170ea`.
 
 ## Build the optimized version from source
 

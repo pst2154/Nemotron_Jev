@@ -1,7 +1,13 @@
 # Nemotron diffusion decision-serving optimization
 
-H100 in-process and final-container HTTP measurements completed. Container
-publication is in progress. Tables distinguish HTTP from in-process measurements.
+H100 in-process and final-container HTTP measurements completed. The container
+is published publicly on GHCR. Tables distinguish HTTP from in-process measurements.
+
+Image: `ghcr.io/pst2154/nemotron-jev:14b-vllm-20260922`.
+Verified manifest digest:
+`sha256:b8afc221e1ef9c8e74847e1a3d304a77123ac5114f1ef9f102048866fb286aa9`.
+Application source: `66b19e885e2f330711f69983ab9f5d182630ca26`.
+See the [deployment guide](README.md#optimized-container) for pull/run commands.
 
 ## Decision
 
