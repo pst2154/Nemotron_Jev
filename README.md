@@ -15,6 +15,11 @@ lookup workload. See the [configuration and controlled comparison](experiments/l
 This selected vLLM path emits one constrained answer token per question; it is
 distinct from the native zero-generation experiment below.
 
+The [expanded endpoint comparison](experiments/lightning-combination/EXPANDED_COMPARISON.md)
+adds semantic accuracy and inputs up to 12,000 tokens. The
+[serving guide](experiments/lightning-combination/SERVING.md) starts the model
+and System One API together in a pinned stock vLLM container.
+
 Each experiment keeps its own report and results. Experiment 3 deliberately
 reuses Experiment 1's immutable adapter and input fixture; Experiment 2's
 Nimble prompt format is **not** substituted into Experiment 3.

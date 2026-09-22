@@ -1,0 +1,49 @@
+{
+  "measurement_date": "2026-09-21",
+  "lightning": {
+    "hardware": "one NVIDIA H100 80GB HBM3",
+    "model": "Nemotron 3.5 Lightning 30B-A3B, existing NVFP4 checkpoint plus trained rank-16 LoRA",
+    "runtime": "vLLM 0.29.1rc1.dev397+ga8d1aa9c9",
+    "adapter_weights_sha256": "fb862c8f2600a3e9ade87fe7139de94d837ca4474657b9159f3b8260f81de075",
+    "adapter_config_sha256": "db20ccc562beacc1544b48b5151573ff0bbd149ef811054b575ecfc59c8a238c",
+    "method": "original state-first System One adapter; independently constrained one-token questions; shared prefix cache; concurrency 100 inside each outer request",
+    "max_model_len": 16384,
+    "max_num_seqs": 128,
+    "max_num_batched_tokens": 16384,
+    "gpu_memory_utilization": 0.85,
+    "per_request_cache_isolation": true
+  },
+  "diffusiongemma": {
+    "hardware": "one L40S, confirmed in active NVCF function instance metadata",
+    "model": "RedHatAI/diffusiongemma-26B-A4B-it-FP8-dynamic",
+    "revision": "3b3dae4697494da5a290e9c0461954449e76c4f5",
+    "container_tag": "pr57250-d2c2b54-fix1",
+    "diffusion_samples": 1,
+    "max_model_len": 16384,
+    "max_num_seqs": 8,
+    "max_num_batched_tokens": 4096,
+    "gpu_memory_utilization": 0.9,
+    "gateway": "existing unified TypeSafe-compatible structured classification gateway"
+  },
+  "measurement": {
+    "client": "same remote client for both endpoints",
+    "latency": "end-to-end wall-clock HTTP including transport, gateway, model, and response scoring; not GPU kernel time",
+    "concurrency": "one outer request at a time per backend; matched endpoints called concurrently on separate hardware",
+    "timeout_seconds": 120,
+    "automatic_retries": 0,
+    "warmup": "one excluded call per backend per fixture file",
+    "cache": "no flushing or changes to either deployment; sequential existing-service measurements",
+    "state_tokenizer_sha256": "623c34567aebb18582765289fbe23d901c62704d6518d71866e0e58db892b5b7",
+    "lengths": "exact Lightning-tokenizer state lengths; identical text for both endpoints; excludes question schema and server template overhead",
+    "percentile": "nearest-rank p95; at six trials p95 is the maximum successful latency"
+  },
+  "data": {
+    "semantic_holdout_sha256": "8e9e48b8de5206593912ae01ddc95bd77e40ad2ecf4c9292c1711290eca0d896",
+    "authored24_source_sha256": "51548252d0a2b08cd9d71ad5d40808cf61101916911c4b0d8a2ffc7f39466906",
+    "semantic_gold": "Nimble provisional references; all 324 marked human_reviewed=false; holdout used during training evaluation/development",
+    "long_semantic": "24 deterministic sampled holdout cases, eight per output type, each at 4000 and 12000 state tokens",
+    "grouped_semantic": "24 previously authored intent, sentiment, and evidence cases; repeated subsets/orders are not new independent cases",
+    "lookup": "seeded random on/off flags and shuffled records; six trials per cell, balanced start/middle/end evidence position",
+    "padding": "repeated neutral office-inventory prose; tests distracting length and evidence location, not realistic long-document comprehension"
+  }
+}

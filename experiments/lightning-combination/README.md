@@ -12,7 +12,15 @@ Direct LoRA loading works; no new FP4 quantization was needed.
 These are ten requests on a synthetic lookup fixture, not general semantic
 accuracy. See [the report](REPORT.md) for full configuration and limitations.
 
-- [Launch recipe](launch_combination.sh)
+**New:** [larger DiffusionGemma comparison](EXPANDED_COMPARISON.md), including
+324 semantic cases, randomized records, and inputs up to 12,000 tokens.
+
+**Deploy both the model and System One API:** follow [Serving](SERVING.md).
+`launch_systemone.sh` starts both in the pinned stock vLLM image; no custom
+container build is required. The exact LoRA is available privately on Hugging Face.
+
+- [Combined model + System One launcher](launch_systemone.sh)
+- [Model-only launch recipe](launch_combination.sh)
 - [Isolated benchmark runner](run_benchmark.py)
 - [Base-control results](comparison-nvfp4-base-lora-engine.json)
 - [Trained results](comparison-nvfp4-trained-lora.json)

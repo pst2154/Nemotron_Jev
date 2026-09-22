@@ -5,6 +5,10 @@ works: 837.22 ms median and 1,000/1,000 correct at 100 questions.** No new
 quantization was necessary. This is the original short-prompt System One
 adapter, not the later shared-schema/native scoring experiment.
 
+Follow-up: [expanded comparison against DiffusionGemma](EXPANDED_COMPARISON.md)
+tests randomized records, semantic accuracy, and short-to-long inputs.
+For deployment, see the [combined model + System One serving guide](SERVING.md).
+
 ## Speed chart
 
 ![Original 100-question comparison: historical latency and correctness before the fine-tune](../lightning-systemone/hundred-questions.svg)
@@ -14,7 +18,8 @@ adapter, not the later shared-schema/native scoring experiment.
 ![Original experiment: historical HTTP latency versus number of questions](../lightning-systemone/latency-vs-questions.svg)
 
 This line graph shows the original experiment's measured scaling, before the
-fine-tune. The combination has been measured at 1 and 100 questions only.
+fine-tune. The original combination run below measured 1 and 100 questions;
+the expanded comparison separately adds intermediate counts and long inputs.
 
 The combination preserves approximately the same measured latency: **839.53 ms
 originally versus 837.22 ms with the fine-tune**, while lookup correctness rose
