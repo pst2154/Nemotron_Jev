@@ -7,8 +7,6 @@ adapter, not the later shared-schema/native scoring experiment.
 
 ## Speed chart
 
-For the original comparison, see the [original 100-question speed chart](../lightning-systemone/hundred-questions.svg).
-
 ![Original 100-question comparison: historical latency and correctness before the fine-tune](../lightning-systemone/hundred-questions.svg)
 
 ### Original latency line graph
