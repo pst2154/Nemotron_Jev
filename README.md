@@ -185,6 +185,9 @@ the 128-sequence concurrency setting.
 
 ## Tests and results
 
+For Benchmark Heaven, see the [JevBench submission preparation](evaluation/jevbench/README.md).
+It pins the upstream harness and public-suite runner; no leaderboard score is claimed.
+
 ```bash
 TEST_URL=http://localhost:8770 node tests/live_scoring.mjs
 python3 evaluation/run.py --url http://localhost:8770 --output evaluation/results
@@ -220,5 +223,10 @@ argmax agreement, and probability drift; missing cases fail the comparison.
 ## Scope and licensing
 
 The 72-case benchmark is a small synthetic regression set, not proof of general reasoning quality, calibration, adversarial safety, or production readiness. Accuracy can depend on wording, option order, and evidence coverage. No tools execute commands contained in the supplied state.
+
+Original application code in this repository is available under the [MIT License](LICENSE).
+This grant does not relicense model weights, vLLM, upstream benchmark datasets,
+or other third-party components. The separate vLLM fork remains under its
+upstream Apache-2.0 license.
 
 Model weights are downloaded at runtime, not embedded in the image. Review the [NVIDIA Nemotron Open Model License](https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/) and the [model card](https://huggingface.co/nvidia/Nemotron-Labs-Diffusion-14B). The CUDA/FlashInfer base and Python dependencies retain their respective licenses. This project is not an official NVIDIA or TypeSafe product.
