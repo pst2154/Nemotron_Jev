@@ -1,0 +1,4 @@
+FROM dockerhub.nvidia.com/flashinfer/flashinfer-ci-cu130:20260822-9a0e83b
+RUN python -m pip install --no-cache-dir transformers==5.17.0 huggingface-hub==1.32.0
+WORKDIR /work
+ENTRYPOINT ["python", "-u", "evaluation/compare_backends.py"]

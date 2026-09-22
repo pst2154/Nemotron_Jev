@@ -1,6 +1,22 @@
 import assert from 'node:assert/strict';
 const base = process.env.TEST_URL;
 if (!base) throw new Error('Set TEST_URL');
+const health = await fetch(base + '/health');
+assert.equal(health.status, 200);
+const healthBody = await health.json();
+assert.equal(healthBody.ready, true);
+assert.equal(healthBody.backend, 'vllm');
+assert.deepEqual(healthBody.modes, ['systemone']);
+const maxChoices = healthBody.limits.max_choices;
+assert(Number.isInteger(maxChoices) && maxChoices >= 2);
+const ui = await fetch(base + '/explorer');
+assert.equal(ui.status, 200);
+assert.match(ui.headers.get('content-type'), /text\/html/);
+assert.match(await ui.text(), /<html/i);
+const chat = await fetch(base + '/v1/chat/completions', {
+  method: 'POST', headers: {'Content-Type': 'application/json'}, body: '{}'
+});
+assert.equal(chat.status, 404);
 const questions = {
   route: {type:'choice', instructions:'Which team should handle this? Payment and payout issues belong to billing, including failed payments.', criteria:{billing:'Payments, payouts, invoices or refunds',technical:'Application bugs or infrastructure outages unrelated to payments'}},
   urgent: {type:'noul', instructions:'Is the issue urgent and business blocking?'},
@@ -36,4 +52,31 @@ const many=Object.fromEntries(Array.from({length:16},(_,i)=>['question '+i,{type
 const batch=await call('Use the stated numbers.',many);
 for(const [id,a] of Object.entries(batch.answers))assert(Number(id.split(' ')[1])%2?a.noul<.5:a.noul>.5);
 console.log('16-question batch passed',batch.metrics);
+// Contract checks, separate from the semantic assertions above. This crosses
+// the 128 active-sequence limit and must return every question exactly once.
+const overflow = Object.fromEntries(Array.from({length:129}, (_, i) => [
+  'q' + i, {type:'noul', instructions:'Is the stated number nine?'}
+]));
+const overflowResult = await call('The stated number is nine.', overflow);
+console.log('129-question contract passed', overflowResult.metrics);
+const wide = await call('The target is item 1.', {
+  wide: {type:'choice', instructions:'Which item is the target?',
+    criteria:Object.fromEntries(Array.from({length:maxChoices}, (_, i) => [
+      'item' + i, 'Item ' + i
+    ]))}
+});
+assert.equal(Object.keys(wide.answers.wide.probabilities).length, maxChoices);
+console.log(maxChoices + '-choice contract passed', wide.metrics);
+for (const invalid of [
+  {model:'jev-latest', state:'x', questions:Object.fromEntries(
+    Array.from({length:513}, (_, i) => ['q' + i, {type:'noul', instructions:'True?'}]))},
+  {model:'jev-latest', state:'x'.repeat(2000001), questions},
+  {model:'jev-latest', state:'x', questions:{q:{type:'choice', instructions:'Pick',
+    criteria:Object.fromEntries(Array.from({length:maxChoices+1}, (_, i) => ['c'+i, 'Choice '+i]))}}}
+]) {
+  const response = await fetch(base + '/v1/systemone', {
+    method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(invalid)
+  });
+  assert.equal(response.status, 400);
+}
 console.log('ALL SCORING TESTS PASSED');

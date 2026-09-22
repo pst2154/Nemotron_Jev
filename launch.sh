@@ -1,6 +1,6 @@
 #!/bin/sh
 set -eu
 if [ "${SKIP_DOWNLOAD:-0}" != "1" ]; then
-    python /app/download.py
+    python3 /app/download.py
 fi
-exec python -u /app/server.py
+exec python3 -u /app/server.py

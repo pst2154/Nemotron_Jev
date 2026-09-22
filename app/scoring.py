@@ -1,19 +1,27 @@
 """Typed decisions from Nemotron's masked-token logits, without text generation."""
 import json
 import time
-import torch
+from functools import lru_cache
 from compat_gateway import validate_request
 
 
-def evaluate(model, tokenizer, payload):
-    validate_request(payload)
-    if len(payload['questions']) > 512:
-        raise ValueError('At most 512 questions per request')
+@lru_cache(maxsize=2)
+def candidate_codes(tokenizer):
+    """Resolve code tokens once per immutable serving tokenizer."""
     codes = []
     for label in list('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz') + [str(i) for i in range(1000)]:
         ids = tokenizer.encode(label, add_special_tokens=False)
         if len(ids) == 1 and ids[0] not in [item[1] for item in codes]:
             codes.append((label, ids[0]))
+    return tuple(codes)
+
+
+def prepare_questions(tokenizer, payload, batch_tokenize=False):
+    """Preserve the native scoring prompt byte-for-byte across backends."""
+    validate_request(payload)
+    if len(payload['questions']) > 512:
+        raise ValueError('At most 512 questions per request')
+    codes = candidate_codes(tokenizer)
     prepared = []
     for key, question in payload['questions'].items():
         kind = question['type']
@@ -37,10 +45,29 @@ def evaluate(model, tokenizer, payload):
             {'role': 'user', 'content': json.dumps({'state': payload['state'],
              'question': question['instructions'], 'options': options}, ensure_ascii=False)}]
         prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-        ids = tokenizer.encode(prompt, add_special_tokens=False)
+        prepared.append((key, kind, labels, descriptions, prompt))
+    prompts = [item[4] for item in prepared]
+    if batch_tokenize:
+        encoded = tokenizer(
+            prompts, add_special_tokens=False, padding=False, truncation=False,
+            return_attention_mask=False, return_token_type_ids=False)['input_ids']
+    else:
+        encoded = [tokenizer.encode(prompt, add_special_tokens=False) for prompt in prompts]
+    if len(encoded) != len(prepared):
+        raise RuntimeError('Incomplete tokenization batch')
+    result = []
+    for (key, kind, labels, descriptions, _), ids in zip(prepared, encoded):
         if len(ids) > 16384:
             raise ValueError(f'Question {key} exceeds the 16384-token scoring limit')
-        prepared.append((key, kind, labels, descriptions, ids))
+        result.append((key, kind, labels, descriptions, ids))
+    return result
+
+
+def evaluate(model, tokenizer, payload):
+    import torch
+
+    prepared = prepare_questions(tokenizer, payload)
+    codes = candidate_codes(tokenizer)
     answers = {}
     total_tokens = 0
     torch.cuda.synchronize()

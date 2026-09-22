@@ -14,7 +14,11 @@ This is an experimental adapter for the **dense Nemotron-Labs-Diffusion-14B mode
 
 The explorer includes samples, State and Questions editors, answer bars, a Noul marker, raw JSON, local history, and share links. Shared URLs contain the entered state and questions; do not share sensitive inputs.
 
-## Prebuilt container
+## Original baseline container
+
+The image below is the **original sequential native scorer**, not this branch's
+optimized vLLM implementation. An optimized image is being built and validated;
+use the source instructions below until its tested tag and digest are published.
 
 Image: `ghcr.io/pst2154/nemotron-jev:14b-v2`
 
@@ -32,21 +36,39 @@ docker run -d --name nemotron-jev --gpus all --shm-size=8g \
 
 For immutable deployments, replace the tag with `ghcr.io/pst2154/nemotron-jev@sha256:a1bf099bb919461659339f5bb8c1e962b3d3367ffe40c74fcb92c4c8c2b170ea`.
 
-## Deploy from source
+## Build the optimized version from source
 
-Tested on one H100 80 GB with Docker and NVIDIA Container Toolkit. Use a CUDA-13-compatible driver. Other GPUs and smaller memory configurations have not been verified. Allow at least 30 GB for model data plus substantial space for the CUDA development image.
+This branch requires the modified vLLM source, not an unmodified vLLM image.
+Use Docker with NVIDIA Container Toolkit and a CUDA-13-compatible driver.
+The commands below build Hopper kernels for H100/H200. Allow at least 30 GB
+for model data and substantial additional disk space for the source build.
+GPU validation completed on one H100 80 GB. See [measured latency, accuracy,
+and validation results](OPTIMIZATION_REPORT.md).
 
 ```bash
-git clone https://github.com/pst2154/Nemotron_Jev.git
+git clone --branch feat/nemotron-labs-diffusion https://github.com/pst2154/vllm.git
+cd vllm
+docker build -f docker/Dockerfile --target vllm-openai \
+  --build-arg torch_cuda_arch_list=9.0 \
+  --build-arg max_jobs=16 --build-arg nvcc_threads=2 \
+  --build-arg RUN_WHEEL_CHECK=false \
+  --build-arg GIT_REPO_CHECK=0 -t nemotron-masked-vllm:dev .
+cd ..
+git clone --branch perf/nemotron-diffusion-optimized https://github.com/pst2154/Nemotron_Jev.git
 cd Nemotron_Jev
-docker build -t nemotron-jev:14b-v2 .
+docker build --build-arg VLLM_IMAGE=nemotron-masked-vllm:dev \
+  -t nemotron-jev:14b-vllm .
 docker volume create nemotron-models
 docker run -d --name nemotron-jev --gpus all --shm-size=8g \
   -p 127.0.0.1:8770:8770 \
   -v nemotron-models:/models \
-  nemotron-jev:14b-v2
+  nemotron-jev:14b-vllm
 docker logs -f nemotron-jev
 ```
+
+`RUN_WHEEL_CHECK=false` skips the upstream 500 MB PyPI upload-size limit for
+this container-only build. The Hopper wheel exceeded that limit; this flag does
+not skip compilation or model correctness checks.
 
 The first start downloads the pinned checkpoint; subsequent starts reuse the volume. The same entrypoint starts **both UI and API**. Open `http://localhost:8770/` after the health endpoint responds:
 
@@ -84,7 +106,10 @@ curl --fail-with-body http://localhost:8770/v1/systemone \
 
 `jev-latest` is accepted as a compatibility identifier; the returned model is always `Nemotron-Labs-Diffusion-14B`. It never routes to TypeSafe. Structured instructions and criteria are serialized as JSON. Question IDs only identify response entries and are not used in model inference.
 
-Also available: `/explorer`, `/health`, and `/v1/chat/completions` with `messages`, `max_tokens`, and `mode` (`dlm`, `ar`, or `linear_spec`). Chat is non-streaming. The explorer uses the scoring API, **not generated JSON**.
+Also available: `/explorer` and `/health`. This branch exposes **classification
+only**. It does not provide chat completions, AR generation, multi-token
+diffusion generation, or self-speculation. The explorer uses scoring, not
+generated JSON.
 
 ## How scoring works
 
@@ -92,7 +117,24 @@ For each question, options are assigned tokenizer-verified single-token codes. T
 
 Choice selects the highest probability; Noul returns the yes probability; Score computes `sum(index * probability)`. Confidence is `max(probabilities)`, matching the previous DiffusionGemma adapter's convention—not necessarily TypeSafe's proprietary confidence statistic. These probabilities are **not empirically calibrated**.
 
-Questions are independent and processed sequentially under one inference lock. Multiple questions can be submitted in one request, but this implementation does not reproduce DiffusionGemma's joint-slot throughput. Larger requests take longer and block other inference requests; health and UI reads remain available.
+Questions are independent sequences batched by vLLM. Each sequence ends in one
+actual mask token, preserving the native scorer's causal-prefix /
+one-token-bidirectional attention pattern. Numerical differences remain between
+the native and vLLM execution paths; the report records the failed strict parity
+check alongside measured accuracy. A single internal
+sampling step returns candidate logprobs; its sampled token is discarded and
+never fed back into the model. There is no autoregressive answer rollout.
+
+Prefix caching reuses common state blocks. Optional prefix priming evaluates
+the first question before scheduling the remaining questions, making those
+blocks available to the first batch of suffixes. Optional candidate-only
+projection reduces the final vocabulary projection while retaining all
+candidate probabilities. These switches and batched tokenization are enabled
+by default after H100 measurements. These are execution changes, not fine-tuning.
+
+Requests currently share one inference lock, while questions *within* a request
+are batched. Cross-request continuous batching is not implemented. Health and
+UI reads remain available during inference.
 
 ## Configuration
 
@@ -103,9 +145,24 @@ Questions are independent and processed sequentially under one inference lock. M
 | `CHECKPOINT_DIR` | `/models/checkpoint` | Container model-cache location |
 | `HF_HOME` | `/models/hf-cache` | Container Hugging Face cache |
 | `SKIP_DOWNLOAD` | `0` | Set to `1` only with a complete existing checkpoint |
-| `OMP_NUM_THREADS` | `8` | CPU worker limit matching the original deployment |
+| `OMP_NUM_THREADS` | `1` | Avoid Torch CPU spin-wait contention |
+| `RAYON_NUM_THREADS` | `8` | Tokenizer worker limit; match the available CPU allocation |
+| `MAX_NUM_SEQS` | `128` | Maximum concurrently scheduled question sequences, not total questions per request |
+| `MAX_BATCHED_TOKENS` | `8192` | Scheduler token budget per step |
+| `GPU_MEMORY_UTILIZATION` | `0.85` | vLLM device-memory fraction |
+| `ENFORCE_EAGER` | `0` | Set to `1` for eager-mode comparisons |
+| `PRIME_SHARED_PREFIX` | `1` | Evaluate the first question before the remaining batch |
+| `CANDIDATE_ONLY` | `1` | Project only the serving code vocabulary; requires unquantized TP=1 |
+| `DIRECT_LOGITS` | `1` | Return candidate logits directly and skip the redundant full-vocabulary softmax |
+| `BATCH_TOKENIZE` | `1` | Batch prompt tokenization; exact token identity was checked on the benchmark inputs |
+| `ISOLATE_REQUEST_CACHE` | `0` | Set to `1` to reset the prefix cache before each request while retaining within-request reuse |
 
-Limits: 512 questions, 16,384 prompt tokens per question, 2 MB request body, and tokenizer-dependent maximum number of candidate codes. Exceeding supported limits returns an error; inputs are not silently truncated. Chat supports up to 1,024 output tokens, with diffusion requests rounded up to a 32-token block boundary.
+Limits: 512 questions, 16,384 prompt tokens per question, 2 MB request body, and
+a tokenizer-dependent maximum number of candidate codes (**62 for the pinned
+checkpoint**). `/health` reports these limits. Exceeding supported
+limits returns an error; inputs are not silently truncated. A request with 129
+questions is queued through the scheduler rather than rejected for exceeding
+the 128-sequence concurrency setting.
 
 ## Tests and results
 
@@ -114,7 +171,22 @@ TEST_URL=http://localhost:8770 node tests/live_scoring.mjs
 python3 evaluation/run.py --url http://localhost:8770 --output evaluation/results
 ```
 
-The Node test checks all three output types, probability normalization, weighted-score arithmetic, contrasting states, and a 16-question batch. The Python evaluator uses frozen cases and deterministic labels, not an LLM judge. See [accuracy report](ACCURACY_REPORT.md) and [raw results](evaluation/results/results.jsonl).
+The Node test checks all three output types, probability normalization,
+weighted-score arithmetic, contrasting states, and a 16-question batch. It also
+checks the UI/health routes, absence of chat generation, a 129-question response,
+maximum-choice coverage, and rejection of oversized requests. The latter two large
+valid requests test the response contract, not semantic accuracy. The
+Python evaluator uses frozen cases and deterministic labels, not an LLM judge.
+The existing [accuracy report](ACCURACY_REPORT.md) and
+[raw results](evaluation/results/results.jsonl) describe the original native
+baseline, not the optimized implementation.
+
+`evaluation/compare_backends.py` runs both implementations separately on the
+same GPU with identical prompts. It records accuracy, candidate distributions,
+state lengths, cache settings, and end-to-end latency. The default matrix uses
+1/4/8/16/32/64/100 questions at 1,000/4,000/12,000 state tokens.
+`evaluation/compare_results.py` checks matched payloads, option coverage,
+argmax agreement, and probability drift; missing cases fail the comparison.
 
 ## Troubleshooting
 
@@ -124,7 +196,7 @@ The Node test checks all three output types, probability normalization, weighted
 - **Download failure:** check disk space, outbound Hugging Face connectivity, and model access/license requirements. Restart with the same volume to reuse downloaded files.
 - **Permission denied on a bind-mounted cache:** run with `--user "$(id -u):$(id -g)"` and ensure that user can write the cache. Named volumes avoid typical root-squashed network-filesystem issues. Compiler caches default to writable temporary storage.
 - **Old UI or missing bars:** refresh the browser and run a new query. Old history entries may predate the scoring backend.
-- **Slow large request:** questions run sequentially. Split interactive work into smaller requests; this does not increase total GPU throughput.
+- **Slow large request:** check the scheduler token budget and compare prefix priming on/off. Do not assume larger batching limits are faster; measure on the intended GPU and state lengths.
 
 ## Scope and licensing
 
