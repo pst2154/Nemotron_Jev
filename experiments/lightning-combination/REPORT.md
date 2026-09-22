@@ -18,6 +18,13 @@ For the original comparison, see the [original 100-question speed chart](../ligh
 
 ![Original 100-question comparison: historical latency and correctness before the fine-tune](../lightning-systemone/hundred-questions.svg)
 
+### Original latency line graph
+
+![Original experiment: historical HTTP latency versus number of questions](../lightning-systemone/latency-vs-questions.svg)
+
+This line graph shows the original experiment's measured scaling, before the
+fine-tune. The combination has been measured at 1 and 100 questions only.
+
 The combination preserves approximately the same measured latency: **839.53 ms
 originally versus 837.22 ms with the fine-tune**, while lookup correctness rose
 from **798/1,000 to 1,000/1,000**. These are separate runs on different H100
