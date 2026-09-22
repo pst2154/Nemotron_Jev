@@ -21,6 +21,9 @@ classification-only vLLM API**. The GHCR package is public; anonymous access
 to this image's manifest and configuration has been verified.
 
 Image: `ghcr.io/pst2154/nemotron-jev:14b-vllm-ordered-20260922`.
+For an immutable deployment, use
+`ghcr.io/pst2154/nemotron-jev@sha256:4dd795850f342183b9e54eb25b350682e63506043f8fd33dde2521d7ce6ae560`.
+
 Answer ordering and code reassignment are enabled by default. This method scored
 174/231 on the public JevBench dataset; see [method and measurements](POSITION_ORDERING.md).
 
