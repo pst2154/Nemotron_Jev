@@ -1,7 +1,8 @@
 # H100 baseline measurements
 
 These are measured baselines, not results for the new vLLM diffusion implementation.
-Optimized diffusion validation is still pending.
+The completed optimized diffusion comparison is in the
+[optimization report](../../OPTIMIZATION_REPORT.md).
 
 All three runs used the same H100 80 GB, identical request payloads, 72 frozen
 regression cases, and a synthetic item/color retrieval fixture. Each run completed
@@ -33,8 +34,8 @@ configuration enables stochastic rounding; repeated answers can differ.
 
 The adapter improves accuracy on these fixtures. The non-monotonic Lightning
 latencies at 4k versus 12k are measured values, not an interpolation or a claim
-that longer inputs generally cost less. The optimized diffusion HTTP comparison
-is required before making the final deployment recommendation.
+that longer inputs generally cost less. The optimization report includes the
+matched-cache-policy diffusion HTTP comparison and final recommendation.
 
 Raw measurements: `native-full.jsonl`, `lightning-base-http.jsonl`, and
 `lightning-http.jsonl`. Payload hashes in those files permit exact request matching.

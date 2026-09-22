@@ -151,6 +151,12 @@ rejection of 513 questions, 63 choices, and an oversized body. Health and explor
 routes respond successfully; the chat-generation route returns 404. This does
 not turn the separately failed numerical-parity check into a pass.
 
+A fresh headless browser also submitted a real explorer query and rendered
+Choice, Noul, and Score results without browser errors. The embedded latency
+chart was inspected in the browser. The final publication image has the same
+filesystem layers as the tested container, with source-revision metadata added;
+application source hashes match the committed files.
+
 ## Reproducibility
 
 Raw measurements are in `evaluation/optimized-results/`. The main files are
