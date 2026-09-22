@@ -1,0 +1,1931 @@
+{
+  "backend": "lightning",
+  "description": "Small authored diagnostic, not a standardized or held-out benchmark.",
+  "state": {
+    "documents": {
+      "d0": "The headphones are fine, but I changed my mind. Please send my payment back.",
+      "d1": "Please keep the money and swap these blue shoes for the same size in black.",
+      "d2": "My order has not shipped. Please stop it from being sent.",
+      "d3": "Do you deliver on Saturdays? Please leave my current order unchanged.",
+      "d4": "I do not want another unit. Return what I paid for this broken one.",
+      "d5": "I love the jacket, but it is too small. Could I get a medium instead?",
+      "d6": "Do not dispatch my pending order; I no longer need it.",
+      "d7": "Before I decide whether to return it, how long is the return window?",
+      "d8": "Setup was effortless and the sound is wonderful. I am delighted.",
+      "d9": "The display flickers constantly. Buying this was a mistake.",
+      "d10": "The parcel contains two cables and one adapter.",
+      "d11": "I expected trouble, but it has worked perfectly. Highly recommended.",
+      "d12": "Great, another crash and another hour of lost work. Exactly what I needed.",
+      "d13": "The office opens at nine and closes at five.",
+      "d14": "The packaging was plain, but the product itself is excellent and I love it.",
+      "d15": "The packaging looked nice, but the product is unusable. I regret buying it.",
+      "d16": "All three warehouse doors were locked at midnight.",
+      "d17": "Mira took the train, not the bus, to the meeting.",
+      "d18": "The laptop has a silver case and a fifteen-inch screen.",
+      "d19": "The launch was postponed from Monday until Thursday.",
+      "d20": "No guests entered the museum after six.",
+      "d21": "Ravi submitted his application yesterday.",
+      "d22": "Lea lent Omar her umbrella because it was raining.",
+      "d23": "The shipment contains only books; there are no electronics."
+    }
+  },
+  "questions": {
+    "0": {
+      "type": "choice",
+      "instructions": "Use only `documents.d0`. What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      }
+    },
+    "1": {
+      "type": "choice",
+      "instructions": "Use only `documents.d1`. What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      }
+    },
+    "2": {
+      "type": "choice",
+      "instructions": "Use only `documents.d2`. What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      }
+    },
+    "3": {
+      "type": "choice",
+      "instructions": "Use only `documents.d3`. What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      }
+    },
+    "4": {
+      "type": "choice",
+      "instructions": "Use only `documents.d4`. What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      }
+    },
+    "5": {
+      "type": "choice",
+      "instructions": "Use only `documents.d5`. What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      }
+    },
+    "6": {
+      "type": "choice",
+      "instructions": "Use only `documents.d6`. What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      }
+    },
+    "7": {
+      "type": "choice",
+      "instructions": "Use only `documents.d7`. What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      }
+    },
+    "8": {
+      "type": "choice",
+      "instructions": "Use only `documents.d8`. Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "negative": "Overall dissatisfaction or criticism",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction",
+        "positive": "Overall satisfaction or praise"
+      }
+    },
+    "9": {
+      "type": "choice",
+      "instructions": "Use only `documents.d9`. Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "negative": "Overall dissatisfaction or criticism",
+        "positive": "Overall satisfaction or praise",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction"
+      }
+    },
+    "10": {
+      "type": "choice",
+      "instructions": "Use only `documents.d10`. Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "positive": "Overall satisfaction or praise",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction",
+        "negative": "Overall dissatisfaction or criticism"
+      }
+    },
+    "11": {
+      "type": "choice",
+      "instructions": "Use only `documents.d11`. Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "negative": "Overall dissatisfaction or criticism",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction",
+        "positive": "Overall satisfaction or praise"
+      }
+    },
+    "12": {
+      "type": "choice",
+      "instructions": "Use only `documents.d12`. Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "negative": "Overall dissatisfaction or criticism",
+        "positive": "Overall satisfaction or praise",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction"
+      }
+    },
+    "13": {
+      "type": "choice",
+      "instructions": "Use only `documents.d13`. Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "positive": "Overall satisfaction or praise",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction",
+        "negative": "Overall dissatisfaction or criticism"
+      }
+    },
+    "14": {
+      "type": "choice",
+      "instructions": "Use only `documents.d14`. Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "negative": "Overall dissatisfaction or criticism",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction",
+        "positive": "Overall satisfaction or praise"
+      }
+    },
+    "15": {
+      "type": "choice",
+      "instructions": "Use only `documents.d15`. Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "negative": "Overall dissatisfaction or criticism",
+        "positive": "Overall satisfaction or praise",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction"
+      }
+    },
+    "16": {
+      "type": "choice",
+      "instructions": "Use only `documents.d16`. Assess this claim using only the passage: At midnight, at least one warehouse door was locked.",
+      "criteria": {
+        "contradicted": "The passage establishes that the claim is false",
+        "supported": "The passage establishes the claim",
+        "unknown": "The passage does not establish whether the claim is true"
+      }
+    },
+    "17": {
+      "type": "choice",
+      "instructions": "Use only `documents.d17`. Assess this claim using only the passage: Mira traveled to the meeting by bus.",
+      "criteria": {
+        "supported": "The passage establishes the claim",
+        "unknown": "The passage does not establish whether the claim is true",
+        "contradicted": "The passage establishes that the claim is false"
+      }
+    },
+    "18": {
+      "type": "choice",
+      "instructions": "Use only `documents.d18`. Assess this claim using only the passage: The laptop has a backlit keyboard.",
+      "criteria": {
+        "unknown": "The passage does not establish whether the claim is true",
+        "supported": "The passage establishes the claim",
+        "contradicted": "The passage establishes that the claim is false"
+      }
+    },
+    "19": {
+      "type": "choice",
+      "instructions": "Use only `documents.d19`. Assess this claim using only the passage: The launch is now scheduled for Thursday.",
+      "criteria": {
+        "contradicted": "The passage establishes that the claim is false",
+        "supported": "The passage establishes the claim",
+        "unknown": "The passage does not establish whether the claim is true"
+      }
+    },
+    "20": {
+      "type": "choice",
+      "instructions": "Use only `documents.d20`. Assess this claim using only the passage: A guest entered the museum at seven.",
+      "criteria": {
+        "supported": "The passage establishes the claim",
+        "unknown": "The passage does not establish whether the claim is true",
+        "contradicted": "The passage establishes that the claim is false"
+      }
+    },
+    "21": {
+      "type": "choice",
+      "instructions": "Use only `documents.d21`. Assess this claim using only the passage: Ravi was accepted.",
+      "criteria": {
+        "unknown": "The passage does not establish whether the claim is true",
+        "supported": "The passage establishes the claim",
+        "contradicted": "The passage establishes that the claim is false"
+      }
+    },
+    "22": {
+      "type": "choice",
+      "instructions": "Use only `documents.d22`. Assess this claim using only the passage: Omar borrowed an umbrella from Lea.",
+      "criteria": {
+        "contradicted": "The passage establishes that the claim is false",
+        "supported": "The passage establishes the claim",
+        "unknown": "The passage does not establish whether the claim is true"
+      }
+    },
+    "23": {
+      "type": "choice",
+      "instructions": "Use only `documents.d23`. Assess this claim using only the passage: The shipment includes a tablet computer.",
+      "criteria": {
+        "supported": "The passage establishes the claim",
+        "unknown": "The passage does not establish whether the claim is true",
+        "contradicted": "The passage establishes that the claim is false"
+      }
+    }
+  },
+  "cases": [
+    {
+      "group": "intent",
+      "text": "The headphones are fine, but I changed my mind. Please send my payment back.",
+      "question": "What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      },
+      "expected": "refund"
+    },
+    {
+      "group": "intent",
+      "text": "Please keep the money and swap these blue shoes for the same size in black.",
+      "question": "What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      },
+      "expected": "exchange"
+    },
+    {
+      "group": "intent",
+      "text": "My order has not shipped. Please stop it from being sent.",
+      "question": "What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      },
+      "expected": "cancel"
+    },
+    {
+      "group": "intent",
+      "text": "Do you deliver on Saturdays? Please leave my current order unchanged.",
+      "question": "What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      },
+      "expected": "information"
+    },
+    {
+      "group": "intent",
+      "text": "I do not want another unit. Return what I paid for this broken one.",
+      "question": "What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      },
+      "expected": "refund"
+    },
+    {
+      "group": "intent",
+      "text": "I love the jacket, but it is too small. Could I get a medium instead?",
+      "question": "What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      },
+      "expected": "exchange"
+    },
+    {
+      "group": "intent",
+      "text": "Do not dispatch my pending order; I no longer need it.",
+      "question": "What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      },
+      "expected": "cancel"
+    },
+    {
+      "group": "intent",
+      "text": "Before I decide whether to return it, how long is the return window?",
+      "question": "What action is the customer explicitly requesting?",
+      "criteria": {
+        "refund": "Return money already paid",
+        "exchange": "Swap the product for a different size or variant",
+        "cancel": "Stop an order before it ships",
+        "information": "Answer a question without changing an order"
+      },
+      "expected": "information"
+    },
+    {
+      "group": "sentiment",
+      "text": "Setup was effortless and the sound is wonderful. I am delighted.",
+      "question": "Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "positive": "Overall satisfaction or praise",
+        "negative": "Overall dissatisfaction or criticism",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction"
+      },
+      "expected": "positive"
+    },
+    {
+      "group": "sentiment",
+      "text": "The display flickers constantly. Buying this was a mistake.",
+      "question": "Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "positive": "Overall satisfaction or praise",
+        "negative": "Overall dissatisfaction or criticism",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction"
+      },
+      "expected": "negative"
+    },
+    {
+      "group": "sentiment",
+      "text": "The parcel contains two cables and one adapter.",
+      "question": "Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "positive": "Overall satisfaction or praise",
+        "negative": "Overall dissatisfaction or criticism",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction"
+      },
+      "expected": "neutral"
+    },
+    {
+      "group": "sentiment",
+      "text": "I expected trouble, but it has worked perfectly. Highly recommended.",
+      "question": "Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "positive": "Overall satisfaction or praise",
+        "negative": "Overall dissatisfaction or criticism",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction"
+      },
+      "expected": "positive"
+    },
+    {
+      "group": "sentiment",
+      "text": "Great, another crash and another hour of lost work. Exactly what I needed.",
+      "question": "Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "positive": "Overall satisfaction or praise",
+        "negative": "Overall dissatisfaction or criticism",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction"
+      },
+      "expected": "negative"
+    },
+    {
+      "group": "sentiment",
+      "text": "The office opens at nine and closes at five.",
+      "question": "Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "positive": "Overall satisfaction or praise",
+        "negative": "Overall dissatisfaction or criticism",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction"
+      },
+      "expected": "neutral"
+    },
+    {
+      "group": "sentiment",
+      "text": "The packaging was plain, but the product itself is excellent and I love it.",
+      "question": "Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "positive": "Overall satisfaction or praise",
+        "negative": "Overall dissatisfaction or criticism",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction"
+      },
+      "expected": "positive"
+    },
+    {
+      "group": "sentiment",
+      "text": "The packaging looked nice, but the product is unusable. I regret buying it.",
+      "question": "Classify the overall sentiment expressed by the speaker, including sarcasm.",
+      "criteria": {
+        "positive": "Overall satisfaction or praise",
+        "negative": "Overall dissatisfaction or criticism",
+        "neutral": "Factual statement without expressed satisfaction or dissatisfaction"
+      },
+      "expected": "negative"
+    },
+    {
+      "group": "evidence",
+      "text": "All three warehouse doors were locked at midnight.",
+      "question": "Assess this claim using only the passage: At midnight, at least one warehouse door was locked.",
+      "criteria": {
+        "supported": "The passage establishes the claim",
+        "contradicted": "The passage establishes that the claim is false",
+        "unknown": "The passage does not establish whether the claim is true"
+      },
+      "expected": "supported"
+    },
+    {
+      "group": "evidence",
+      "text": "Mira took the train, not the bus, to the meeting.",
+      "question": "Assess this claim using only the passage: Mira traveled to the meeting by bus.",
+      "criteria": {
+        "supported": "The passage establishes the claim",
+        "contradicted": "The passage establishes that the claim is false",
+        "unknown": "The passage does not establish whether the claim is true"
+      },
+      "expected": "contradicted"
+    },
+    {
+      "group": "evidence",
+      "text": "The laptop has a silver case and a fifteen-inch screen.",
+      "question": "Assess this claim using only the passage: The laptop has a backlit keyboard.",
+      "criteria": {
+        "supported": "The passage establishes the claim",
+        "contradicted": "The passage establishes that the claim is false",
+        "unknown": "The passage does not establish whether the claim is true"
+      },
+      "expected": "unknown"
+    },
+    {
+      "group": "evidence",
+      "text": "The launch was postponed from Monday until Thursday.",
+      "question": "Assess this claim using only the passage: The launch is now scheduled for Thursday.",
+      "criteria": {
+        "supported": "The passage establishes the claim",
+        "contradicted": "The passage establishes that the claim is false",
+        "unknown": "The passage does not establish whether the claim is true"
+      },
+      "expected": "supported"
+    },
+    {
+      "group": "evidence",
+      "text": "No guests entered the museum after six.",
+      "question": "Assess this claim using only the passage: A guest entered the museum at seven.",
+      "criteria": {
+        "supported": "The passage establishes the claim",
+        "contradicted": "The passage establishes that the claim is false",
+        "unknown": "The passage does not establish whether the claim is true"
+      },
+      "expected": "contradicted"
+    },
+    {
+      "group": "evidence",
+      "text": "Ravi submitted his application yesterday.",
+      "question": "Assess this claim using only the passage: Ravi was accepted.",
+      "criteria": {
+        "supported": "The passage establishes the claim",
+        "contradicted": "The passage establishes that the claim is false",
+        "unknown": "The passage does not establish whether the claim is true"
+      },
+      "expected": "unknown"
+    },
+    {
+      "group": "evidence",
+      "text": "Lea lent Omar her umbrella because it was raining.",
+      "question": "Assess this claim using only the passage: Omar borrowed an umbrella from Lea.",
+      "criteria": {
+        "supported": "The passage establishes the claim",
+        "contradicted": "The passage establishes that the claim is false",
+        "unknown": "The passage does not establish whether the claim is true"
+      },
+      "expected": "supported"
+    },
+    {
+      "group": "evidence",
+      "text": "The shipment contains only books; there are no electronics.",
+      "question": "Assess this claim using only the passage: The shipment includes a tablet computer.",
+      "criteria": {
+        "supported": "The passage establishes the claim",
+        "contradicted": "The passage establishes that the claim is false",
+        "unknown": "The passage does not establish whether the claim is true"
+      },
+      "expected": "contradicted"
+    }
+  ],
+  "runs": [
+    {
+      "variant": "group",
+      "ms": 600.88,
+      "correct": 16,
+      "total": 24,
+      "wrong": {
+        "3": {
+          "expected": "information",
+          "actual": "cancel"
+        },
+        "7": {
+          "expected": "information",
+          "actual": "cancel"
+        },
+        "10": {
+          "expected": "neutral",
+          "actual": "negative"
+        },
+        "12": {
+          "expected": "negative",
+          "actual": "neutral"
+        },
+        "17": {
+          "expected": "contradicted",
+          "actual": "unknown"
+        },
+        "20": {
+          "expected": "contradicted",
+          "actual": "unknown"
+        },
+        "21": {
+          "expected": "unknown",
+          "actual": "supported"
+        },
+        "23": {
+          "expected": "contradicted",
+          "actual": "unknown"
+        }
+      },
+      "answers": {
+        "0": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.9706884850287101,
+            "exchange": 0.010130041864281156,
+            "cancel": 0.008398099673875545,
+            "information": 0.010783373433133233
+          },
+          "confidence": 0.9609179800382801,
+          "choice": "refund"
+        },
+        "1": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.0357981528637055,
+            "exchange": 0.9232464826115457,
+            "cancel": 0.0357981528637055,
+            "information": 0.005157211661043361
+          },
+          "confidence": 0.8976619768153943,
+          "choice": "exchange"
+        },
+        "2": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.002047561184097279,
+            "exchange": 0.0013220048612833579,
+            "cancel": 0.9964007039566135,
+            "information": 0.00022972999800586778
+          },
+          "confidence": 0.995200938608818,
+          "choice": "cancel"
+        },
+        "3": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.14982786580524704,
+            "exchange": 0.2470243892967152,
+            "cancel": 0.5229506674151697,
+            "information": 0.0801970774828681
+          },
+          "confidence": 0.3639342232202263,
+          "choice": "cancel"
+        },
+        "4": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.9701095469594593,
+            "exchange": 0.012999472483887612,
+            "cancel": 0.005418986354388587,
+            "information": 0.011471994202264496
+          },
+          "confidence": 0.9601460626126124,
+          "choice": "refund"
+        },
+        "5": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.1305380058445793,
+            "exchange": 0.8512147244410966,
+            "cancel": 0.012141925936212147,
+            "information": 0.0061053437781118484
+          },
+          "confidence": 0.8016196325881287,
+          "choice": "exchange"
+        },
+        "6": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.0051967673078018835,
+            "exchange": 0.0035716824550236586,
+            "cancel": 0.9903284874889035,
+            "information": 0.0009030627482710864
+          },
+          "confidence": 0.9871046499852046,
+          "choice": "cancel"
+        },
+        "7": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.2829333131257948,
+            "exchange": 0.10408534912150208,
+            "cancel": 0.3632935652811919,
+            "information": 0.24968777247151133
+          },
+          "confidence": 0.15105808704158918,
+          "choice": "cancel"
+        },
+        "8": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.018917898058734183,
+            "neutral": 0.010779090823941384,
+            "positive": 0.9703030111173245
+          },
+          "confidence": 0.9554545166759869,
+          "choice": "positive"
+        },
+        "9": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.726488062726447,
+            "positive": 0.11141053949147853,
+            "neutral": 0.16210139778207464
+          },
+          "confidence": 0.5897320940896704,
+          "choice": "negative"
+        },
+        "10": {
+          "type": "choice",
+          "probabilities": {
+            "positive": 0.2894363125383799,
+            "neutral": 0.2894363125383799,
+            "negative": 0.4211273749232401
+          },
+          "confidence": 0.13169106238486017,
+          "choice": "negative"
+        },
+        "11": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.005882243542317926,
+            "neutral": 0.004876551176810184,
+            "positive": 0.989241205280872
+          },
+          "confidence": 0.983861807921308,
+          "choice": "positive"
+        },
+        "12": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.20975326999328767,
+            "positive": 0.14416117365773473,
+            "neutral": 0.6460855563489776
+          },
+          "confidence": 0.46912833452346636,
+          "choice": "neutral"
+        },
+        "13": {
+          "type": "choice",
+          "probabilities": {
+            "positive": 0.0846604095118454,
+            "neutral": 0.45766979524407725,
+            "negative": 0.45766979524407725
+          },
+          "confidence": 0.18650469286611582,
+          "choice": "neutral"
+        },
+        "14": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.05069599826061518,
+            "neutral": 0.05069599826061518,
+            "positive": 0.8986080034787697
+          },
+          "confidence": 0.8479120052181546,
+          "choice": "positive"
+        },
+        "15": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.6460855563489776,
+            "positive": 0.14416117365773473,
+            "neutral": 0.20975326999328767
+          },
+          "confidence": 0.46912833452346636,
+          "choice": "negative"
+        },
+        "16": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.2605717452145181,
+            "supported": 0.7083073978080725,
+            "unknown": 0.031120856977409288
+          },
+          "confidence": 0.5624610967121089,
+          "choice": "supported"
+        },
+        "17": {
+          "type": "choice",
+          "probabilities": {
+            "supported": 0.053305895981300165,
+            "unknown": 0.735865195628634,
+            "contradicted": 0.21082890839006582
+          },
+          "confidence": 0.603797793442951,
+          "choice": "unknown"
+        },
+        "18": {
+          "type": "choice",
+          "probabilities": {
+            "unknown": 0.4055001946055473,
+            "supported": 0.31580386909440733,
+            "contradicted": 0.27869593630004547
+          },
+          "confidence": 0.10825029190832103,
+          "choice": "unknown"
+        },
+        "19": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.11355998875074705,
+            "supported": 0.8391011649839477,
+            "unknown": 0.04733884626530511
+          },
+          "confidence": 0.7586517474759216,
+          "choice": "supported"
+        },
+        "20": {
+          "type": "choice",
+          "probabilities": {
+            "supported": 0.07572306157331078,
+            "unknown": 0.7184403406943092,
+            "contradicted": 0.20583659773238008
+          },
+          "confidence": 0.5776605110414637,
+          "choice": "unknown"
+        },
+        "21": {
+          "type": "choice",
+          "probabilities": {
+            "unknown": 0.3941544664482974,
+            "supported": 0.5734913647156906,
+            "contradicted": 0.032354168836012054
+          },
+          "confidence": 0.3602370470735359,
+          "choice": "supported"
+        },
+        "22": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.128893541677415,
+            "supported": 0.8404915587272509,
+            "unknown": 0.030614899595334182
+          },
+          "confidence": 0.7607373380908764,
+          "choice": "supported"
+        },
+        "23": {
+          "type": "choice",
+          "probabilities": {
+            "supported": 0.03956546702145163,
+            "unknown": 0.7465456390612236,
+            "contradicted": 0.21388889391732474
+          },
+          "confidence": 0.6198184585918354,
+          "choice": "unknown"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "reversed_questions",
+      "ms": 677.91,
+      "correct": 15,
+      "total": 24,
+      "wrong": {
+        "23": {
+          "expected": "contradicted",
+          "actual": "unknown"
+        },
+        "21": {
+          "expected": "unknown",
+          "actual": "supported"
+        },
+        "20": {
+          "expected": "contradicted",
+          "actual": "unknown"
+        },
+        "17": {
+          "expected": "contradicted",
+          "actual": "unknown"
+        },
+        "13": {
+          "expected": "neutral",
+          "actual": "negative"
+        },
+        "12": {
+          "expected": "negative",
+          "actual": "neutral"
+        },
+        "10": {
+          "expected": "neutral",
+          "actual": "negative"
+        },
+        "7": {
+          "expected": "information",
+          "actual": "cancel"
+        },
+        "3": {
+          "expected": "information",
+          "actual": "cancel"
+        }
+      },
+      "answers": {
+        "23": {
+          "type": "choice",
+          "probabilities": {
+            "supported": 0.03622353871028048,
+            "unknown": 0.7275692893036171,
+            "contradicted": 0.23620717198610244
+          },
+          "confidence": 0.5913539339554257,
+          "choice": "unknown"
+        },
+        "22": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.14410085162849748,
+            "supported": 0.8292431711094284,
+            "unknown": 0.026655977262074217
+          },
+          "confidence": 0.7438647566641425,
+          "choice": "supported"
+        },
+        "21": {
+          "type": "choice",
+          "probabilities": {
+            "unknown": 0.3941544664482974,
+            "supported": 0.5734913647156906,
+            "contradicted": 0.032354168836012054
+          },
+          "confidence": 0.3602370470735359,
+          "choice": "supported"
+        },
+        "20": {
+          "type": "choice",
+          "probabilities": {
+            "supported": 0.06291794930597439,
+            "unknown": 0.5268055083020554,
+            "contradicted": 0.41027654239197026
+          },
+          "confidence": 0.29020826245308307,
+          "choice": "unknown"
+        },
+        "19": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.11502133119452593,
+            "supported": 0.8498991447569357,
+            "unknown": 0.03507952404853826
+          },
+          "confidence": 0.7748487171354035,
+          "choice": "supported"
+        },
+        "18": {
+          "type": "choice",
+          "probabilities": {
+            "unknown": 0.37575653614018895,
+            "supported": 0.3316039792696333,
+            "contradicted": 0.2926394845901778
+          },
+          "confidence": 0.06363480421028345,
+          "choice": "unknown"
+        },
+        "17": {
+          "type": "choice",
+          "probabilities": {
+            "supported": 0.039935124038300615,
+            "unknown": 0.8021183964508707,
+            "contradicted": 0.15794647951082874
+          },
+          "confidence": 0.7031775946763061,
+          "choice": "unknown"
+        },
+        "16": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.2165684011824173,
+            "supported": 0.755898016403337,
+            "unknown": 0.027533582414245743
+          },
+          "confidence": 0.6338470246050054,
+          "choice": "supported"
+        },
+        "15": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.6775206578363818,
+            "positive": 0.1511752928869014,
+            "neutral": 0.17130404927671672
+          },
+          "confidence": 0.5162809867545728,
+          "choice": "negative"
+        },
+        "14": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.07109851206300265,
+            "neutral": 0.06274421667397333,
+            "positive": 0.8661572712630241
+          },
+          "confidence": 0.7992359068945363,
+          "choice": "positive"
+        },
+        "13": {
+          "type": "choice",
+          "probabilities": {
+            "positive": 0.0742529720732504,
+            "neutral": 0.3770876844678177,
+            "negative": 0.548659343458932
+          },
+          "confidence": 0.32298901518839795,
+          "choice": "negative"
+        },
+        "12": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.27380297100095424,
+            "positive": 0.14655616939071442,
+            "neutral": 0.5796408596083312
+          },
+          "confidence": 0.3694612894124969,
+          "choice": "neutral"
+        },
+        "11": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.005882243542317926,
+            "neutral": 0.004876551176810184,
+            "positive": 0.989241205280872
+          },
+          "confidence": 0.983861807921308,
+          "choice": "positive"
+        },
+        "10": {
+          "type": "choice",
+          "probabilities": {
+            "positive": 0.2894363125383799,
+            "neutral": 0.2894363125383799,
+            "negative": 0.4211273749232401
+          },
+          "confidence": 0.13169106238486017,
+          "choice": "negative"
+        },
+        "9": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.5989094043671833,
+            "positive": 0.15142801172386008,
+            "neutral": 0.24966258390895651
+          },
+          "confidence": 0.39836410655077503,
+          "choice": "negative"
+        },
+        "8": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.011599726535284032,
+            "neutral": 0.0074893463444726536,
+            "positive": 0.9809109271202433
+          },
+          "confidence": 0.9713663906803649,
+          "choice": "positive"
+        },
+        "7": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.240622991154595,
+            "exchange": 0.10030658607378833,
+            "cancel": 0.3501043862896871,
+            "information": 0.3089660364819296
+          },
+          "confidence": 0.13347251505291613,
+          "choice": "cancel"
+        },
+        "6": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.005195853773971564,
+            "exchange": 0.003801367826758988,
+            "cancel": 0.9901545785873017,
+            "information": 0.0008481998119678216
+          },
+          "confidence": 0.9868727714497356,
+          "choice": "cancel"
+        },
+        "5": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.13052792758031478,
+            "exchange": 0.8511489424872405,
+            "cancel": 0.01140540320327426,
+            "information": 0.00691772672917052
+          },
+          "confidence": 0.8015319233163206,
+          "choice": "exchange"
+        },
+        "4": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.9614335781786755,
+            "exchange": 0.012102660068867621,
+            "cancel": 0.00885449525821199,
+            "information": 0.017609266494244918
+          },
+          "confidence": 0.948578104238234,
+          "choice": "refund"
+        },
+        "3": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.12294149049691516,
+            "exchange": 0.26026713742435637,
+            "cancel": 0.5509855342510958,
+            "information": 0.06580583782763268
+          },
+          "confidence": 0.4013140456681277,
+          "choice": "cancel"
+        },
+        "2": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.0016981064387326774,
+            "exchange": 0.0013224866242236037,
+            "cancel": 0.9967635169303587,
+            "information": 0.0002158900066848877
+          },
+          "confidence": 0.9956846892404783,
+          "choice": "cancel"
+        },
+        "1": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.03198962761581355,
+            "exchange": 0.9348738579856178,
+            "cancel": 0.028230747285790097,
+            "information": 0.004905767112778531
+          },
+          "confidence": 0.9131651439808238,
+          "choice": "exchange"
+        },
+        "0": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.9824515600328037,
+            "exchange": 0.0062186392132893165,
+            "cancel": 0.005487929844018927,
+            "information": 0.0058418709098881
+          },
+          "confidence": 0.9766020800437382,
+          "choice": "refund"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "reversed_choices",
+      "ms": 710.25,
+      "correct": 18,
+      "total": 24,
+      "wrong": {
+        "3": {
+          "expected": "information",
+          "actual": "exchange"
+        },
+        "10": {
+          "expected": "neutral",
+          "actual": "positive"
+        },
+        "14": {
+          "expected": "positive",
+          "actual": "negative"
+        },
+        "17": {
+          "expected": "contradicted",
+          "actual": "unknown"
+        },
+        "21": {
+          "expected": "unknown",
+          "actual": "supported"
+        },
+        "23": {
+          "expected": "contradicted",
+          "actual": "unknown"
+        }
+      },
+      "answers": {
+        "0": {
+          "type": "choice",
+          "probabilities": {
+            "information": 0.07912659523532442,
+            "cancel": 0.18981483440575447,
+            "exchange": 0.21508838597601648,
+            "refund": 0.5159701843829047
+          },
+          "confidence": 0.3546269125105395,
+          "choice": "refund"
+        },
+        "1": {
+          "type": "choice",
+          "probabilities": {
+            "information": 0.0025813774344025523,
+            "cancel": 0.13239940450132381,
+            "exchange": 0.8633525555275975,
+            "refund": 0.0016666625366762204
+          },
+          "confidence": 0.81780340737013,
+          "choice": "exchange"
+        },
+        "2": {
+          "type": "choice",
+          "probabilities": {
+            "information": 0.0007086520937041793,
+            "cancel": 0.9978564874023027,
+            "exchange": 0.001031082712290794,
+            "refund": 0.00040377779170225006
+          },
+          "confidence": 0.9971419832030702,
+          "choice": "cancel"
+        },
+        "3": {
+          "type": "choice",
+          "probabilities": {
+            "information": 0.31797400983847596,
+            "cancel": 0.24763840785855964,
+            "exchange": 0.40828668614293745,
+            "refund": 0.026100896160026883
+          },
+          "confidence": 0.21104891485724994,
+          "choice": "exchange"
+        },
+        "4": {
+          "type": "choice",
+          "probabilities": {
+            "information": 0.002952121805322749,
+            "cancel": 0.0021598184513282985,
+            "exchange": 0.007538507120989867,
+            "refund": 0.987349552622359
+          },
+          "confidence": 0.9831327368298121,
+          "choice": "refund"
+        },
+        "5": {
+          "type": "choice",
+          "probabilities": {
+            "information": 0.0037888215120747875,
+            "cancel": 0.0075349713066225656,
+            "exchange": 0.9868864946246929,
+            "refund": 0.0017897125566097663
+          },
+          "confidence": 0.9825153261662573,
+          "choice": "exchange"
+        },
+        "6": {
+          "type": "choice",
+          "probabilities": {
+            "information": 0.0019125336101201366,
+            "cancel": 0.9907168167807875,
+            "exchange": 0.0045879296261988976,
+            "refund": 0.0027827199828935533
+          },
+          "confidence": 0.9876224223743834,
+          "choice": "cancel"
+        },
+        "7": {
+          "type": "choice",
+          "probabilities": {
+            "information": 0.9024798448532979,
+            "cancel": 0.05091442844724894,
+            "exchange": 0.02901016686023396,
+            "refund": 0.017595559839219156
+          },
+          "confidence": 0.8699731264710638,
+          "choice": "information"
+        },
+        "8": {
+          "type": "choice",
+          "probabilities": {
+            "positive": 0.8241239898602343,
+            "neutral": 0.04949249546559502,
+            "negative": 0.12638351467417067
+          },
+          "confidence": 0.7361859847903514,
+          "choice": "positive"
+        },
+        "9": {
+          "type": "choice",
+          "probabilities": {
+            "neutral": 0.007899365443720805,
+            "positive": 0.02017174113178931,
+            "negative": 0.9719288934244897
+          },
+          "confidence": 0.9578933401367347,
+          "choice": "negative"
+        },
+        "10": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.06831774884597006,
+            "neutral": 0.09940173803692895,
+            "positive": 0.8322805131171009
+          },
+          "confidence": 0.7484207696756515,
+          "choice": "positive"
+        },
+        "11": {
+          "type": "choice",
+          "probabilities": {
+            "positive": 0.780950615396254,
+            "neutral": 0.09928672887212699,
+            "negative": 0.11976265573161901
+          },
+          "confidence": 0.6714259230943811,
+          "choice": "positive"
+        },
+        "12": {
+          "type": "choice",
+          "probabilities": {
+            "neutral": 0.0405935173031757,
+            "positive": 0.09147890337804775,
+            "negative": 0.8679275793187765
+          },
+          "confidence": 0.8018913689781648,
+          "choice": "negative"
+        },
+        "13": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.2272197795324624,
+            "neutral": 0.48102424837367086,
+            "positive": 0.2917559720938668
+          },
+          "confidence": 0.2215363725605063,
+          "choice": "neutral"
+        },
+        "14": {
+          "type": "choice",
+          "probabilities": {
+            "positive": 0.1931384683557733,
+            "neutral": 0.13274199862303246,
+            "negative": 0.6741195330211942
+          },
+          "confidence": 0.5111792995317912,
+          "choice": "negative"
+        },
+        "15": {
+          "type": "choice",
+          "probabilities": {
+            "neutral": 0.006154780970699492,
+            "positive": 0.021482296415801124,
+            "negative": 0.9723629226134994
+          },
+          "confidence": 0.9585443839202492,
+          "choice": "negative"
+        },
+        "16": {
+          "type": "choice",
+          "probabilities": {
+            "unknown": 0.11752967839706747,
+            "supported": 0.8684333999058753,
+            "contradicted": 0.01403692169705725
+          },
+          "confidence": 0.8026500998588131,
+          "choice": "supported"
+        },
+        "17": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.3621983619940776,
+            "unknown": 0.5971641080386251,
+            "supported": 0.04063752996729736
+          },
+          "confidence": 0.39574616205793767,
+          "choice": "unknown"
+        },
+        "18": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.13872271476150247,
+            "supported": 0.3770874347306995,
+            "unknown": 0.48418985050779795
+          },
+          "confidence": 0.22628477576169692,
+          "choice": "unknown"
+        },
+        "19": {
+          "type": "choice",
+          "probabilities": {
+            "unknown": 0.030566440233686012,
+            "supported": 0.9508940766063096,
+            "contradicted": 0.018539483160004356
+          },
+          "confidence": 0.9263411149094645,
+          "choice": "supported"
+        },
+        "20": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.46439161536636425,
+            "unknown": 0.46439161536636425,
+            "supported": 0.07121676926727152
+          },
+          "confidence": 0.19658742304954635,
+          "choice": "contradicted"
+        },
+        "21": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.1511752928869014,
+            "supported": 0.6775206578363818,
+            "unknown": 0.17130404927671672
+          },
+          "confidence": 0.5162809867545728,
+          "choice": "supported"
+        },
+        "22": {
+          "type": "choice",
+          "probabilities": {
+            "unknown": 0.04701342456016317,
+            "supported": 0.9442899663502614,
+            "contradicted": 0.008696609089575424
+          },
+          "confidence": 0.9164349495253921,
+          "choice": "supported"
+        },
+        "23": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.2877882840197299,
+            "unknown": 0.5376592982162166,
+            "supported": 0.1745524177640535
+          },
+          "confidence": 0.30648894732432486,
+          "choice": "unknown"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_0",
+      "ms": 250.46,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "0": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.9639060098365666,
+            "exchange": 0.016584922356744962,
+            "cancel": 0.009449803908369182,
+            "information": 0.010059263898319326
+          },
+          "confidence": 0.9518746797820888,
+          "choice": "refund"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_1",
+      "ms": 230.48,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "1": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.04548810496969135,
+            "exchange": 0.9136529438621205,
+            "cancel": 0.035426171770829885,
+            "information": 0.005432779397358358
+          },
+          "confidence": 0.8848705918161607,
+          "choice": "exchange"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_2",
+      "ms": 232.69,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "2": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.002319183121736298,
+            "exchange": 0.0014973771650654793,
+            "cancel": 0.9959677221826062,
+            "information": 0.00021571753059213496
+          },
+          "confidence": 0.9946236295768083,
+          "choice": "cancel"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_3",
+      "ms": 175.61,
+      "correct": 0,
+      "total": 1,
+      "wrong": {
+        "3": {
+          "expected": "information",
+          "actual": "cancel"
+        }
+      },
+      "answers": {
+        "3": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.16740509273785692,
+            "exchange": 0.27600433722043227,
+            "cancel": 0.45505424870416383,
+            "information": 0.10153632133754695
+          },
+          "confidence": 0.27340566493888513,
+          "choice": "cancel"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_4",
+      "ms": 170.87,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "4": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.9570567879303798,
+            "exchange": 0.015469383941118391,
+            "cancel": 0.008814189278817615,
+            "information": 0.018659638849684152
+          },
+          "confidence": 0.9427423839071731,
+          "choice": "refund"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_5",
+      "ms": 160.16,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "5": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.08373186277883755,
+            "exchange": 0.9002022803456593,
+            "cancel": 0.010000342525910488,
+            "information": 0.0060655143495927915
+          },
+          "confidence": 0.8669363737942124,
+          "choice": "exchange"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_6",
+      "ms": 173.19,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "6": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.004311566629761629,
+            "exchange": 0.0038049441960517406,
+            "cancel": 0.9910859295432198,
+            "information": 0.0007975596309669241
+          },
+          "confidence": 0.9881145727242931,
+          "choice": "cancel"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_7",
+      "ms": 182.89,
+      "correct": 0,
+      "total": 1,
+      "wrong": {
+        "7": {
+          "expected": "information",
+          "actual": "cancel"
+        }
+      },
+      "answers": {
+        "7": {
+          "type": "choice",
+          "probabilities": {
+            "refund": 0.17883403889257743,
+            "exchange": 0.10846832758858974,
+            "cancel": 0.3785916633064982,
+            "information": 0.3341059702123347
+          },
+          "confidence": 0.17145555107533092,
+          "choice": "cancel"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_8",
+      "ms": 208.71,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "8": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.014795187340483474,
+            "neutral": 0.01082439029149121,
+            "positive": 0.9743804223680252
+          },
+          "confidence": 0.961570633552038,
+          "choice": "positive"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_9",
+      "ms": 212.1,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "9": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.8023303092874199,
+            "positive": 0.07462834723275004,
+            "neutral": 0.12304134347983003
+          },
+          "confidence": 0.7034954639311297,
+          "choice": "negative"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_10",
+      "ms": 199.73,
+      "correct": 0,
+      "total": 1,
+      "wrong": {
+        "10": {
+          "expected": "neutral",
+          "actual": "negative"
+        }
+      },
+      "answers": {
+        "10": {
+          "type": "choice",
+          "probabilities": {
+            "positive": 0.25851510989519716,
+            "neutral": 0.25851510989519716,
+            "negative": 0.4829697802096057
+          },
+          "confidence": 0.22445467031440858,
+          "choice": "negative"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_11",
+      "ms": 179.74,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "11": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.007071072657953979,
+            "neutral": 0.007071072657953979,
+            "positive": 0.9858578546840919
+          },
+          "confidence": 0.978786782026138,
+          "choice": "positive"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_12",
+      "ms": 156.01,
+      "correct": 0,
+      "total": 1,
+      "wrong": {
+        "12": {
+          "expected": "negative",
+          "actual": "neutral"
+        }
+      },
+      "answers": {
+        "12": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.2541853796358511,
+            "positive": 0.1360556294125275,
+            "neutral": 0.6097589909516214
+          },
+          "confidence": 0.4146384864274322,
+          "choice": "neutral"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_13",
+      "ms": 216.57,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "13": {
+          "type": "choice",
+          "probabilities": {
+            "positive": 0.09469600025098811,
+            "neutral": 0.48090597041942773,
+            "negative": 0.4243980293295841
+          },
+          "confidence": 0.22135895562914154,
+          "choice": "neutral"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_14",
+      "ms": 164.73,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "14": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.06985365520970493,
+            "neutral": 0.07915456134194059,
+            "positive": 0.8509917834483545
+          },
+          "confidence": 0.7764876751725316,
+          "choice": "positive"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_15",
+      "ms": 174.46,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "15": {
+          "type": "choice",
+          "probabilities": {
+            "negative": 0.6496272080276881,
+            "positive": 0.16425148070148662,
+            "neutral": 0.18612131127082523
+          },
+          "confidence": 0.4744408120415322,
+          "choice": "negative"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_16",
+      "ms": 141.01,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "16": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.19676470333767315,
+            "supported": 0.7782194748704558,
+            "unknown": 0.025015821791871097
+          },
+          "confidence": 0.6673292123056838,
+          "choice": "supported"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_17",
+      "ms": 163.37,
+      "correct": 0,
+      "total": 1,
+      "wrong": {
+        "17": {
+          "expected": "contradicted",
+          "actual": "unknown"
+        }
+      },
+      "answers": {
+        "17": {
+          "type": "choice",
+          "probabilities": {
+            "supported": 0.047338797683259534,
+            "unknown": 0.7405034301367314,
+            "contradicted": 0.21215777218000917
+          },
+          "confidence": 0.610755145205097,
+          "choice": "unknown"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_18",
+      "ms": 183.99,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "18": {
+          "type": "choice",
+          "probabilities": {
+            "unknown": 0.41360626789508365,
+            "supported": 0.36500625030698575,
+            "contradicted": 0.22138748179793066
+          },
+          "confidence": 0.1204094018426255,
+          "choice": "unknown"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_19",
+      "ms": 184.9,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "19": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.09940173803692895,
+            "supported": 0.8322805131171009,
+            "unknown": 0.06831774884597006
+          },
+          "confidence": 0.7484207696756515,
+          "choice": "supported"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_20",
+      "ms": 201.32,
+      "correct": 0,
+      "total": 1,
+      "wrong": {
+        "20": {
+          "expected": "contradicted",
+          "actual": "unknown"
+        }
+      },
+      "answers": {
+        "20": {
+          "type": "choice",
+          "probabilities": {
+            "supported": 0.04689245103470726,
+            "unknown": 0.64733035765903,
+            "contradicted": 0.30577719130626274
+          },
+          "confidence": 0.470995536488545,
+          "choice": "unknown"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_21",
+      "ms": 174.78,
+      "correct": 0,
+      "total": 1,
+      "wrong": {
+        "21": {
+          "expected": "unknown",
+          "actual": "supported"
+        }
+      },
+      "answers": {
+        "21": {
+          "type": "choice",
+          "probabilities": {
+            "unknown": 0.3895312229330339,
+            "supported": 0.5667645850932929,
+            "contradicted": 0.04370419197367321
+          },
+          "confidence": 0.35014687763993924,
+          "choice": "supported"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_22",
+      "ms": 181.35,
+      "correct": 1,
+      "total": 1,
+      "wrong": {},
+      "answers": {
+        "22": {
+          "type": "choice",
+          "probabilities": {
+            "contradicted": 0.15832955891123218,
+            "supported": 0.804063870086097,
+            "unknown": 0.037606571002670806
+          },
+          "confidence": 0.7060958051291455,
+          "choice": "supported"
+        }
+      },
+      "model": "lightning-systemone"
+    },
+    {
+      "variant": "single_23",
+      "ms": 164.65,
+      "correct": 0,
+      "total": 1,
+      "wrong": {
+        "23": {
+          "expected": "contradicted",
+          "actual": "unknown"
+        }
+      },
+      "answers": {
+        "23": {
+          "type": "choice",
+          "probabilities": {
+            "supported": 0.03598818811559032,
+            "unknown": 0.7694614818309508,
+            "contradicted": 0.19455033005345887
+          },
+          "confidence": 0.6541922227464261,
+          "choice": "unknown"
+        }
+      },
+      "model": "lightning-systemone"
+    }
+  ]
+}

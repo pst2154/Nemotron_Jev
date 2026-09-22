@@ -1,0 +1,3995 @@
+{
+  "correct": 194,
+  "total": 324,
+  "autocast": false,
+  "adapter": false,
+  "audit": {
+    "training_rows": 2676,
+    "training_groups": 1338,
+    "training_families": 34,
+    "validation_rows": 324,
+    "token_records_reconstructed": 2676,
+    "training_fingerprint": "5bbe9310e7f351d9aacb33dc4ebb9dc172408731edbda2fe9cea9313d696fea5",
+    "validation_fingerprint": "286a918b9882581aca3d87d3e65efbf0d6d8294cc0afe755b53d7262c0a54157",
+    "training_tokens_fingerprint": "b73da4b8985f0e1f6cbdc1b4df1bc42f4ff1dd103329b17b1761263645daa5f3",
+    "validation_order": "original inference choice order; no shuffling",
+    "train_max_tokens": 1115,
+    "validation_max_tokens": 921,
+    "training_kinds": {
+      "choice": 856,
+      "noul": 888,
+      "score": 932
+    },
+    "validation_kinds": {
+      "choice": 146,
+      "noul": 114,
+      "score": 64
+    },
+    "heldout_family_overlap": false,
+    "test_split_used": false
+  },
+  "rows": [
+    {
+      "id": "scale-diverse-007-001-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        15.777631759643555,
+        18.577959060668945,
+        17.671894073486328,
+        15.120134353637695
+      ],
+      "ms": 5646.342171006836
+    },
+    {
+      "id": "scale-diverse-007-001-counterfactual",
+      "prediction": 1,
+      "label": 3,
+      "correct": false,
+      "logits": [
+        16.14040756225586,
+        17.957239151000977,
+        17.91669464111328,
+        16.600719451904297
+      ],
+      "ms": 113.41680798796006
+    },
+    {
+      "id": "scale-diverse-007-004-base",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        16.676116943359375,
+        17.778644561767578,
+        18.1348876953125,
+        17.13239097595215
+      ],
+      "ms": 708.1637250084896
+    },
+    {
+      "id": "scale-diverse-007-004-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        16.65240478515625,
+        16.574007034301758,
+        17.688098907470703,
+        18.079090118408203
+      ],
+      "ms": 53.20607700559776
+    },
+    {
+      "id": "scale-diverse-007-005-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.780105590820312,
+        18.65166664123535,
+        17.742618560791016,
+        16.220104217529297
+      ],
+      "ms": 104.42772899114061
+    },
+    {
+      "id": "scale-diverse-007-005-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        16.893789291381836,
+        17.68056297302246,
+        17.546672821044922,
+        17.928300857543945
+      ],
+      "ms": 52.46265899040736
+    },
+    {
+      "id": "scale-diverse-008-003-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        14.034417152404785,
+        14.061446189880371,
+        19.439716339111328,
+        13.28906536102295,
+        13.438894271850586
+      ],
+      "ms": 165.53411800123286
+    },
+    {
+      "id": "scale-diverse-008-003-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        14.659626007080078,
+        14.893924713134766,
+        19.114200592041016,
+        14.158945083618164,
+        14.110791206359863
+      ],
+      "ms": 106.1767249921104
+    },
+    {
+      "id": "scale-diverse-008-005-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        14.38428783416748,
+        14.091142654418945,
+        19.44023895263672,
+        13.605718612670898,
+        13.486791610717773
+      ],
+      "ms": 108.06228101137094
+    },
+    {
+      "id": "scale-diverse-008-005-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        14.78287410736084,
+        14.909438133239746,
+        19.179140090942383,
+        14.132250785827637,
+        13.967338562011719
+      ],
+      "ms": 105.65233600209467
+    },
+    {
+      "id": "scale-diverse-009-001-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.206771850585938,
+        18.402584075927734
+      ],
+      "ms": 114.07550600415561
+    },
+    {
+      "id": "scale-diverse-009-001-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.678770065307617,
+        18.155452728271484
+      ],
+      "ms": 52.315789012936875
+    },
+    {
+      "id": "scale-diverse-009-003-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.329957962036133,
+        18.504850387573242
+      ],
+      "ms": 52.16785999073181
+    },
+    {
+      "id": "scale-diverse-009-003-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.395095825195312,
+        18.427677154541016
+      ],
+      "ms": 52.2888889972819
+    },
+    {
+      "id": "scale-diverse-010-001-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        15.38901424407959,
+        18.4986515045166
+      ],
+      "ms": 108.41878000064753
+    },
+    {
+      "id": "scale-diverse-010-001-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        15.7345609664917,
+        18.491533279418945
+      ],
+      "ms": 52.551077998941764
+    },
+    {
+      "id": "scale-diverse-010-004-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        15.638916015625,
+        18.623165130615234
+      ],
+      "ms": 113.8852180010872
+    },
+    {
+      "id": "scale-diverse-010-004-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        15.319600105285645,
+        18.454147338867188
+      ],
+      "ms": 52.33833000238519
+    },
+    {
+      "id": "scale-diverse-011-004-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.75531005859375,
+        18.443471908569336,
+        18.376163482666016,
+        16.300386428833008
+      ],
+      "ms": 110.67817499861121
+    },
+    {
+      "id": "scale-diverse-011-004-counterfactual",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        16.917091369628906,
+        18.367507934570312,
+        18.684993743896484,
+        16.926822662353516
+      ],
+      "ms": 53.16447699442506
+    },
+    {
+      "id": "scale-diverse-079-001-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.024177551269531,
+        14.291714668273926,
+        16.529874801635742,
+        19.458988189697266
+      ],
+      "ms": 105.44422699604183
+    },
+    {
+      "id": "scale-diverse-079-001-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.447593688964844,
+        14.926429748535156,
+        16.733224868774414,
+        19.439189910888672
+      ],
+      "ms": 53.1837269954849
+    },
+    {
+      "id": "scale-diverse-079-002-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        16.026384353637695,
+        13.913026809692383,
+        16.93720817565918,
+        19.700300216674805
+      ],
+      "ms": 114.04469699482433
+    },
+    {
+      "id": "scale-diverse-079-002-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        15.886895179748535,
+        14.00703239440918,
+        16.511672973632812,
+        19.728771209716797
+      ],
+      "ms": 53.86219499632716
+    },
+    {
+      "id": "scale-diverse-079-003-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.342066764831543,
+        14.401814460754395,
+        16.99901580810547,
+        19.316566467285156
+      ],
+      "ms": 108.7581890024012
+    },
+    {
+      "id": "scale-diverse-079-003-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.38901424407959,
+        14.378286361694336,
+        17.116744995117188,
+        19.51058006286621
+      ],
+      "ms": 53.19016700377688
+    },
+    {
+      "id": "scale-diverse-080-003-base",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        15.278793334960938,
+        14.565783500671387,
+        16.151765823364258,
+        18.419921875,
+        11.869913101196289
+      ],
+      "ms": 115.17522399662994
+    },
+    {
+      "id": "scale-diverse-080-003-counterfactual",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        15.494829177856445,
+        14.90414810180664,
+        16.547456741333008,
+        18.65127182006836,
+        12.008676528930664
+      ],
+      "ms": 53.58914699172601
+    },
+    {
+      "id": "scale-diverse-081-005-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        18.6648006439209,
+        17.98401641845703
+      ],
+      "ms": 112.77931899530813
+    },
+    {
+      "id": "scale-diverse-081-005-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.798511505126953,
+        13.622808456420898
+      ],
+      "ms": 105.31986699788831
+    },
+    {
+      "id": "scale-diverse-082-004-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.40578842163086,
+        18.755821228027344
+      ],
+      "ms": 112.34157100261655
+    },
+    {
+      "id": "scale-diverse-082-004-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        16.342506408691406,
+        18.717121124267578
+      ],
+      "ms": 53.09196800226346
+    },
+    {
+      "id": "scale-diverse-083-004-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        14.696937561035156,
+        18.575756072998047,
+        14.515193939208984,
+        13.454097747802734
+      ],
+      "ms": 110.7533339963993
+    },
+    {
+      "id": "scale-diverse-083-004-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        14.985294342041016,
+        18.420616149902344,
+        14.981255531311035,
+        13.464761734008789
+      ],
+      "ms": 52.829057996859774
+    },
+    {
+      "id": "scale-diverse-084-002-base",
+      "prediction": 1,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        16.419227600097656,
+        18.107952117919922,
+        16.832075119018555,
+        14.370268821716309
+      ],
+      "ms": 108.59547900327016
+    },
+    {
+      "id": "scale-diverse-084-002-counterfactual",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.438135147094727,
+        18.241056442260742,
+        16.98173713684082,
+        14.558646202087402
+      ],
+      "ms": 104.29971000121441
+    },
+    {
+      "id": "scale-diverse-084-003-base",
+      "prediction": 1,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        16.525096893310547,
+        18.046110153198242,
+        17.56029510498047,
+        14.859153747558594
+      ],
+      "ms": 52.56093900243286
+    },
+    {
+      "id": "scale-diverse-084-003-counterfactual",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.450824737548828,
+        18.34843635559082,
+        17.106111526489258,
+        14.231210708618164
+      ],
+      "ms": 103.79877100058366
+    },
+    {
+      "id": "scale-diverse-084-004-base",
+      "prediction": 1,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        15.864171981811523,
+        17.65790557861328,
+        17.277448654174805,
+        14.802257537841797
+      ],
+      "ms": 52.47876800422091
+    },
+    {
+      "id": "scale-diverse-084-004-counterfactual",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.085041046142578,
+        17.98534393310547,
+        17.298866271972656,
+        14.705005645751953
+      ],
+      "ms": 104.08274999645073
+    },
+    {
+      "id": "scale-diverse-097-002-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.249513626098633,
+        14.323097229003906,
+        18.469018936157227
+      ],
+      "ms": 105.68425599194597
+    },
+    {
+      "id": "scale-diverse-097-002-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.94937515258789,
+        13.689401626586914,
+        15.951171875
+      ],
+      "ms": 53.70979600411374
+    },
+    {
+      "id": "scale-diverse-097-005-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        16.5939884185791,
+        14.475418090820312,
+        18.76845359802246
+      ],
+      "ms": 107.11881300085224
+    },
+    {
+      "id": "scale-diverse-097-005-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.88824462890625,
+        15.522286415100098,
+        19.152929306030273
+      ],
+      "ms": 53.752685998915695
+    },
+    {
+      "id": "scale-diverse-099-001-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        17.134845733642578,
+        17.086353302001953
+      ],
+      "ms": 104.02548000274692
+    },
+    {
+      "id": "scale-diverse-099-001-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.499530792236328,
+        16.29244613647461
+      ],
+      "ms": 52.54424900340382
+    },
+    {
+      "id": "scale-diverse-099-002-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.86607551574707,
+        17.183589935302734
+      ],
+      "ms": 111.42965299950447
+    },
+    {
+      "id": "scale-diverse-099-002-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.185710906982422,
+        16.837617874145508
+      ],
+      "ms": 52.28363900096156
+    },
+    {
+      "id": "scale-diverse-099-003-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        17.254640579223633,
+        17.120792388916016
+      ],
+      "ms": 104.89487800805364
+    },
+    {
+      "id": "scale-diverse-099-003-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.464895248413086,
+        16.49459457397461
+      ],
+      "ms": 105.23875700891949
+    },
+    {
+      "id": "scale-diverse-169-001-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        16.528499603271484,
+        14.531472206115723,
+        19.58629035949707
+      ],
+      "ms": 111.77465200307779
+    },
+    {
+      "id": "scale-diverse-169-001-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        16.55547523498535,
+        14.819039344787598,
+        19.32643699645996
+      ],
+      "ms": 54.33324500336312
+    },
+    {
+      "id": "scale-diverse-169-002-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        18.04292869567871,
+        16.860443115234375,
+        20.44106674194336
+      ],
+      "ms": 105.43897699972149
+    },
+    {
+      "id": "scale-diverse-169-002-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.9522705078125,
+        17.746339797973633,
+        19.71207618713379
+      ],
+      "ms": 53.19474700081628
+    },
+    {
+      "id": "scale-diverse-169-004-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        18.015047073364258,
+        18.14929962158203,
+        19.768444061279297
+      ],
+      "ms": 105.0664280046476
+    },
+    {
+      "id": "scale-diverse-169-004-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        18.13164710998535,
+        18.88294792175293,
+        19.453615188598633
+      ],
+      "ms": 52.633379003964365
+    },
+    {
+      "id": "scale-diverse-171-001-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        18.012371063232422,
+        17.46814727783203
+      ],
+      "ms": 104.38407899346203
+    },
+    {
+      "id": "scale-diverse-171-001-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.281200408935547,
+        16.440750122070312
+      ],
+      "ms": 52.22434901224915
+    },
+    {
+      "id": "scale-diverse-171-002-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.479129791259766,
+        17.818073272705078
+      ],
+      "ms": 102.91812299692538
+    },
+    {
+      "id": "scale-diverse-171-002-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.10315704345703,
+        16.77503204345703
+      ],
+      "ms": 52.287558995885774
+    },
+    {
+      "id": "scale-diverse-173-001-base",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        16.408435821533203,
+        15.94601058959961,
+        18.92938995361328,
+        13.975869178771973
+      ],
+      "ms": 104.11097000178415
+    },
+    {
+      "id": "scale-diverse-173-001-counterfactual",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.986625671386719,
+        15.656927108764648,
+        19.24493408203125,
+        14.47780990600586
+      ],
+      "ms": 52.51463899912778
+    },
+    {
+      "id": "scale-diverse-173-002-base",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.354736328125,
+        14.475189208984375,
+        14.93010139465332,
+        14.22703742980957
+      ],
+      "ms": 106.88889300217852
+    },
+    {
+      "id": "scale-diverse-173-002-counterfactual",
+      "prediction": 0,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        18.574411392211914,
+        14.979109764099121,
+        16.723726272583008,
+        15.421245574951172
+      ],
+      "ms": 53.25152700243052
+    },
+    {
+      "id": "scale-diverse-173-004-base",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        16.169462203979492,
+        17.340486526489258,
+        17.778079986572266,
+        16.15769386291504
+      ],
+      "ms": 105.99927499424666
+    },
+    {
+      "id": "scale-diverse-173-004-counterfactual",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.62345027923584,
+        16.74085807800293,
+        17.769393920898438,
+        17.183029174804688
+      ],
+      "ms": 105.20938700938132
+    },
+    {
+      "id": "scale-diverse-174-003-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.667131423950195,
+        15.719173431396484,
+        18.557998657226562,
+        16.85533332824707
+      ],
+      "ms": 107.04054300731514
+    },
+    {
+      "id": "scale-diverse-174-003-counterfactual",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.67734146118164,
+        17.896530151367188,
+        17.416549682617188,
+        15.606027603149414
+      ],
+      "ms": 52.49575900961645
+    },
+    {
+      "id": "scale-diverse-174-004-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.56224536895752,
+        15.824922561645508,
+        18.271751403808594,
+        16.162517547607422
+      ],
+      "ms": 104.62932899827138
+    },
+    {
+      "id": "scale-diverse-174-004-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        15.981630325317383,
+        16.61038589477539,
+        18.324033737182617,
+        16.262874603271484
+      ],
+      "ms": 52.37929899885785
+    },
+    {
+      "id": "scale-diverse-211-004-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        16.22014808654785,
+        17.325164794921875,
+        17.53802490234375,
+        17.306676864624023,
+        13.99974250793457,
+        13.78449821472168
+      ],
+      "ms": 106.18191400135402
+    },
+    {
+      "id": "scale-diverse-211-004-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        16.337631225585938,
+        17.168079376220703,
+        17.87187385559082,
+        17.04579734802246,
+        14.327292442321777,
+        14.484670639038086
+      ],
+      "ms": 105.40720699646045
+    },
+    {
+      "id": "scale-diverse-211-006-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.704463958740234,
+        16.582664489746094,
+        17.175004959106445,
+        17.05575180053711,
+        13.836234092712402,
+        13.606925964355469
+      ],
+      "ms": 104.1145700000925
+    },
+    {
+      "id": "scale-diverse-211-006-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        15.875682830810547,
+        16.218854904174805,
+        16.90481948852539,
+        16.497512817382812,
+        13.788830757141113,
+        13.666341781616211
+      ],
+      "ms": 53.848395007662475
+    },
+    {
+      "id": "scale-diverse-213-001-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.0953426361084,
+        17.233352661132812
+      ],
+      "ms": 104.16586000064854
+    },
+    {
+      "id": "scale-diverse-213-001-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.251176834106445,
+        17.313392639160156
+      ],
+      "ms": 103.67373000190128
+    },
+    {
+      "id": "scale-diverse-213-003-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.40052604675293,
+        17.536523818969727
+      ],
+      "ms": 104.63538799376693
+    },
+    {
+      "id": "scale-diverse-213-003-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.120628356933594,
+        17.187450408935547
+      ],
+      "ms": 52.64906799129676
+    },
+    {
+      "id": "scale-diverse-214-003-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.57660675048828,
+        18.121379852294922
+      ],
+      "ms": 104.30340000311844
+    },
+    {
+      "id": "scale-diverse-214-003-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.809839248657227,
+        18.22870635986328
+      ],
+      "ms": 55.44429201108869
+    },
+    {
+      "id": "scale-diverse-215-003-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        18.743907928466797,
+        16.144657135009766,
+        13.946452140808105,
+        14.078140258789062,
+        13.888469696044922
+      ],
+      "ms": 105.25757700088434
+    },
+    {
+      "id": "scale-diverse-215-003-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.699825286865234,
+        14.927593231201172,
+        13.623753547668457,
+        14.161495208740234,
+        13.774949073791504
+      ],
+      "ms": 105.02540699962992
+    },
+    {
+      "id": "scale-diverse-215-004-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        18.24703598022461,
+        15.844749450683594,
+        14.254881858825684,
+        14.607831001281738,
+        13.087013244628906
+      ],
+      "ms": 104.09728001104668
+    },
+    {
+      "id": "scale-diverse-215-004-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.02340316772461,
+        15.76292610168457,
+        13.74409294128418,
+        14.01370620727539,
+        12.331681251525879
+      ],
+      "ms": 105.43377700378187
+    },
+    {
+      "id": "scale-diverse-216-005-base",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        15.06854248046875,
+        16.192413330078125,
+        16.659151077270508,
+        17.764904022216797,
+        13.614241600036621
+      ],
+      "ms": 107.01335300109349
+    },
+    {
+      "id": "scale-diverse-216-005-counterfactual",
+      "prediction": 3,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        15.203045845031738,
+        16.38931655883789,
+        16.669620513916016,
+        17.6025390625,
+        14.222677230834961
+      ],
+      "ms": 109.61233600392006
+    },
+    {
+      "id": "scale-diverse-273-001-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.522218704223633,
+        17.823148727416992
+      ],
+      "ms": 104.37280900077894
+    },
+    {
+      "id": "scale-diverse-273-001-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.860225677490234,
+        17.34711265563965
+      ],
+      "ms": 52.03122898819856
+    },
+    {
+      "id": "scale-diverse-273-003-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        17.77342414855957,
+        17.199888229370117
+      ],
+      "ms": 107.88748000049964
+    },
+    {
+      "id": "scale-diverse-273-003-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.741065979003906,
+        16.52791976928711
+      ],
+      "ms": 54.35135499283206
+    },
+    {
+      "id": "scale-diverse-274-004-base",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.749805450439453,
+        18.33582305908203
+      ],
+      "ms": 111.49065299832728
+    },
+    {
+      "id": "scale-diverse-274-004-counterfactual",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        18.055171966552734,
+        18.217926025390625
+      ],
+      "ms": 108.88970800442621
+    },
+    {
+      "id": "scale-diverse-275-002-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        16.69583511352539,
+        15.727034568786621,
+        18.39436149597168
+      ],
+      "ms": 112.94164900027681
+    },
+    {
+      "id": "scale-diverse-275-002-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.041423797607422,
+        16.949384689331055,
+        16.620555877685547
+      ],
+      "ms": 53.863095003180206
+    },
+    {
+      "id": "scale-diverse-275-003-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.315982818603516,
+        16.702865600585938,
+        17.930280685424805
+      ],
+      "ms": 53.19294799119234
+    },
+    {
+      "id": "scale-diverse-275-003-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.97565460205078,
+        17.370315551757812,
+        17.537639617919922
+      ],
+      "ms": 52.826268001808785
+    },
+    {
+      "id": "scale-diverse-275-004-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.061599731445312,
+        16.511886596679688,
+        17.772558212280273
+      ],
+      "ms": 105.65012700681109
+    },
+    {
+      "id": "scale-diverse-275-004-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.975629806518555,
+        16.8447322845459,
+        17.474651336669922
+      ],
+      "ms": 51.92837100184988
+    },
+    {
+      "id": "scale-diverse-275-005-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        16.33717155456543,
+        16.65854835510254,
+        18.53404426574707
+      ],
+      "ms": 115.33292300009634
+    },
+    {
+      "id": "scale-diverse-275-005-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        16.39244842529297,
+        16.843753814697266,
+        18.503084182739258
+      ],
+      "ms": 54.559834010433406
+    },
+    {
+      "id": "fast-41-diverse-007-003-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        15.916540145874023,
+        18.994213104248047,
+        15.546663284301758,
+        14.226585388183594
+      ],
+      "ms": 104.28989000502042
+    },
+    {
+      "id": "fast-41-diverse-007-003-counterfactual",
+      "prediction": 1,
+      "label": 3,
+      "correct": false,
+      "logits": [
+        16.359664916992188,
+        18.687101364135742,
+        16.914337158203125,
+        15.473308563232422
+      ],
+      "ms": 52.131369986454956
+    },
+    {
+      "id": "fast-41-diverse-007-005-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        15.473020553588867,
+        18.831859588623047,
+        15.343544006347656,
+        14.654385566711426
+      ],
+      "ms": 105.16465800174046
+    },
+    {
+      "id": "fast-41-diverse-007-005-counterfactual",
+      "prediction": 1,
+      "label": 3,
+      "correct": false,
+      "logits": [
+        16.30260467529297,
+        17.956008911132812,
+        15.865924835205078,
+        17.350448608398438
+      ],
+      "ms": 52.00691100617405
+    },
+    {
+      "id": "fast-41-diverse-007-006-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        14.148710250854492,
+        19.278743743896484,
+        12.937201499938965,
+        12.520155906677246
+      ],
+      "ms": 107.6088710105978
+    },
+    {
+      "id": "fast-41-diverse-007-006-counterfactual",
+      "prediction": 1,
+      "label": 3,
+      "correct": false,
+      "logits": [
+        15.467018127441406,
+        18.781997680664062,
+        15.238100051879883,
+        14.704079627990723
+      ],
+      "ms": 52.28010000428185
+    },
+    {
+      "id": "fast-41-diverse-007-009-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.039175033569336,
+        18.891326904296875,
+        16.02078628540039,
+        14.082721710205078
+      ],
+      "ms": 105.02565700153355
+    },
+    {
+      "id": "fast-41-diverse-007-009-counterfactual",
+      "prediction": 1,
+      "label": 3,
+      "correct": false,
+      "logits": [
+        17.194486618041992,
+        17.725093841552734,
+        17.470508575439453,
+        17.587099075317383
+      ],
+      "ms": 51.90145000233315
+    },
+    {
+      "id": "fast-41-diverse-007-010-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        14.391817092895508,
+        19.368772506713867,
+        12.755255699157715,
+        12.452978134155273
+      ],
+      "ms": 105.16668800846674
+    },
+    {
+      "id": "fast-41-diverse-007-010-counterfactual",
+      "prediction": 1,
+      "label": 3,
+      "correct": false,
+      "logits": [
+        15.589700698852539,
+        18.697872161865234,
+        15.134008407592773,
+        14.360883712768555
+      ],
+      "ms": 51.8908800004283
+    },
+    {
+      "id": "fast-41-diverse-008-009-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        13.610932350158691,
+        13.525053024291992,
+        19.69144058227539,
+        12.698376655578613,
+        12.18247127532959
+      ],
+      "ms": 107.82739100977778
+    },
+    {
+      "id": "fast-41-diverse-008-009-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        13.572932243347168,
+        13.828142166137695,
+        19.531435012817383,
+        13.318130493164062,
+        12.948441505432129
+      ],
+      "ms": 53.03213800652884
+    },
+    {
+      "id": "fast-41-diverse-008-011-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        13.006426811218262,
+        12.869866371154785,
+        19.467235565185547,
+        11.703489303588867,
+        11.050926208496094
+      ],
+      "ms": 105.53759700269438
+    },
+    {
+      "id": "fast-41-diverse-008-011-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        12.993988990783691,
+        13.224206924438477,
+        19.39212417602539,
+        11.952051162719727,
+        11.13521957397461
+      ],
+      "ms": 105.56565600563772
+    },
+    {
+      "id": "fast-41-diverse-009-001-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.420244216918945,
+        18.587682723999023
+      ],
+      "ms": 105.89413600973785
+    },
+    {
+      "id": "fast-41-diverse-009-001-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.629108428955078,
+        18.561981201171875
+      ],
+      "ms": 51.82808999961708
+    },
+    {
+      "id": "fast-41-diverse-009-002-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.388376235961914,
+        18.52212905883789
+      ],
+      "ms": 103.55134100245778
+    },
+    {
+      "id": "fast-41-diverse-009-002-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.542158126831055,
+        18.491073608398438
+      ],
+      "ms": 52.03777000133414
+    },
+    {
+      "id": "fast-41-diverse-009-003-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.57037925720215,
+        18.43039321899414
+      ],
+      "ms": 109.32551800215151
+    },
+    {
+      "id": "fast-41-diverse-009-003-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        18.01414680480957,
+        18.52326202392578
+      ],
+      "ms": 51.69446999207139
+    },
+    {
+      "id": "fast-41-diverse-009-004-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.16274642944336,
+        18.536108016967773
+      ],
+      "ms": 104.26233000180218
+    },
+    {
+      "id": "fast-41-diverse-009-004-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        18.021635055541992,
+        18.48880386352539
+      ],
+      "ms": 51.752030005445704
+    },
+    {
+      "id": "fast-41-diverse-009-005-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.134857177734375,
+        18.932371139526367
+      ],
+      "ms": 104.7115789988311
+    },
+    {
+      "id": "fast-41-diverse-009-005-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.431747436523438,
+        18.605146408081055
+      ],
+      "ms": 51.64478000369854
+    },
+    {
+      "id": "fast-41-diverse-009-007-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.358469009399414,
+        18.42913818359375
+      ],
+      "ms": 103.57090098841581
+    },
+    {
+      "id": "fast-41-diverse-009-007-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.57084846496582,
+        18.08753204345703
+      ],
+      "ms": 53.13714800286107
+    },
+    {
+      "id": "fast-41-diverse-009-008-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.66167640686035,
+        18.387468338012695
+      ],
+      "ms": 105.73493600531947
+    },
+    {
+      "id": "fast-41-diverse-009-008-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.4863338470459,
+        18.13797378540039
+      ],
+      "ms": 51.83799999940675
+    },
+    {
+      "id": "fast-41-diverse-010-004-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        15.935320854187012,
+        18.582067489624023
+      ],
+      "ms": 51.53760100074578
+    },
+    {
+      "id": "fast-41-diverse-010-004-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        16.058008193969727,
+        18.366432189941406
+      ],
+      "ms": 51.36787099763751
+    },
+    {
+      "id": "fast-41-diverse-079-003-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.27290153503418,
+        14.734651565551758,
+        16.88031005859375,
+        19.261686325073242
+      ],
+      "ms": 105.29103700537235
+    },
+    {
+      "id": "fast-41-diverse-079-003-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.338376998901367,
+        14.823793411254883,
+        16.72199249267578,
+        19.419376373291016
+      ],
+      "ms": 105.28013700968586
+    },
+    {
+      "id": "fast-41-diverse-079-011-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.090240478515625,
+        14.07786750793457,
+        16.301250457763672,
+        19.333309173583984
+      ],
+      "ms": 104.76459799974691
+    },
+    {
+      "id": "fast-41-diverse-079-011-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        13.814936637878418,
+        13.515190124511719,
+        16.063390731811523,
+        19.394222259521484
+      ],
+      "ms": 52.93604799953755
+    },
+    {
+      "id": "fast-41-diverse-079-012-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        15.123310089111328,
+        15.374918937683105,
+        18.466691970825195,
+        19.49236297607422
+      ],
+      "ms": 106.0806949972175
+    },
+    {
+      "id": "fast-41-diverse-079-012-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.94302749633789,
+        14.840324401855469,
+        18.2089786529541,
+        19.591442108154297
+      ],
+      "ms": 53.607075999025255
+    },
+    {
+      "id": "fast-41-diverse-079-015-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.35147762298584,
+        14.481231689453125,
+        17.1514892578125,
+        19.18292236328125
+      ],
+      "ms": 105.19585700239986
+    },
+    {
+      "id": "fast-41-diverse-079-015-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.262557983398438,
+        14.356424331665039,
+        17.066566467285156,
+        19.257577896118164
+      ],
+      "ms": 53.2435670029372
+    },
+    {
+      "id": "fast-41-diverse-082-006-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.447080612182617,
+        18.837587356567383
+      ],
+      "ms": 104.65106899209786
+    },
+    {
+      "id": "fast-41-diverse-082-006-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        16.683208465576172,
+        18.57838249206543
+      ],
+      "ms": 52.27199899672996
+    },
+    {
+      "id": "fast-41-diverse-084-006-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        16.08012580871582,
+        17.783214569091797,
+        17.872426986694336,
+        14.03412914276123
+      ],
+      "ms": 52.28524899575859
+    },
+    {
+      "id": "fast-41-diverse-084-006-counterfactual",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.458833694458008,
+        18.193588256835938,
+        18.03265380859375,
+        14.463651657104492
+      ],
+      "ms": 52.247889994760044
+    },
+    {
+      "id": "fast-41-diverse-099-001-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.939714431762695,
+        17.36981773376465
+      ],
+      "ms": 52.23597899021115
+    },
+    {
+      "id": "fast-41-diverse-099-001-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.19588851928711,
+        17.084184646606445
+      ],
+      "ms": 52.1854800026631
+    },
+    {
+      "id": "fast-41-diverse-099-003-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.336368560791016,
+        17.45386505126953
+      ],
+      "ms": 105.1886469940655
+    },
+    {
+      "id": "fast-41-diverse-099-003-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.200944900512695,
+        16.991172790527344
+      ],
+      "ms": 52.50486898876261
+    },
+    {
+      "id": "fast-41-diverse-099-008-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.122459411621094,
+        17.738780975341797
+      ],
+      "ms": 103.90790000383276
+    },
+    {
+      "id": "fast-41-diverse-099-008-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.0969295501709,
+        17.125225067138672
+      ],
+      "ms": 52.589548999094404
+    },
+    {
+      "id": "fast-41-diverse-171-001-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.81816291809082,
+        18.02044677734375
+      ],
+      "ms": 103.07551198638976
+    },
+    {
+      "id": "fast-41-diverse-171-001-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.605941772460938,
+        17.238088607788086
+      ],
+      "ms": 51.76688100618776
+    },
+    {
+      "id": "fast-41-diverse-171-003-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.216585159301758,
+        17.682029724121094
+      ],
+      "ms": 106.00268599228002
+    },
+    {
+      "id": "fast-41-diverse-171-003-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.478134155273438,
+        17.614166259765625
+      ],
+      "ms": 51.80133999965619
+    },
+    {
+      "id": "fast-41-diverse-171-004-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        18.117176055908203,
+        17.459909439086914
+      ],
+      "ms": 51.61064100684598
+    },
+    {
+      "id": "fast-41-diverse-171-004-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.239299774169922,
+        16.863555908203125
+      ],
+      "ms": 51.51510100404266
+    },
+    {
+      "id": "fast-41-diverse-171-006-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        17.79317855834961,
+        17.521738052368164
+      ],
+      "ms": 104.13544000766706
+    },
+    {
+      "id": "fast-41-diverse-171-006-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.03443145751953,
+        17.18377113342285
+      ],
+      "ms": 51.62760100211017
+    },
+    {
+      "id": "fast-41-diverse-171-007-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.530994415283203,
+        17.77603530883789
+      ],
+      "ms": 109.43266701360699
+    },
+    {
+      "id": "fast-41-diverse-171-007-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.7927188873291,
+        17.233779907226562
+      ],
+      "ms": 51.96418000559788
+    },
+    {
+      "id": "fast-41-diverse-171-008-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.513675689697266,
+        17.91482162475586
+      ],
+      "ms": 104.5163090020651
+    },
+    {
+      "id": "fast-41-diverse-171-008-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.512096405029297,
+        17.275524139404297
+      ],
+      "ms": 103.44324100879021
+    },
+    {
+      "id": "fast-41-diverse-174-001-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.651542663574219,
+        15.324872016906738,
+        18.708372116088867,
+        16.859241485595703
+      ],
+      "ms": 104.48771899973508
+    },
+    {
+      "id": "fast-41-diverse-174-001-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        15.553669929504395,
+        15.95057201385498,
+        18.37049102783203,
+        16.232040405273438
+      ],
+      "ms": 52.38824899424799
+    },
+    {
+      "id": "fast-41-diverse-174-005-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.379392623901367,
+        15.079582214355469,
+        18.313339233398438,
+        16.68913459777832
+      ],
+      "ms": 110.45418500725646
+    },
+    {
+      "id": "fast-41-diverse-174-005-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        15.763716697692871,
+        16.457368850708008,
+        18.007186889648438,
+        16.3199405670166
+      ],
+      "ms": 52.291619998868555
+    },
+    {
+      "id": "fast-41-diverse-174-007-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        14.861820220947266,
+        14.567602157592773,
+        18.189613342285156,
+        15.824830055236816
+      ],
+      "ms": 104.63620799419004
+    },
+    {
+      "id": "fast-41-diverse-174-007-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        15.772581100463867,
+        17.060562133789062,
+        18.19576644897461,
+        15.9873046875
+      ],
+      "ms": 52.58219900133554
+    },
+    {
+      "id": "fast-41-diverse-211-018-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.151763916015625,
+        17.94621467590332,
+        18.45045280456543,
+        16.146486282348633,
+        14.832795143127441,
+        14.903258323669434
+      ],
+      "ms": 105.5377370066708
+    },
+    {
+      "id": "fast-41-diverse-211-018-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        17.08157730102539,
+        17.68267822265625,
+        18.00739288330078,
+        15.376274108886719,
+        14.583395004272461,
+        14.668471336364746
+      ],
+      "ms": 105.0522279983852
+    },
+    {
+      "id": "fast-41-diverse-211-020-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        16.403961181640625,
+        17.356647491455078,
+        17.575265884399414,
+        16.800661087036133,
+        14.377328872680664,
+        14.538866996765137
+      ],
+      "ms": 105.09696799272206
+    },
+    {
+      "id": "fast-41-diverse-211-020-counterfactual",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.712793350219727,
+        17.561100006103516,
+        17.476806640625,
+        15.743600845336914,
+        13.791389465332031,
+        14.63990592956543
+      ],
+      "ms": 103.5101009911159
+    },
+    {
+      "id": "fast-41-diverse-212-023-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        15.925273895263672,
+        19.051380157470703,
+        17.108428955078125
+      ],
+      "ms": 103.73803100083023
+    },
+    {
+      "id": "fast-41-diverse-212-023-counterfactual",
+      "prediction": 1,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        15.912172317504883,
+        18.8363037109375,
+        17.57619285583496
+      ],
+      "ms": 103.78430099808611
+    },
+    {
+      "id": "fast-41-diverse-212-028-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.70647430419922,
+        19.024200439453125,
+        17.326156616210938
+      ],
+      "ms": 51.830349999363534
+    },
+    {
+      "id": "fast-41-diverse-212-028-counterfactual",
+      "prediction": 1,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        16.40546989440918,
+        19.066925048828125,
+        17.484020233154297
+      ],
+      "ms": 51.704041004995815
+    },
+    {
+      "id": "fast-41-diverse-212-032-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.046993255615234,
+        19.18036651611328,
+        17.916467666625977
+      ],
+      "ms": 103.51070101023652
+    },
+    {
+      "id": "fast-41-diverse-212-032-counterfactual",
+      "prediction": 1,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        16.531049728393555,
+        18.96965217590332,
+        17.968828201293945
+      ],
+      "ms": 52.370798992342316
+    },
+    {
+      "id": "fast-41-diverse-212-034-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.821598052978516,
+        19.19742774963379,
+        17.819608688354492
+      ],
+      "ms": 107.08752300706692
+    },
+    {
+      "id": "fast-41-diverse-212-034-counterfactual",
+      "prediction": 1,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        16.68577766418457,
+        19.13539695739746,
+        17.75223159790039
+      ],
+      "ms": 99.3810109939659
+    },
+    {
+      "id": "fast-41-diverse-212-037-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.126468658447266,
+        19.551836013793945,
+        17.37660026550293
+      ],
+      "ms": 104.27036898909137
+    },
+    {
+      "id": "fast-41-diverse-212-037-counterfactual",
+      "prediction": 1,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        16.240394592285156,
+        19.619165420532227,
+        18.417652130126953
+      ],
+      "ms": 52.403549998416565
+    },
+    {
+      "id": "fast-41-diverse-212-042-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.203168869018555,
+        19.303504943847656,
+        17.80052947998047
+      ],
+      "ms": 103.98093999538105
+    },
+    {
+      "id": "fast-41-diverse-212-042-counterfactual",
+      "prediction": 1,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        16.662132263183594,
+        18.918325424194336,
+        17.9267578125
+      ],
+      "ms": 52.50914899806958
+    },
+    {
+      "id": "fast-41-diverse-212-045-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.21348762512207,
+        19.227407455444336,
+        17.044696807861328
+      ],
+      "ms": 104.22828000446316
+    },
+    {
+      "id": "fast-41-diverse-212-045-counterfactual",
+      "prediction": 1,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        16.12674331665039,
+        19.238548278808594,
+        17.401412963867188
+      ],
+      "ms": 52.496068994514644
+    },
+    {
+      "id": "fast-41-diverse-212-059-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.363792419433594,
+        18.998414993286133,
+        17.354455947875977
+      ],
+      "ms": 104.62285800895188
+    },
+    {
+      "id": "fast-41-diverse-212-059-counterfactual",
+      "prediction": 1,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        15.927351951599121,
+        18.732872009277344,
+        17.02081298828125
+      ],
+      "ms": 52.45537900191266
+    },
+    {
+      "id": "fast-41-diverse-213-001-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.99388885498047,
+        18.148420333862305
+      ],
+      "ms": 104.290889998083
+    },
+    {
+      "id": "fast-41-diverse-213-001-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.237464904785156,
+        17.414337158203125
+      ],
+      "ms": 103.92806999152526
+    },
+    {
+      "id": "fast-41-diverse-213-016-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.382102966308594,
+        17.94668960571289
+      ],
+      "ms": 103.74245999264531
+    },
+    {
+      "id": "fast-41-diverse-213-016-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.98118019104004,
+        16.959321975708008
+      ],
+      "ms": 51.52356201142538
+    },
+    {
+      "id": "fast-41-diverse-216-009-base",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.562152862548828,
+        14.85214900970459,
+        16.544384002685547,
+        17.942712783813477,
+        13.470715522766113
+      ],
+      "ms": 104.95018900837749
+    },
+    {
+      "id": "fast-41-diverse-216-009-counterfactual",
+      "prediction": 3,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        14.621247291564941,
+        14.833977699279785,
+        16.49057388305664,
+        17.87114143371582,
+        13.007747650146484
+      ],
+      "ms": 53.35922699305229
+    },
+    {
+      "id": "fast-41-diverse-273-007-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.243450164794922,
+        17.69483184814453
+      ],
+      "ms": 52.00746000627987
+    },
+    {
+      "id": "fast-41-diverse-273-007-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.30373191833496,
+        17.393707275390625
+      ],
+      "ms": 52.63497900159564
+    },
+    {
+      "id": "fast-41-diverse-273-008-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.15421485900879,
+        18.04697036743164
+      ],
+      "ms": 51.75856000278145
+    },
+    {
+      "id": "fast-41-diverse-273-008-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        16.952953338623047,
+        17.07400131225586
+      ],
+      "ms": 51.60979100037366
+    },
+    {
+      "id": "fast-41-diverse-274-002-base",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.427907943725586,
+        17.623180389404297
+      ],
+      "ms": 106.78104399994481
+    },
+    {
+      "id": "fast-41-diverse-274-002-counterfactual",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.468788146972656,
+        17.684207916259766
+      ],
+      "ms": 104.46313899592496
+    },
+    {
+      "id": "fast-41-diverse-274-004-base",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.58654022216797,
+        17.922746658325195
+      ],
+      "ms": 52.04424999828916
+    },
+    {
+      "id": "fast-41-diverse-274-004-counterfactual",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.27177619934082,
+        17.7124080657959
+      ],
+      "ms": 103.58588099188637
+    },
+    {
+      "id": "fast-41-diverse-275-013-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.53176498413086,
+        17.200584411621094,
+        18.26202964782715
+      ],
+      "ms": 104.44096899300348
+    },
+    {
+      "id": "fast-41-diverse-275-013-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.392080307006836,
+        17.07888412475586,
+        17.846925735473633
+      ],
+      "ms": 53.43759700190276
+    },
+    {
+      "id": "fast-43-diverse-007-002-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.431907653808594,
+        18.53879165649414,
+        17.584190368652344,
+        15.338606834411621
+      ],
+      "ms": 103.57173100055661
+    },
+    {
+      "id": "fast-43-diverse-007-002-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        16.620929718017578,
+        14.750001907348633,
+        16.485143661499023,
+        18.816165924072266
+      ],
+      "ms": 103.89625999960117
+    },
+    {
+      "id": "fast-43-diverse-007-012-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.44788932800293,
+        18.299427032470703,
+        17.815269470214844,
+        15.350359916687012
+      ],
+      "ms": 107.5864320009714
+    },
+    {
+      "id": "fast-43-diverse-007-012-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        16.673646926879883,
+        15.079427719116211,
+        16.88037872314453,
+        18.239625930786133
+      ],
+      "ms": 104.1910799976904
+    },
+    {
+      "id": "fast-43-diverse-008-010-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        14.457987785339355,
+        14.471735000610352,
+        19.75533676147461,
+        13.169873237609863,
+        13.090225219726562
+      ],
+      "ms": 105.40026701346505
+    },
+    {
+      "id": "fast-43-diverse-008-010-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        14.398344039916992,
+        14.602413177490234,
+        19.44744300842285,
+        13.302399635314941,
+        13.394331932067871
+      ],
+      "ms": 54.83746400568634
+    },
+    {
+      "id": "fast-43-diverse-010-001-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        15.492059707641602,
+        18.448074340820312
+      ],
+      "ms": 52.44697901071049
+    },
+    {
+      "id": "fast-43-diverse-010-001-counterfactual",
+      "prediction": 1,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        15.733969688415527,
+        18.023855209350586
+      ],
+      "ms": 52.23381900577806
+    },
+    {
+      "id": "fast-43-diverse-079-003-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        15.129693031311035,
+        15.583297729492188,
+        18.049114227294922,
+        19.658187866210938
+      ],
+      "ms": 106.36099500698037
+    },
+    {
+      "id": "fast-43-diverse-079-003-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        15.061692237854004,
+        15.406170845031738,
+        17.738183975219727,
+        19.41692352294922
+      ],
+      "ms": 53.719306000857614
+    },
+    {
+      "id": "fast-43-diverse-079-015-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.294487953186035,
+        14.503198623657227,
+        17.33689308166504,
+        19.52953338623047
+      ],
+      "ms": 105.09235800418537
+    },
+    {
+      "id": "fast-43-diverse-079-015-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.324137687683105,
+        14.794207572937012,
+        17.361923217773438,
+        19.129243850708008
+      ],
+      "ms": 53.442435993929394
+    },
+    {
+      "id": "fast-43-diverse-079-019-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.833734512329102,
+        15.285795211791992,
+        18.4652042388916,
+        19.524883270263672
+      ],
+      "ms": 106.21265499503352
+    },
+    {
+      "id": "fast-43-diverse-079-019-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.804986953735352,
+        15.03102970123291,
+        18.503515243530273,
+        19.722328186035156
+      ],
+      "ms": 53.86771600751672
+    },
+    {
+      "id": "fast-43-diverse-079-022-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.213899612426758,
+        14.45950984954834,
+        17.700517654418945,
+        19.507671356201172
+      ],
+      "ms": 105.92007600644138
+    },
+    {
+      "id": "fast-43-diverse-079-022-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.89949893951416,
+        14.963411331176758,
+        18.407243728637695,
+        19.838254928588867
+      ],
+      "ms": 52.906577999237925
+    },
+    {
+      "id": "fast-43-diverse-079-023-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.884092330932617,
+        15.330913543701172,
+        17.964200973510742,
+        19.5241641998291
+      ],
+      "ms": 105.09114799788222
+    },
+    {
+      "id": "fast-43-diverse-079-023-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        15.127225875854492,
+        15.57172966003418,
+        18.404882431030273,
+        19.229251861572266
+      ],
+      "ms": 52.70331900101155
+    },
+    {
+      "id": "fast-43-diverse-079-037-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.576802253723145,
+        14.750779151916504,
+        17.52581787109375,
+        19.879358291625977
+      ],
+      "ms": 54.373574996134266
+    },
+    {
+      "id": "fast-43-diverse-079-037-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.361245155334473,
+        14.40231704711914,
+        17.080142974853516,
+        19.78449821472168
+      ],
+      "ms": 53.1162280094577
+    },
+    {
+      "id": "fast-43-diverse-079-045-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.633024215698242,
+        14.75172233581543,
+        18.595252990722656,
+        19.710208892822266
+      ],
+      "ms": 104.9512669997057
+    },
+    {
+      "id": "fast-43-diverse-079-045-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.734485626220703,
+        14.851886749267578,
+        18.67801284790039,
+        19.783857345581055
+      ],
+      "ms": 52.79316799715161
+    },
+    {
+      "id": "fast-43-diverse-079-046-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.467403411865234,
+        14.330431938171387,
+        17.010032653808594,
+        19.295440673828125
+      ],
+      "ms": 52.64668799645733
+    },
+    {
+      "id": "fast-43-diverse-079-046-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.406153678894043,
+        14.439058303833008,
+        16.673372268676758,
+        19.280019760131836
+      ],
+      "ms": 52.55018900788855
+    },
+    {
+      "id": "fast-43-diverse-079-054-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.962126731872559,
+        15.512046813964844,
+        17.539363861083984,
+        19.255619049072266
+      ],
+      "ms": 104.55387900583446
+    },
+    {
+      "id": "fast-43-diverse-079-054-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.90233325958252,
+        15.483379364013672,
+        17.976734161376953,
+        19.051776885986328
+      ],
+      "ms": 52.119020008831285
+    },
+    {
+      "id": "fast-43-diverse-079-055-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.53054428100586,
+        14.721311569213867,
+        16.867759704589844,
+        19.416337966918945
+      ],
+      "ms": 53.05541800044011
+    },
+    {
+      "id": "fast-43-diverse-079-055-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.276457786560059,
+        14.591347694396973,
+        16.647750854492188,
+        19.42426300048828
+      ],
+      "ms": 52.96928799361922
+    },
+    {
+      "id": "fast-43-diverse-079-056-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.850248336791992,
+        15.424217224121094,
+        17.18255615234375,
+        19.366121292114258
+      ],
+      "ms": 105.78142599842977
+    },
+    {
+      "id": "fast-43-diverse-079-056-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.971846580505371,
+        15.712284088134766,
+        17.207826614379883,
+        19.24842071533203
+      ],
+      "ms": 53.75758599257097
+    },
+    {
+      "id": "fast-43-diverse-079-057-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.551538467407227,
+        15.11689567565918,
+        17.28558921813965,
+        19.32193374633789
+      ],
+      "ms": 105.28724700270686
+    },
+    {
+      "id": "fast-43-diverse-079-057-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.724761962890625,
+        15.32598876953125,
+        17.60576629638672,
+        19.284292221069336
+      ],
+      "ms": 53.09393799689133
+    },
+    {
+      "id": "fast-43-diverse-079-058-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.730995178222656,
+        15.267312049865723,
+        17.189613342285156,
+        19.521034240722656
+      ],
+      "ms": 104.45911000715569
+    },
+    {
+      "id": "fast-43-diverse-079-058-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.493049621582031,
+        14.757758140563965,
+        16.964710235595703,
+        19.590717315673828
+      ],
+      "ms": 53.231138008413836
+    },
+    {
+      "id": "fast-43-diverse-079-059-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        14.716533660888672,
+        15.053872108459473,
+        17.56181526184082,
+        19.582584381103516
+      ],
+      "ms": 105.2708770002937
+    },
+    {
+      "id": "fast-43-diverse-079-059-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.794661521911621,
+        15.20019245147705,
+        17.5020751953125,
+        19.370319366455078
+      ],
+      "ms": 53.17755699797999
+    },
+    {
+      "id": "fast-43-diverse-079-060-base",
+      "prediction": 3,
+      "label": 2,
+      "correct": false,
+      "logits": [
+        15.12984561920166,
+        15.607966423034668,
+        17.539134979248047,
+        19.552127838134766
+      ],
+      "ms": 53.62977599725127
+    },
+    {
+      "id": "fast-43-diverse-079-060-counterfactual",
+      "prediction": 3,
+      "label": 3,
+      "correct": true,
+      "logits": [
+        14.948866844177246,
+        15.674564361572266,
+        17.5806827545166,
+        19.32217025756836
+      ],
+      "ms": 61.58708900329657
+    },
+    {
+      "id": "fast-43-diverse-081-014-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        18.28079605102539,
+        17.922595977783203
+      ],
+      "ms": 51.65329099691007
+    },
+    {
+      "id": "fast-43-diverse-081-014-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        19.02896499633789,
+        14.559968948364258
+      ],
+      "ms": 103.89519100135658
+    },
+    {
+      "id": "fast-43-diverse-081-016-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        18.134485244750977,
+        17.962186813354492
+      ],
+      "ms": 104.0172899956815
+    },
+    {
+      "id": "fast-43-diverse-081-016-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.94495391845703,
+        13.137866973876953
+      ],
+      "ms": 52.09461899357848
+    },
+    {
+      "id": "fast-43-diverse-081-019-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        18.258136749267578,
+        17.607257843017578
+      ],
+      "ms": 51.85721100133378
+    },
+    {
+      "id": "fast-43-diverse-081-019-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.99246597290039,
+        13.920089721679688
+      ],
+      "ms": 103.8189009996131
+    },
+    {
+      "id": "fast-43-diverse-081-022-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        18.179901123046875,
+        18.666996002197266
+      ],
+      "ms": 106.79614399850834
+    },
+    {
+      "id": "fast-43-diverse-081-022-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.755781173706055,
+        14.164904594421387
+      ],
+      "ms": 105.48024698800873
+    },
+    {
+      "id": "fast-43-diverse-169-012-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        18.153812408447266,
+        18.26923370361328,
+        20.349210739135742
+      ],
+      "ms": 53.260247004800476
+    },
+    {
+      "id": "fast-43-diverse-169-012-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.812223434448242,
+        18.593059539794922,
+        19.296600341796875
+      ],
+      "ms": 52.45258900686167
+    },
+    {
+      "id": "fast-43-diverse-169-020-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.771421432495117,
+        17.659496307373047,
+        19.981163024902344
+      ],
+      "ms": 51.82693999086041
+    },
+    {
+      "id": "fast-43-diverse-169-020-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.4794921875,
+        18.122987747192383,
+        19.142780303955078
+      ],
+      "ms": 52.00737000268418
+    },
+    {
+      "id": "fast-43-diverse-169-023-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.59841537475586,
+        16.967212677001953,
+        20.151126861572266
+      ],
+      "ms": 105.96474600606598
+    },
+    {
+      "id": "fast-43-diverse-169-023-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.693021774291992,
+        17.58544921875,
+        20.442001342773438
+      ],
+      "ms": 52.982228007749654
+    },
+    {
+      "id": "fast-43-diverse-169-024-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        18.186203002929688,
+        18.162166595458984,
+        20.15408706665039
+      ],
+      "ms": 104.32352899806574
+    },
+    {
+      "id": "fast-43-diverse-169-024-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.544939041137695,
+        18.2947998046875,
+        19.317873001098633
+      ],
+      "ms": 52.13781999191269
+    },
+    {
+      "id": "fast-43-diverse-169-053-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.966327667236328,
+        17.901782989501953,
+        19.956443786621094
+      ],
+      "ms": 104.1001999983564
+    },
+    {
+      "id": "fast-43-diverse-169-053-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.613733291625977,
+        18.527936935424805,
+        18.947471618652344
+      ],
+      "ms": 52.0043090073159
+    },
+    {
+      "id": "fast-43-diverse-169-064-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.64598846435547,
+        17.980575561523438,
+        19.41525650024414
+      ],
+      "ms": 105.23399799421895
+    },
+    {
+      "id": "fast-43-diverse-169-064-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.53358268737793,
+        18.48604393005371,
+        19.201881408691406
+      ],
+      "ms": 54.28372501046397
+    },
+    {
+      "id": "fast-43-diverse-169-065-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.914749145507812,
+        18.125125885009766,
+        19.923789978027344
+      ],
+      "ms": 51.95757000183221
+    },
+    {
+      "id": "fast-43-diverse-169-065-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.778274536132812,
+        18.89575958251953,
+        19.196001052856445
+      ],
+      "ms": 51.82968000008259
+    },
+    {
+      "id": "fast-43-diverse-169-066-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        18.114221572875977,
+        17.97016143798828,
+        19.979854583740234
+      ],
+      "ms": 103.79643099440727
+    },
+    {
+      "id": "fast-43-diverse-169-066-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.573226928710938,
+        18.391586303710938,
+        18.92386245727539
+      ],
+      "ms": 58.07949601148721
+    },
+    {
+      "id": "fast-43-diverse-169-068-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.873083114624023,
+        17.750308990478516,
+        19.98003387451172
+      ],
+      "ms": 54.7919540113071
+    },
+    {
+      "id": "fast-43-diverse-169-068-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.739948272705078,
+        18.475711822509766,
+        19.22470474243164
+      ],
+      "ms": 54.90882300364319
+    },
+    {
+      "id": "fast-43-diverse-169-070-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.723966598510742,
+        17.599103927612305,
+        20.005359649658203
+      ],
+      "ms": 51.973569992696866
+    },
+    {
+      "id": "fast-43-diverse-169-070-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.600683212280273,
+        18.5014705657959,
+        19.224628448486328
+      ],
+      "ms": 51.80391999601852
+    },
+    {
+      "id": "fast-43-diverse-169-071-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        18.192956924438477,
+        18.178937911987305,
+        20.17197036743164
+      ],
+      "ms": 104.09195000829641
+    },
+    {
+      "id": "fast-43-diverse-169-071-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.764856338500977,
+        18.477418899536133,
+        19.396869659423828
+      ],
+      "ms": 54.040575996623375
+    },
+    {
+      "id": "fast-43-diverse-169-085-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        18.03057098388672,
+        17.461650848388672,
+        20.41339874267578
+      ],
+      "ms": 104.40950900374446
+    },
+    {
+      "id": "fast-43-diverse-169-085-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        18.000459671020508,
+        18.206724166870117,
+        20.019084930419922
+      ],
+      "ms": 52.88887799542863
+    },
+    {
+      "id": "fast-43-diverse-169-087-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.59062385559082,
+        17.347911834716797,
+        20.133644104003906
+      ],
+      "ms": 54.57672399643343
+    },
+    {
+      "id": "fast-43-diverse-169-087-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.759227752685547,
+        18.274578094482422,
+        19.497581481933594
+      ],
+      "ms": 54.879003000678495
+    },
+    {
+      "id": "fast-43-diverse-169-097-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.963315963745117,
+        18.038604736328125,
+        19.932024002075195
+      ],
+      "ms": 53.93738600832876
+    },
+    {
+      "id": "fast-43-diverse-169-097-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.884906768798828,
+        18.784509658813477,
+        19.175621032714844
+      ],
+      "ms": 53.75981600082014
+    },
+    {
+      "id": "fast-43-diverse-169-099-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        17.552001953125,
+        17.7385196685791,
+        20.051311492919922
+      ],
+      "ms": 103.6879909952404
+    },
+    {
+      "id": "fast-43-diverse-169-099-counterfactual",
+      "prediction": 2,
+      "label": 0,
+      "correct": false,
+      "logits": [
+        17.755598068237305,
+        18.553020477294922,
+        19.388397216796875
+      ],
+      "ms": 52.878087997669354
+    },
+    {
+      "id": "fast-43-diverse-171-001-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.737606048583984,
+        18.301069259643555
+      ],
+      "ms": 51.96831999637652
+    },
+    {
+      "id": "fast-43-diverse-171-001-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.63193130493164,
+        17.02111053466797
+      ],
+      "ms": 51.89478000102099
+    },
+    {
+      "id": "fast-43-diverse-171-002-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.565248489379883,
+        17.853675842285156
+      ],
+      "ms": 104.64850900461897
+    },
+    {
+      "id": "fast-43-diverse-171-002-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.830219268798828,
+        17.359302520751953
+      ],
+      "ms": 52.40017900359817
+    },
+    {
+      "id": "fast-43-diverse-171-003-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.071395874023438,
+        17.958293914794922
+      ],
+      "ms": 52.187169989338145
+    },
+    {
+      "id": "fast-43-diverse-171-003-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.66573143005371,
+        17.043075561523438
+      ],
+      "ms": 52.23661899799481
+    },
+    {
+      "id": "fast-43-diverse-171-004-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        16.664411544799805,
+        18.88313865661621
+      ],
+      "ms": 52.19494999619201
+    },
+    {
+      "id": "fast-43-diverse-171-004-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.86846160888672,
+        17.144655227661133
+      ],
+      "ms": 52.24473899579607
+    },
+    {
+      "id": "fast-43-diverse-171-006-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        15.961867332458496,
+        18.94676971435547
+      ],
+      "ms": 104.87268900033087
+    },
+    {
+      "id": "fast-43-diverse-171-006-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.50783348083496,
+        17.479761123657227
+      ],
+      "ms": 52.44400899391621
+    },
+    {
+      "id": "fast-43-diverse-171-008-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.348278045654297,
+        17.953981399536133
+      ],
+      "ms": 107.08561300998554
+    },
+    {
+      "id": "fast-43-diverse-171-008-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.67582893371582,
+        17.47828483581543
+      ],
+      "ms": 53.864055007579736
+    },
+    {
+      "id": "fast-43-diverse-171-010-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.571704864501953,
+        17.964736938476562
+      ],
+      "ms": 105.41712700796779
+    },
+    {
+      "id": "fast-43-diverse-171-010-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.24888038635254,
+        17.366985321044922
+      ],
+      "ms": 51.659350996487774
+    },
+    {
+      "id": "fast-43-diverse-171-012-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.224029541015625,
+        17.953975677490234
+      ],
+      "ms": 52.845957994577475
+    },
+    {
+      "id": "fast-43-diverse-171-012-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.828691482543945,
+        17.284202575683594
+      ],
+      "ms": 51.65913100063335
+    },
+    {
+      "id": "fast-43-diverse-171-013-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.518857955932617,
+        17.91244125366211
+      ],
+      "ms": 51.71907099429518
+    },
+    {
+      "id": "fast-43-diverse-171-013-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.592527389526367,
+        17.362972259521484
+      ],
+      "ms": 51.549051990150474
+    },
+    {
+      "id": "fast-43-diverse-171-015-base",
+      "prediction": 1,
+      "label": 1,
+      "correct": true,
+      "logits": [
+        17.425668716430664,
+        17.991071701049805
+      ],
+      "ms": 51.613150993944146
+    },
+    {
+      "id": "fast-43-diverse-171-015-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        17.916400909423828,
+        17.32496452331543
+      ],
+      "ms": 51.57648099702783
+    },
+    {
+      "id": "fast-43-diverse-171-016-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        17.748233795166016,
+        17.694515228271484
+      ],
+      "ms": 51.66421999456361
+    },
+    {
+      "id": "fast-43-diverse-171-016-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.160858154296875,
+        17.140888214111328
+      ],
+      "ms": 51.50041099113878
+    },
+    {
+      "id": "fast-43-diverse-174-001-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.43637466430664,
+        15.10438346862793,
+        18.392929077148438,
+        16.370494842529297
+      ],
+      "ms": 105.17160699237138
+    },
+    {
+      "id": "fast-43-diverse-174-001-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        16.1387882232666,
+        17.029523849487305,
+        18.005001068115234,
+        16.075292587280273
+      ],
+      "ms": 52.01066000154242
+    },
+    {
+      "id": "fast-43-diverse-174-005-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.479375839233398,
+        14.931554794311523,
+        18.647764205932617,
+        16.058015823364258
+      ],
+      "ms": 103.67291100556031
+    },
+    {
+      "id": "fast-43-diverse-174-005-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        15.840517044067383,
+        17.103790283203125,
+        18.12293243408203,
+        15.316046714782715
+      ],
+      "ms": 51.954160007881
+    },
+    {
+      "id": "fast-43-diverse-174-006-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.235225677490234,
+        15.098243713378906,
+        18.488842010498047,
+        16.40045928955078
+      ],
+      "ms": 105.24747800081968
+    },
+    {
+      "id": "fast-43-diverse-174-006-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        15.824478149414062,
+        17.796783447265625,
+        18.336936950683594,
+        15.706113815307617
+      ],
+      "ms": 51.950050008599646
+    },
+    {
+      "id": "fast-43-diverse-174-007-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.531522750854492,
+        15.428723335266113,
+        18.36825942993164,
+        15.543492317199707
+      ],
+      "ms": 51.958160009235144
+    },
+    {
+      "id": "fast-43-diverse-174-007-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        16.16083335876465,
+        17.679094314575195,
+        18.263607025146484,
+        15.717799186706543
+      ],
+      "ms": 52.27580000064336
+    },
+    {
+      "id": "fast-43-diverse-174-008-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.408622741699219,
+        14.9072265625,
+        18.71881103515625,
+        16.365612030029297
+      ],
+      "ms": 52.4859099969035
+    },
+    {
+      "id": "fast-43-diverse-174-008-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        16.04485321044922,
+        17.01795768737793,
+        17.9732723236084,
+        15.878701210021973
+      ],
+      "ms": 52.32622999756131
+    },
+    {
+      "id": "fast-43-diverse-174-009-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.639274597167969,
+        15.104445457458496,
+        18.520267486572266,
+        16.455039978027344
+      ],
+      "ms": 51.92671999975573
+    },
+    {
+      "id": "fast-43-diverse-174-009-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        16.02261734008789,
+        17.6585750579834,
+        17.96392822265625,
+        15.652727127075195
+      ],
+      "ms": 51.80571100208908
+    },
+    {
+      "id": "fast-43-diverse-174-010-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.681687355041504,
+        15.22740364074707,
+        18.755348205566406,
+        16.740806579589844
+      ],
+      "ms": 104.10952000529505
+    },
+    {
+      "id": "fast-43-diverse-174-010-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        15.864072799682617,
+        16.689062118530273,
+        17.903480529785156,
+        16.15917205810547
+      ],
+      "ms": 51.83990100340452
+    },
+    {
+      "id": "fast-43-diverse-174-011-base",
+      "prediction": 2,
+      "label": 2,
+      "correct": true,
+      "logits": [
+        15.463912010192871,
+        14.975225448608398,
+        18.438369750976562,
+        16.52252960205078
+      ],
+      "ms": 104.13497000990901
+    },
+    {
+      "id": "fast-43-diverse-174-011-counterfactual",
+      "prediction": 2,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        15.816553115844727,
+        16.624975204467773,
+        17.628381729125977,
+        15.911433219909668
+      ],
+      "ms": 51.84513999847695
+    },
+    {
+      "id": "fast-43-diverse-215-039-base",
+      "prediction": 0,
+      "label": 1,
+      "correct": false,
+      "logits": [
+        18.23383331298828,
+        17.658233642578125,
+        16.43547248840332,
+        15.650566101074219,
+        13.624074935913086
+      ],
+      "ms": 103.8521909940755
+    },
+    {
+      "id": "fast-43-diverse-215-039-counterfactual",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.555404663085938,
+        17.496957778930664,
+        15.867875099182129,
+        15.516430854797363,
+        13.325366020202637
+      ],
+      "ms": 52.114728998276405
+    },
+    {
+      "id": "fast-43-diverse-272-004-base",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.078880310058594,
+        17.447738647460938,
+        14.671270370483398,
+        15.700719833374023,
+        14.08913803100586
+      ],
+      "ms": 104.61690901138354
+    },
+    {
+      "id": "fast-43-diverse-272-004-counterfactual",
+      "prediction": 0,
+      "label": 3,
+      "correct": false,
+      "logits": [
+        18.047439575195312,
+        17.606067657470703,
+        15.282435417175293,
+        16.046730041503906,
+        14.847549438476562
+      ],
+      "ms": 52.829638007096946
+    },
+    {
+      "id": "fast-43-diverse-272-009-base",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.431285858154297,
+        15.891853332519531,
+        14.46529483795166,
+        15.619219779968262,
+        15.052146911621094
+      ],
+      "ms": 103.14019198995084
+    },
+    {
+      "id": "fast-43-diverse-272-009-counterfactual",
+      "prediction": 0,
+      "label": 3,
+      "correct": false,
+      "logits": [
+        18.339927673339844,
+        16.766992568969727,
+        15.10069751739502,
+        16.456993103027344,
+        15.265926361083984
+      ],
+      "ms": 51.962300000013784
+    },
+    {
+      "id": "fast-43-diverse-272-025-base",
+      "prediction": 0,
+      "label": 0,
+      "correct": true,
+      "logits": [
+        18.03693389892578,
+        16.82343864440918,
+        14.492559432983398,
+        15.748250007629395,
+        13.185935974121094
+      ],
+      "ms": 51.89463999704458
+    },
+    {
+      "id": "fast-43-diverse-272-025-counterfactual",
+      "prediction": 1,
+      "label": 3,
+      "correct": false,
+      "logits": [
+        17.061941146850586,
+        17.768451690673828,
+        15.30415153503418,
+        17.009918212890625,
+        12.905556678771973
+      ],
+      "ms": 51.79192099603824
+    }
+  ]
+}

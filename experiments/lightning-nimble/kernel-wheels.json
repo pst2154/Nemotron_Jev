@@ -1,0 +1,13 @@
+{
+  "container_image": "vllm/vllm-openai:nightly-a8d1aa9c99b8698a2a78b611b7a10c30e6b3995b",
+  "container_digest": "sha256:4cbfd34aac145fd1870381c030131c7f868fcad45448f401ecdb5fd4ed020b42",
+  "torch": "2.13.0+cu130",
+  "transformers": "5.17.0",
+  "python": "3.12",
+  "tested_gpu": "NVIDIA H100 80GB HBM3",
+  "peft": "0.21.0",
+  "wheels": {
+    "causal_conv1d-1.7.0-cp312-cp312-linux_x86_64.whl": "6f05161274563ba17a441373d0f32f94ffbf146448d4cb6d11dfbe67b1e9ac18",
+    "mamba_ssm-2.3.2.post1-cp312-cp312-linux_x86_64.whl": "e8a89da069a749d25ed5f090a11ae0a1951eacf16b6b0b380fc8133ab3453d06"
+  }
+}

@@ -1,6 +1,6 @@
 # Faster 100-question scoring with Nemotron 3.5 Lightning
 
-Measured September 21, 2026. This is a separate Lightning experiment; it does not change the repository's existing Nemotron diffusion application.
+Measured September 21, 2026. Historical Lightning HTTP experiment. The old diffusion application has since been removed from this branch; comparison measurements below are retained as historical evidence. See the newer [trained native scorer benchmark](../lightning-nimble/HUNDRED_QUESTIONS.md).
 
 ## Result
 
@@ -119,7 +119,7 @@ Use `launch-gpu.sh` with your existing checkpoint and writable runtime location 
 
 Run `python3 -m unittest discover -p 'test_*.py'` for unit checks. `quality.py` takes a base URL, while `compare_endpoints.py` takes the complete System One URL through `BENCH_URL` and an optional `BENCH_API_KEY`. Set `BENCH_COUNTS=1,2,4,8,12,24,50,75,100` and a unique `BENCH_SUFFIX` to avoid overwriting saved measurements. The bundled fixture makes the endpoint test reproducible without a model download on the client. `make_charts.py` regenerates both figures directly from raw results.
 
-The original adapter remains available through its default settings. Optional explicit priming is included for reproducibility but is off by default and not selected by the final recipe. The existing diffusion application is unchanged.
+The original Lightning adapter remains available through its default settings. Optional explicit priming is included for reproducibility but is off by default and not selected by the final recipe. No running deployment was changed by these experiments.
 
 ## Scope of conclusions
 

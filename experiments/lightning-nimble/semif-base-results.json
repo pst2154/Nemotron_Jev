@@ -1,0 +1,6783 @@
+{
+  "description": "Compare identical-token independent and shared Lightning execution.\n\nThis is an execution-equivalence/latency diagnostic, not a new accuracy benchmark.\nReports candidate-conditional probabilities, not calibrated confidence.\n",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "torch": "2.13.0+cu130",
+  "runs": [
+    {
+      "questions": 1,
+      "offset": 0,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        272.46737699897494,
+        272.4728980101645,
+        272.61801798886154
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          18.648588180541992,
+          16.21864128112793,
+          17.66686248779297,
+          16.131702423095703
+        ]
+      ],
+      "peak_gib": 62.00916147232056
+    },
+    {
+      "questions": 1,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        401.1133979947772,
+        401.29803800664376,
+        379.82238399854396
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.017957687377929688,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          18.659128189086914,
+          16.221595764160156,
+          17.6848201751709,
+          16.13831329345703
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        385.41267000255175,
+        389.10093100275844,
+        388.4762520028744
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.017957687377929688,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          18.659128189086914,
+          16.221595764160156,
+          17.6848201751709,
+          16.13831329345703
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        388.194722996559,
+        389.46515900897793,
+        391.1345359956613
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.017957687377929688,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          18.659128189086914,
+          16.221595764160156,
+          17.6848201751709,
+          16.13831329345703
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 1,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        273.32306699827313,
+        290.2879429893801,
+        286.60146200854797
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "exchange"
+      ],
+      "logits": [
+        [
+          17.067472457885742,
+          18.720767974853516,
+          17.005523681640625,
+          14.732133865356445
+        ]
+      ],
+      "peak_gib": 62.00916147232056
+    },
+    {
+      "questions": 1,
+      "offset": 1,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        402.67391499946825,
+        398.4789170062868,
+        407.6344729983248
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.05805206298828125,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "exchange"
+      ],
+      "logits": [
+        [
+          17.0328369140625,
+          18.662715911865234,
+          17.035385131835938,
+          14.723604202270508
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 1,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        429.73774499841966,
+        457.8333409881452,
+        409.51493800093886
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.05805206298828125,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "exchange"
+      ],
+      "logits": [
+        [
+          17.0328369140625,
+          18.662715911865234,
+          17.035385131835938,
+          14.723604202270508
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 1,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        433.1209259980824,
+        426.71098400023766,
+        424.68235900742
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.05805206298828125,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "exchange"
+      ],
+      "logits": [
+        [
+          17.0328369140625,
+          18.662715911865234,
+          17.035385131835938,
+          14.723604202270508
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 2,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        308.07084699335974,
+        307.60961800115183,
+        316.33332501223776
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.044490814208984,
+          15.222323417663574,
+          20.1719913482666,
+          14.092272758483887
+        ]
+      ],
+      "peak_gib": 62.00916147232056
+    },
+    {
+      "questions": 1,
+      "offset": 2,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        386.8484099948546,
+        431.11496200435795,
+        473.1167319987435
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.035660743713378906,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.041336059570312,
+          15.186662673950195,
+          20.14423179626465,
+          14.103959083557129
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 2,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        470.59387899935246,
+        435.0310829904629,
+        428.3245599945076
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.035660743713378906,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.041336059570312,
+          15.186662673950195,
+          20.14423179626465,
+          14.103959083557129
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 2,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        436.10412000271026,
+        444.5221290079644,
+        449.48845499311574
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.035660743713378906,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.041336059570312,
+          15.186662673950195,
+          20.14423179626465,
+          14.103959083557129
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 3,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        328.195064997999,
+        331.5770670014899,
+        335.6366060033906
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.67915153503418,
+          16.391204833984375,
+          18.45370101928711,
+          17.722118377685547
+        ]
+      ],
+      "peak_gib": 62.00916147232056
+    },
+    {
+      "questions": 1,
+      "offset": 3,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        442.0005459978711,
+        450.6074630044168,
+        451.25622299383394
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.087432861328125,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.766584396362305,
+          16.465810775756836,
+          18.486194610595703,
+          17.73223876953125
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 3,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        436.5027710009599,
+        436.24152199481614,
+        430.25389801186975
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.087432861328125,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.766584396362305,
+          16.465810775756836,
+          18.486194610595703,
+          17.73223876953125
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 3,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        424.41415300709195,
+        434.29167800059076,
+        426.3853989978088
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.087432861328125,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.766584396362305,
+          16.465810775756836,
+          18.486194610595703,
+          17.73223876953125
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 4,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        396.30325899634045,
+        349.43099098745733,
+        356.65140200580936
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          19.17428207397461,
+          15.66413688659668,
+          17.33608627319336,
+          17.29607582092285
+        ]
+      ],
+      "peak_gib": 62.00916147232056
+    },
+    {
+      "questions": 1,
+      "offset": 4,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        413.92915199685376,
+        413.02834400266875,
+        412.65891600050963
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.22247695922851562,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          18.975704193115234,
+          15.68313217163086,
+          17.270950317382812,
+          17.073598861694336
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 4,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        416.12770699430257,
+        416.45522600447293,
+        419.6983679867117
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.22247695922851562,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          18.975704193115234,
+          15.68313217163086,
+          17.270950317382812,
+          17.073598861694336
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 4,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        455.1095759961754,
+        488.9237659954233,
+        490.0396339944564
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.22247695922851562,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          18.975704193115234,
+          15.68313217163086,
+          17.270950317382812,
+          17.073598861694336
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 5,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        377.4209600087488,
+        369.6772300027078,
+        365.2416919940151
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          18.606401443481445,
+          18.053918838500977,
+          16.565715789794922,
+          15.170921325683594
+        ]
+      ],
+      "peak_gib": 62.00916147232056
+    },
+    {
+      "questions": 1,
+      "offset": 5,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        424.3462169979466,
+        424.08813801012,
+        423.1910410017008
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.19605636596679688,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          18.48238182067871,
+          17.902503967285156,
+          16.369659423828125,
+          15.011987686157227
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 5,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        423.59548999229446,
+        424.12849799438845,
+        430.760860996088
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.19605636596679688,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          18.48238182067871,
+          17.902503967285156,
+          16.369659423828125,
+          15.011987686157227
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 5,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        428.338898011134,
+        430.19996299699415,
+        428.51914701168425
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.19605636596679688,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "refund"
+      ],
+      "logits": [
+        [
+          18.48238182067871,
+          17.902503967285156,
+          16.369659423828125,
+          15.011987686157227
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 6,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        355.2988690062193,
+        365.6046830001287,
+        369.7579820000101
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.389612197875977,
+          15.184436798095703,
+          19.708457946777344,
+          15.426763534545898
+        ]
+      ],
+      "peak_gib": 62.00916147232056
+    },
+    {
+      "questions": 1,
+      "offset": 6,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        438.41235199943185,
+        432.37957800738513,
+        427.5775109999813
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.1372833251953125,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.300613403320312,
+          15.04715347290039,
+          19.583158493041992,
+          15.300012588500977
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 6,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        427.38523200387135,
+        437.7795740001602,
+        435.2447520068381
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.1372833251953125,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.300613403320312,
+          15.04715347290039,
+          19.583158493041992,
+          15.300012588500977
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 6,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        433.8676550105447,
+        435.539931000676,
+        433.59353599953465
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.1372833251953125,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "cancel"
+      ],
+      "logits": [
+        [
+          17.300613403320312,
+          15.04715347290039,
+          19.583158493041992,
+          15.300012588500977
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 7,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        363.017730996944,
+        365.75158400228247,
+        367.0814299985068
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "information"
+      ],
+      "logits": [
+        [
+          17.528663635253906,
+          14.524887084960938,
+          17.14333152770996,
+          17.787458419799805
+        ]
+      ],
+      "peak_gib": 62.00916147232056
+    },
+    {
+      "questions": 1,
+      "offset": 7,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        435.6655209994642,
+        443.69042100152,
+        455.65853000152856
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.35405921936035156,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "information"
+      ],
+      "logits": [
+        [
+          17.669757843017578,
+          14.795289993286133,
+          17.497390747070312,
+          17.918725967407227
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 7,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        444.1457299981266,
+        443.58958200609777,
+        443.01570300012827
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.35405921936035156,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "information"
+      ],
+      "logits": [
+        [
+          17.669757843017578,
+          14.795289993286133,
+          17.497390747070312,
+          17.918725967407227
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 7,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        443.3606319944374,
+        442.00492699746974,
+        442.6129950006725
+      ],
+      "prefix_tokens": 700,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.35405921936035156,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "information"
+      ],
+      "logits": [
+        [
+          17.669757843017578,
+          14.795289993286133,
+          17.497390747070312,
+          17.918725967407227
+        ]
+      ],
+      "peak_gib": 62.061123847961426
+    },
+    {
+      "questions": 1,
+      "offset": 8,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        370.2784440101823,
+        370.3417030046694,
+        369.9689950008178
+      ],
+      "prefix_tokens": 678,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.204355239868164,
+          16.991567611694336,
+          18.65110969543457
+        ]
+      ],
+      "peak_gib": 62.00833034515381
+    },
+    {
+      "questions": 1,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        436.087062000297,
+        436.5243320062291,
+        436.0856229905039
+      ],
+      "prefix_tokens": 678,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.29193687438964844,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.280855178833008,
+          17.283504486083984,
+          18.89885711669922
+        ]
+      ],
+      "peak_gib": 62.06254005432129
+    },
+    {
+      "questions": 1,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        438.83089600421954,
+        447.09027399949264,
+        446.98647600307595
+      ],
+      "prefix_tokens": 678,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.29193687438964844,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.280855178833008,
+          17.283504486083984,
+          18.89885711669922
+        ]
+      ],
+      "peak_gib": 62.06254005432129
+    },
+    {
+      "questions": 1,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        445.8693390042754,
+        445.47291900380515,
+        448.67182199959643
+      ],
+      "prefix_tokens": 678,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.29193687438964844,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.280855178833008,
+          17.283504486083984,
+          18.89885711669922
+        ]
+      ],
+      "peak_gib": 62.06254005432129
+    },
+    {
+      "questions": 1,
+      "offset": 9,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        377.20163800986484,
+        375.6499610026367,
+        376.7592679942027
+      ],
+      "prefix_tokens": 678,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.2520751953125,
+          16.126983642578125,
+          18.685577392578125
+        ]
+      ],
+      "peak_gib": 62.00833034515381
+    },
+    {
+      "questions": 1,
+      "offset": 9,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        447.6821150019532,
+        447.4431950075086,
+        445.8524799993029
+      ],
+      "prefix_tokens": 678,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.06585693359375,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.31582260131836,
+          16.192840576171875,
+          18.70816421508789
+        ]
+      ],
+      "peak_gib": 62.06254005432129
+    },
+    {
+      "questions": 1,
+      "offset": 9,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        447.31052601127885,
+        445.19076200958807,
+        448.02014499146026
+      ],
+      "prefix_tokens": 678,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.06585693359375,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.31582260131836,
+          16.192840576171875,
+          18.70816421508789
+        ]
+      ],
+      "peak_gib": 62.06254005432129
+    },
+    {
+      "questions": 1,
+      "offset": 9,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        448.93580200732686,
+        445.0068020087201,
+        449.0885330014862
+      ],
+      "prefix_tokens": 678,
+      "suffix_tokens": [
+        11
+      ],
+      "max_logit_delta": 0.06585693359375,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.31582260131836,
+          16.192840576171875,
+          18.70816421508789
+        ]
+      ],
+      "peak_gib": 62.06254005432129
+    },
+    {
+      "questions": 1,
+      "offset": 10,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        373.8029880041722,
+        377.4897489929572,
+        379.5317240001168
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.798206329345703,
+          17.448917388916016,
+          17.63445472717285
+        ]
+      ],
+      "peak_gib": 62.00839424133301
+    },
+    {
+      "questions": 1,
+      "offset": 10,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        444.6394349943148,
+        475.57928500464186,
+        439.4055790035054
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.1291637420654297,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.786815643310547,
+          17.500892639160156,
+          17.76361846923828
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 10,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        498.1481970025925,
+        478.45993799273856,
+        471.65341599611565
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.1291637420654297,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.786815643310547,
+          17.500892639160156,
+          17.76361846923828
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 10,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        444.8053149972111,
+        438.75600199680775,
+        439.2245610069949
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.1291637420654297,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.786815643310547,
+          17.500892639160156,
+          17.76361846923828
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 11,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        370.27524899167474,
+        377.87815000046976,
+        379.51686599990353
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          16.771936416625977,
+          15.919683456420898,
+          18.793224334716797
+        ]
+      ],
+      "peak_gib": 62.00839424133301
+    },
+    {
+      "questions": 1,
+      "offset": 11,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        465.6695729936473,
+        479.11290799675044,
+        478.62731899658684
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.09378433227539062,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          16.73816680908203,
+          15.825899124145508,
+          18.7790584564209
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 11,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        486.33309999422636,
+        477.58530199644156,
+        482.43509999883827
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.09378433227539062,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          16.73816680908203,
+          15.825899124145508,
+          18.7790584564209
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 11,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        483.97746599221136,
+        483.4857679961715,
+        474.7656609979458
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.09378433227539062,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          16.73816680908203,
+          15.825899124145508,
+          18.7790584564209
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 12,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        373.97773200063966,
+        384.19073600380216,
+        388.6276229895884
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.712535858154297,
+          15.703269958496094,
+          18.920568466186523
+        ]
+      ],
+      "peak_gib": 62.00839424133301
+    },
+    {
+      "questions": 1,
+      "offset": 12,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        454.3791140022222,
+        456.89909798966255,
+        458.1473550060764
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.2926464080810547,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.419889450073242,
+          15.432687759399414,
+          18.642343521118164
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 12,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        458.281844999874,
+        457.9983860021457,
+        457.29642699006945
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.2926464080810547,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.419889450073242,
+          15.432687759399414,
+          18.642343521118164
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 12,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        458.0737560027046,
+        457.1908479992999,
+        459.67489200120326
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.2926464080810547,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.419889450073242,
+          15.432687759399414,
+          18.642343521118164
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 13,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        385.45245400746353,
+        387.665279005887,
+        386.84669000213034
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "negative"
+      ],
+      "logits": [
+        [
+          17.102397918701172,
+          17.165538787841797,
+          17.645198822021484
+        ]
+      ],
+      "peak_gib": 62.00839424133301
+    },
+    {
+      "questions": 1,
+      "offset": 13,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        458.47881500958465,
+        459.36256399727426,
+        457.1171499992488
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.14999771118164062,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "negative"
+      ],
+      "logits": [
+        [
+          17.01963996887207,
+          17.077739715576172,
+          17.495201110839844
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 13,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        447.9450229991926,
+        462.9754449997563,
+        475.5952330015134
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.14999771118164062,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "negative"
+      ],
+      "logits": [
+        [
+          17.01963996887207,
+          17.077739715576172,
+          17.495201110839844
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 13,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        474.30418599105906,
+        476.6956499952357,
+        475.68473299907055
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.14999771118164062,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "negative"
+      ],
+      "logits": [
+        [
+          17.01963996887207,
+          17.077739715576172,
+          17.495201110839844
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 14,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        387.8310800064355,
+        388.3067879942246,
+        388.06468999246135
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.188762664794922,
+          16.981821060180664,
+          18.48944091796875
+        ]
+      ],
+      "peak_gib": 62.00839424133301
+    },
+    {
+      "questions": 1,
+      "offset": 14,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        459.46467500471044,
+        461.048661993118,
+        459.8546240013093
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.03756523132324219,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.226327896118164,
+          16.99843978881836,
+          18.493728637695312
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 14,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        464.30146299826447,
+        465.23171199078206,
+        465.62643999641296
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.03756523132324219,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.226327896118164,
+          16.99843978881836,
+          18.493728637695312
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 14,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        462.856396989082,
+        466.3386600004742,
+        466.4886279933853
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.03756523132324219,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "positive"
+      ],
+      "logits": [
+        [
+          17.226327896118164,
+          16.99843978881836,
+          18.493728637695312
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 15,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        391.0415829886915,
+        392.29552999313455,
+        391.67549200647045
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.484783172607422,
+          15.831338882446289,
+          18.71018409729004
+        ]
+      ],
+      "peak_gib": 62.00839424133301
+    },
+    {
+      "questions": 1,
+      "offset": 15,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        464.7252549912082,
+        465.5972019972978,
+        465.2152430062415
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0819091796875,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.4052677154541,
+          15.749429702758789,
+          18.643421173095703
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 15,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        463.8798469968606,
+        463.9463070052443,
+        463.97172700380906
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0819091796875,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.4052677154541,
+          15.749429702758789,
+          18.643421173095703
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 15,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        466.23461099807173,
+        460.872116003884,
+        465.00790400023106
+      ],
+      "prefix_tokens": 680,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0819091796875,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.4052677154541,
+          15.749429702758789,
+          18.643421173095703
+        ]
+      ],
+      "peak_gib": 62.06253957748413
+    },
+    {
+      "questions": 1,
+      "offset": 16,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        395.64665299258195,
+        395.09194499987643,
+        391.52293499500956
+      ],
+      "prefix_tokens": 696,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.718456268310547,
+          17.167015075683594,
+          16.623706817626953
+        ]
+      ],
+      "peak_gib": 62.00903844833374
+    },
+    {
+      "questions": 1,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        466.51103199110366,
+        465.95349299605004,
+        467.21921999414917
+      ],
+      "prefix_tokens": 696,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.059207916259765625,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.777664184570312,
+          17.168689727783203,
+          16.648300170898438
+        ]
+      ],
+      "peak_gib": 62.06258726119995
+    },
+    {
+      "questions": 1,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        464.99413601122797,
+        464.1662189969793,
+        463.27020101307426
+      ],
+      "prefix_tokens": 696,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.059207916259765625,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.777664184570312,
+          17.168689727783203,
+          16.648300170898438
+        ]
+      ],
+      "peak_gib": 62.06258726119995
+    },
+    {
+      "questions": 1,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        442.7199740021024,
+        469.7336350072874,
+        475.6842589995358
+      ],
+      "prefix_tokens": 696,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.059207916259765625,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.777664184570312,
+          17.168689727783203,
+          16.648300170898438
+        ]
+      ],
+      "peak_gib": 62.06258726119995
+    },
+    {
+      "questions": 1,
+      "offset": 17,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        394.29357899643946,
+        395.813145005377,
+        396.54805399186444
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.638883590698242,
+          18.086767196655273,
+          17.552513122558594
+        ]
+      ],
+      "peak_gib": 62.00891733169556
+    },
+    {
+      "questions": 1,
+      "offset": 17,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        441.7645580106182,
+        515.2272699924652,
+        510.37215199903585
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.08800125122070312,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.571260452270508,
+          18.00633430480957,
+          17.46451187133789
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 17,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        476.40839900122955,
+        474.59694401186425,
+        468.38272000604775
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.08800125122070312,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.571260452270508,
+          18.00633430480957,
+          17.46451187133789
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 17,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        467.4292220006464,
+        464.3041220115265,
+        468.7827300076606
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.08800125122070312,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.571260452270508,
+          18.00633430480957,
+          17.46451187133789
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 18,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        376.85454500024207,
+        396.34562500577886,
+        413.16225299669895
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.05535888671875,
+          16.542482376098633,
+          17.554439544677734
+        ]
+      ],
+      "peak_gib": 62.00891733169556
+    },
+    {
+      "questions": 1,
+      "offset": 18,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        489.83764700824395,
+        480.0032119965181,
+        481.8374869937543
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.10007667541503906,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          16.98284912109375,
+          16.5003662109375,
+          17.454362869262695
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 18,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        473.9766879938543,
+        475.3275839902926,
+        473.9747279963922
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.10007667541503906,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          16.98284912109375,
+          16.5003662109375,
+          17.454362869262695
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 18,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        472.7090509986738,
+        473.2063709961949,
+        475.24319399963133
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.10007667541503906,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          16.98284912109375,
+          16.5003662109375,
+          17.454362869262695
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 19,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        400.45609600201715,
+        400.41098700021394,
+        401.14330500364304
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          17.416465759277344,
+          18.004776000976562,
+          16.419971466064453
+        ]
+      ],
+      "peak_gib": 62.00891733169556
+    },
+    {
+      "questions": 1,
+      "offset": 19,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        474.59190800145734,
+        474.39629898872226,
+        474.96646699437406
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.05503654479980469,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          17.36142921447754,
+          18.05809211730957,
+          16.454023361206055
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 19,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        474.13725999649614,
+        474.9870079976972,
+        474.56368801067583
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.05503654479980469,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          17.36142921447754,
+          18.05809211730957,
+          16.454023361206055
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 19,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        466.1121199897025,
+        467.8268559946446,
+        465.33472299051937
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.05503654479980469,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          17.36142921447754,
+          18.05809211730957,
+          16.454023361206055
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 20,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        394.3138640024699,
+        395.7998699916061,
+        393.5097359935753
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.13974380493164,
+          17.891809463500977,
+          17.356021881103516
+        ]
+      ],
+      "peak_gib": 62.00891733169556
+    },
+    {
+      "questions": 1,
+      "offset": 20,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        469.6589719969779,
+        467.3651890043402,
+        457.05669399467297
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.024003982543945312,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.163747787475586,
+          17.901506423950195,
+          17.364768981933594
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 20,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        476.64860500663053,
+        488.67156500637066,
+        486.53465100505855
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.024003982543945312,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.163747787475586,
+          17.901506423950195,
+          17.364768981933594
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 20,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        485.734361995128,
+        477.19622499425896,
+        480.1583470107289
+      ],
+      "prefix_tokens": 693,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.024003982543945312,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.163747787475586,
+          17.901506423950195,
+          17.364768981933594
+        ]
+      ],
+      "peak_gib": 62.06175422668457
+    },
+    {
+      "questions": 1,
+      "offset": 21,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        407.23760300897993,
+        402.6039349992061,
+        404.00476098875515
+      ],
+      "prefix_tokens": 690,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          16.591440200805664,
+          18.197635650634766,
+          15.558246612548828
+        ]
+      ],
+      "peak_gib": 62.008793354034424
+    },
+    {
+      "questions": 1,
+      "offset": 21,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        458.66353300516494,
+        449.68125500599854,
+        445.5749460030347
+      ],
+      "prefix_tokens": 690,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.055561065673828125,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          16.588621139526367,
+          18.186473846435547,
+          15.613807678222656
+        ]
+      ],
+      "peak_gib": 62.06085681915283
+    },
+    {
+      "questions": 1,
+      "offset": 21,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        458.61185299872886,
+        461.7181250068825,
+        464.3014100001892
+      ],
+      "prefix_tokens": 690,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.055561065673828125,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          16.588621139526367,
+          18.186473846435547,
+          15.613807678222656
+        ]
+      ],
+      "peak_gib": 62.06085681915283
+    },
+    {
+      "questions": 1,
+      "offset": 21,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        467.85087999887764,
+        468.7728779972531,
+        469.2896469932748
+      ],
+      "prefix_tokens": 690,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.055561065673828125,
+      "agreement": 1,
+      "correct": 0,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          16.588621139526367,
+          18.186473846435547,
+          15.613807678222656
+        ]
+      ],
+      "peak_gib": 62.06085681915283
+    },
+    {
+      "questions": 1,
+      "offset": 22,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        372.76310299057513,
+        388.2878830045229,
+        410.63933599798474
+      ],
+      "prefix_tokens": 692,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          16.6196346282959,
+          18.128541946411133,
+          17.546627044677734
+        ]
+      ],
+      "peak_gib": 62.00887441635132
+    },
+    {
+      "questions": 1,
+      "offset": 22,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        483.83286100579426,
+        463.24855300190393,
+        451.861461988301
+      ],
+      "prefix_tokens": 692,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.05862617492675781,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          16.649322509765625,
+          18.069915771484375,
+          17.594642639160156
+        ]
+      ],
+      "peak_gib": 62.06085920333862
+    },
+    {
+      "questions": 1,
+      "offset": 22,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        452.71658001001924,
+        459.4837839977117,
+        461.5597689989954
+      ],
+      "prefix_tokens": 692,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.05862617492675781,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          16.649322509765625,
+          18.069915771484375,
+          17.594642639160156
+        ]
+      ],
+      "peak_gib": 62.06085920333862
+    },
+    {
+      "questions": 1,
+      "offset": 22,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        479.85925199463964,
+        477.94837699620984,
+        476.584500996978
+      ],
+      "prefix_tokens": 692,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.05862617492675781,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "supported"
+      ],
+      "logits": [
+        [
+          16.649322509765625,
+          18.069915771484375,
+          17.594642639160156
+        ]
+      ],
+      "peak_gib": 62.06085920333862
+    },
+    {
+      "questions": 1,
+      "offset": 23,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        402.24587998818606,
+        404.3693540006643,
+        400.9644219913753
+      ],
+      "prefix_tokens": 692,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          16.34674835205078,
+          17.767072677612305,
+          17.847272872924805
+        ]
+      ],
+      "peak_gib": 62.00887441635132
+    },
+    {
+      "questions": 1,
+      "offset": 23,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        479.10976500133984,
+        475.9164130082354,
+        474.13867799332365
+      ],
+      "prefix_tokens": 692,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.05665397644042969,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          16.29825782775879,
+          17.74440574645996,
+          17.790618896484375
+        ]
+      ],
+      "peak_gib": 62.06085920333862
+    },
+    {
+      "questions": 1,
+      "offset": 23,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        476.44196198962163,
+        477.1146410057554,
+        475.9515729965642
+      ],
+      "prefix_tokens": 692,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.05665397644042969,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          16.29825782775879,
+          17.74440574645996,
+          17.790618896484375
+        ]
+      ],
+      "peak_gib": 62.06085920333862
+    },
+    {
+      "questions": 1,
+      "offset": 23,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        476.90941199834924,
+        479.27391600387637,
+        476.3646339997649
+      ],
+      "prefix_tokens": 692,
+      "suffix_tokens": [
+        12
+      ],
+      "max_logit_delta": 0.05665397644042969,
+      "agreement": 1,
+      "correct": 1,
+      "predictions": [
+        "contradicted"
+      ],
+      "logits": [
+        [
+          16.29825782775879,
+          17.74440574645996,
+          17.790618896484375
+        ]
+      ],
+      "peak_gib": 62.06085920333862
+    },
+    {
+      "questions": 2,
+      "offset": 0,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        920.2446599956602,
+        920.0491809897358,
+        919.5027319947258
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "refund",
+        "exchange"
+      ],
+      "logits": [
+        [
+          18.67561912536621,
+          17.168027877807617,
+          16.312545776367188,
+          15.690228462219238
+        ],
+        [
+          14.437530517578125,
+          19.357336044311523,
+          13.306867599487305,
+          13.426382064819336
+        ]
+      ],
+      "peak_gib": 62.54029846191406
+    },
+    {
+      "questions": 2,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        609.7684270062018,
+        610.3636859916151,
+        610.6605950044468
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.6506214141845703,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "refund",
+        "exchange"
+      ],
+      "logits": [
+        [
+          18.680469512939453,
+          16.517406463623047,
+          16.21120262145996,
+          15.593280792236328
+        ],
+        [
+          14.242332458496094,
+          19.314735412597656,
+          13.116281509399414,
+          12.983102798461914
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        606.7379950109171,
+        604.901370999869,
+        611.7250230017817
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.6875133514404297,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "refund",
+        "exchange"
+      ],
+      "logits": [
+        [
+          18.650331497192383,
+          16.480514526367188,
+          16.181589126586914,
+          15.538283348083496
+        ],
+        [
+          14.095178604125977,
+          19.273910522460938,
+          12.961923599243164,
+          12.948508262634277
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        612.2195219941204,
+        617.5129799958086,
+        614.7358059970429
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.6875133514404297,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "refund",
+        "exchange"
+      ],
+      "logits": [
+        [
+          18.650331497192383,
+          16.480514526367188,
+          16.181589126586914,
+          15.538283348083496
+        ],
+        [
+          14.095178604125977,
+          19.273910522460938,
+          12.961923599243164,
+          12.948508262634277
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 2,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        923.6189070070395,
+        920.3246050019516,
+        931.9645069917897
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          17.14088249206543,
+          15.387511253356934,
+          19.99043083190918,
+          13.707252502441406
+        ],
+        [
+          14.599119186401367,
+          14.990781784057617,
+          15.642849922180176,
+          18.03360366821289
+        ]
+      ],
+      "peak_gib": 62.54029846191406
+    },
+    {
+      "questions": 2,
+      "offset": 2,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        628.2985639991239,
+        623.7187859951518,
+        628.959603011026
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.3179950714111328,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          17.20908546447754,
+          15.247852325439453,
+          20.052839279174805,
+          13.724771499633789
+        ],
+        [
+          14.80413818359375,
+          14.672786712646484,
+          15.517505645751953,
+          18.240684509277344
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 2,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        622.5721490045544,
+        621.5348719997564,
+        621.3330430036876
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.47963523864746094,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          17.235858917236328,
+          15.280426979064941,
+          20.060707092285156,
+          13.732246398925781
+        ],
+        [
+          14.67411994934082,
+          14.511146545410156,
+          15.360750198364258,
+          18.107505798339844
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 2,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        621.353962997091,
+        623.7692379945656,
+        622.9708699975163
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.47963523864746094,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          17.235858917236328,
+          15.280426979064941,
+          20.060707092285156,
+          13.732246398925781
+        ],
+        [
+          14.67411994934082,
+          14.511146545410156,
+          15.360750198364258,
+          18.107505798339844
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 4,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        920.6245209934423,
+        920.4437409935053,
+        922.8974059951724
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "refund",
+        "exchange"
+      ],
+      "logits": [
+        [
+          19.227367401123047,
+          16.327590942382812,
+          17.510271072387695,
+          16.586727142333984
+        ],
+        [
+          14.883399963378906,
+          20.220632553100586,
+          13.46136474609375,
+          12.72038459777832
+        ]
+      ],
+      "peak_gib": 62.54029846191406
+    },
+    {
+      "questions": 2,
+      "offset": 4,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        621.8825439864304,
+        620.1085890061222,
+        619.8062100011157
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.3587970733642578,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "refund",
+        "exchange"
+      ],
+      "logits": [
+        [
+          19.359283447265625,
+          16.361600875854492,
+          17.151473999023438,
+          16.72138023376465
+        ],
+        [
+          15.131688117980957,
+          20.094858169555664,
+          13.31264877319336,
+          12.741178512573242
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 4,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        622.407293994911,
+        618.4107339940965,
+        619.7239410103066
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.36840248107910156,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "refund",
+        "exchange"
+      ],
+      "logits": [
+        [
+          19.36014175415039,
+          16.34393882751465,
+          17.141868591308594,
+          16.70185089111328
+        ],
+        [
+          15.125167846679688,
+          20.12749481201172,
+          13.374063491821289,
+          12.850786209106445
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 4,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        625.0315880024573,
+        623.6726210045163,
+        619.8346820019651
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.36840248107910156,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "refund",
+        "exchange"
+      ],
+      "logits": [
+        [
+          19.36014175415039,
+          16.34393882751465,
+          17.141868591308594,
+          16.70185089111328
+        ],
+        [
+          15.125167846679688,
+          20.12749481201172,
+          13.374063491821289,
+          12.850786209106445
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 6,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        940.6885759963188,
+        937.4192340037553,
+        943.2421899982728
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.065847396850586,
+          14.929193496704102,
+          19.623069763183594,
+          15.427358627319336
+        ],
+        [
+          14.432205200195312,
+          11.645851135253906,
+          12.699305534362793,
+          19.228870391845703
+        ]
+      ],
+      "peak_gib": 62.54029846191406
+    },
+    {
+      "questions": 2,
+      "offset": 6,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        617.69537901273,
+        618.20034700213,
+        619.7032740019495
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.2706747055053711,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.045255661010742,
+          14.986407279968262,
+          19.850299835205078,
+          15.221689224243164
+        ],
+        [
+          14.563722610473633,
+          11.58244514465332,
+          12.969980239868164,
+          19.31977081298828
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 6,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        621.7835290008225,
+        620.0598939904012,
+        623.3626850007568
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.29076671600341797,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.122690200805664,
+          15.090856552124023,
+          19.91301727294922,
+          15.400253295898438
+        ],
+        [
+          14.58345890045166,
+          11.568166732788086,
+          12.990072250366211,
+          19.335540771484375
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 6,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        623.0227669875603,
+        621.6554599959636,
+        620.9492420020979
+      ],
+      "prefix_tokens": 827,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.29076671600341797,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.122690200805664,
+          15.090856552124023,
+          19.91301727294922,
+          15.400253295898438
+        ],
+        [
+          14.58345890045166,
+          11.568166732788086,
+          12.990072250366211,
+          19.335540771484375
+        ]
+      ],
+      "peak_gib": 62.58412504196167
+    },
+    {
+      "questions": 2,
+      "offset": 8,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        924.6494410035666,
+        932.5330720021157,
+        930.642887004069
+      ],
+      "prefix_tokens": 783,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "positive",
+        "negative"
+      ],
+      "logits": [
+        [
+          18.251033782958984,
+          17.492782592773438,
+          18.66390609741211
+        ],
+        [
+          18.022750854492188,
+          16.936237335205078,
+          17.27497673034668
+        ]
+      ],
+      "peak_gib": 62.5377459526062
+    },
+    {
+      "questions": 2,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        608.4146659995895,
+        608.9491439925041,
+        608.5919449978974
+      ],
+      "prefix_tokens": 783,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.17681503295898438,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "positive",
+        "negative"
+      ],
+      "logits": [
+        [
+          18.42784881591797,
+          17.647804260253906,
+          18.79063606262207
+        ],
+        [
+          17.887229919433594,
+          16.946624755859375,
+          17.252120971679688
+        ]
+      ],
+      "peak_gib": 62.58249378204346
+    },
+    {
+      "questions": 2,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        601.0443150007632,
+        608.4796659997664,
+        599.0941499912878
+      ],
+      "prefix_tokens": 783,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.3177337646484375,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "positive",
+        "negative"
+      ],
+      "logits": [
+        [
+          18.331560134887695,
+          17.54102897644043,
+          18.70244598388672
+        ],
+        [
+          17.70501708984375,
+          16.773128509521484,
+          17.140052795410156
+        ]
+      ],
+      "peak_gib": 62.58249378204346
+    },
+    {
+      "questions": 2,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        654.6084209985565,
+        626.9194810010958,
+        623.0153010110371
+      ],
+      "prefix_tokens": 783,
+      "suffix_tokens": [
+        11,
+        11
+      ],
+      "max_logit_delta": 0.3177337646484375,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "positive",
+        "negative"
+      ],
+      "logits": [
+        [
+          18.331560134887695,
+          17.54102897644043,
+          18.70244598388672
+        ],
+        [
+          17.70501708984375,
+          16.773128509521484,
+          17.140052795410156
+        ]
+      ],
+      "peak_gib": 62.58249378204346
+    },
+    {
+      "questions": 2,
+      "offset": 10,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        935.155521001434,
+        934.8938010080019,
+        931.6835299978266
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "positive",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.526390075683594,
+          16.364171981811523,
+          18.033445358276367
+        ],
+        [
+          15.56274700164795,
+          15.051023483276367,
+          19.694150924682617
+        ]
+      ],
+      "peak_gib": 62.53702688217163
+    },
+    {
+      "questions": 2,
+      "offset": 10,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        613.4019960009027,
+        610.8966530009639,
+        611.6644620051375
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.3330230712890625,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "positive",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.54222869873047,
+          16.697195053100586,
+          18.254018783569336
+        ],
+        [
+          15.578546524047852,
+          15.064106941223145,
+          19.653430938720703
+        ]
+      ],
+      "peak_gib": 62.58261156082153
+    },
+    {
+      "questions": 2,
+      "offset": 10,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        611.1131029902026,
+        612.9933189949952,
+        610.7897949987091
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.2724285125732422,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "positive",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.488784790039062,
+          16.636600494384766,
+          18.212570190429688
+        ],
+        [
+          15.726381301879883,
+          15.183499336242676,
+          19.78011703491211
+        ]
+      ],
+      "peak_gib": 62.58261156082153
+    },
+    {
+      "questions": 2,
+      "offset": 10,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        613.9259470073739,
+        615.6994229968404,
+        610.7418350002263
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.2724285125732422,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "positive",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.488784790039062,
+          16.636600494384766,
+          18.212570190429688
+        ],
+        [
+          15.726381301879883,
+          15.183499336242676,
+          19.78011703491211
+        ]
+      ],
+      "peak_gib": 62.58261156082153
+    },
+    {
+      "questions": 2,
+      "offset": 12,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        933.8579989998834,
+        942.5509779975982,
+        942.9819179931656
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "neutral",
+        "neutral"
+      ],
+      "logits": [
+        [
+          17.94751739501953,
+          15.545770645141602,
+          18.720989227294922
+        ],
+        [
+          16.988908767700195,
+          18.263675689697266,
+          17.182979583740234
+        ]
+      ],
+      "peak_gib": 62.53702688217163
+    },
+    {
+      "questions": 2,
+      "offset": 12,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        624.4670230080374,
+        624.8792809929,
+        623.6572849884396
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.2534332275390625,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "neutral",
+        "neutral"
+      ],
+      "logits": [
+        [
+          18.200950622558594,
+          15.566707611083984,
+          18.624128341674805
+        ],
+        [
+          16.941349029541016,
+          18.183717727661133,
+          17.130168914794922
+        ]
+      ],
+      "peak_gib": 62.58261156082153
+    },
+    {
+      "questions": 2,
+      "offset": 12,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        623.8837339915335,
+        624.1714650095673,
+        626.6906280070543
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.2999553680419922,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "neutral",
+        "neutral"
+      ],
+      "logits": [
+        [
+          18.247472763061523,
+          15.632623672485352,
+          18.69859504699707
+        ],
+        [
+          16.9290828704834,
+          18.161487579345703,
+          17.10666847229004
+        ]
+      ],
+      "peak_gib": 62.58261156082153
+    },
+    {
+      "questions": 2,
+      "offset": 12,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        623.2847770006629,
+        624.1694950003875,
+        625.3774020005949
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.2999553680419922,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "neutral",
+        "neutral"
+      ],
+      "logits": [
+        [
+          18.247472763061523,
+          15.632623672485352,
+          18.69859504699707
+        ],
+        [
+          16.9290828704834,
+          18.161487579345703,
+          17.10666847229004
+        ]
+      ],
+      "peak_gib": 62.58261156082153
+    },
+    {
+      "questions": 2,
+      "offset": 14,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        940.677157996106,
+        941.7510849889368,
+        940.8149080118164
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 0,
+      "predictions": [
+        "negative",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.141620635986328,
+          15.893460273742676,
+          16.999950408935547
+        ],
+        [
+          17.198936462402344,
+          17.894466400146484,
+          17.65906524658203
+        ]
+      ],
+      "peak_gib": 62.53702688217163
+    },
+    {
+      "questions": 2,
+      "offset": 14,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        612.1607870009029,
+        613.538912992226,
+        618.6299010005314
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.1943216323852539,
+      "agreement": 2,
+      "correct": 0,
+      "predictions": [
+        "negative",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.27379608154297,
+          16.08778190612793,
+          17.187841415405273
+        ],
+        [
+          17.159534454345703,
+          17.976774215698242,
+          17.725805282592773
+        ]
+      ],
+      "peak_gib": 62.58261156082153
+    },
+    {
+      "questions": 2,
+      "offset": 14,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        614.4287409988465,
+        618.3295829978306,
+        619.5409200008726
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.1363677978515625,
+      "agreement": 2,
+      "correct": 0,
+      "predictions": [
+        "negative",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.191776275634766,
+          16.000608444213867,
+          17.13631820678711
+        ],
+        [
+          17.123207092285156,
+          17.931385040283203,
+          17.6586971282959
+        ]
+      ],
+      "peak_gib": 62.58261156082153
+    },
+    {
+      "questions": 2,
+      "offset": 14,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        619.5889800001169,
+        620.1231779996306,
+        621.8387150001945
+      ],
+      "prefix_tokens": 787,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.1363677978515625,
+      "agreement": 2,
+      "correct": 0,
+      "predictions": [
+        "negative",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.191776275634766,
+          16.000608444213867,
+          17.13631820678711
+        ],
+        [
+          17.123207092285156,
+          17.931385040283203,
+          17.6586971282959
+        ]
+      ],
+      "peak_gib": 62.58261156082153
+    },
+    {
+      "questions": 2,
+      "offset": 16,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        931.8753150000703,
+        936.0547549877083,
+        937.3695209942525
+      ],
+      "prefix_tokens": 816,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "contradicted",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          18.282407760620117,
+          17.518762588500977,
+          16.232805252075195
+        ],
+        [
+          15.929604530334473,
+          16.431598663330078,
+          19.470355987548828
+        ]
+      ],
+      "peak_gib": 62.53820466995239
+    },
+    {
+      "questions": 2,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        561.4551350008696,
+        647.2934820048977,
+        714.1037580004195
+      ],
+      "prefix_tokens": 816,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.1268177032470703,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "contradicted",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          18.155590057373047,
+          17.46416473388672,
+          16.211294174194336
+        ],
+        [
+          15.917271614074707,
+          16.464046478271484,
+          19.453807830810547
+        ]
+      ],
+      "peak_gib": 62.58387756347656
+    },
+    {
+      "questions": 2,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        673.4070389939006,
+        632.3241300124209,
+        609.4287790037924
+      ],
+      "prefix_tokens": 816,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.17431068420410156,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "contradicted",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          18.108097076416016,
+          17.3865966796875,
+          16.13631248474121
+        ],
+        [
+          15.88554859161377,
+          16.409576416015625,
+          19.413894653320312
+        ]
+      ],
+      "peak_gib": 62.58387756347656
+    },
+    {
+      "questions": 2,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        610.1525559934089,
+        609.7083779895911,
+        609.7840679867659
+      ],
+      "prefix_tokens": 816,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.17431068420410156,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "contradicted",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          18.108097076416016,
+          17.3865966796875,
+          16.13631248474121
+        ],
+        [
+          15.88554859161377,
+          16.409576416015625,
+          19.413894653320312
+        ]
+      ],
+      "peak_gib": 62.58387756347656
+    },
+    {
+      "questions": 2,
+      "offset": 18,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        942.2106749989325,
+        938.3784449892119,
+        941.7729760025395
+      ],
+      "prefix_tokens": 813,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "unknown",
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.870590209960938,
+          16.542362213134766,
+          17.399879455566406
+        ],
+        [
+          15.938676834106445,
+          18.223337173461914,
+          18.379491806030273
+        ]
+      ],
+      "peak_gib": 62.538068771362305
+    },
+    {
+      "questions": 2,
+      "offset": 18,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        619.4934949890012,
+        620.9594620013377,
+        625.0225319963647
+      ],
+      "prefix_tokens": 813,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.3793678283691406,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "unknown",
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.491222381591797,
+          16.246488571166992,
+          17.07196617126465
+        ],
+        [
+          15.988795280456543,
+          18.2581787109375,
+          18.42565155029297
+        ]
+      ],
+      "peak_gib": 62.58390283584595
+    },
+    {
+      "questions": 2,
+      "offset": 18,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        627.4259559868369,
+        624.6686730009969,
+        623.198526998749
+      ],
+      "prefix_tokens": 813,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.38347816467285156,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "unknown",
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.487112045288086,
+          16.211288452148438,
+          17.06285285949707
+        ],
+        [
+          15.88472843170166,
+          18.109865188598633,
+          18.306888580322266
+        ]
+      ],
+      "peak_gib": 62.58390283584595
+    },
+    {
+      "questions": 2,
+      "offset": 18,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        625.2550820063334,
+        622.844088007696,
+        622.476739998092
+      ],
+      "prefix_tokens": 813,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.38347816467285156,
+      "agreement": 2,
+      "correct": 1,
+      "predictions": [
+        "unknown",
+        "unknown"
+      ],
+      "logits": [
+        [
+          17.487112045288086,
+          16.211288452148438,
+          17.06285285949707
+        ],
+        [
+          15.88472843170166,
+          18.109865188598633,
+          18.306888580322266
+        ]
+      ],
+      "peak_gib": 62.58390283584595
+    },
+    {
+      "questions": 2,
+      "offset": 20,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        941.1324419925222,
+        938.2912789878901,
+        939.158627006691
+      ],
+      "prefix_tokens": 810,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 0,
+      "predictions": [
+        "supported",
+        "supported"
+      ],
+      "logits": [
+        [
+          17.533973693847656,
+          17.40874481201172,
+          17.283065795898438
+        ],
+        [
+          16.963647842407227,
+          18.397857666015625,
+          15.66739273071289
+        ]
+      ],
+      "peak_gib": 62.537930488586426
+    },
+    {
+      "questions": 2,
+      "offset": 20,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        622.2081720043207,
+        621.3446839974495,
+        622.2354420024203
+      ],
+      "prefix_tokens": 810,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.2606048583984375,
+      "agreement": 2,
+      "correct": 0,
+      "predictions": [
+        "supported",
+        "supported"
+      ],
+      "logits": [
+        [
+          17.794578552246094,
+          17.54800033569336,
+          17.393747329711914
+        ],
+        [
+          16.876556396484375,
+          18.41023063659668,
+          15.698613166809082
+        ]
+      ],
+      "peak_gib": 62.58471488952637
+    },
+    {
+      "questions": 2,
+      "offset": 20,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        624.320497008739,
+        615.8535380091053,
+        615.6810890097404
+      ],
+      "prefix_tokens": 810,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.33376502990722656,
+      "agreement": 2,
+      "correct": 0,
+      "predictions": [
+        "supported",
+        "supported"
+      ],
+      "logits": [
+        [
+          17.867738723754883,
+          17.63254165649414,
+          17.529232025146484
+        ],
+        [
+          16.87764549255371,
+          18.385562896728516,
+          15.719374656677246
+        ]
+      ],
+      "peak_gib": 62.58471488952637
+    },
+    {
+      "questions": 2,
+      "offset": 20,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        612.933486001566,
+        613.5525049903663,
+        614.8212420084747
+      ],
+      "prefix_tokens": 810,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.33376502990722656,
+      "agreement": 2,
+      "correct": 0,
+      "predictions": [
+        "supported",
+        "supported"
+      ],
+      "logits": [
+        [
+          17.867738723754883,
+          17.63254165649414,
+          17.529232025146484
+        ],
+        [
+          16.87764549255371,
+          18.385562896728516,
+          15.719374656677246
+        ]
+      ],
+      "peak_gib": 62.58471488952637
+    },
+    {
+      "questions": 2,
+      "offset": 22,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        922.266463006963,
+        940.9989879932255,
+        942.3782939993544
+      ],
+      "prefix_tokens": 811,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "supported",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.221561431884766,
+          17.60353660583496,
+          17.461050033569336
+        ],
+        [
+          16.40664291381836,
+          17.972888946533203,
+          18.514890670776367
+        ]
+      ],
+      "peak_gib": 62.53797674179077
+    },
+    {
+      "questions": 2,
+      "offset": 22,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        625.5783359956695,
+        626.2626560055651,
+        624.2355209978996
+      ],
+      "prefix_tokens": 811,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.2569751739501953,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "supported",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.278926849365234,
+          17.614551544189453,
+          17.49254608154297
+        ],
+        [
+          16.286470413208008,
+          17.93256187438965,
+          18.257915496826172
+        ]
+      ],
+      "peak_gib": 62.584736824035645
+    },
+    {
+      "questions": 2,
+      "offset": 22,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        623.3318829908967,
+        626.0589070006972,
+        624.0533920063172
+      ],
+      "prefix_tokens": 811,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.10984420776367188,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "supported",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.31520652770996,
+          17.615489959716797,
+          17.570894241333008
+        ],
+        [
+          16.3941593170166,
+          18.02649688720703,
+          18.563772201538086
+        ]
+      ],
+      "peak_gib": 62.584736824035645
+    },
+    {
+      "questions": 2,
+      "offset": 22,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        624.6897899982287,
+        624.7109310061205,
+        624.7793910006294
+      ],
+      "prefix_tokens": 811,
+      "suffix_tokens": [
+        12,
+        12
+      ],
+      "max_logit_delta": 0.10984420776367188,
+      "agreement": 2,
+      "correct": 2,
+      "predictions": [
+        "supported",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.31520652770996,
+          17.615489959716797,
+          17.570894241333008
+        ],
+        [
+          16.3941593170166,
+          18.02649688720703,
+          18.563772201538086
+        ]
+      ],
+      "peak_gib": 62.584736824035645
+    },
+    {
+      "questions": 4,
+      "offset": 0,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        2359.4213890028186,
+        2393.78894699621,
+        2455.5064579908503
+      ],
+      "prefix_tokens": 1081,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 4,
+      "correct": 3,
+      "predictions": [
+        "cancel",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.086071014404297,
+          16.29364585876465,
+          18.25912094116211,
+          17.629379272460938
+        ],
+        [
+          15.923321723937988,
+          18.55936050415039,
+          16.46367835998535,
+          15.29720687866211
+        ],
+        [
+          14.268945693969727,
+          14.635801315307617,
+          19.83305549621582,
+          12.97313117980957
+        ],
+        [
+          14.243088722229004,
+          13.46608829498291,
+          13.475764274597168,
+          18.876312255859375
+        ]
+      ],
+      "peak_gib": 63.591042041778564
+    },
+    {
+      "questions": 4,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        899.6073879970936,
+        886.5428199933376,
+        888.799555003061
+      ],
+      "prefix_tokens": 1081,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.25615882873535156,
+      "agreement": 4,
+      "correct": 3,
+      "predictions": [
+        "cancel",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.08906364440918,
+          16.325237274169922,
+          18.240633010864258,
+          17.673965454101562
+        ],
+        [
+          15.869831085205078,
+          18.553985595703125,
+          16.321826934814453,
+          15.24909782409668
+        ],
+        [
+          14.17147159576416,
+          14.379642486572266,
+          19.853290557861328,
+          12.89643383026123
+        ],
+        [
+          14.268898010253906,
+          13.321664810180664,
+          13.410067558288574,
+          18.808032989501953
+        ]
+      ],
+      "peak_gib": 63.63639736175537
+    },
+    {
+      "questions": 4,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        853.5196919983719,
+        866.5352910029469,
+        871.8529869947815
+      ],
+      "prefix_tokens": 1081,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.23954486846923828,
+      "agreement": 4,
+      "correct": 3,
+      "predictions": [
+        "cancel",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.058069229125977,
+          16.28875732421875,
+          18.245893478393555,
+          17.64280891418457
+        ],
+        [
+          15.960428237915039,
+          18.540157318115234,
+          16.450965881347656,
+          15.282779693603516
+        ],
+        [
+          14.196775436401367,
+          14.602649688720703,
+          19.838531494140625,
+          13.032654762268066
+        ],
+        [
+          14.482633590698242,
+          13.5845365524292,
+          13.676314353942871,
+          18.99897003173828
+        ]
+      ],
+      "peak_gib": 63.63639736175537
+    },
+    {
+      "questions": 4,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        867.1756100084167,
+        872.359207001864,
+        871.8145890015876
+      ],
+      "prefix_tokens": 1081,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.23954486846923828,
+      "agreement": 4,
+      "correct": 3,
+      "predictions": [
+        "cancel",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.058069229125977,
+          16.28875732421875,
+          18.245893478393555,
+          17.64280891418457
+        ],
+        [
+          15.960428237915039,
+          18.540157318115234,
+          16.450965881347656,
+          15.282779693603516
+        ],
+        [
+          14.196775436401367,
+          14.602649688720703,
+          19.838531494140625,
+          13.032654762268066
+        ],
+        [
+          14.482633590698242,
+          13.5845365524292,
+          13.676314353942871,
+          18.99897003173828
+        ]
+      ],
+      "peak_gib": 63.63639736175537
+    },
+    {
+      "questions": 4,
+      "offset": 4,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        2370.6412729952717,
+        2384.558350997395,
+        2421.85599100776
+      ],
+      "prefix_tokens": 1081,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 4,
+      "correct": 4,
+      "predictions": [
+        "refund",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.809783935546875,
+          16.483219146728516,
+          16.968486785888672,
+          16.99690818786621
+        ],
+        [
+          15.756847381591797,
+          19.947246551513672,
+          13.995894432067871,
+          13.292424201965332
+        ],
+        [
+          13.764606475830078,
+          13.598203659057617,
+          19.916522979736328,
+          14.896687507629395
+        ],
+        [
+          13.598621368408203,
+          11.21729564666748,
+          13.447775840759277,
+          19.279529571533203
+        ]
+      ],
+      "peak_gib": 63.591042041778564
+    },
+    {
+      "questions": 4,
+      "offset": 4,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        914.6935989992926,
+        906.9435370038263,
+        914.474479999626
+      ],
+      "prefix_tokens": 1081,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.2640113830566406,
+      "agreement": 4,
+      "correct": 4,
+      "predictions": [
+        "refund",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.720806121826172,
+          16.35750389099121,
+          16.70447540283203,
+          16.84724998474121
+        ],
+        [
+          15.709007263183594,
+          19.872909545898438,
+          13.939897537231445,
+          13.179360389709473
+        ],
+        [
+          13.805665969848633,
+          13.693013191223145,
+          20.03388214111328,
+          14.984518051147461
+        ],
+        [
+          13.53464126586914,
+          11.179637908935547,
+          13.571378707885742,
+          19.413345336914062
+        ]
+      ],
+      "peak_gib": 63.63639736175537
+    },
+    {
+      "questions": 4,
+      "offset": 4,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        887.6123660011217,
+        887.4362269998528,
+        886.2050000025192
+      ],
+      "prefix_tokens": 1081,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.3066291809082031,
+      "agreement": 4,
+      "correct": 4,
+      "predictions": [
+        "refund",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.71875762939453,
+          16.361225128173828,
+          16.695419311523438,
+          16.87221336364746
+        ],
+        [
+          15.731961250305176,
+          19.9842529296875,
+          13.984840393066406,
+          13.238739013671875
+        ],
+        [
+          13.583294868469238,
+          13.394363403320312,
+          19.932729721069336,
+          14.590058326721191
+        ],
+        [
+          13.776659965515137,
+          11.401998519897461,
+          13.591076850891113,
+          19.347679138183594
+        ]
+      ],
+      "peak_gib": 63.63639736175537
+    },
+    {
+      "questions": 4,
+      "offset": 4,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        884.3769049999537,
+        883.7807880045148,
+        884.3529860023409
+      ],
+      "prefix_tokens": 1081,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.3066291809082031,
+      "agreement": 4,
+      "correct": 4,
+      "predictions": [
+        "refund",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.71875762939453,
+          16.361225128173828,
+          16.695419311523438,
+          16.87221336364746
+        ],
+        [
+          15.731961250305176,
+          19.9842529296875,
+          13.984840393066406,
+          13.238739013671875
+        ],
+        [
+          13.583294868469238,
+          13.394363403320312,
+          19.932729721069336,
+          14.590058326721191
+        ],
+        [
+          13.776659965515137,
+          11.401998519897461,
+          13.591076850891113,
+          19.347679138183594
+        ]
+      ],
+      "peak_gib": 63.63639736175537
+    },
+    {
+      "questions": 4,
+      "offset": 8,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        2106.642047991045,
+        2144.373856994207,
+        2140.086829997017
+      ],
+      "prefix_tokens": 997,
+      "suffix_tokens": [
+        11,
+        11,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 4,
+      "correct": 3,
+      "predictions": [
+        "positive",
+        "neutral",
+        "neutral",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.199357986450195,
+          18.01844024658203,
+          18.38239097595215
+        ],
+        [
+          17.18130874633789,
+          17.156158447265625,
+          17.831172943115234
+        ],
+        [
+          16.89089012145996,
+          18.388914108276367,
+          16.684078216552734
+        ],
+        [
+          15.187302589416504,
+          16.387962341308594,
+          19.29759407043457
+        ]
+      ],
+      "peak_gib": 63.06733751296997
+    },
+    {
+      "questions": 4,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        846.8682420061668,
+        846.320373006165,
+        844.1187790012918
+      ],
+      "prefix_tokens": 997,
+      "suffix_tokens": [
+        11,
+        11,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.31342124938964844,
+      "agreement": 4,
+      "correct": 3,
+      "predictions": [
+        "positive",
+        "neutral",
+        "neutral",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.217716217041016,
+          18.03878402709961,
+          18.40863037109375
+        ],
+        [
+          17.070362091064453,
+          17.03830337524414,
+          17.768360137939453
+        ],
+        [
+          16.949861526489258,
+          18.44068145751953,
+          16.724029541015625
+        ],
+        [
+          14.873881340026855,
+          16.1815242767334,
+          19.110187530517578
+        ]
+      ],
+      "peak_gib": 63.114975452423096
+    },
+    {
+      "questions": 4,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        844.1529090050608,
+        847.7980900061084,
+        845.1796570006991
+      ],
+      "prefix_tokens": 997,
+      "suffix_tokens": [
+        11,
+        11,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.3690366744995117,
+      "agreement": 4,
+      "correct": 3,
+      "predictions": [
+        "positive",
+        "neutral",
+        "neutral",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.173065185546875,
+          17.986635208129883,
+          18.324506759643555
+        ],
+        [
+          17.122404098510742,
+          17.118318557739258,
+          17.773265838623047
+        ],
+        [
+          16.817941665649414,
+          18.50813102722168,
+          16.68755531311035
+        ],
+        [
+          14.818265914916992,
+          16.075565338134766,
+          19.134681701660156
+        ]
+      ],
+      "peak_gib": 63.114975452423096
+    },
+    {
+      "questions": 4,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        845.6099859904498,
+        844.2489299923182,
+        845.3288180025993
+      ],
+      "prefix_tokens": 997,
+      "suffix_tokens": [
+        11,
+        11,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.3690366744995117,
+      "agreement": 4,
+      "correct": 3,
+      "predictions": [
+        "positive",
+        "neutral",
+        "neutral",
+        "positive"
+      ],
+      "logits": [
+        [
+          18.173065185546875,
+          17.986635208129883,
+          18.324506759643555
+        ],
+        [
+          17.122404098510742,
+          17.118318557739258,
+          17.773265838623047
+        ],
+        [
+          16.817941665649414,
+          18.50813102722168,
+          16.68755531311035
+        ],
+        [
+          14.818265914916992,
+          16.075565338134766,
+          19.134681701660156
+        ]
+      ],
+      "peak_gib": 63.114975452423096
+    },
+    {
+      "questions": 4,
+      "offset": 12,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        2118.3849450026173,
+        2141.7532109917374,
+        2140.2922950073844
+      ],
+      "prefix_tokens": 1001,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "neutral",
+        "neutral",
+        "positive",
+        "positive"
+      ],
+      "logits": [
+        [
+          17.373811721801758,
+          15.322160720825195,
+          18.149206161499023
+        ],
+        [
+          16.21039390563965,
+          17.89251136779785,
+          15.977987289428711
+        ],
+        [
+          16.250598907470703,
+          17.47012710571289,
+          17.628847122192383
+        ],
+        [
+          17.560415267944336,
+          17.956830978393555,
+          15.959930419921875
+        ]
+      ],
+      "peak_gib": 63.06744384765625
+    },
+    {
+      "questions": 4,
+      "offset": 12,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        846.5293580084108,
+        848.6308040010044,
+        846.3832790002925
+      ],
+      "prefix_tokens": 1001,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.10062599182128906,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "neutral",
+        "neutral",
+        "positive",
+        "positive"
+      ],
+      "logits": [
+        [
+          17.469528198242188,
+          15.404178619384766,
+          18.24599838256836
+        ],
+        [
+          16.238285064697266,
+          17.869932174682617,
+          15.918549537658691
+        ],
+        [
+          16.28704071044922,
+          17.57075309753418,
+          17.72225570678711
+        ],
+        [
+          17.573806762695312,
+          17.994525909423828,
+          16.019079208374023
+        ]
+      ],
+      "peak_gib": 63.115986347198486
+    },
+    {
+      "questions": 4,
+      "offset": 12,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        820.6721829919843,
+        821.6810599988094,
+        821.6726800019387
+      ],
+      "prefix_tokens": 1001,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.2448863983154297,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "neutral",
+        "neutral",
+        "positive",
+        "positive"
+      ],
+      "logits": [
+        [
+          17.431259155273438,
+          15.35032844543457,
+          18.208166122436523
+        ],
+        [
+          16.154949188232422,
+          17.80527114868164,
+          15.850286483764648
+        ],
+        [
+          16.345827102661133,
+          17.60719108581543,
+          17.751638412475586
+        ],
+        [
+          17.315528869628906,
+          17.82363510131836,
+          15.73944091796875
+        ]
+      ],
+      "peak_gib": 63.115986347198486
+    },
+    {
+      "questions": 4,
+      "offset": 12,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        820.1433949870989,
+        822.904828004539,
+        822.5448489974951
+      ],
+      "prefix_tokens": 1001,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.2448863983154297,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "neutral",
+        "neutral",
+        "positive",
+        "positive"
+      ],
+      "logits": [
+        [
+          17.431259155273438,
+          15.35032844543457,
+          18.208166122436523
+        ],
+        [
+          16.154949188232422,
+          17.80527114868164,
+          15.850286483764648
+        ],
+        [
+          16.345827102661133,
+          17.60719108581543,
+          17.751638412475586
+        ],
+        [
+          17.315528869628906,
+          17.82363510131836,
+          15.73944091796875
+        ]
+      ],
+      "peak_gib": 63.115986347198486
+    },
+    {
+      "questions": 4,
+      "offset": 16,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        2352.5677019933937,
+        2381.5526730031706,
+        2381.634755001869
+      ],
+      "prefix_tokens": 1056,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "contradicted",
+        "contradicted",
+        "contradicted",
+        "supported"
+      ],
+      "logits": [
+        [
+          18.026430130004883,
+          16.75450897216797,
+          14.674582481384277
+        ],
+        [
+          16.22014617919922,
+          16.582399368286133,
+          19.423137664794922
+        ],
+        [
+          17.228668212890625,
+          15.917821884155273,
+          18.536291122436523
+        ],
+        [
+          15.426584243774414,
+          18.340307235717773,
+          17.894081115722656
+        ]
+      ],
+      "peak_gib": 63.58972406387329
+    },
+    {
+      "questions": 4,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        892.2887340013403,
+        898.7035089958226,
+        920.0266170082614
+      ],
+      "prefix_tokens": 1056,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.11984062194824219,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "contradicted",
+        "contradicted",
+        "contradicted",
+        "supported"
+      ],
+      "logits": [
+        [
+          18.000076293945312,
+          16.71868133544922,
+          14.722175598144531
+        ],
+        [
+          16.29261016845703,
+          16.702239990234375,
+          19.471391677856445
+        ],
+        [
+          17.204416275024414,
+          15.836334228515625,
+          18.528287887573242
+        ],
+        [
+          15.452169418334961,
+          18.368228912353516,
+          17.90241813659668
+        ]
+      ],
+      "peak_gib": 63.636746406555176
+    },
+    {
+      "questions": 4,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        893.0650030088145,
+        888.2015749986749,
+        890.3304599953117
+      ],
+      "prefix_tokens": 1056,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.11202621459960938,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "contradicted",
+        "contradicted",
+        "contradicted",
+        "supported"
+      ],
+      "logits": [
+        [
+          17.961103439331055,
+          16.833314895629883,
+          14.766532897949219
+        ],
+        [
+          16.332172393798828,
+          16.68994903564453,
+          19.512351989746094
+        ],
+        [
+          17.296527862548828,
+          15.93355941772461,
+          18.64661407470703
+        ],
+        [
+          15.44340991973877,
+          18.357248306274414,
+          17.879436492919922
+        ]
+      ],
+      "peak_gib": 63.636746406555176
+    },
+    {
+      "questions": 4,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        888.5254549968522,
+        888.6204449954676,
+        873.3481430099346
+      ],
+      "prefix_tokens": 1056,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.11202621459960938,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "contradicted",
+        "contradicted",
+        "contradicted",
+        "supported"
+      ],
+      "logits": [
+        [
+          17.961103439331055,
+          16.833314895629883,
+          14.766532897949219
+        ],
+        [
+          16.332172393798828,
+          16.68994903564453,
+          19.512351989746094
+        ],
+        [
+          17.296527862548828,
+          15.93355941772461,
+          18.64661407470703
+        ],
+        [
+          15.44340991973877,
+          18.357248306274414,
+          17.879436492919922
+        ]
+      ],
+      "peak_gib": 63.636746406555176
+    },
+    {
+      "questions": 4,
+      "offset": 20,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        2378.994345010142,
+        2376.4302340132417,
+        2378.32704000175
+      ],
+      "prefix_tokens": 1048,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "supported",
+        "supported",
+        "supported",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.731691360473633,
+          17.451879501342773,
+          16.81497573852539
+        ],
+        [
+          17.571548461914062,
+          18.685590744018555,
+          14.707231521606445
+        ],
+        [
+          15.872539520263672,
+          17.891952514648438,
+          17.845672607421875
+        ],
+        [
+          17.44927978515625,
+          17.288345336914062,
+          19.596412658691406
+        ]
+      ],
+      "peak_gib": 63.589449405670166
+    },
+    {
+      "questions": 4,
+      "offset": 20,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        903.2210639998084,
+        901.674428008846,
+        903.2783349975944
+      ],
+      "prefix_tokens": 1048,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.4134674072265625,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "supported",
+        "supported",
+        "supported",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.81346321105957,
+          17.52105712890625,
+          16.993528366088867
+        ],
+        [
+          17.985015869140625,
+          18.9864444732666,
+          14.977429389953613
+        ],
+        [
+          15.92158317565918,
+          17.897356033325195,
+          17.891582489013672
+        ],
+        [
+          17.30314064025879,
+          17.343456268310547,
+          19.30234718322754
+        ]
+      ],
+      "peak_gib": 63.63689994812012
+    },
+    {
+      "questions": 4,
+      "offset": 20,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        863.2674320106162,
+        861.673545994563,
+        864.1441700019641
+      ],
+      "prefix_tokens": 1048,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.1265544891357422,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "supported",
+        "supported",
+        "supported",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.616897583007812,
+          17.369043350219727,
+          16.69147300720215
+        ],
+        [
+          17.698102951049805,
+          18.784841537475586,
+          14.591049194335938
+        ],
+        [
+          15.900323867797852,
+          17.907014846801758,
+          17.89475440979004
+        ],
+        [
+          17.3663387298584,
+          17.177928924560547,
+          19.484067916870117
+        ]
+      ],
+      "peak_gib": 63.63689994812012
+    },
+    {
+      "questions": 4,
+      "offset": 20,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        863.5808819963131,
+        868.310689998907,
+        888.9408020040719
+      ],
+      "prefix_tokens": 1048,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.1265544891357422,
+      "agreement": 4,
+      "correct": 2,
+      "predictions": [
+        "supported",
+        "supported",
+        "supported",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.616897583007812,
+          17.369043350219727,
+          16.69147300720215
+        ],
+        [
+          17.698102951049805,
+          18.784841537475586,
+          14.591049194335938
+        ],
+        [
+          15.900323867797852,
+          17.907014846801758,
+          17.89475440979004
+        ],
+        [
+          17.3663387298584,
+          17.177928924560547,
+          19.484067916870117
+        ]
+      ],
+      "peak_gib": 63.63689994812012
+    },
+    {
+      "questions": 8,
+      "offset": 0,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        6916.506146997563,
+        6914.582878001966,
+        6915.013063990045
+      ],
+      "prefix_tokens": 1589,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 8,
+      "correct": 8,
+      "predictions": [
+        "refund",
+        "exchange",
+        "cancel",
+        "information",
+        "refund",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.497352600097656,
+          16.09455680847168,
+          17.165050506591797,
+          16.842395782470703
+        ],
+        [
+          16.390485763549805,
+          18.68002700805664,
+          16.822858810424805,
+          15.14012336730957
+        ],
+        [
+          14.346176147460938,
+          14.901933670043945,
+          19.870500564575195,
+          13.078390121459961
+        ],
+        [
+          15.171476364135742,
+          15.29008674621582,
+          15.12655258178711,
+          18.87890625
+        ],
+        [
+          18.252857208251953,
+          17.982284545898438,
+          16.30394744873047,
+          15.404197692871094
+        ],
+        [
+          16.762657165527344,
+          18.840545654296875,
+          15.76425838470459,
+          14.918500900268555
+        ],
+        [
+          13.369763374328613,
+          12.883139610290527,
+          19.860258102416992,
+          14.352745056152344
+        ],
+        [
+          15.242504119873047,
+          12.634503364562988,
+          14.638543128967285,
+          19.097272872924805
+        ]
+      ],
+      "peak_gib": 65.6944260597229
+    },
+    {
+      "questions": 8,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        1439.7526840039063,
+        1426.8465369968908,
+        1432.0025049964897
+      ],
+      "prefix_tokens": 1589,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.4125537872314453,
+      "agreement": 8,
+      "correct": 8,
+      "predictions": [
+        "refund",
+        "exchange",
+        "cancel",
+        "information",
+        "refund",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.56761932373047,
+          15.983447074890137,
+          17.10018539428711,
+          16.614192962646484
+        ],
+        [
+          16.292606353759766,
+          18.421049118041992,
+          16.7161808013916,
+          14.912139892578125
+        ],
+        [
+          14.281600952148438,
+          14.73859977722168,
+          19.723682403564453,
+          13.074962615966797
+        ],
+        [
+          15.011480331420898,
+          14.937965393066406,
+          15.115696907043457,
+          18.77677345275879
+        ],
+        [
+          18.6654109954834,
+          18.150997161865234,
+          16.570659637451172,
+          15.649726867675781
+        ],
+        [
+          16.838871002197266,
+          18.9078369140625,
+          15.82503890991211,
+          14.97601318359375
+        ],
+        [
+          13.658201217651367,
+          13.220197677612305,
+          20.004566192626953,
+          14.545470237731934
+        ],
+        [
+          15.381956100463867,
+          12.610489845275879,
+          14.70652961730957,
+          19.178573608398438
+        ]
+      ],
+      "peak_gib": 65.74134540557861
+    },
+    {
+      "questions": 8,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        1407.1500559948618,
+        1408.6005729914177,
+        1404.551982996054
+      ],
+      "prefix_tokens": 1589,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.30315589904785156,
+      "agreement": 8,
+      "correct": 8,
+      "predictions": [
+        "refund",
+        "exchange",
+        "cancel",
+        "information",
+        "refund",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.581867218017578,
+          15.961284637451172,
+          16.983705520629883,
+          16.711423873901367
+        ],
+        [
+          16.364437103271484,
+          18.569583892822266,
+          16.619348526000977,
+          14.879343032836914
+        ],
+        [
+          14.538774490356445,
+          15.01189136505127,
+          19.87566375732422,
+          13.142680168151855
+        ],
+        [
+          15.227370262145996,
+          15.359363555908203,
+          15.159446716308594,
+          18.896106719970703
+        ],
+        [
+          18.38699722290039,
+          18.01200294494629,
+          16.528268814086914,
+          15.572586059570312
+        ],
+        [
+          16.77037811279297,
+          18.90635871887207,
+          15.734331130981445,
+          14.939355850219727
+        ],
+        [
+          13.616175651550293,
+          13.186295509338379,
+          19.98800277709961,
+          14.39950942993164
+        ],
+        [
+          15.230527877807617,
+          12.739078521728516,
+          14.692434310913086,
+          19.13523292541504
+        ]
+      ],
+      "peak_gib": 65.74134540557861
+    },
+    {
+      "questions": 8,
+      "offset": 0,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        1431.0457209940068,
+        1542.160764001892,
+        1383.6044269992271
+      ],
+      "prefix_tokens": 1589,
+      "suffix_tokens": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11
+      ],
+      "max_logit_delta": 0.30315589904785156,
+      "agreement": 8,
+      "correct": 8,
+      "predictions": [
+        "refund",
+        "exchange",
+        "cancel",
+        "information",
+        "refund",
+        "exchange",
+        "cancel",
+        "information"
+      ],
+      "logits": [
+        [
+          18.581867218017578,
+          15.961284637451172,
+          16.983705520629883,
+          16.711423873901367
+        ],
+        [
+          16.364437103271484,
+          18.569583892822266,
+          16.619348526000977,
+          14.879343032836914
+        ],
+        [
+          14.538774490356445,
+          15.01189136505127,
+          19.87566375732422,
+          13.142680168151855
+        ],
+        [
+          15.227370262145996,
+          15.359363555908203,
+          15.159446716308594,
+          18.896106719970703
+        ],
+        [
+          18.38699722290039,
+          18.01200294494629,
+          16.528268814086914,
+          15.572586059570312
+        ],
+        [
+          16.77037811279297,
+          18.90635871887207,
+          15.734331130981445,
+          14.939355850219727
+        ],
+        [
+          13.616175651550293,
+          13.186295509338379,
+          19.98800277709961,
+          14.39950942993164
+        ],
+        [
+          15.230527877807617,
+          12.739078521728516,
+          14.692434310913086,
+          19.13523292541504
+        ]
+      ],
+      "peak_gib": 65.74134540557861
+    },
+    {
+      "questions": 8,
+      "offset": 8,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        6320.050418988103,
+        6270.437800005311,
+        6272.2522289986955
+      ],
+      "prefix_tokens": 1425,
+      "suffix_tokens": [
+        11,
+        11,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 8,
+      "correct": 5,
+      "predictions": [
+        "positive",
+        "neutral",
+        "neutral",
+        "positive",
+        "positive",
+        "neutral",
+        "neutral",
+        "negative"
+      ],
+      "logits": [
+        [
+          17.676992416381836,
+          17.63555908203125,
+          17.99985694885254
+        ],
+        [
+          17.47482681274414,
+          17.199684143066406,
+          18.236331939697266
+        ],
+        [
+          16.010147094726562,
+          18.70659065246582,
+          17.037092208862305
+        ],
+        [
+          15.523824691772461,
+          16.752872467041016,
+          19.037303924560547
+        ],
+        [
+          17.27899169921875,
+          18.09874725341797,
+          16.702184677124023
+        ],
+        [
+          16.483375549316406,
+          18.13454818725586,
+          15.458370208740234
+        ],
+        [
+          17.2894344329834,
+          17.981586456298828,
+          15.99117660522461
+        ],
+        [
+          18.747337341308594,
+          17.076374053955078,
+          14.072907447814941
+        ]
+      ],
+      "peak_gib": 65.16784429550171
+    },
+    {
+      "questions": 8,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        1391.7675690026954,
+        1390.3602430073079,
+        1387.9258090018993
+      ],
+      "prefix_tokens": 1425,
+      "suffix_tokens": [
+        11,
+        11,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.3355827331542969,
+      "agreement": 8,
+      "correct": 5,
+      "predictions": [
+        "positive",
+        "neutral",
+        "neutral",
+        "positive",
+        "positive",
+        "neutral",
+        "neutral",
+        "negative"
+      ],
+      "logits": [
+        [
+          17.62990379333496,
+          17.610858917236328,
+          17.97245216369629
+        ],
+        [
+          17.28260040283203,
+          17.005292892456055,
+          18.032331466674805
+        ],
+        [
+          15.904473304748535,
+          18.64103889465332,
+          16.944671630859375
+        ],
+        [
+          15.396147727966309,
+          16.680906295776367,
+          19.09984588623047
+        ],
+        [
+          17.25042152404785,
+          18.434329986572266,
+          16.888212203979492
+        ],
+        [
+          16.61454200744629,
+          18.238731384277344,
+          15.512187004089355
+        ],
+        [
+          17.26958656311035,
+          17.88007926940918,
+          15.994317054748535
+        ],
+        [
+          18.740217208862305,
+          17.089521408081055,
+          14.05573844909668
+        ]
+      ],
+      "peak_gib": 65.2138442993164
+    },
+    {
+      "questions": 8,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        1469.2730569950072,
+        1421.8128710053861,
+        1372.9795880062738
+      ],
+      "prefix_tokens": 1425,
+      "suffix_tokens": [
+        11,
+        11,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.2614622116088867,
+      "agreement": 8,
+      "correct": 5,
+      "predictions": [
+        "positive",
+        "neutral",
+        "neutral",
+        "positive",
+        "positive",
+        "neutral",
+        "neutral",
+        "negative"
+      ],
+      "logits": [
+        [
+          17.592830657958984,
+          17.564821243286133,
+          17.927051544189453
+        ],
+        [
+          17.402931213378906,
+          17.077306747436523,
+          18.125606536865234
+        ],
+        [
+          15.996243476867676,
+          18.68270492553711,
+          16.99947738647461
+        ],
+        [
+          15.50575065612793,
+          16.763076782226562,
+          19.061843872070312
+        ],
+        [
+          17.24294090270996,
+          18.08787727355957,
+          16.675811767578125
+        ],
+        [
+          16.57895278930664,
+          18.172401428222656,
+          15.432718276977539
+        ],
+        [
+          17.338848114013672,
+          17.829866409301758,
+          15.729714393615723
+        ],
+        [
+          18.747800827026367,
+          17.11773681640625,
+          14.11715316772461
+        ]
+      ],
+      "peak_gib": 65.2138442993164
+    },
+    {
+      "questions": 8,
+      "offset": 8,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        1341.2943050061585,
+        1347.3661099997116,
+        1349.3208660074743
+      ],
+      "prefix_tokens": 1425,
+      "suffix_tokens": [
+        11,
+        11,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.46546173095703125,
+      "agreement": 8,
+      "correct": 5,
+      "predictions": [
+        "positive",
+        "neutral",
+        "neutral",
+        "positive",
+        "positive",
+        "neutral",
+        "neutral",
+        "negative"
+      ],
+      "logits": [
+        [
+          17.592830657958984,
+          17.564821243286133,
+          17.927051544189453
+        ],
+        [
+          17.402931213378906,
+          17.077306747436523,
+          18.125606536865234
+        ],
+        [
+          15.932962417602539,
+          18.643720626831055,
+          16.93626594543457
+        ],
+        [
+          15.2860689163208,
+          16.604541778564453,
+          18.82286262512207
+        ],
+        [
+          17.269859313964844,
+          18.564208984375,
+          16.938255310058594
+        ],
+        [
+          16.48896026611328,
+          18.11880874633789,
+          15.45511245727539
+        ],
+        [
+          17.39674186706543,
+          18.00206756591797,
+          16.029382705688477
+        ],
+        [
+          18.770648956298828,
+          17.03260040283203,
+          14.0548677444458
+        ]
+      ],
+      "peak_gib": 65.2138442993164
+    },
+    {
+      "questions": 8,
+      "offset": 16,
+      "mode": "independent",
+      "batch": 1,
+      "ms": [
+        6856.562419998227,
+        6845.267361000879,
+        6847.86303799774
+      ],
+      "prefix_tokens": 1531,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.0,
+      "agreement": 8,
+      "correct": 4,
+      "predictions": [
+        "contradicted",
+        "contradicted",
+        "contradicted",
+        "supported",
+        "contradicted",
+        "contradicted",
+        "unknown",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.93195152282715,
+          15.802939414978027,
+          14.051942825317383
+        ],
+        [
+          16.473112106323242,
+          16.70555305480957,
+          19.238624572753906
+        ],
+        [
+          17.347810745239258,
+          16.24991226196289,
+          18.835628509521484
+        ],
+        [
+          16.65521812438965,
+          18.727588653564453,
+          17.286327362060547
+        ],
+        [
+          15.787517547607422,
+          15.014965057373047,
+          19.42740821838379
+        ],
+        [
+          17.159788131713867,
+          16.83868408203125,
+          17.970626831054688
+        ],
+        [
+          17.72191619873047,
+          15.858088493347168,
+          18.138301849365234
+        ],
+        [
+          16.395334243774414,
+          16.880615234375,
+          18.82467269897461
+        ]
+      ],
+      "peak_gib": 65.69153261184692
+    },
+    {
+      "questions": 8,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 1,
+      "ms": [
+        1411.042941006599,
+        1398.2741220097523,
+        1395.00088999921
+      ],
+      "prefix_tokens": 1531,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 1.0102558135986328,
+      "agreement": 8,
+      "correct": 4,
+      "predictions": [
+        "contradicted",
+        "contradicted",
+        "contradicted",
+        "supported",
+        "contradicted",
+        "contradicted",
+        "unknown",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.839988708496094,
+          16.24544334411621,
+          14.494827270507812
+        ],
+        [
+          16.646982192993164,
+          17.101863861083984,
+          19.279102325439453
+        ],
+        [
+          17.21954345703125,
+          16.319698333740234,
+          19.069602966308594
+        ],
+        [
+          16.271484375,
+          18.587295532226562,
+          18.29658317565918
+        ],
+        [
+          16.029922485351562,
+          15.103703498840332,
+          19.84343719482422
+        ],
+        [
+          16.846147537231445,
+          16.428556442260742,
+          18.07140350341797
+        ],
+        [
+          18.033647537231445,
+          15.884775161743164,
+          18.050731658935547
+        ],
+        [
+          16.644689559936523,
+          17.596393585205078,
+          18.87130355834961
+        ]
+      ],
+      "peak_gib": 65.21926259994507
+    },
+    {
+      "questions": 8,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 4,
+      "ms": [
+        1441.1703209916595,
+        1384.7408069996163,
+        1358.6459689977346
+      ],
+      "prefix_tokens": 1531,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.9811420440673828,
+      "agreement": 8,
+      "correct": 4,
+      "predictions": [
+        "contradicted",
+        "contradicted",
+        "contradicted",
+        "supported",
+        "contradicted",
+        "contradicted",
+        "unknown",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.895343780517578,
+          16.292194366455078,
+          14.570724487304688
+        ],
+        [
+          16.548261642456055,
+          16.9891357421875,
+          19.1951904296875
+        ],
+        [
+          17.099836349487305,
+          16.238405227661133,
+          19.060794830322266
+        ],
+        [
+          16.286996841430664,
+          18.588375091552734,
+          18.26746940612793
+        ],
+        [
+          15.96876049041748,
+          15.034423828125,
+          19.790576934814453
+        ],
+        [
+          16.91289520263672,
+          16.478479385375977,
+          18.176372528076172
+        ],
+        [
+          17.94930076599121,
+          15.78213119506836,
+          17.950183868408203
+        ],
+        [
+          16.341123580932617,
+          17.377531051635742,
+          18.54806900024414
+        ]
+      ],
+      "peak_gib": 65.21926259994507
+    },
+    {
+      "questions": 8,
+      "offset": 16,
+      "mode": "shared",
+      "batch": 8,
+      "ms": [
+        1336.9395310000982,
+        1330.9651159943314,
+        1331.322126003215
+      ],
+      "prefix_tokens": 1531,
+      "suffix_tokens": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "max_logit_delta": 0.9552268981933594,
+      "agreement": 8,
+      "correct": 4,
+      "predictions": [
+        "contradicted",
+        "contradicted",
+        "contradicted",
+        "supported",
+        "contradicted",
+        "contradicted",
+        "unknown",
+        "contradicted"
+      ],
+      "logits": [
+        [
+          17.70862579345703,
+          16.357812881469727,
+          14.859796524047852
+        ],
+        [
+          16.563011169433594,
+          17.019027709960938,
+          19.214677810668945
+        ],
+        [
+          17.2779483795166,
+          16.42568588256836,
+          19.09857940673828
+        ],
+        [
+          16.269149780273438,
+          18.598854064941406,
+          18.241554260253906
+        ],
+        [
+          15.955984115600586,
+          15.151269912719727,
+          19.697877883911133
+        ],
+        [
+          16.856945037841797,
+          16.474082946777344,
+          18.103532791137695
+        ],
+        [
+          18.02001953125,
+          15.930299758911133,
+          18.084306716918945
+        ],
+        [
+          16.660064697265625,
+          17.648399353027344,
+          18.881927490234375
+        ]
+      ],
+      "peak_gib": 65.21926259994507
+    }
+  ]
+}
