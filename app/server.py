@@ -6,7 +6,20 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 
+def precision_settings(environ):
+    quantization = environ.get('QUANTIZATION', 'none')
+    if quantization not in ('none', 'fp8', 'fp8_per_channel', 'fp8_per_block'):
+        raise ValueError('QUANTIZATION must be none, fp8, fp8_per_channel or fp8_per_block')
+    candidate = environ.get('CANDIDATE_ONLY', '1')
+    if candidate not in ('0', '1'):
+        raise ValueError('CANDIDATE_ONLY must be 0 or 1')
+    if quantization != 'none' and candidate == '1':
+        raise ValueError('FP8 requires CANDIDATE_ONLY=0 with this model backend')
+    return (None if quantization == 'none' else quantization), candidate == '1'
+
+
 def main():
+    quantization, candidate_only = precision_settings(os.environ)
     from transformers import AutoTokenizer
     from vllm import LLM
     from vllm_scoring import evaluate
@@ -21,9 +34,10 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(
         checkpoint, trust_remote_code=True, local_files_only=True)
     additional = ({'decision_token_ids': [token for _, token in candidate_codes(tokenizer)]}
-                  if os.environ.get('CANDIDATE_ONLY', '1') == '1' else {})
+                  if candidate_only else {})
     engine = LLM(
         model=checkpoint, trust_remote_code=True, dtype='bfloat16',
+        quantization=quantization,
         max_model_len=16386,
         max_logprobs=1052,
         logprobs_mode=('processed_logits' if os.environ.get('DIRECT_LOGITS', '1') == '1'
@@ -62,6 +76,8 @@ def main():
                 self.send(200, {'ready': True,
                                'model': 'Nemotron-Labs-Diffusion-14B',
                                'backend': 'vllm', 'modes': ['systemone'],
+                               'quantization': quantization,
+                               'candidate_only_head': candidate_only,
                                'cache_policy': 'isolated_request' if isolate_cache else 'shared',
                                'position_ordering': POSITION_ORDERING if position_ordering else 'off',
                                'limits': {'max_questions': 512,

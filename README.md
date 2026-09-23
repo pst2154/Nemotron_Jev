@@ -171,6 +171,7 @@ UI reads remain available during inference.
 | `ENFORCE_EAGER` | `0` | Set to `1` for eager-mode comparisons |
 | `PRIME_SHARED_PREFIX` | `1` | Evaluate the first question before the remaining batch |
 | `CANDIDATE_ONLY` | `1` | Project only the serving code vocabulary; requires unquantized TP=1 |
+| `QUANTIZATION` | `none` | Optional online `fp8`, `fp8_per_channel`, or `fp8_per_block`; requires `CANDIDATE_ONLY=0`. Changes numerical precision and may change answers. |
 | `DIRECT_LOGITS` | `1` | Return candidate logits directly and skip the redundant full-vocabulary softmax |
 | `BATCH_TOKENIZE` | `1` | Batch prompt tokenization; exact token identity was checked on the benchmark inputs |
 | `POSITION_ORDERING` | `1` | Order options and reassign internal codes; map responses back to original labels. `0` restores input order. |
@@ -182,6 +183,44 @@ checkpoint**). `/health` reports these limits. Exceeding supported
 limits returns an error; inputs are not silently truncated. A request with 129
 questions is queued through the scheduler rather than rejected for exceeding
 the 128-sequence concurrency setting.
+
+### Optional FP8 inference
+
+To enable per-channel FP8, add these options to the container command:
+
+```bash
+-e QUANTIZATION=fp8_per_channel -e CANDIDATE_ONLY=0
+```
+
+The server quantizes the existing BF16 checkpoint during loading; the saved
+weights are not modified. Requests, option ordering, and response types stay the
+same, but numerical probabilities and some predictions can change. BF16 remains
+the default. `/health` reports the active quantization and output-head settings.
+For non-root containers, mount a writable cache or set `HF_HOME=/tmp/hf-cache`.
+See [H100 performance measurements](PERFORMANCE.md) for the tested latency and
+accuracy tradeoffs.
+
+To build a separate image with FP8 enabled by default:
+
+```bash
+docker build --build-arg VLLM_IMAGE=nemotron-masked-vllm:dev \
+  --build-arg DEFAULT_QUANTIZATION=fp8_per_channel \
+  --build-arg DEFAULT_CANDIDATE_ONLY=0 \
+  -t nemotron-jev:14b-vllm-fp8-channel-20260923 .
+```
+
+This image starts the same UI and System One API on port 8770. The normal build
+still defaults to BF16. The published FP8 image can be launched directly:
+
+```bash
+docker run --rm --gpus all --ipc=host -p 8770:8770 \
+  -v nemotron-models:/models \
+  ghcr.io/pst2154/nemotron-jev:14b-vllm-fp8-channel-20260923
+```
+
+This FP8 tag already sets both precision options. The first launch downloads
+the checkpoint into the model volume. For reproducible deployments, use
+`ghcr.io/pst2154/nemotron-jev@sha256:03e09c01d813d39418be9e05bc20ab8f39e5945794700360816027cbb46127b6`.
 
 ## Tests and results
 

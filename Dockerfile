@@ -1,5 +1,7 @@
 ARG VLLM_IMAGE=nemotron-masked-vllm:dev
 FROM ${VLLM_IMAGE}
+ARG DEFAULT_QUANTIZATION=none
+ARG DEFAULT_CANDIDATE_ONLY=1
 LABEL org.opencontainers.image.source="https://github.com/pst2154/Nemotron_Jev" \
       org.opencontainers.image.title="Nemotron Diffusion Decision Lab"
 WORKDIR /app
@@ -13,7 +15,8 @@ ENV CHECKPOINT_DIR=/models/checkpoint HF_HOME=/models/hf-cache PORT=8770 \
     CUDA_CACHE_PATH=/tmp/nemotron-cuda \
     OMP_NUM_THREADS=1 TOKENIZERS_PARALLELISM=true RAYON_NUM_THREADS=8 \
     VLLM_WORKER_MULTIPROC_METHOD=spawn \
-    CANDIDATE_ONLY=1 DIRECT_LOGITS=1 PRIME_SHARED_PREFIX=1 BATCH_TOKENIZE=1 \
+    QUANTIZATION=${DEFAULT_QUANTIZATION} CANDIDATE_ONLY=${DEFAULT_CANDIDATE_ONLY} \
+    DIRECT_LOGITS=1 PRIME_SHARED_PREFIX=1 BATCH_TOKENIZE=1 \
     POSITION_ORDERING=1
 EXPOSE 8770
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10m \
