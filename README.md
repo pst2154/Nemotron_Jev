@@ -220,6 +220,13 @@ argmax agreement, and probability drift; missing cases fail the comparison.
 - **Old UI or missing bars:** refresh the browser and run a new query. Old history entries may predate the scoring backend.
 - **Slow large request:** check the scheduler token budget and compare prefix priming on/off. Do not assume larger batching limits are faster; measure on the intended GPU and state lengths.
 
+## Separate training experiment
+
+The [small diffusion LoRA experiment](experiments/diffusion-lora-small/README.md)
+contains a 4,096-example training recipe and measured accuracy/latency report.
+It uses native Transformers/PEFT and does not change the production container or
+the existing JevBench submission instructions.
+
 ## Scope and licensing
 
 The 72-case benchmark is a small synthetic regression set, not proof of general reasoning quality, calibration, adversarial safety, or production readiness. Accuracy can depend on wording, option order, and evidence coverage. No tools execute commands contained in the supplied state.

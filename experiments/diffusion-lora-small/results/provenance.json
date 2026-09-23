@@ -1,0 +1,28 @@
+{
+  "model": "nvidia/Nemotron-Labs-Diffusion-14B",
+  "model_revision": "f8c3e2c078e193599b8882d965b1001c456ba738",
+  "jevbench_revision": "51a8d73fa798aa337bb1b26abd10995c0ab847e9",
+  "serving_repository_base_commit": "3af4cea3082948004a239a94dcb265ad61fdad81",
+  "hardware": "1 NVIDIA H100 PCIe 80 GB",
+  "base_dtype": "bfloat16",
+  "trainable_parameters": 60948480,
+  "selected_step": 192,
+  "selected_adapter_sha256": "2d89274ef89be5fa892b2974b122778f3f5ae8b35c86139bb394443505e391b2",
+  "python": "3.12",
+  "packages": {
+    "torch": "2.14.0",
+    "transformers": "5.17.0",
+    "peft": "0.21.0",
+    "datasets": "5.0.1",
+    "accelerate": "1.15.0",
+    "huggingface-hub": "1.31.0",
+    "safetensors": "0.8.0"
+  },
+  "training_source_groups": 1604,
+  "validation_source_groups": 283,
+  "training_question_types": {"choice": 1566, "noul": 1598, "score": 932},
+  "api_generated_data_added": false,
+  "production_service_changed": false,
+  "adapter_included_in_repository": false,
+  "bitwise_reproducibility_claimed": false
+}

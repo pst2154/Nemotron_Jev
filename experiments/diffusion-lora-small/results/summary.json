@@ -1,0 +1,61 @@
+{
+  "selected_step": 192,
+  "training_examples": 4096,
+  "training_seconds": 2522.9459484580084,
+  "peak_gib": 39.786683559417725,
+  "training_tokens": {
+    "min": 152,
+    "median": 472.0,
+    "max": 1045
+  },
+  "accuracy": {
+    "base/heldout/all": {
+      "correct": 382,
+      "total": 580
+    },
+    "base/heldout/BoolQ": {
+      "correct": 108,
+      "total": 128
+    },
+    "base/heldout/PAWS": {
+      "correct": 64,
+      "total": 128
+    },
+    "base/heldout/synthetic": {
+      "correct": 210,
+      "total": 324
+    },
+    "trained/heldout/all": {
+      "correct": 488,
+      "total": 580
+    },
+    "trained/heldout/BoolQ": {
+      "correct": 111,
+      "total": 128
+    },
+    "trained/heldout/PAWS": {
+      "correct": 107,
+      "total": 128
+    },
+    "trained/heldout/synthetic": {
+      "correct": 270,
+      "total": 324
+    },
+    "base/jevbench/all": {
+      "correct": 173,
+      "total": 231
+    },
+    "trained/jevbench/all": {
+      "correct": 183,
+      "total": 231
+    }
+  },
+  "jevbench_transitions": {
+    "wrong_to_correct": 19,
+    "correct_to_wrong": 9
+  },
+  "warm_latency_median_ms": {
+    "False": 89.85365750049823,
+    "True": 172.4722520002615
+  }
+}

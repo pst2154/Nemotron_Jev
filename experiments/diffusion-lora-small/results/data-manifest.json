@@ -1,0 +1,28 @@
+{
+  "sources": {
+    "google/boolq": {
+      "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+      "counts": {
+        "eval": 128,
+        "train": 710
+      }
+    },
+    "google-research-datasets/paws": {
+      "revision": "161ece9501cf0a11f3e48bd356eaa82de46d6a09",
+      "counts": {
+        "eval": 128,
+        "train": 710
+      }
+    }
+  },
+  "counts": {
+    "train": 4096,
+    "eval": 580
+  },
+  "exact_state_overlap": 0,
+  "source_group_overlap": 0,
+  "sha256": {
+    "train": "abedf133cda1a499ff17967a1c8b66e11526253b373bb0504ad5f0b434ec3c94",
+    "eval": "50fc6121fc5f6fa2a60d4840867085e986627f649a72d6906b9145b8b5d8d8c0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "diffusion-decision-small-v2",
+  "training_rows": 4096,
+  "new_public_training_rows": 1420,
+  "new_public_validation_rows": 256,
+  "rank": 16,
+  "alpha": 32,
+  "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+  "train_output_head": false,
+  "forward": "differentiable_causal_prefix_then_masked_answer",
+  "gradient_checkpointing": false,
+  "epochs": 1,
+  "effective_batch_size": 16,
+  "learning_rate": 0.00002,
+  "weight_decay": 0.01,
+  "warmup_fraction": 0.05,
+  "minimum_lr_fraction": 0.1,
+  "gradient_clip": 1.0,
+  "canonical_prompt_fraction": 0.5,
+  "max_prompt_tokens": 4096,
+  "validation_every_updates": 64,
+  "selection": "validation_accuracy_then_cross_entropy",
+  "seed": 29,
+  "public_sources": {
+    "google/boolq": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+    "google-research-datasets/paws": "161ece9501cf0a11f3e48bd356eaa82de46d6a09"
+  }
+}

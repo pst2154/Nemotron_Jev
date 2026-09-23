@@ -1,0 +1,62 @@
+[
+  {
+    "id": "scale-diverse-007-001-base",
+    "max_probability_delta": 0.0,
+    "argmax_agreement": true
+  },
+  {
+    "id": "scale-diverse-007-001-counterfactual",
+    "max_probability_delta": 0.0,
+    "argmax_agreement": true
+  },
+  {
+    "id": "scale-diverse-007-004-base",
+    "max_probability_delta": 0.0,
+    "argmax_agreement": true
+  },
+  {
+    "id": "scale-diverse-007-004-counterfactual",
+    "max_probability_delta": 0.0,
+    "argmax_agreement": true
+  },
+  {
+    "id": "scale-diverse-007-005-base",
+    "max_probability_delta": 0.0,
+    "argmax_agreement": true
+  },
+  {
+    "id": "scale-diverse-007-005-counterfactual",
+    "max_probability_delta": 0.0,
+    "argmax_agreement": true
+  },
+  {
+    "id": "scale-diverse-008-003-base",
+    "max_probability_delta": 0.0,
+    "argmax_agreement": true
+  },
+  {
+    "id": "scale-diverse-008-003-counterfactual",
+    "max_probability_delta": 0.0,
+    "argmax_agreement": true
+  },
+  {
+    "id": "scale-diverse-008-005-base",
+    "max_probability_delta": 0.0,
+    "argmax_agreement": true
+  },
+  {
+    "id": "scale-diverse-008-005-counterfactual",
+    "max_probability_delta": 0.0,
+    "argmax_agreement": true
+  },
+  {
+    "id": "scale-diverse-009-001-base",
+    "max_probability_delta": 4.842877388000488e-08,
+    "argmax_agreement": true
+  },
+  {
+    "id": "scale-diverse-009-001-counterfactual",
+    "max_probability_delta": 7.450580596923828e-09,
+    "argmax_agreement": true
+  }
+]

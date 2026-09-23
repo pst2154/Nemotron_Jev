@@ -1,0 +1,580 @@
+{"id": "scale-diverse-007-001-base", "correct": true, "probabilities": [0.0016985804541036487, 0.0004571666941046715, 0.9970418810844421, 0.0008023525588214397]}
+{"id": "scale-diverse-007-001-counterfactual", "correct": false, "probabilities": [0.09649106860160828, 0.35850781202316284, 0.49002209305763245, 0.054978951811790466]}
+{"id": "scale-diverse-007-004-base", "correct": true, "probabilities": [0.0029762196354568005, 0.0009076957358047366, 0.9954091906547546, 0.0007069141138345003]}
+{"id": "scale-diverse-007-004-counterfactual", "correct": true, "probabilities": [0.010934345424175262, 0.9842783808708191, 0.0027646354865282774, 0.0020226503256708384]}
+{"id": "scale-diverse-007-005-base", "correct": true, "probabilities": [0.0934237539768219, 0.08776348829269409, 0.7822275161743164, 0.03658527135848999]}
+{"id": "scale-diverse-007-005-counterfactual", "correct": true, "probabilities": [0.020094117149710655, 0.9681888818740845, 0.006944341119378805, 0.004772771615535021]}
+{"id": "scale-diverse-008-003-base", "correct": true, "probabilities": [0.0050478121265769005, 0.0006417572731152177, 0.001446222304366529, 0.961942732334137, 0.03092159889638424]}
+{"id": "scale-diverse-008-003-counterfactual", "correct": false, "probabilities": [0.011837302707135677, 0.0023309029638767242, 0.010446381755173206, 0.6071377396583557, 0.3682476580142975]}
+{"id": "scale-diverse-008-005-base", "correct": true, "probabilities": [0.013127565383911133, 0.0012998048914596438, 0.0021430160850286484, 0.9796684384346008, 0.0037611103616654873]}
+{"id": "scale-diverse-008-005-counterfactual", "correct": false, "probabilities": [0.0189374890178442, 0.001875065267086029, 0.003091460093855858, 0.9713078737258911, 0.004788146819919348]}
+{"id": "scale-diverse-009-001-base", "correct": true, "probabilities": [0.0097084641456604, 0.9902915358543396]}
+{"id": "scale-diverse-009-001-counterfactual", "correct": true, "probabilities": [0.8267118036746979, 0.17328819632530212]}
+{"id": "scale-diverse-009-003-base", "correct": true, "probabilities": [0.13296425342559814, 0.8670357465744019]}
+{"id": "scale-diverse-009-003-counterfactual", "correct": true, "probabilities": [0.9324533045291901, 0.06754669547080994]}
+{"id": "scale-diverse-010-001-base", "correct": true, "probabilities": [0.0019267797470092773, 0.9980732202529907]}
+{"id": "scale-diverse-010-001-counterfactual", "correct": false, "probabilities": [0.0028009414672851562, 0.9971990585327148]}
+{"id": "scale-diverse-010-004-base", "correct": true, "probabilities": [0.0031726956367492676, 0.9968273043632507]}
+{"id": "scale-diverse-010-004-counterfactual", "correct": false, "probabilities": [0.003824472427368164, 0.9961755275726318]}
+{"id": "scale-diverse-011-004-base", "correct": true, "probabilities": [0.018633143976330757, 0.022475864738225937, 0.06109573319554329, 0.8977952003479004]}
+{"id": "scale-diverse-011-004-counterfactual", "correct": false, "probabilities": [0.04727480933070183, 0.032491471618413925, 0.22553549706935883, 0.6946982741355896]}
+{"id": "scale-diverse-079-001-base", "correct": true, "probabilities": [0.06260059028863907, 0.9199089407920837, 0.009018470533192158, 0.00847206823527813]}
+{"id": "scale-diverse-079-001-counterfactual", "correct": false, "probabilities": [0.1358678787946701, 0.8322916626930237, 0.018387718126177788, 0.013452742248773575]}
+{"id": "scale-diverse-079-002-base", "correct": true, "probabilities": [0.1028938814997673, 0.009570621885359287, 0.8615198731422424, 0.026015646755695343]}
+{"id": "scale-diverse-079-002-counterfactual", "correct": false, "probabilities": [0.1408279836177826, 0.010859489440917969, 0.8104091882705688, 0.03790334612131119]}
+{"id": "scale-diverse-079-003-base", "correct": true, "probabilities": [0.016832716763019562, 0.9783079028129578, 0.0022780606523156166, 0.002581381006166339]}
+{"id": "scale-diverse-079-003-counterfactual", "correct": false, "probabilities": [0.02907412126660347, 0.9628026485443115, 0.003934754524379969, 0.004188524559140205]}
+{"id": "scale-diverse-080-003-base", "correct": true, "probabilities": [0.008678625337779522, 0.0019364631734788418, 0.008152814581990242, 0.038894906640052795, 0.9423372745513916]}
+{"id": "scale-diverse-080-003-counterfactual", "correct": false, "probabilities": [0.009174595586955547, 0.002047128975391388, 0.009174595586955547, 0.04376954957842827, 0.9358341693878174]}
+{"id": "scale-diverse-081-005-base", "correct": true, "probabilities": [0.09534949064254761, 0.9046505093574524]}
+{"id": "scale-diverse-081-005-counterfactual", "correct": true, "probabilities": [0.9740426428616047, 0.02595735713839531]}
+{"id": "scale-diverse-082-004-base", "correct": true, "probabilities": [0.006692826747894287, 0.9933071732521057]}
+{"id": "scale-diverse-082-004-counterfactual", "correct": false, "probabilities": [0.006289958953857422, 0.9937100410461426]}
+{"id": "scale-diverse-083-004-base", "correct": true, "probabilities": [0.098351389169693, 0.02336050383746624, 0.10469451546669006, 0.7735936045646667]}
+{"id": "scale-diverse-083-004-counterfactual", "correct": false, "probabilities": [0.09265650808811188, 0.026546532288193703, 0.10499357432126999, 0.7758034467697144]}
+{"id": "scale-diverse-084-002-base", "correct": true, "probabilities": [0.7560268640518188, 0.03764035925269127, 0.03764035925269127, 0.16869239509105682]}
+{"id": "scale-diverse-084-002-counterfactual", "correct": false, "probabilities": [0.7170596122741699, 0.03800276666879654, 0.05194362625479698, 0.19299398362636566]}
+{"id": "scale-diverse-084-003-base", "correct": true, "probabilities": [0.6526100635528564, 0.032491542398929596, 0.28959396481513977, 0.025304438546299934]}
+{"id": "scale-diverse-084-003-counterfactual", "correct": false, "probabilities": [0.6067167520523071, 0.03422861546278, 0.07246197760105133, 0.2865926921367645]}
+{"id": "scale-diverse-084-004-base", "correct": true, "probabilities": [0.782361626625061, 0.025148974731564522, 0.028497520834207535, 0.16399189829826355]}
+{"id": "scale-diverse-084-004-counterfactual", "correct": false, "probabilities": [0.7426310777664185, 0.03262893483042717, 0.03697342425584793, 0.18776655197143555]}
+{"id": "scale-diverse-097-002-base", "correct": false, "probabilities": [0.057068321853876114, 0.15512776374816895, 0.7878038883209229]}
+{"id": "scale-diverse-097-002-counterfactual", "correct": true, "probabilities": [0.0271313413977623, 0.016455989331007004, 0.9564127326011658]}
+{"id": "scale-diverse-097-005-base", "correct": true, "probabilities": [0.050702743232250214, 0.6575231552124023, 0.29177412390708923]}
+{"id": "scale-diverse-097-005-counterfactual", "correct": true, "probabilities": [0.11541574448347092, 0.33396652340888977, 0.5506176948547363]}
+{"id": "scale-diverse-099-001-base", "correct": true, "probabilities": [0.09534949064254761, 0.9046505093574524]}
+{"id": "scale-diverse-099-001-counterfactual", "correct": true, "probabilities": [0.5, 0.5]}
+{"id": "scale-diverse-099-002-base", "correct": true, "probabilities": [0.04468083381652832, 0.9553191661834717]}
+{"id": "scale-diverse-099-002-counterfactual", "correct": false, "probabilities": [0.11920297145843506, 0.8807970285415649]}
+{"id": "scale-diverse-099-003-base", "correct": true, "probabilities": [0.022977352142333984, 0.977022647857666]}
+{"id": "scale-diverse-099-003-counterfactual", "correct": false, "probabilities": [0.1732882261276245, 0.8267117738723755]}
+{"id": "scale-diverse-169-001-base", "correct": true, "probabilities": [0.01793016865849495, 0.978954017162323, 0.0031157962512224913]}
+{"id": "scale-diverse-169-001-counterfactual", "correct": false, "probabilities": [0.04980519413948059, 0.9397550821304321, 0.010439736768603325]}
+{"id": "scale-diverse-169-002-base", "correct": true, "probabilities": [0.016888342797756195, 0.0015708606224507093, 0.9815407991409302]}
+{"id": "scale-diverse-169-002-counterfactual", "correct": false, "probabilities": [0.2815132737159729, 0.04317145794630051, 0.675315260887146]}
+{"id": "scale-diverse-169-004-base", "correct": true, "probabilities": [0.052812155336141586, 0.011070027947425842, 0.9361178278923035]}
+{"id": "scale-diverse-169-004-counterfactual", "correct": false, "probabilities": [0.18100006878376007, 0.10313073545694351, 0.7158691883087158]}
+{"id": "scale-diverse-171-001-base", "correct": true, "probabilities": [0.1919327974319458, 0.8080672025680542]}
+{"id": "scale-diverse-171-001-counterfactual", "correct": true, "probabilities": [0.6791786849498749, 0.3208213150501251]}
+{"id": "scale-diverse-171-002-base", "correct": true, "probabilities": [0.03308594226837158, 0.9669140577316284]}
+{"id": "scale-diverse-171-002-counterfactual", "correct": true, "probabilities": [0.7185944020748138, 0.28140559792518616]}
+{"id": "scale-diverse-173-001-base", "correct": false, "probabilities": [0.9242962002754211, 0.006629520561546087, 0.05214522406458855, 0.016929075121879578]}
+{"id": "scale-diverse-173-001-counterfactual", "correct": true, "probabilities": [0.9491623640060425, 0.0041291844099760056, 0.03680301830172539, 0.009905398823320866]}
+{"id": "scale-diverse-173-002-base", "correct": false, "probabilities": [0.8821682929992676, 0.05639513209462166, 0.036411434412002563, 0.02502518892288208]}
+{"id": "scale-diverse-173-002-counterfactual", "correct": true, "probabilities": [0.944365382194519, 0.006363084074109793, 0.03661701828241348, 0.012654503807425499]}
+{"id": "scale-diverse-173-004-base", "correct": false, "probabilities": [0.8823134303092957, 0.026643557474017143, 0.04977671802043915, 0.04126634821295738]}
+{"id": "scale-diverse-173-004-counterfactual", "correct": true, "probabilities": [0.9610859155654907, 0.0044507114216685295, 0.008851295337080956, 0.02561207301914692]}
+{"id": "scale-diverse-174-003-base", "correct": true, "probabilities": [0.8572741150856018, 0.006545368116348982, 0.020161155611276627, 0.11601943522691727]}
+{"id": "scale-diverse-174-003-counterfactual", "correct": false, "probabilities": [0.8175221085548401, 0.026279205456376076, 0.10393626242876053, 0.05226243659853935]}
+{"id": "scale-diverse-174-004-base", "correct": true, "probabilities": [0.7482613921165466, 0.006473729386925697, 0.030884437263011932, 0.21438048779964447]}
+{"id": "scale-diverse-174-004-counterfactual", "correct": false, "probabilities": [0.744533121585846, 0.017509741708636284, 0.061115000396966934, 0.1768421232700348]}
+{"id": "scale-diverse-211-004-base", "correct": true, "probabilities": [0.18201978504657745, 0.007057673297822475, 0.7199022173881531, 0.009646695107221603, 0.0054965210147202015, 0.0758771300315857]}
+{"id": "scale-diverse-211-004-counterfactual", "correct": false, "probabilities": [0.11926351487636566, 0.005937780253589153, 0.7776957750320435, 0.009196613915264606, 0.005937780253589153, 0.0819685310125351]}
+{"id": "scale-diverse-211-006-base", "correct": true, "probabilities": [0.25841230154037476, 0.009412667714059353, 0.6598789691925049, 0.013695350848138332, 0.013695350848138332, 0.04490532726049423]}
+{"id": "scale-diverse-211-006-counterfactual", "correct": false, "probabilities": [0.24849936366081238, 0.00905158743262291, 0.675491213798523, 0.014019372873008251, 0.012372053228318691, 0.040566399693489075]}
+{"id": "scale-diverse-213-001-base", "correct": true, "probabilities": [0.00522005558013916, 0.9947799444198608]}
+{"id": "scale-diverse-213-001-counterfactual", "correct": false, "probabilities": [0.0179862380027771, 0.9820137619972229]}
+{"id": "scale-diverse-213-003-base", "correct": true, "probabilities": [0.004331469535827637, 0.9956685304641724]}
+{"id": "scale-diverse-213-003-counterfactual", "correct": false, "probabilities": [0.00806206464767456, 0.9919379353523254]}
+{"id": "scale-diverse-214-003-base", "correct": true, "probabilities": [0.9525741338729858, 0.04742586612701416]}
+{"id": "scale-diverse-214-003-counterfactual", "correct": false, "probabilities": [0.9603611826896667, 0.03963881731033325]}
+{"id": "scale-diverse-215-003-base", "correct": false, "probabilities": [0.0038003064692020416, 0.000514315499458462, 0.9898779392242432, 0.002453662222251296, 0.003353758715093136]}
+{"id": "scale-diverse-215-003-counterfactual", "correct": true, "probabilities": [0.007080915849655867, 0.0012304787524044514, 0.9872302412986755, 0.0022988368291407824, 0.0021595575381070375]}
+{"id": "scale-diverse-215-004-base", "correct": false, "probabilities": [0.019898533821105957, 0.00345784705132246, 0.9587650895118713, 0.005031137727200985, 0.012847459875047207]}
+{"id": "scale-diverse-215-004-counterfactual", "correct": true, "probabilities": [0.01876121759414673, 0.0041861929930746555, 0.9622668027877808, 0.004743578378111124, 0.010042156092822552]}
+{"id": "scale-diverse-216-005-base", "correct": true, "probabilities": [0.014522834680974483, 0.008274862542748451, 0.9564440250396729, 0.017517883330583572, 0.003240482648834586]}
+{"id": "scale-diverse-216-005-counterfactual", "correct": false, "probabilities": [0.047630757093429565, 0.06930233538150787, 0.8442752957344055, 0.03273610398173332, 0.0060555702075362206]}
+{"id": "scale-diverse-273-001-base", "correct": true, "probabilities": [0.09009301662445068, 0.9099069833755493]}
+{"id": "scale-diverse-273-001-counterfactual", "correct": false, "probabilities": [0.2689414620399475, 0.7310585379600525]}
+{"id": "scale-diverse-273-003-base", "correct": false, "probabilities": [0.7310585677623749, 0.2689414322376251]}
+{"id": "scale-diverse-273-003-counterfactual", "correct": true, "probabilities": [0.8175744861364365, 0.18242551386356354]}
+{"id": "scale-diverse-274-004-base", "correct": false, "probabilities": [0.3073580265045166, 0.6926419734954834]}
+{"id": "scale-diverse-274-004-counterfactual", "correct": true, "probabilities": [0.23370635509490967, 0.7662936449050903]}
+{"id": "scale-diverse-275-002-base", "correct": true, "probabilities": [0.5151380896568298, 0.3768830895423889, 0.10797881335020065]}
+{"id": "scale-diverse-275-002-counterfactual", "correct": true, "probabilities": [0.01305026188492775, 0.01305026188492775, 0.9738995432853699]}
+{"id": "scale-diverse-275-003-base", "correct": true, "probabilities": [0.5175566077232361, 0.4030734896659851, 0.07936988025903702]}
+{"id": "scale-diverse-275-003-counterfactual", "correct": false, "probabilities": [0.3092344403266907, 0.4499334692955017, 0.24083203077316284]}
+{"id": "scale-diverse-275-004-base", "correct": true, "probabilities": [0.5248270630836487, 0.3839716613292694, 0.09120126068592072]}
+{"id": "scale-diverse-275-004-counterfactual", "correct": false, "probabilities": [0.3316039741039276, 0.37575653195381165, 0.29263946413993835]}
+{"id": "scale-diverse-275-005-base", "correct": false, "probabilities": [0.5185303688049316, 0.37936490774154663, 0.10210467875003815]}
+{"id": "scale-diverse-275-005-counterfactual", "correct": true, "probabilities": [0.5803366303443909, 0.33066582679748535, 0.0889975056052208]}
+{"id": "fast-41-diverse-007-003-base", "correct": true, "probabilities": [0.0027976357378065586, 0.000550887081772089, 0.9960272312164307, 0.0006242368253879249]}
+{"id": "fast-41-diverse-007-003-counterfactual", "correct": true, "probabilities": [0.038925301283597946, 0.9430736303329468, 0.009841857478022575, 0.008159185759723186]}
+{"id": "fast-41-diverse-007-005-base", "correct": true, "probabilities": [0.0033646589145064354, 0.0027894002851098776, 0.9930952191352844, 0.0007507568807341158]}
+{"id": "fast-41-diverse-007-005-counterfactual", "correct": true, "probabilities": [0.01899321936070919, 0.9741662740707397, 0.0037399865686893463, 0.003100557718425989]}
+{"id": "fast-41-diverse-007-006-base", "correct": true, "probabilities": [0.0019244685536250472, 0.0005513694486580789, 0.9968993663787842, 0.0006247833953239024]}
+{"id": "fast-41-diverse-007-006-counterfactual", "correct": true, "probabilities": [0.006268013268709183, 0.9902520179748535, 0.0013138470239937305, 0.002166167600080371]}
+{"id": "fast-41-diverse-007-009-base", "correct": true, "probabilities": [0.002975448267534375, 0.0009659865172579885, 0.995151162147522, 0.0009074604022316635]}
+{"id": "fast-41-diverse-007-009-counterfactual", "correct": true, "probabilities": [0.006270335055887699, 0.9906188249588013, 0.0013143336400389671, 0.0017964810831472278]}
+{"id": "fast-41-diverse-007-010-base", "correct": true, "probabilities": [0.0026280637830495834, 0.0006644786335527897, 0.9960001111030579, 0.0007073337910696864]}
+{"id": "fast-41-diverse-007-010-counterfactual", "correct": true, "probabilities": [0.015770304948091507, 0.9756742119789124, 0.005450071766972542, 0.00310535728931427]}
+{"id": "fast-41-diverse-008-009-base", "correct": true, "probabilities": [0.004248489160090685, 0.00047666727914474905, 0.001885255565866828, 0.9765865802764893, 0.01680309884250164]}
+{"id": "fast-41-diverse-008-009-counterfactual", "correct": false, "probabilities": [0.005077192559838295, 0.0006063841283321381, 0.0025529726408421993, 0.9675416350364685, 0.024221930652856827]}
+{"id": "fast-41-diverse-008-011-base", "correct": true, "probabilities": [0.003994632046669722, 0.0012968671508133411, 0.003311666427180171, 0.013942635618150234, 0.9774542450904846]}
+{"id": "fast-41-diverse-008-011-counterfactual", "correct": false, "probabilities": [0.004795793443918228, 0.0013740177964791656, 0.00423227297142148, 0.01673896238207817, 0.9728589653968811]}
+{"id": "fast-41-diverse-009-001-base", "correct": true, "probabilities": [0.03308594226837158, 0.9669140577316284]}
+{"id": "fast-41-diverse-009-001-counterfactual", "correct": true, "probabilities": [0.9149009585380554, 0.08509904146194458]}
+{"id": "fast-41-diverse-009-002-base", "correct": true, "probabilities": [0.05033063888549805, 0.949669361114502]}
+{"id": "fast-41-diverse-009-002-counterfactual", "correct": true, "probabilities": [0.8175744861364365, 0.18242551386356354]}
+{"id": "fast-41-diverse-009-003-base", "correct": true, "probabilities": [0.031143784523010254, 0.9688562154769897]}
+{"id": "fast-41-diverse-009-003-counterfactual", "correct": true, "probabilities": [0.7981867790222168, 0.2018132209777832]}
+{"id": "fast-41-diverse-009-004-base", "correct": true, "probabilities": [0.003593623638153076, 0.9964063763618469]}
+{"id": "fast-41-diverse-009-004-counterfactual", "correct": true, "probabilities": [0.9399133548140526, 0.06008664518594742]}
+{"id": "fast-41-diverse-009-005-base", "correct": true, "probabilities": [0.011687219142913818, 0.9883127808570862]}
+{"id": "fast-41-diverse-009-005-counterfactual", "correct": true, "probabilities": [0.9149009585380554, 0.08509904146194458]}
+{"id": "fast-41-diverse-009-007-base", "correct": true, "probabilities": [0.02033233642578125, 0.9796676635742188]}
+{"id": "fast-41-diverse-009-007-counterfactual", "correct": true, "probabilities": [0.8175744861364365, 0.18242551386356354]}
+{"id": "fast-41-diverse-009-008-base", "correct": true, "probabilities": [0.11279541254043579, 0.8872045874595642]}
+{"id": "fast-41-diverse-009-008-counterfactual", "correct": true, "probabilities": [0.7772998511791229, 0.22270014882087708]}
+{"id": "fast-41-diverse-010-004-base", "correct": true, "probabilities": [0.0024725794792175293, 0.9975274205207825]}
+{"id": "fast-41-diverse-010-004-counterfactual", "correct": false, "probabilities": [0.007577240467071533, 0.9924227595329285]}
+{"id": "fast-41-diverse-079-003-base", "correct": true, "probabilities": [0.07489166408777237, 0.9123672246932983, 0.006966009270399809, 0.005775024648755789]}
+{"id": "fast-41-diverse-079-003-counterfactual", "correct": false, "probabilities": [0.2512684166431427, 0.7270692586898804, 0.01250991690903902, 0.009152451530098915]}
+{"id": "fast-41-diverse-079-011-base", "correct": true, "probabilities": [0.11067977547645569, 0.8705639243125916, 0.009671092964708805, 0.009085150435566902]}
+{"id": "fast-41-diverse-079-011-counterfactual", "correct": false, "probabilities": [0.14482806622982025, 0.8334280252456665, 0.011888211593031883, 0.009855673648416996]}
+{"id": "fast-41-diverse-079-012-base", "correct": true, "probabilities": [0.06294485926628113, 0.924967885017395, 0.006232384592294693, 0.005854783579707146]}
+{"id": "fast-41-diverse-079-012-counterfactual", "correct": false, "probabilities": [0.07067488878965378, 0.9165259003639221, 0.006997761316597462, 0.005801348015666008]}
+{"id": "fast-41-diverse-079-015-base", "correct": true, "probabilities": [0.013187178410589695, 0.9841172099113464, 0.0013899183832108974, 0.001305707381106913]}
+{"id": "fast-41-diverse-079-015-counterfactual", "correct": false, "probabilities": [0.015854841098189354, 0.9809042811393738, 0.0016710880445316434, 0.0015698418719694018]}
+{"id": "fast-41-diverse-082-006-base", "correct": true, "probabilities": [0.9890130758285522, 0.010986924171447754]}
+{"id": "fast-41-diverse-082-006-counterfactual", "correct": false, "probabilities": [0.9324532747268677, 0.06754672527313232]}
+{"id": "fast-41-diverse-084-006-base", "correct": true, "probabilities": [0.7770821452140808, 0.0722799003124237, 0.03868864104151726, 0.11194930225610733]}
+{"id": "fast-41-diverse-084-006-counterfactual", "correct": false, "probabilities": [0.7628112435340881, 0.05882168933749199, 0.04581037536263466, 0.1325567066669464]}
+{"id": "fast-41-diverse-099-001-base", "correct": true, "probabilities": [0.02595740556716919, 0.9740425944328308]}
+{"id": "fast-41-diverse-099-001-counterfactual", "correct": false, "probabilities": [0.377540647983551, 0.622459352016449]}
+{"id": "fast-41-diverse-099-003-base", "correct": true, "probabilities": [0.02033233642578125, 0.9796676635742188]}
+{"id": "fast-41-diverse-099-003-counterfactual", "correct": false, "probabilities": [0.07159119844436646, 0.9284088015556335]}
+{"id": "fast-41-diverse-099-008-base", "correct": true, "probabilities": [0.02931225299835205, 0.970687747001648]}
+{"id": "fast-41-diverse-099-008-counterfactual", "correct": false, "probabilities": [0.11920297145843506, 0.8807970285415649]}
+{"id": "fast-41-diverse-171-001-base", "correct": true, "probabilities": [0.01912403106689453, 0.9808759689331055]}
+{"id": "fast-41-diverse-171-001-counterfactual", "correct": true, "probabilities": [0.9465966671705246, 0.0534033328294754]}
+{"id": "fast-41-diverse-171-003-base", "correct": true, "probabilities": [0.15610486268997192, 0.8438951373100281]}
+{"id": "fast-41-diverse-171-003-counterfactual", "correct": true, "probabilities": [0.9399133548140526, 0.06008664518594742]}
+{"id": "fast-41-diverse-171-004-base", "correct": true, "probabilities": [0.1732882261276245, 0.8267117738723755]}
+{"id": "fast-41-diverse-171-004-counterfactual", "correct": true, "probabilities": [0.9099070057272911, 0.09009299427270889]}
+{"id": "fast-41-diverse-171-006-base", "correct": true, "probabilities": [0.10669058561325073, 0.8933094143867493]}
+{"id": "fast-41-diverse-171-006-counterfactual", "correct": true, "probabilities": [0.7549149841070175, 0.24508501589298248]}
+{"id": "fast-41-diverse-171-007-base", "correct": true, "probabilities": [0.06008666753768921, 0.9399133324623108]}
+{"id": "fast-41-diverse-171-007-counterfactual", "correct": true, "probabilities": [0.8519528061151505, 0.14804719388484955]}
+{"id": "fast-41-diverse-171-008-base", "correct": true, "probabilities": [0.07585817575454712, 0.9241418242454529]}
+{"id": "fast-41-diverse-171-008-counterfactual", "correct": true, "probabilities": [0.8933093994855881, 0.10669060051441193]}
+{"id": "fast-41-diverse-174-001-base", "correct": true, "probabilities": [0.7970108985900879, 0.0068954951129853725, 0.029031120240688324, 0.16706255078315735]}
+{"id": "fast-41-diverse-174-001-counterfactual", "correct": false, "probabilities": [0.7782174944877625, 0.03017476573586464, 0.13523390889167786, 0.05637389048933983]}
+{"id": "fast-41-diverse-174-005-base", "correct": true, "probabilities": [0.75613933801651, 0.005773194599896669, 0.021450022235512733, 0.21663755178451538]}
+{"id": "fast-41-diverse-174-005-counterfactual", "correct": false, "probabilities": [0.6653525829315186, 0.035262394696474075, 0.24476955831050873, 0.05461546406149864]}
+{"id": "fast-41-diverse-174-007-base", "correct": true, "probabilities": [0.8981125950813293, 0.004712862428277731, 0.013637118972837925, 0.08353748172521591]}
+{"id": "fast-41-diverse-174-007-counterfactual", "correct": false, "probabilities": [0.7955642938613892, 0.02897842787206173, 0.13824832439422607, 0.03720903769135475]}
+{"id": "fast-41-diverse-211-018-base", "correct": true, "probabilities": [0.24280449748039246, 0.010021737776696682, 0.702578067779541, 0.010021737776696682, 0.007332060486078262, 0.027241908013820648]}
+{"id": "fast-41-diverse-211-018-counterfactual", "correct": false, "probabilities": [0.19185085594654083, 0.00743886549025774, 0.7587848901748657, 0.008972983807325363, 0.006988166831433773, 0.02596418932080269]}
+{"id": "fast-41-diverse-211-020-base", "correct": true, "probabilities": [0.28295454382896423, 0.007540482562035322, 0.6376478672027588, 0.012432155199348927, 0.0070836287923157215, 0.05234132707118988]}
+{"id": "fast-41-diverse-211-020-counterfactual", "correct": false, "probabilities": [0.15966898202896118, 0.005132550839334726, 0.761738121509552, 0.009588867425918579, 0.005132550839334726, 0.058738935738801956]}
+{"id": "fast-41-diverse-212-023-base", "correct": true, "probabilities": [0.3140720725059509, 0.5178173184394836, 0.168110653758049]}
+{"id": "fast-41-diverse-212-023-counterfactual", "correct": true, "probabilities": [0.9635935425758362, 0.022661548107862473, 0.013744923286139965]}
+{"id": "fast-41-diverse-212-028-base", "correct": true, "probabilities": [0.394187331199646, 0.5061465501785278, 0.09966615587472916]}
+{"id": "fast-41-diverse-212-028-counterfactual", "correct": true, "probabilities": [0.7637927532196045, 0.19311703741550446, 0.04309023916721344]}
+{"id": "fast-41-diverse-212-032-base", "correct": false, "probabilities": [0.9703029990196228, 0.01891789771616459, 0.010779093019664288]}
+{"id": "fast-41-diverse-212-032-counterfactual", "correct": true, "probabilities": [0.9599067568778992, 0.027230460196733475, 0.012862758710980415]}
+{"id": "fast-41-diverse-212-034-base", "correct": false, "probabilities": [0.9056512117385864, 0.07434038072824478, 0.02000844106078148]}
+{"id": "fast-41-diverse-212-034-counterfactual", "correct": true, "probabilities": [0.9890333414077759, 0.0066640544682741165, 0.004302636720240116]}
+{"id": "fast-41-diverse-212-037-base", "correct": false, "probabilities": [0.8903039693832397, 0.08281116932630539, 0.02688485197722912]}
+{"id": "fast-41-diverse-212-037-counterfactual", "correct": true, "probabilities": [0.9726497530937195, 0.017814701423048973, 0.009535523131489754]}
+{"id": "fast-41-diverse-212-042-base", "correct": false, "probabilities": [0.9275106191635132, 0.04617803171277046, 0.026311451569199562]}
+{"id": "fast-41-diverse-212-042-counterfactual", "correct": true, "probabilities": [0.9661662578582764, 0.020052140578627586, 0.013781621120870113]}
+{"id": "fast-41-diverse-212-045-base", "correct": true, "probabilities": [0.33095037937164307, 0.6182966828346252, 0.05075288191437721]}
+{"id": "fast-41-diverse-212-045-counterfactual", "correct": true, "probabilities": [0.9723942875862122, 0.02018139883875847, 0.007424321491271257]}
+{"id": "fast-41-diverse-212-059-base", "correct": true, "probabilities": [0.31526675820350647, 0.5533104538917542, 0.131422758102417]}
+{"id": "fast-41-diverse-212-059-counterfactual", "correct": false, "probabilities": [0.2889251410961151, 0.5745962858200073, 0.13647858798503876]}
+{"id": "fast-41-diverse-213-001-base", "correct": true, "probabilities": [0.0018102526664733887, 0.9981897473335266]}
+{"id": "fast-41-diverse-213-001-counterfactual", "correct": false, "probabilities": [0.0351448655128479, 0.9648551344871521]}
+{"id": "fast-41-diverse-213-016-base", "correct": true, "probabilities": [0.007121384143829346, 0.9928786158561707]}
+{"id": "fast-41-diverse-213-016-counterfactual", "correct": true, "probabilities": [0.5621764957904816, 0.43782350420951843]}
+{"id": "fast-41-diverse-216-009-base", "correct": true, "probabilities": [0.022947341203689575, 0.016788633540272713, 0.9166283011436462, 0.037833768874406815, 0.005801995750516653]}
+{"id": "fast-41-diverse-216-009-counterfactual", "correct": false, "probabilities": [0.024296671152114868, 0.017775824293494225, 0.9117258191108704, 0.0400584377348423, 0.006143160164356232]}
+{"id": "fast-41-diverse-273-007-base", "correct": true, "probabilities": [0.8991213440895081, 0.10087865591049194]}
+{"id": "fast-41-diverse-273-007-counterfactual", "correct": false, "probabilities": [0.8080672025680542, 0.1919327974319458]}
+{"id": "fast-41-diverse-273-008-base", "correct": true, "probabilities": [0.9324532747268677, 0.06754672527313232]}
+{"id": "fast-41-diverse-273-008-counterfactual", "correct": false, "probabilities": [0.8872045874595642, 0.11279541254043579]}
+{"id": "fast-41-diverse-274-002-base", "correct": false, "probabilities": [0.1732882261276245, 0.8267117738723755]}
+{"id": "fast-41-diverse-274-002-counterfactual", "correct": true, "probabilities": [0.07159119844436646, 0.9284088015556335]}
+{"id": "fast-41-diverse-274-004-base", "correct": false, "probabilities": [0.1259227991104126, 0.8740772008895874]}
+{"id": "fast-41-diverse-274-004-counterfactual", "correct": true, "probabilities": [0.11279541254043579, 0.8872045874595642]}
+{"id": "fast-41-diverse-275-013-base", "correct": false, "probabilities": [0.27675342559814453, 0.4286440908908844, 0.29460251331329346]}
+{"id": "fast-41-diverse-275-013-counterfactual", "correct": true, "probabilities": [0.21432414650917053, 0.33195170760154724, 0.4537241756916046]}
+{"id": "fast-43-diverse-007-002-base", "correct": true, "probabilities": [0.0012438201811164618, 0.00033476963290013373, 0.9979342222213745, 0.00048708697431720793]}
+{"id": "fast-43-diverse-007-002-counterfactual", "correct": true, "probabilities": [0.00966770201921463, 0.9861323833465576, 0.001903683296404779, 0.002296280348673463]}
+{"id": "fast-43-diverse-007-012-base", "correct": true, "probabilities": [0.003587837563827634, 0.0008521860581822693, 0.9948078989982605, 0.0007520515937358141]}
+{"id": "fast-43-diverse-007-012-counterfactual", "correct": true, "probabilities": [0.010941036976873875, 0.9848806858062744, 0.0020238880533725023, 0.0021544178016483784]}
+{"id": "fast-43-diverse-008-010-base", "correct": true, "probabilities": [0.008391945622861385, 0.0010669161565601826, 0.001652472303248942, 0.018911542370915413, 0.969977080821991]}
+{"id": "fast-43-diverse-008-010-counterfactual", "correct": false, "probabilities": [0.008901650086045265, 0.0012047074269503355, 0.0019862265326082706, 0.02135394886136055, 0.9665535688400269]}
+{"id": "fast-43-diverse-010-001-base", "correct": true, "probabilities": [0.0015978217124938965, 0.9984021782875061]}
+{"id": "fast-43-diverse-010-001-counterfactual", "correct": false, "probabilities": [0.003593623638153076, 0.9964063763618469]}
+{"id": "fast-43-diverse-079-003-base", "correct": true, "probabilities": [0.9265817999839783, 0.046131789684295654, 0.013216978870332241, 0.01406940072774887]}
+{"id": "fast-43-diverse-079-003-counterfactual", "correct": false, "probabilities": [0.8833262920379639, 0.08216214179992676, 0.016178686171770096, 0.01833285205066204]}
+{"id": "fast-43-diverse-079-015-base", "correct": true, "probabilities": [0.034595537930727005, 0.9497746229171753, 0.004398329649120569, 0.011231526732444763]}
+{"id": "fast-43-diverse-079-015-counterfactual", "correct": false, "probabilities": [0.034515589475631714, 0.9475797414779663, 0.004388165194541216, 0.013516498729586601]}
+{"id": "fast-43-diverse-079-019-base", "correct": true, "probabilities": [0.02741028554737568, 0.9662458300590515, 0.003948825877159834, 0.0023950841277837753]}
+{"id": "fast-43-diverse-079-019-counterfactual", "correct": false, "probabilities": [0.02426389418542385, 0.9692177772521973, 0.003960971720516682, 0.0025573954917490482]}
+{"id": "fast-43-diverse-079-022-base", "correct": true, "probabilities": [0.049942970275878906, 0.9423547387123108, 0.0038511883467435837, 0.0038511883467435837]}
+{"id": "fast-43-diverse-079-022-counterfactual", "correct": false, "probabilities": [0.049888402223587036, 0.9413250684738159, 0.0038469803985208273, 0.004939620848745108]}
+{"id": "fast-43-diverse-079-023-base", "correct": true, "probabilities": [0.025781847536563873, 0.9674566984176636, 0.0025527486577630043, 0.004208771046251059]}
+{"id": "fast-43-diverse-079-023-counterfactual", "correct": false, "probabilities": [0.03284967318177223, 0.9600081443786621, 0.002696465468034148, 0.004445719998329878]}
+{"id": "fast-43-diverse-079-037-base", "correct": true, "probabilities": [0.0370895192027092, 0.9565513134002686, 0.0036723599769175053, 0.0026867559645324945]}
+{"id": "fast-43-diverse-079-037-counterfactual", "correct": false, "probabilities": [0.044296350330114365, 0.947097659111023, 0.004969912581145763, 0.0036360658705234528]}
+{"id": "fast-43-diverse-079-045-base", "correct": true, "probabilities": [0.030951451510190964, 0.9628714323043823, 0.003472656710073352, 0.00270450790412724]}
+{"id": "fast-43-diverse-079-045-counterfactual", "correct": false, "probabilities": [0.029131876304745674, 0.9647152423858643, 0.0032685059122741222, 0.0028844464104622602]}
+{"id": "fast-43-diverse-079-046-base", "correct": true, "probabilities": [0.08880437165498734, 0.8968923091888428, 0.008260092698037624, 0.006043212953954935]}
+{"id": "fast-43-diverse-079-046-counterfactual", "correct": false, "probabilities": [0.11078275740146637, 0.8713739514350891, 0.010304401628673077, 0.007538861595094204]}
+{"id": "fast-43-diverse-079-054-base", "correct": true, "probabilities": [0.9146819114685059, 0.06224488466978073, 0.0122567443177104, 0.010816538706421852]}
+{"id": "fast-43-diverse-079-054-counterfactual", "correct": false, "probabilities": [0.9051609635353088, 0.06979852169752121, 0.012911426834762096, 0.012129164300858974]}
+{"id": "fast-43-diverse-079-055-base", "correct": true, "probabilities": [0.0937836766242981, 0.8897947669029236, 0.008723241277039051, 0.007698233239352703]}
+{"id": "fast-43-diverse-079-055-counterfactual", "correct": false, "probabilities": [0.10467597842216492, 0.8764411807060242, 0.009736382402479649, 0.009146485477685928]}
+{"id": "fast-43-diverse-079-056-base", "correct": true, "probabilities": [0.943891704082489, 0.032298196107149124, 0.011161957867443562, 0.01264815591275692]}
+{"id": "fast-43-diverse-079-056-counterfactual", "correct": false, "probabilities": [0.9175019264221191, 0.051761917769908905, 0.01393153052777052, 0.016804633662104607]}
+{"id": "fast-43-diverse-079-057-base", "correct": true, "probabilities": [0.10470397025346756, 0.8766756057739258, 0.011035717092454433, 0.007584730163216591]}
+{"id": "fast-43-diverse-079-057-counterfactual", "correct": false, "probabilities": [0.13661158084869385, 0.8368473649024963, 0.015327394008636475, 0.011213760823011398]}
+{"id": "fast-43-diverse-079-058-base", "correct": true, "probabilities": [0.8964955806732178, 0.06494192779064178, 0.02108355611562729, 0.017478883266448975]}
+{"id": "fast-43-diverse-079-058-counterfactual", "correct": false, "probabilities": [0.814640462398529, 0.1329863965511322, 0.02618657611310482, 0.02618657611310482]}
+{"id": "fast-43-diverse-079-059-base", "correct": true, "probabilities": [0.9441491961479187, 0.030349627137184143, 0.014336148276925087, 0.011165003292262554]}
+{"id": "fast-43-diverse-079-059-counterfactual", "correct": false, "probabilities": [0.9213293790817261, 0.048828668892383575, 0.015852347016334534, 0.013989646919071674]}
+{"id": "fast-43-diverse-079-060-base", "correct": true, "probabilities": [0.21821489930152893, 0.7616447806358337, 0.013950011692941189, 0.006190280430018902]}
+{"id": "fast-43-diverse-079-060-counterfactual", "correct": false, "probabilities": [0.2060835063457489, 0.7656930685043335, 0.019168753176927567, 0.009054676629602909]}
+{"id": "fast-43-diverse-081-014-base", "correct": true, "probabilities": [0.04468083381652832, 0.9553191661834717]}
+{"id": "fast-43-diverse-081-014-counterfactual", "correct": true, "probabilities": [0.9755769092589617, 0.024423090741038322]}
+{"id": "fast-43-diverse-081-016-base", "correct": true, "probabilities": [0.02595740556716919, 0.9740425944328308]}
+{"id": "fast-43-diverse-081-016-counterfactual", "correct": true, "probabilities": [0.9908743621781468, 0.00912563782185316]}
+{"id": "fast-43-diverse-081-019-base", "correct": true, "probabilities": [0.027585208415985107, 0.9724147915840149]}
+{"id": "fast-43-diverse-081-019-counterfactual", "correct": true, "probabilities": [0.9883127426728606, 0.011687257327139378]}
+{"id": "fast-43-diverse-081-022-base", "correct": true, "probabilities": [0.01912403106689453, 0.9808759689331055]}
+{"id": "fast-43-diverse-081-022-counterfactual", "correct": true, "probabilities": [0.98308508656919, 0.016914913430809975]}
+{"id": "fast-43-diverse-169-012-base", "correct": true, "probabilities": [0.005905370227992535, 0.0009640252101235092, 0.993130624294281]}
+{"id": "fast-43-diverse-169-012-counterfactual", "correct": false, "probabilities": [0.10157168656587601, 0.047979068011045456, 0.85044926404953]}
+{"id": "fast-43-diverse-169-020-base", "correct": true, "probabilities": [0.003820028156042099, 0.0011650427477434278, 0.9950149655342102]}
+{"id": "fast-43-diverse-169-020-counterfactual", "correct": false, "probabilities": [0.08931019902229309, 0.1146765723824501, 0.7960131764411926]}
+{"id": "fast-43-diverse-169-023-base", "correct": true, "probabilities": [0.005214420147240162, 0.0010930018033832312, 0.9936926364898682]}
+{"id": "fast-43-diverse-169-023-counterfactual", "correct": false, "probabilities": [0.0071059949696063995, 0.002167206257581711, 0.9907268285751343]}
+{"id": "fast-43-diverse-169-024-base", "correct": true, "probabilities": [0.0066871605813503265, 0.0008501770789735019, 0.9924626350402832]}
+{"id": "fast-43-diverse-169-024-counterfactual", "correct": false, "probabilities": [0.04952145367860794, 0.016077261418104172, 0.934401273727417]}
+{"id": "fast-43-diverse-169-053-base", "correct": true, "probabilities": [0.00968876015394926, 0.0020308743696659803, 0.9882804155349731]}
+{"id": "fast-43-diverse-169-053-counterfactual", "correct": false, "probabilities": [0.07109851390123367, 0.06274422258138657, 0.8661572337150574]}
+{"id": "fast-43-diverse-169-064-base", "correct": true, "probabilities": [0.01319920178502798, 0.0017863176763057709, 0.9850144982337952]}
+{"id": "fast-43-diverse-169-064-counterfactual", "correct": false, "probabilities": [0.036955613642930984, 0.009946469217538834, 0.9530978798866272]}
+{"id": "fast-43-diverse-169-065-base", "correct": true, "probabilities": [0.005549892783164978, 0.0009059950243681669, 0.9935442209243774]}
+{"id": "fast-43-diverse-169-065-counterfactual", "correct": false, "probabilities": [0.09680762141942978, 0.04035542532801628, 0.8628369569778442]}
+{"id": "fast-43-diverse-169-066-base", "correct": true, "probabilities": [0.0066834744065999985, 0.001400932320393622, 0.9919155240058899]}
+{"id": "fast-43-diverse-169-066-counterfactual", "correct": false, "probabilities": [0.15152060985565186, 0.1256149858236313, 0.7228643894195557]}
+{"id": "fast-43-diverse-169-068-base", "correct": true, "probabilities": [0.005549892783164978, 0.0009059950243681669, 0.9935442209243774]}
+{"id": "fast-43-diverse-169-068-counterfactual", "correct": false, "probabilities": [0.10157168656587601, 0.047979068011045456, 0.85044926404953]}
+{"id": "fast-43-diverse-169-070-base", "correct": true, "probabilities": [0.006283840164542198, 0.000963658036198467, 0.9927524328231812]}
+{"id": "fast-43-diverse-169-070-counterfactual", "correct": false, "probabilities": [0.09704489260911942, 0.03800332546234131, 0.8649517297744751]}
+{"id": "fast-43-diverse-169-071-base", "correct": true, "probabilities": [0.005905003286898136, 0.0010261357529088855, 0.9930689334869385]}
+{"id": "fast-43-diverse-169-071-counterfactual", "correct": false, "probabilities": [0.0242309607565403, 0.007866641506552696, 0.9679023027420044]}
+{"id": "fast-43-diverse-169-085-base", "correct": true, "probabilities": [0.0075644515454769135, 0.0016878575552254915, 0.9907476902008057]}
+{"id": "fast-43-diverse-169-085-counterfactual", "correct": false, "probabilities": [0.021455062553286552, 0.007414671126753092, 0.9711303114891052]}
+{"id": "fast-43-diverse-169-087-base", "correct": true, "probabilities": [0.008052638731896877, 0.0011600925354287028, 0.9907872080802917]}
+{"id": "fast-43-diverse-169-087-counterfactual", "correct": false, "probabilities": [0.06894907355308533, 0.03690578043460846, 0.8941451907157898]}
+{"id": "fast-43-diverse-169-097-base", "correct": true, "probabilities": [0.005215395241975784, 0.0009062997996807098, 0.9938784241676331]}
+{"id": "fast-43-diverse-169-097-counterfactual", "correct": false, "probabilities": [0.10157168656587601, 0.047979068011045456, 0.85044926404953]}
+{"id": "fast-43-diverse-169-099-base", "correct": true, "probabilities": [0.005904612597078085, 0.0010922434739768505, 0.9930031895637512]}
+{"id": "fast-43-diverse-169-099-counterfactual", "correct": false, "probabilities": [0.12304133921861649, 0.07462833821773529, 0.8023303151130676]}
+{"id": "fast-43-diverse-171-001-base", "correct": true, "probabilities": [0.04208773374557495, 0.957912266254425]}
+{"id": "fast-43-diverse-171-001-counterfactual", "correct": true, "probabilities": [0.9783846661448479, 0.02161533385515213]}
+{"id": "fast-43-diverse-171-002-base", "correct": true, "probabilities": [0.2018132209777832, 0.7981867790222168]}
+{"id": "fast-43-diverse-171-002-counterfactual", "correct": true, "probabilities": [0.9755769092589617, 0.024423090741038322]}
+{"id": "fast-43-diverse-171-003-base", "correct": true, "probabilities": [0.010986924171447754, 0.9890130758285522]}
+{"id": "fast-43-diverse-171-003-counterfactual", "correct": true, "probabilities": [0.9046505391597748, 0.09534946084022522]}
+{"id": "fast-43-diverse-171-004-base", "correct": true, "probabilities": [0.011687219142913818, 0.9883127808570862]}
+{"id": "fast-43-diverse-171-004-counterfactual", "correct": true, "probabilities": [0.9883127426728606, 0.011687257327139378]}
+{"id": "fast-43-diverse-171-006-base", "correct": true, "probabilities": [0.00522005558013916, 0.9947799444198608]}
+{"id": "fast-43-diverse-171-006-counterfactual", "correct": true, "probabilities": [0.9940889310091734, 0.005911068990826607]}
+{"id": "fast-43-diverse-171-008-base", "correct": true, "probabilities": [0.07585817575454712, 0.9241418242454529]}
+{"id": "fast-43-diverse-171-008-counterfactual", "correct": true, "probabilities": [0.9770226292312145, 0.022977370768785477]}
+{"id": "fast-43-diverse-171-010-base", "correct": true, "probabilities": [0.01691490411758423, 0.9830850958824158]}
+{"id": "fast-43-diverse-171-010-counterfactual", "correct": true, "probabilities": [0.9579122737050056, 0.042087726294994354]}
+{"id": "fast-43-diverse-171-012-base", "correct": true, "probabilities": [0.031143784523010254, 0.9688562154769897]}
+{"id": "fast-43-diverse-171-012-counterfactual", "correct": true, "probabilities": [0.9465966671705246, 0.0534033328294754]}
+{"id": "fast-43-diverse-171-013-base", "correct": true, "probabilities": [0.021615266799926758, 0.9783847332000732]}
+{"id": "fast-43-diverse-171-013-counterfactual", "correct": true, "probabilities": [0.9324533045291901, 0.06754669547080994]}
+{"id": "fast-43-diverse-171-015-base", "correct": true, "probabilities": [0.03963881731033325, 0.9603611826896667]}
+{"id": "fast-43-diverse-171-015-counterfactual", "correct": true, "probabilities": [0.9196425303816795, 0.08035746961832047]}
+{"id": "fast-43-diverse-171-016-base", "correct": true, "probabilities": [0.022977352142333984, 0.977022647857666]}
+{"id": "fast-43-diverse-171-016-counterfactual", "correct": true, "probabilities": [0.9324533045291901, 0.06754669547080994]}
+{"id": "fast-43-diverse-174-001-base", "correct": true, "probabilities": [0.7317090630531311, 0.004087293520569801, 0.0266525000333786, 0.23755113780498505]}
+{"id": "fast-43-diverse-174-001-counterfactual", "correct": false, "probabilities": [0.5347515344619751, 0.06386696547269821, 0.324343204498291, 0.07703826576471329]}
+{"id": "fast-43-diverse-174-005-base", "correct": true, "probabilities": [0.7090938091278076, 0.004216425586491823, 0.025828739628195763, 0.2608610689640045]}
+{"id": "fast-43-diverse-174-005-counterfactual", "correct": false, "probabilities": [0.6105673909187317, 0.05679161101579666, 0.28841161727905273, 0.044229354709386826]}
+{"id": "fast-43-diverse-174-006-base", "correct": true, "probabilities": [0.22050347924232483, 0.0027757291682064533, 0.007088072132319212, 0.7696326971054077]}
+{"id": "fast-43-diverse-174-006-counterfactual", "correct": false, "probabilities": [0.10288947820663452, 0.021566806361079216, 0.2046201378107071, 0.67092365026474]}
+{"id": "fast-43-diverse-174-007-base", "correct": true, "probabilities": [0.737795889377594, 0.003015203168615699, 0.019661594182252884, 0.23952725529670715]}
+{"id": "fast-43-diverse-174-007-counterfactual", "correct": false, "probabilities": [0.5921422243118286, 0.03556090593338013, 0.26276153326034546, 0.10953530669212341]}
+{"id": "fast-43-diverse-174-008-base", "correct": false, "probabilities": [0.3114381432533264, 0.0036829011514782906, 0.6593145728111267, 0.025564398616552353]}
+{"id": "fast-43-diverse-174-008-counterfactual", "correct": false, "probabilities": [0.4942423403263092, 0.026193883270025253, 0.16045698523521423, 0.3191068470478058]}
+{"id": "fast-43-diverse-174-009-base", "correct": true, "probabilities": [0.6796859502792358, 0.0051894658245146275, 0.03178933635354042, 0.28333526849746704]}
+{"id": "fast-43-diverse-174-009-counterfactual", "correct": false, "probabilities": [0.602463960647583, 0.0409981869161129, 0.28458383679389954, 0.07195405662059784]}
+{"id": "fast-43-diverse-174-010-base", "correct": true, "probabilities": [0.8431527614593506, 0.006437550764530897, 0.02110791765153408, 0.12930166721343994]}
+{"id": "fast-43-diverse-174-010-counterfactual", "correct": false, "probabilities": [0.7379480600357056, 0.050217993557453156, 0.16465847194194794, 0.047175437211990356]}
+{"id": "fast-43-diverse-174-011-base", "correct": true, "probabilities": [0.6279560923576355, 0.006553310435265303, 0.02936989814043045, 0.33612069487571716]}
+{"id": "fast-43-diverse-174-011-counterfactual", "correct": false, "probabilities": [0.5128039717674255, 0.06124570220708847, 0.33109113574028015, 0.09485919773578644]}
+{"id": "fast-43-diverse-215-039-base", "correct": false, "probabilities": [0.04324095696210861, 0.006229450460523367, 0.924532413482666, 0.009063797071576118, 0.01693340204656124]}
+{"id": "fast-43-diverse-215-039-counterfactual", "correct": true, "probabilities": [0.03064422495663166, 0.0034381865989416838, 0.9533138275146484, 0.005325167905539274, 0.007278640754520893]}
+{"id": "fast-43-diverse-272-004-base", "correct": true, "probabilities": [0.9386453628540039, 0.015171789564192295, 0.022074824199080467, 0.019480962306261063, 0.004627134185284376]}
+{"id": "fast-43-diverse-272-004-counterfactual", "correct": false, "probabilities": [0.8632452487945557, 0.027748974040150642, 0.0487009659409523, 0.05184190347790718, 0.008462958969175816]}
+{"id": "fast-43-diverse-272-009-base", "correct": true, "probabilities": [0.9866493344306946, 0.0029500280506908894, 0.0058668311685323715, 0.0031402886379510164, 0.0013934946618974209]}
+{"id": "fast-43-diverse-272-009-counterfactual", "correct": false, "probabilities": [0.9701521992683411, 0.0061407871544361115, 0.012212413363158703, 0.008934792131185532, 0.002559860935434699]}
+{"id": "fast-43-diverse-272-025-base", "correct": true, "probabilities": [0.025825750082731247, 0.9691041111946106, 0.0018708111019805074, 0.0019914680160582066, 0.0012078864965587854]}
+{"id": "fast-43-diverse-272-025-counterfactual", "correct": false, "probabilities": [0.15671804547309875, 0.702361524105072, 0.03284988924860954, 0.10118477791547775, 0.006885710638016462]}
+{"id": "google/boolq:validation:2213", "correct": true, "probabilities": [0.03963881731033325, 0.9603611826896667]}
+{"id": "google/boolq:validation:1955", "correct": true, "probabilities": [0.9840936083346605, 0.01590639166533947]}
+{"id": "google/boolq:validation:2889", "correct": true, "probabilities": [0.008577484637498856, 0.9914225153625011]}
+{"id": "google/boolq:validation:568", "correct": true, "probabilities": [0.020332353189587593, 0.9796676468104124]}
+{"id": "google/boolq:validation:1951", "correct": true, "probabilities": [0.334589421749115, 0.665410578250885]}
+{"id": "google/boolq:validation:1231", "correct": true, "probabilities": [0.11279541254043579, 0.8872045874595642]}
+{"id": "google/boolq:validation:1435", "correct": true, "probabilities": [0.06754669547080994, 0.9324533045291901]}
+{"id": "google/boolq:validation:2322", "correct": true, "probabilities": [0.9859363734722137, 0.014063626527786255]}
+{"id": "google/boolq:validation:1724", "correct": true, "probabilities": [0.6791787147521973, 0.32082128524780273]}
+{"id": "google/boolq:validation:738", "correct": true, "probabilities": [0.005910992622375488, 0.9940890073776245]}
+{"id": "google/boolq:validation:1077", "correct": true, "probabilities": [0.9149009585380554, 0.08509904146194458]}
+{"id": "google/boolq:validation:284", "correct": true, "probabilities": [0.9465966671705246, 0.0534033328294754]}
+{"id": "google/boolq:validation:1867", "correct": true, "probabilities": [0.02931225299835205, 0.970687747001648]}
+{"id": "google/boolq:validation:1896", "correct": true, "probabilities": [0.8354835510253906, 0.16451644897460938]}
+{"id": "google/boolq:validation:122", "correct": true, "probabilities": [0.9770226292312145, 0.022977370768785477]}
+{"id": "google/boolq:validation:1752", "correct": true, "probabilities": [0.9890130562707782, 0.01098694372922182]}
+{"id": "google/boolq:validation:706", "correct": true, "probabilities": [0.0097084641456604, 0.9902915358543396]}
+{"id": "google/boolq:validation:902", "correct": false, "probabilities": [0.7185944020748138, 0.28140559792518616]}
+{"id": "google/boolq:validation:1817", "correct": false, "probabilities": [0.9859363734722137, 0.014063626527786255]}
+{"id": "google/boolq:validation:1384", "correct": true, "probabilities": [0.9740426428616047, 0.02595735713839531]}
+{"id": "google/boolq:validation:715", "correct": true, "probabilities": [0.46879059076309204, 0.531209409236908]}
+{"id": "google/boolq:validation:959", "correct": false, "probabilities": [0.9902915228158236, 0.009708477184176445]}
+{"id": "google/boolq:validation:1647", "correct": true, "probabilities": [0.08509904146194458, 0.9149009585380554]}
+{"id": "google/boolq:validation:344", "correct": false, "probabilities": [0.5312093496322632, 0.4687906503677368]}
+{"id": "google/boolq:validation:1934", "correct": true, "probabilities": [0.01590639352798462, 0.9840936064720154]}
+{"id": "google/boolq:validation:994", "correct": true, "probabilities": [0.03963884338736534, 0.9603611566126347]}
+{"id": "google/boolq:validation:2249", "correct": true, "probabilities": [0.02595740556716919, 0.9740425944328308]}
+{"id": "google/boolq:validation:815", "correct": true, "probabilities": [0.9796676468104124, 0.020332353189587593]}
+{"id": "google/boolq:validation:853", "correct": true, "probabilities": [0.3208213150501251, 0.6791786849498749]}
+{"id": "google/boolq:validation:2363", "correct": true, "probabilities": [0.8807970806956291, 0.11920291930437088]}
+{"id": "google/boolq:validation:3152", "correct": true, "probabilities": [0.037326883524656296, 0.9626731164753437]}
+{"id": "google/boolq:validation:2729", "correct": true, "probabilities": [0.014063626527786255, 0.9859363734722137]}
+{"id": "google/boolq:validation:310", "correct": true, "probabilities": [0.16451644897460938, 0.8354835510253906]}
+{"id": "google/boolq:validation:370", "correct": true, "probabilities": [0.867035761475563, 0.13296423852443695]}
+{"id": "google/boolq:validation:3071", "correct": false, "probabilities": [0.1259227693080902, 0.8740772306919098]}
+{"id": "google/boolq:validation:10", "correct": true, "probabilities": [0.9525741338729858, 0.04742586612701416]}
+{"id": "google/boolq:validation:130", "correct": true, "probabilities": [0.9875683188438416, 0.012431681156158447]}
+{"id": "google/boolq:validation:648", "correct": true, "probabilities": [0.9867772459983826, 0.013222754001617432]}
+{"id": "google/boolq:validation:2741", "correct": true, "probabilities": [0.9324532747268677, 0.06754672527313232]}
+{"id": "google/boolq:validation:2293", "correct": true, "probabilities": [0.05340331792831421, 0.9465966820716858]}
+{"id": "google/boolq:validation:2852", "correct": true, "probabilities": [0.9579122737050056, 0.042087726294994354]}
+{"id": "google/boolq:validation:919", "correct": true, "probabilities": [0.9890130758285522, 0.010986924171447754]}
+{"id": "google/boolq:validation:3240", "correct": false, "probabilities": [0.9740426428616047, 0.02595735713839531]}
+{"id": "google/boolq:validation:879", "correct": true, "probabilities": [0.9688561670482159, 0.031143832951784134]}
+{"id": "google/boolq:validation:19", "correct": true, "probabilities": [0.9149009585380554, 0.08509904146194458]}
+{"id": "google/boolq:validation:2471", "correct": true, "probabilities": [0.9324532747268677, 0.06754672527313232]}
+{"id": "google/boolq:validation:2953", "correct": true, "probabilities": [0.9525741264224052, 0.04742587357759476]}
+{"id": "google/boolq:validation:385", "correct": true, "probabilities": [0.03308594226837158, 0.9669140577316284]}
+{"id": "google/boolq:validation:1350", "correct": true, "probabilities": [0.02595735713839531, 0.9740426428616047]}
+{"id": "google/boolq:validation:1792", "correct": true, "probabilities": [0.07585817575454712, 0.9241418242454529]}
+{"id": "google/boolq:validation:1753", "correct": true, "probabilities": [0.02931225299835205, 0.970687747001648]}
+{"id": "google/boolq:validation:2854", "correct": true, "probabilities": [0.46879059076309204, 0.531209409236908]}
+{"id": "google/boolq:validation:73", "correct": true, "probabilities": [0.1732882261276245, 0.8267117738723755]}
+{"id": "google/boolq:validation:484", "correct": false, "probabilities": [0.7549149841070175, 0.24508501589298248]}
+{"id": "google/boolq:validation:1320", "correct": true, "probabilities": [0.9525741338729858, 0.04742586612701416]}
+{"id": "google/boolq:validation:85", "correct": false, "probabilities": [0.5926665663719177, 0.4073334336280823]}
+{"id": "google/boolq:validation:2977", "correct": true, "probabilities": [0.04742586612701416, 0.9525741338729858]}
+{"id": "google/boolq:validation:233", "correct": true, "probabilities": [0.9362850040197372, 0.06371499598026276]}
+{"id": "google/boolq:validation:844", "correct": false, "probabilities": [0.06371499598026276, 0.9362850040197372]}
+{"id": "google/boolq:validation:2193", "correct": true, "probabilities": [0.037326931953430176, 0.9626730680465698]}
+{"id": "google/boolq:validation:3244", "correct": true, "probabilities": [0.9919380079954863, 0.00806199200451374]}
+{"id": "google/boolq:validation:2072", "correct": true, "probabilities": [0.014063626527786255, 0.9859363734722137]}
+{"id": "google/boolq:validation:1538", "correct": true, "probabilities": [0.012431681156158447, 0.9875683188438416]}
+{"id": "google/boolq:validation:3158", "correct": true, "probabilities": [0.9046505391597748, 0.09534946084022522]}
+{"id": "google/boolq:validation:2330", "correct": true, "probabilities": [0.010328173637390137, 0.9896718263626099]}
+{"id": "google/boolq:validation:2970", "correct": true, "probabilities": [0.8807970285415649, 0.11920297145843506]}
+{"id": "google/boolq:validation:238", "correct": false, "probabilities": [0.8807970806956291, 0.11920291930437088]}
+{"id": "google/boolq:validation:1401", "correct": true, "probabilities": [0.9875683486461639, 0.01243165135383606]}
+{"id": "google/boolq:validation:513", "correct": true, "probabilities": [0.02595740556716919, 0.9740425944328308]}
+{"id": "google/boolq:validation:1705", "correct": false, "probabilities": [0.11920291930437088, 0.8807970806956291]}
+{"id": "google/boolq:validation:631", "correct": true, "probabilities": [0.5, 0.5]}
+{"id": "google/boolq:validation:1001", "correct": true, "probabilities": [0.9149009585380554, 0.08509904146194458]}
+{"id": "google/boolq:validation:500", "correct": true, "probabilities": [0.9914225153625011, 0.008577484637498856]}
+{"id": "google/boolq:validation:978", "correct": true, "probabilities": [0.2689414620399475, 0.7310585379600525]}
+{"id": "google/boolq:validation:171", "correct": true, "probabilities": [0.014063626527786255, 0.9859363734722137]}
+{"id": "google/boolq:validation:1526", "correct": true, "probabilities": [0.07159119844436646, 0.9284088015556335]}
+{"id": "google/boolq:validation:1707", "correct": true, "probabilities": [0.9740426428616047, 0.02595735713839531]}
+{"id": "google/boolq:validation:2990", "correct": true, "probabilities": [0.012431681156158447, 0.9875683188438416]}
+{"id": "google/boolq:validation:48", "correct": true, "probabilities": [0.008577525615692139, 0.9914224743843079]}
+{"id": "google/boolq:validation:2663", "correct": true, "probabilities": [0.9859363734722137, 0.014063626527786255]}
+{"id": "google/boolq:validation:2898", "correct": true, "probabilities": [0.9241418242454529, 0.07585817575454712]}
+{"id": "google/boolq:validation:2726", "correct": true, "probabilities": [0.9465966671705246, 0.0534033328294754]}
+{"id": "google/boolq:validation:1615", "correct": true, "probabilities": [0.9840936083346605, 0.01590639166533947]}
+{"id": "google/boolq:validation:1027", "correct": true, "probabilities": [0.3073580265045166, 0.6926419734954834]}
+{"id": "google/boolq:validation:1952", "correct": false, "probabilities": [0.8175744861364365, 0.18242551386356354]}
+{"id": "google/boolq:validation:1722", "correct": true, "probabilities": [0.18242551386356354, 0.8175744861364365]}
+{"id": "google/boolq:validation:2212", "correct": false, "probabilities": [0.6224593222141266, 0.3775406777858734]}
+{"id": "google/boolq:validation:750", "correct": true, "probabilities": [0.5926666259765625, 0.4073333740234375]}
+{"id": "google/boolq:validation:79", "correct": true, "probabilities": [0.7981867790222168, 0.2018132209777832]}
+{"id": "google/boolq:validation:2109", "correct": true, "probabilities": [0.02931225299835205, 0.970687747001648]}
+{"id": "google/boolq:validation:305", "correct": false, "probabilities": [0.16451644897460938, 0.8354835510253906]}
+{"id": "google/boolq:validation:506", "correct": true, "probabilities": [0.02595735713839531, 0.9740426428616047]}
+{"id": "google/boolq:validation:373", "correct": true, "probabilities": [0.03308597952127457, 0.9669140204787254]}
+{"id": "google/boolq:validation:1190", "correct": true, "probabilities": [0.02595735713839531, 0.9740426428616047]}
+{"id": "google/boolq:validation:3233", "correct": false, "probabilities": [0.9796676468104124, 0.020332353189587593]}
+{"id": "google/boolq:validation:1535", "correct": true, "probabilities": [0.022977352142333984, 0.977022647857666]}
+{"id": "google/boolq:validation:1134", "correct": true, "probabilities": [0.01912403665482998, 0.98087596334517]}
+{"id": "google/boolq:validation:1255", "correct": true, "probabilities": [0.09009301662445068, 0.9099069833755493]}
+{"id": "google/boolq:validation:2532", "correct": true, "probabilities": [0.04208773374557495, 0.957912266254425]}
+{"id": "google/boolq:validation:2166", "correct": true, "probabilities": [0.03963881731033325, 0.9603611826896667]}
+{"id": "google/boolq:validation:2487", "correct": true, "probabilities": [0.05033063888549805, 0.949669361114502]}
+{"id": "google/boolq:validation:1699", "correct": true, "probabilities": [0.05340331792831421, 0.9465966820716858]}
+{"id": "google/boolq:validation:820", "correct": true, "probabilities": [0.18242555856704712, 0.8175744414329529]}
+{"id": "google/boolq:validation:3133", "correct": true, "probabilities": [0.022977370768785477, 0.9770226292312145]}
+{"id": "google/boolq:validation:1339", "correct": true, "probabilities": [0.7549149990081787, 0.2450850009918213]}
+{"id": "google/boolq:validation:1548", "correct": false, "probabilities": [0.6370307803153992, 0.36296921968460083]}
+{"id": "google/boolq:validation:301", "correct": true, "probabilities": [0.6224593222141266, 0.3775406777858734]}
+{"id": "google/boolq:validation:1574", "correct": true, "probabilities": [0.9399133548140526, 0.06008664518594742]}
+{"id": "google/boolq:validation:487", "correct": true, "probabilities": [0.02595740556716919, 0.9740425944328308]}
+{"id": "google/boolq:validation:2321", "correct": true, "probabilities": [0.9796676468104124, 0.020332353189587593]}
+{"id": "google/boolq:validation:2313", "correct": true, "probabilities": [0.037326931953430176, 0.9626730680465698]}
+{"id": "google/boolq:validation:1524", "correct": true, "probabilities": [0.02595740556716919, 0.9740425944328308]}
+{"id": "google/boolq:validation:2668", "correct": false, "probabilities": [0.8354835510253906, 0.16451644897460938]}
+{"id": "google/boolq:validation:1272", "correct": true, "probabilities": [0.9933071490377188, 0.006692850962281227]}
+{"id": "google/boolq:validation:1517", "correct": true, "probabilities": [0.9902915228158236, 0.009708477184176445]}
+{"id": "google/boolq:validation:927", "correct": true, "probabilities": [0.9149009585380554, 0.08509904146194458]}
+{"id": "google/boolq:validation:3065", "correct": true, "probabilities": [0.04208773374557495, 0.957912266254425]}
+{"id": "google/boolq:validation:562", "correct": true, "probabilities": [0.9959298619069159, 0.004070138093084097]}
+{"id": "google/boolq:validation:1285", "correct": false, "probabilities": [0.7772998809814453, 0.2227001190185547]}
+{"id": "google/boolq:validation:699", "correct": true, "probabilities": [0.32082128524780273, 0.6791787147521973]}
+{"id": "google/boolq:validation:3095", "correct": true, "probabilities": [0.0534033328294754, 0.9465966671705246]}
+{"id": "google/boolq:validation:1203", "correct": false, "probabilities": [0.9783846661448479, 0.02161533385515213]}
+{"id": "google/boolq:validation:3259", "correct": true, "probabilities": [0.9525741264224052, 0.04742587357759476]}
+{"id": "google/boolq:validation:379", "correct": true, "probabilities": [0.9046505093574524, 0.09534949064254761]}
+{"id": "google/boolq:validation:1584", "correct": true, "probabilities": [0.29421496391296387, 0.7057850360870361]}
+{"id": "google/boolq:validation:1172", "correct": true, "probabilities": [0.9669140204787254, 0.03308597952127457]}
+{"id": "google/boolq:validation:3037", "correct": true, "probabilities": [0.10669058561325073, 0.8933094143867493]}
+{"id": "google/boolq:validation:2545", "correct": false, "probabilities": [0.7310585677623749, 0.2689414322376251]}
+{"id": "google-research-datasets/paws:validation:873", "correct": true, "probabilities": [0.024423090741038322, 0.9755768775939941]}
+{"id": "google-research-datasets/paws:validation:3079", "correct": true, "probabilities": [0.22270014882087708, 0.7772998809814453]}
+{"id": "google-research-datasets/paws:validation:2332", "correct": true, "probabilities": [0.06008664518594742, 0.9399133324623108]}
+{"id": "google-research-datasets/paws:validation:6161", "correct": false, "probabilities": [0.05665242671966553, 0.9433475732803345]}
+{"id": "google-research-datasets/paws:validation:2500", "correct": true, "probabilities": [0.02931223064661026, 0.970687747001648]}
+{"id": "google-research-datasets/paws:validation:3756", "correct": true, "probabilities": [0.02595735713839531, 0.9740425944328308]}
+{"id": "google-research-datasets/paws:validation:6990", "correct": true, "probabilities": [0.14804719388484955, 0.851952850818634]}
+{"id": "google-research-datasets/paws:validation:6543", "correct": false, "probabilities": [0.031143832951784134, 0.9688562154769897]}
+{"id": "google-research-datasets/paws:validation:9", "correct": true, "probabilities": [0.01912403665482998, 0.9808759689331055]}
+{"id": "google-research-datasets/paws:validation:4786", "correct": false, "probabilities": [0.08035746961832047, 0.9196425676345825]}
+{"id": "google-research-datasets/paws:validation:3031", "correct": false, "probabilities": [0.2018132209777832, 0.7981867790222168]}
+{"id": "google-research-datasets/paws:validation:3726", "correct": true, "probabilities": [0.5926666259765625, 0.4073334336280823]}
+{"id": "google-research-datasets/paws:validation:1566", "correct": false, "probabilities": [0.14804719388484955, 0.851952850818634]}
+{"id": "google-research-datasets/paws:validation:7252", "correct": false, "probabilities": [0.2018132209777832, 0.7981867790222168]}
+{"id": "google-research-datasets/paws:validation:3952", "correct": false, "probabilities": [0.10669060051441193, 0.8933094143867493]}
+{"id": "google-research-datasets/paws:validation:7081", "correct": false, "probabilities": [0.16451644897460938, 0.8354835510253906]}
+{"id": "google-research-datasets/paws:validation:460", "correct": false, "probabilities": [0.4687906503677368, 0.531209409236908]}
+{"id": "google-research-datasets/paws:validation:3128", "correct": false, "probabilities": [0.43782350420951843, 0.562176525592804]}
+{"id": "google-research-datasets/paws:validation:2366", "correct": true, "probabilities": [0.02595735713839531, 0.9740425944328308]}
+{"id": "google-research-datasets/paws:validation:3588", "correct": false, "probabilities": [0.1127953976392746, 0.8872045874595642]}
+{"id": "google-research-datasets/paws:validation:3611", "correct": false, "probabilities": [0.07585817575454712, 0.9241418242454529]}
+{"id": "google-research-datasets/paws:validation:1520", "correct": true, "probabilities": [0.031143832951784134, 0.9688562154769897]}
+{"id": "google-research-datasets/paws:validation:7836", "correct": false, "probabilities": [0.3073580265045166, 0.6926419734954834]}
+{"id": "google-research-datasets/paws:validation:2438", "correct": true, "probabilities": [0.03514484688639641, 0.9648551344871521]}
+{"id": "google-research-datasets/paws:validation:3662", "correct": false, "probabilities": [0.03308597952127457, 0.9669140577316284]}
+{"id": "google-research-datasets/paws:validation:3275", "correct": false, "probabilities": [0.09534946084022522, 0.9046505093574524]}
+{"id": "google-research-datasets/paws:validation:2635", "correct": true, "probabilities": [0.022977370768785477, 0.977022647857666]}
+{"id": "google-research-datasets/paws:validation:6553", "correct": true, "probabilities": [0.03514484688639641, 0.9648551344871521]}
+{"id": "google-research-datasets/paws:validation:4886", "correct": false, "probabilities": [0.1561049073934555, 0.8438951373100281]}
+{"id": "google-research-datasets/paws:validation:203", "correct": true, "probabilities": [0.011687257327139378, 0.9883127808570862]}
+{"id": "google-research-datasets/paws:validation:502", "correct": false, "probabilities": [0.2689414322376251, 0.7310585379600525]}
+{"id": "google-research-datasets/paws:validation:3358", "correct": true, "probabilities": [0.008577484637498856, 0.9914224743843079]}
+{"id": "google-research-datasets/paws:validation:1195", "correct": false, "probabilities": [0.14804719388484955, 0.851952850818634]}
+{"id": "google-research-datasets/paws:validation:5944", "correct": false, "probabilities": [0.2018132209777832, 0.7981867790222168]}
+{"id": "google-research-datasets/paws:validation:4743", "correct": false, "probabilities": [0.1259227693080902, 0.8740772008895874]}
+{"id": "google-research-datasets/paws:validation:2209", "correct": true, "probabilities": [0.07159119844436646, 0.9284088015556335]}
+{"id": "google-research-datasets/paws:validation:3931", "correct": true, "probabilities": [0.02595735713839531, 0.9740425944328308]}
+{"id": "google-research-datasets/paws:validation:1860", "correct": true, "probabilities": [0.1919327974319458, 0.8080672025680542]}
+{"id": "google-research-datasets/paws:validation:836", "correct": false, "probabilities": [0.01798621006309986, 0.9820137619972229]}
+{"id": "google-research-datasets/paws:validation:398", "correct": false, "probabilities": [0.06371499598026276, 0.9362850189208984]}
+{"id": "google-research-datasets/paws:validation:1085", "correct": false, "probabilities": [0.0534033328294754, 0.9465966820716858]}
+{"id": "google-research-datasets/paws:validation:605", "correct": true, "probabilities": [0.02931223064661026, 0.970687747001648]}
+{"id": "google-research-datasets/paws:validation:5122", "correct": false, "probabilities": [0.4073334336280823, 0.5926666259765625]}
+{"id": "google-research-datasets/paws:validation:2943", "correct": false, "probabilities": [0.43782350420951843, 0.562176525592804]}
+{"id": "google-research-datasets/paws:validation:6590", "correct": true, "probabilities": [0.022977370768785477, 0.977022647857666]}
+{"id": "google-research-datasets/paws:validation:90", "correct": true, "probabilities": [0.08509904146194458, 0.9149009585380554]}
+{"id": "google-research-datasets/paws:validation:23", "correct": false, "probabilities": [0.06371499598026276, 0.9362850189208984]}
+{"id": "google-research-datasets/paws:validation:4194", "correct": false, "probabilities": [0.18242551386356354, 0.8175744414329529]}
+{"id": "google-research-datasets/paws:validation:4970", "correct": false, "probabilities": [0.10087861120700836, 0.8991213440895081]}
+{"id": "google-research-datasets/paws:validation:5483", "correct": false, "probabilities": [0.1259227693080902, 0.8740772008895874]}
+{"id": "google-research-datasets/paws:validation:143", "correct": false, "probabilities": [0.08035746961832047, 0.9196425676345825]}
+{"id": "google-research-datasets/paws:validation:7353", "correct": false, "probabilities": [0.07159119844436646, 0.9284088015556335]}
+{"id": "google-research-datasets/paws:validation:7835", "correct": false, "probabilities": [0.11920291930437088, 0.8807970285415649]}
+{"id": "google-research-datasets/paws:validation:5743", "correct": true, "probabilities": [0.037326883524656296, 0.9626730680465698]}
+{"id": "google-research-datasets/paws:validation:3", "correct": true, "probabilities": [0.009708477184176445, 0.9902915358543396]}
+{"id": "google-research-datasets/paws:validation:3140", "correct": false, "probabilities": [0.01798621006309986, 0.9820137619972229]}
+{"id": "google-research-datasets/paws:validation:3803", "correct": true, "probabilities": [0.020332353189587593, 0.9796676635742188]}
+{"id": "google-research-datasets/paws:validation:1303", "correct": true, "probabilities": [0.016914913430809975, 0.9830850958824158]}
+{"id": "google-research-datasets/paws:validation:5473", "correct": false, "probabilities": [0.06754669547080994, 0.9324532747268677]}
+{"id": "google-research-datasets/paws:validation:1732", "correct": true, "probabilities": [0.01798621006309986, 0.9820137619972229]}
+{"id": "google-research-datasets/paws:validation:2221", "correct": true, "probabilities": [0.18242551386356354, 0.8175744414329529]}
+{"id": "google-research-datasets/paws:validation:3834", "correct": true, "probabilities": [0.042087726294994354, 0.957912266254425]}
+{"id": "google-research-datasets/paws:validation:4514", "correct": true, "probabilities": [0.01912403665482998, 0.9808759689331055]}
+{"id": "google-research-datasets/paws:validation:2237", "correct": true, "probabilities": [0.013222822919487953, 0.9867772459983826]}
+{"id": "google-research-datasets/paws:validation:4813", "correct": true, "probabilities": [0.18242551386356354, 0.8175744414329529]}
+{"id": "google-research-datasets/paws:validation:2704", "correct": false, "probabilities": [0.29421496391296387, 0.7057850360870361]}
+{"id": "google-research-datasets/paws:validation:4612", "correct": false, "probabilities": [0.3775406777858734, 0.622459352016449]}
+{"id": "google-research-datasets/paws:validation:440", "correct": true, "probabilities": [0.05665242671966553, 0.9433475732803345]}
+{"id": "google-research-datasets/paws:validation:4518", "correct": true, "probabilities": [0.08035746961832047, 0.9196425676345825]}
+{"id": "google-research-datasets/paws:validation:2070", "correct": false, "probabilities": [0.22270014882087708, 0.7772998809814453]}
+{"id": "google-research-datasets/paws:validation:6845", "correct": false, "probabilities": [0.020332353189587593, 0.9796676635742188]}
+{"id": "google-research-datasets/paws:validation:7020", "correct": true, "probabilities": [0.01912403665482998, 0.9808759689331055]}
+{"id": "google-research-datasets/paws:validation:3626", "correct": true, "probabilities": [0.031143832951784134, 0.9688562154769897]}
+{"id": "google-research-datasets/paws:validation:6138", "correct": true, "probabilities": [0.04742587357759476, 0.9525741338729858]}
+{"id": "google-research-datasets/paws:validation:3103", "correct": false, "probabilities": [0.16451644897460938, 0.8354835510253906]}
+{"id": "google-research-datasets/paws:validation:1328", "correct": false, "probabilities": [0.07585817575454712, 0.9241418242454529]}
+{"id": "google-research-datasets/paws:validation:6205", "correct": true, "probabilities": [0.031143832951784134, 0.9688562154769897]}
+{"id": "google-research-datasets/paws:validation:6500", "correct": true, "probabilities": [0.07159119844436646, 0.9284088015556335]}
+{"id": "google-research-datasets/paws:validation:2175", "correct": false, "probabilities": [0.10669060051441193, 0.8933094143867493]}
+{"id": "google-research-datasets/paws:validation:4048", "correct": false, "probabilities": [0.020332353189587593, 0.9796676635742188]}
+{"id": "google-research-datasets/paws:validation:7537", "correct": false, "probabilities": [0.2689414322376251, 0.7310585379600525]}
+{"id": "google-research-datasets/paws:validation:7437", "correct": true, "probabilities": [0.01590639166533947, 0.9840936064720154]}
+{"id": "google-research-datasets/paws:validation:3624", "correct": true, "probabilities": [0.027585284784436226, 0.9724147915840149]}
+{"id": "google-research-datasets/paws:validation:5958", "correct": false, "probabilities": [0.037326883524656296, 0.9626730680465698]}
+{"id": "google-research-datasets/paws:validation:798", "correct": false, "probabilities": [0.05033063143491745, 0.949669361114502]}
+{"id": "google-research-datasets/paws:validation:6452", "correct": true, "probabilities": [0.010328153148293495, 0.9896718263626099]}
+{"id": "google-research-datasets/paws:validation:5732", "correct": false, "probabilities": [0.037326883524656296, 0.9626730680465698]}
+{"id": "google-research-datasets/paws:validation:2738", "correct": true, "probabilities": [0.10087861120700836, 0.8991213440895081]}
+{"id": "google-research-datasets/paws:validation:5660", "correct": false, "probabilities": [0.09534946084022522, 0.9046505093574524]}
+{"id": "google-research-datasets/paws:validation:6576", "correct": true, "probabilities": [0.014957087114453316, 0.985042929649353]}
+{"id": "google-research-datasets/paws:validation:6016", "correct": true, "probabilities": [0.07159119844436646, 0.9284088015556335]}
+{"id": "google-research-datasets/paws:validation:3412", "correct": false, "probabilities": [0.027585284784436226, 0.9724147915840149]}
+{"id": "google-research-datasets/paws:validation:3273", "correct": true, "probabilities": [0.031143832951784134, 0.9688562154769897]}
+{"id": "google-research-datasets/paws:validation:7382", "correct": true, "probabilities": [0.031143832951784134, 0.9688562154769897]}
+{"id": "google-research-datasets/paws:validation:6803", "correct": false, "probabilities": [0.22270014882087708, 0.7772998809814453]}
+{"id": "google-research-datasets/paws:validation:6144", "correct": false, "probabilities": [0.0534033328294754, 0.9465966820716858]}
+{"id": "google-research-datasets/paws:validation:4850", "correct": true, "probabilities": [0.037326883524656296, 0.9626730680465698]}
+{"id": "google-research-datasets/paws:validation:6985", "correct": false, "probabilities": [0.23370634019374847, 0.7662936449050903]}
+{"id": "google-research-datasets/paws:validation:5899", "correct": true, "probabilities": [0.2689414322376251, 0.7310585379600525]}
+{"id": "google-research-datasets/paws:validation:118", "correct": true, "probabilities": [0.04742587357759476, 0.9525741338729858]}
+{"id": "google-research-datasets/paws:validation:88", "correct": false, "probabilities": [0.14033624529838562, 0.859663724899292]}
+{"id": "google-research-datasets/paws:validation:11", "correct": true, "probabilities": [0.562176525592804, 0.43782350420951843]}
+{"id": "google-research-datasets/paws:validation:259", "correct": true, "probabilities": [0.04742587357759476, 0.9525741338729858]}
+{"id": "google-research-datasets/paws:validation:1858", "correct": false, "probabilities": [0.23370634019374847, 0.7662936449050903]}
+{"id": "google-research-datasets/paws:validation:3863", "correct": false, "probabilities": [0.24508501589298248, 0.7549149990081787]}
+{"id": "google-research-datasets/paws:validation:1986", "correct": true, "probabilities": [0.06371499598026276, 0.9362850189208984]}
+{"id": "google-research-datasets/paws:validation:3832", "correct": true, "probabilities": [0.10087861120700836, 0.8991213440895081]}
+{"id": "google-research-datasets/paws:validation:7444", "correct": false, "probabilities": [0.3486451506614685, 0.6513549089431763]}
+{"id": "google-research-datasets/paws:validation:1928", "correct": false, "probabilities": [0.04742587357759476, 0.9525741338729858]}
+{"id": "google-research-datasets/paws:validation:7093", "correct": true, "probabilities": [0.06371499598026276, 0.9362850189208984]}
+{"id": "google-research-datasets/paws:validation:2828", "correct": true, "probabilities": [0.14033624529838562, 0.859663724899292]}
+{"id": "google-research-datasets/paws:validation:5971", "correct": true, "probabilities": [0.08035746961832047, 0.9196425676345825]}
+{"id": "google-research-datasets/paws:validation:2368", "correct": false, "probabilities": [0.09534946084022522, 0.9046505093574524]}
+{"id": "google-research-datasets/paws:validation:4057", "correct": true, "probabilities": [0.01243165135383606, 0.9875683188438416]}
+{"id": "google-research-datasets/paws:validation:5254", "correct": true, "probabilities": [0.04742587357759476, 0.9525741338729858]}
+{"id": "google-research-datasets/paws:validation:329", "correct": false, "probabilities": [0.04742587357759476, 0.9525741338729858]}
+{"id": "google-research-datasets/paws:validation:421", "correct": true, "probabilities": [0.22270014882087708, 0.7772998809814453]}
+{"id": "google-research-datasets/paws:validation:6827", "correct": true, "probabilities": [0.01912403665482998, 0.9808759689331055]}
+{"id": "google-research-datasets/paws:validation:2053", "correct": true, "probabilities": [0.05665242671966553, 0.9433475732803345]}
+{"id": "google-research-datasets/paws:validation:4653", "correct": false, "probabilities": [0.05665242671966553, 0.9433475732803345]}
+{"id": "google-research-datasets/paws:validation:1290", "correct": false, "probabilities": [0.042087726294994354, 0.957912266254425]}
+{"id": "google-research-datasets/paws:validation:591", "correct": true, "probabilities": [0.024423090741038322, 0.9755768775939941]}
+{"id": "google-research-datasets/paws:validation:2975", "correct": true, "probabilities": [0.02595735713839531, 0.9740425944328308]}
+{"id": "google-research-datasets/paws:validation:5116", "correct": true, "probabilities": [0.022977370768785477, 0.977022647857666]}
+{"id": "google-research-datasets/paws:validation:2802", "correct": false, "probabilities": [0.2568320035934448, 0.7431679368019104]}
+{"id": "google-research-datasets/paws:validation:7280", "correct": false, "probabilities": [0.14033624529838562, 0.859663724899292]}
+{"id": "google-research-datasets/paws:validation:5692", "correct": false, "probabilities": [0.22270014882087708, 0.7772998809814453]}
+{"id": "google-research-datasets/paws:validation:4552", "correct": false, "probabilities": [0.07159119844436646, 0.9284088015556335]}
