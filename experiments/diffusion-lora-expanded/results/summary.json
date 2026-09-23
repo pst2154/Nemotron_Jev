@@ -1,0 +1,48 @@
+{
+  "training_rows": 32768,
+  "new_training_rows": 28672,
+  "epochs": 2,
+  "optimizer_updates": 4096,
+  "example_passes": 65536,
+  "world_size": 8,
+  "optimizer_seconds": 2758.4734565019608,
+  "peak_allocated_gib": 57.17909240722656,
+  "selected_step": 1536,
+  "selected_validation": {
+    "step": 1536,
+    "correct": 504,
+    "total": 580,
+    "cross_entropy": 0.3428753069465717
+  },
+  "public_jevbench": {
+    "base": {
+      "correct": 173,
+      "total": 231
+    },
+    "previous": {
+      "correct": 183,
+      "total": 231
+    },
+    "selected": {
+      "correct": 175,
+      "total": 231
+    }
+  },
+  "transitions": {
+    "base": {
+      "wrong_to_correct": 15,
+      "correct_to_wrong": 13
+    },
+    "previous": {
+      "wrong_to_correct": 7,
+      "correct_to_wrong": 15
+    }
+  },
+  "two_epoch_4k_control": {
+    "correct": 177,
+    "total": 231,
+    "selected_step": 256,
+    "optimizer_seconds": 269.4875829219818
+  },
+  "adapter_sha256": "78ced88abac547a9f040b9a026a38bc302e19eb288c1cf72e6ca211794dfd147"
+}

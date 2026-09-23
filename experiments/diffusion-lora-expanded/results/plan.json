@@ -1,0 +1,14 @@
+{
+  "purpose": "post-run diagnosis, not selection or promotion",
+  "variants": {
+    "selected_repeat": "best-adapter",
+    "validation_accuracy_winner": "checkpoint-3328",
+    "final_two_epochs": "final-adapter"
+  },
+  "validation_accuracy_winner": {
+    "step": 3328,
+    "correct": 517,
+    "total": 580,
+    "cross_entropy": 0.38679396043414493
+  }
+}

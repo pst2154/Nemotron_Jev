@@ -1,0 +1,11 @@
+{
+  "world_size": 8,
+  "epochs": 2,
+  "steps": 4096,
+  "completed_examples_this_run": 65536,
+  "verified_total_example_passes": 65536,
+  "seconds": 2922.822070697999,
+  "selected_step": 1536,
+  "identical_adapter_sha256": "b69b5faf0a00347e97ed3925cc227dff36efa5ba0830863cf8592db13bc313b0",
+  "reload_exact": true
+}

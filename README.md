@@ -6,6 +6,8 @@ This is an experimental adapter for the **dense Nemotron-Labs-Diffusion-14B mode
 
 ## What works
 
+Training experiments: [expanded 32K-example diffusion LoRA report](experiments/diffusion-lora-expanded/README.md), including comparison with the earlier 4K-example adapter and checkpoint-selection diagnosis.
+
 | Question | Output |
 | --- | --- |
 | Choice | Selected label, probability per option, maximum-probability confidence |
