@@ -1,0 +1,17 @@
+{
+  "ready": true,
+  "model": "Nemotron-Labs-Diffusion-8B",
+  "backend": "vllm",
+  "modes": [
+    "systemone"
+  ],
+  "quantization": "fp8_per_channel",
+  "candidate_only_head": false,
+  "cache_policy": "isolated_request",
+  "position_ordering": "length_overlap_rotate2_recode_v1",
+  "limits": {
+    "max_questions": 512,
+    "max_choices": 62,
+    "max_prompt_tokens": 16384
+  }
+}

@@ -4,6 +4,7 @@ import os
 import threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from model_config import MODEL_NAME
 
 
 def precision_settings(environ):
@@ -74,7 +75,7 @@ def main():
                 self.wfile.write(data)
             elif self.path == '/health':
                 self.send(200, {'ready': True,
-                               'model': 'Nemotron-Labs-Diffusion-14B',
+                               'model': MODEL_NAME,
                                'backend': 'vllm', 'modes': ['systemone'],
                                'quantization': quantization,
                                'candidate_only_head': candidate_only,

@@ -7,6 +7,7 @@ never fed back into the model. All questions retain the native prompt format.
 
 import math
 import time
+from model_config import MODEL_NAME
 
 from scoring import POSITION_ORDERING, candidate_codes, prepare_questions, pack_answer
 
@@ -66,7 +67,7 @@ def evaluate(engine, tokenizer, payload, mask_token_id=100, prime_shared_prefix=
         probs = [weight / denominator for weight in weights]
         answers[key] = pack_answer(payload['questions'][key], labels, probs)
     return {
-        'model': 'Nemotron-Labs-Diffusion-14B', 'answers': answers,
+        'model': MODEL_NAME, 'answers': answers,
         'usage': {'input_tokens': sum(len(item[4]) for item in prepared),
                   'output_tokens': len(answers)},
         'metrics': {'seconds': time.perf_counter() - started,

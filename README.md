@@ -2,7 +2,18 @@
 
 Ask typed questions about text or JSON and inspect model-derived probability distributions in a browser. One container runs the model, the original Decision Lab explorer, and a TypeSafe-shaped API.
 
-This is an experimental adapter for the **dense Nemotron-Labs-Diffusion-14B model**, not a mixture-of-experts model, Jev, an official TypeSafe service, or a calibrated replacement for Jev. The repository name describes its interface, not its model identity.
+This branch defaults to **dense Nemotron-Labs-Diffusion-8B**. It is not a mixture-of-experts model, Jev, an official TypeSafe service, or a calibrated replacement for Jev. The repository name describes its interface, not its model identity.
+
+## 8B serving
+
+See [8B deployment and measured results](SERVING_8B.md). The downloader pins
+`nvidia/Nemotron-Labs-Diffusion-8B` to revision
+`16c67f0560b912e93e0cabb6e0c4f5c3086d95fc`. API responses and health report the
+configured model, while `jev-latest` remains an input compatibility alias.
+
+The published **14B images and their historical measurements below remain
+unchanged**. Building this branch creates an 8B-default application image;
+pulling an existing 14B tag alone does not include these changes.
 
 ## What works
 
@@ -124,7 +135,7 @@ curl --fail-with-body http://localhost:8770/v1/systemone \
   }'
 ```
 
-`jev-latest` is accepted as a compatibility identifier; the returned model is always `Nemotron-Labs-Diffusion-14B`. It never routes to TypeSafe. Structured instructions and criteria are serialized as JSON. Question IDs only identify response entries and are not used in model inference.
+`jev-latest` is accepted as a compatibility identifier; the returned model is the configured checkpoint name (8B by default on this branch). It never routes to TypeSafe. Structured instructions and criteria are serialized as JSON. Question IDs only identify response entries and are not used in model inference.
 
 Also available: `/explorer` and `/health`. This branch exposes **classification
 only**. It does not provide chat completions, AR generation, multi-token
@@ -161,7 +172,8 @@ UI reads remain available during inference.
 | Variable | Default | Purpose |
 | --- | --- | --- |
 | `PORT` | `8770` | UI and API port (keep default for built-in healthcheck) |
-| `MODEL_REVISION` | `f8c3e2c078e193599b8882d965b1001c456ba738` | Hugging Face revision |
+| `MODEL_ID` | `nvidia/Nemotron-Labs-Diffusion-8B` | Download and response identity; must match any manually mounted checkpoint |
+| `MODEL_REVISION` | `16c67f0560b912e93e0cabb6e0c4f5c3086d95fc` | Pinned 8B revision; known 14B ID selects its own pin |
 | `CHECKPOINT_DIR` | `/models/checkpoint` | Container model-cache location |
 | `HF_HOME` | `/models/hf-cache` | Container Hugging Face cache |
 | `SKIP_DOWNLOAD` | `0` | Set to `1` only with a complete existing checkpoint |

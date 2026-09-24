@@ -4,6 +4,7 @@ import re
 import time
 from functools import lru_cache
 from compat_gateway import validate_request
+from model_config import MODEL_NAME
 
 POSITION_ORDERING = 'length_overlap_rotate2_recode_v1'
 _STOP_WORDS = frozenset('the a an is are was were of to in and or for with this that it be as on by from'.split())
@@ -154,7 +155,7 @@ def evaluate(model, tokenizer, payload, position_ordering=True):
         for layer, value in zip(layers, previous):
             layer.diffusion_lm = value
     torch.cuda.synchronize()
-    return {'model': 'Nemotron-Labs-Diffusion-14B', 'answers': answers,
+    return {'model': MODEL_NAME, 'answers': answers,
             'usage': {'input_tokens': total_tokens, 'output_tokens': len(answers)},
             'metrics': {'seconds': time.perf_counter() - started, 'questions': len(answers)},
             'scoring': {'method': 'diffusion_masked_token_candidate_softmax',

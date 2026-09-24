@@ -1,0 +1,45 @@
+{
+  "description": "Repeated identical short questions; functionality smoke, not representative task throughput. One warmup and three measured calls per size.",
+  "results": [
+    {
+      "questions": 1,
+      "median_ms": 13.242671004263684,
+      "samples_ms": [
+        15.197616012301296,
+        13.242671004263684,
+        12.674085010075942
+      ],
+      "all_correct": true
+    },
+    {
+      "questions": 10,
+      "median_ms": 34.398182993754745,
+      "samples_ms": [
+        34.398182993754745,
+        35.03406798699871,
+        33.66172799724154
+      ],
+      "all_correct": true
+    },
+    {
+      "questions": 30,
+      "median_ms": 43.852141010575,
+      "samples_ms": [
+        44.08459001570009,
+        43.852141010575,
+        43.690132995834574
+      ],
+      "all_correct": true
+    },
+    {
+      "questions": 100,
+      "median_ms": 91.14685701206326,
+      "samples_ms": [
+        91.14685701206326,
+        84.62029599468224,
+        341.27816499676555
+      ],
+      "all_correct": true
+    }
+  ]
+}

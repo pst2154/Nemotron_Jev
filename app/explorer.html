@@ -301,7 +301,7 @@
       <div class="mark">D</div>
       <div class="identity">
         <h1>Decision Lab</h1>
-        <span>System One explorer / Nemotron Diffusion 14B</span>
+        <span>System One explorer / Nemotron Diffusion</span>
       </div>
       <div class="status" title="Service health">
         <i class="status-dot" id="statusDot"></i>
@@ -350,7 +350,7 @@
           <button class="tab active" data-tab="answers">Answers</button>
           <button class="tab" data-tab="raw">Raw JSON</button>
           <button class="tab" data-tab="history">History</button>
-          <div class="run-meta"><span id="modelMeta">Nemotron-Labs-Diffusion-14B</span><span class="latency" id="latencyMeta">— ms</span></div>
+          <div class="run-meta"><span id="modelMeta">Nemotron Diffusion</span><span class="latency" id="latencyMeta">— ms</span></div>
         </header>
         <div class="response-scroll" id="responseView">
           <div class="empty">
@@ -542,7 +542,7 @@
         if (!response.ok) throw Object.assign(new Error(body?.error?.message || `HTTP ${response.status}`), { body });
         currentResponse = body;
         activeTab = "answers";
-        modelMeta.textContent = body.model || "Nemotron-Labs-Diffusion-14B";
+        modelMeta.textContent = body.model || "Nemotron Diffusion";
         latencyMeta.textContent = `${lastLatency} ms`;
         addHistory(request, body, lastLatency);
         renderTabs();
