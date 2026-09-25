@@ -120,6 +120,7 @@ def pack_answer(question, labels, probs):
 
 def evaluate(model, tokenizer, payload, position_ordering=True):
     import torch
+    from usage import decision_usage
 
     prepared = prepare_questions(tokenizer, payload, position_ordering=position_ordering)
     codes = candidate_codes(tokenizer)
@@ -156,7 +157,7 @@ def evaluate(model, tokenizer, payload, position_ordering=True):
             layer.diffusion_lm = value
     torch.cuda.synchronize()
     return {'model': MODEL_NAME, 'answers': answers,
-            'usage': {'input_tokens': total_tokens, 'output_tokens': len(answers)},
+            'usage': decision_usage(total_tokens, len(answers)),
             'metrics': {'seconds': time.perf_counter() - started, 'questions': len(answers)},
             'scoring': {'method': 'diffusion_masked_token_candidate_softmax',
                         'position_ordering': POSITION_ORDERING if position_ordering else 'off',

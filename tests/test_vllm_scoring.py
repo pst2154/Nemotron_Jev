@@ -87,6 +87,11 @@ class ScoringTests(unittest.TestCase):
                 SamplingParams=lambda **kwargs: SimpleNamespace(**kwargs))}):
             result = evaluate(SimpleNamespace(generate=generate), tokenizer, payload)
         self.assertEqual(len(seen), 1)
+        self.assertEqual(result['usage']['output_tokens'], 3)
+        self.assertEqual(result['usage']['decision_positions'], 3)
+        self.assertEqual(result['usage']['generated_text_tokens'], 0)
+        self.assertEqual(result['usage']['discarded_sampled_tokens'], 3)
+        self.assertEqual(result['usage']['output_tokens_basis'], 'scored_decision_positions')
         self.assertTrue(all(p['prompt_token_ids'][-1] == 100 for p in seen[0][0]))
         for params in seen[0][1]:
             self.assertEqual(params.max_tokens, 1)

@@ -8,7 +8,7 @@ WORKDIR /app
 COPY app/ /app/
 COPY launch.sh /app/launch.sh
 RUN chmod 0755 /app/launch.sh
-ENV CHECKPOINT_DIR=/models/checkpoint HF_HOME=/models/hf-cache PORT=8770 \
+ENV CHECKPOINT_DIR=/models/checkpoint HF_HOME=/tmp/hf HF_MODULES_CACHE=/tmp/hf/modules PORT=8770 \
     TRITON_CACHE_DIR=/tmp/nemotron-triton TORCHINDUCTOR_CACHE_DIR=/tmp/nemotron-inductor \
     VLLM_CACHE_ROOT=/tmp/nemotron-vllm XDG_CACHE_HOME=/tmp/nemotron-cache \
     VLLM_CONFIG_ROOT=/tmp/nemotron-config FLASHINFER_WORKSPACE_BASE=/tmp/nemotron-flashinfer \

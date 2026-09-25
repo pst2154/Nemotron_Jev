@@ -25,7 +25,7 @@ intentional 0.2-second pacing, and are not Internet or adjusted leaderboard late
 
 - Serving source: `cdc36d6013a6401bf1dfa7f4048cdb69e7138d69`.
 - Checkpoint: `nvidia/Nemotron-Labs-Diffusion-8B`, revision
-  `16c67f0560b912e93e0c4f5c3086d95fc`.
+  `16c67f0560b912e93e0cabb6e0c4f5c3086d95fc`.
 - One H100 80GB HBM3; BF16, candidate-only projection, modified vLLM,
   CUDA graphs, 128 maximum sequences, 8,192-token batching budget.
 - No LoRA, extra training, quantization, generated probability text, or
@@ -40,7 +40,7 @@ intentional 0.2-second pacing, and are not Internet or adjusted leaderboard late
 
 Requires Docker, NVIDIA Container Toolkit, an H100 and a CUDA-13-compatible
 driver. The base runtime is public and digest-pinned in the Dockerfile.
-There is no separately published 8B image tag; build this pinned source:
+The original measured candidate can be built from this pinned source:
 
 ```bash
 git clone https://github.com/pst2154/Nemotron_Jev.git
@@ -75,7 +75,50 @@ An initial runner invocation appended the API path twice and stopped after
 three HTTP 404s without model predictions. Fixing the base URL produced the
 two complete passes reported here; no benchmark content or serving code changed.
 
-## Evidence
+## Container compatibility and usage accounting
+
+The patched image is `ghcr.io/pst2154/nemotron-jev:8b-cachefix-20260925`,
+pinned as:
+
+```text
+ghcr.io/pst2154/nemotron-jev@sha256:ebe572f82d3fba94078db55d00527047afd09729f3b9ea8b14f7e0b7b4470aac
+```
+
+This image does not bundle weights. It downloads the pinned checkpoint on
+ordinary first startup; offline operation requires prefetching as described
+below. The original measured image/source remains unchanged.
+
+The follow-up cache fix defaults `HF_HOME=/tmp/hf` and
+`HF_MODULES_CACHE=/tmp/hf/modules`. A read-only container still needs writable
+`/tmp` (for example, `--tmpfs /tmp:rw,exec,size=8g`). Keep downloaded checkpoint
+weights separate from the runtime modules cache. For an offline run, prefetch
+the checkpoint with `python3 /app/download.py` while network access is available,
+then mount the checkpoint read-only and set `SKIP_DOWNLOAD=1` at runtime.
+This changes neither model weights nor candidate ordering or scoring.
+
+Usage fields describe model computation, not the JSON response length:
+
+| Field | Meaning |
+| --- | --- |
+| `output_tokens` | Legacy count of scored decision positions; one per question |
+| `output_tokens_basis` | `scored_decision_positions` |
+| `decision_positions` | Explicit count of scored answer slots |
+| `generated_text_tokens` | Zero; no text-answer generation |
+| `discarded_sampled_tokens` | One per question in vLLM; zero in the native scorer |
+
+vLLM is invoked with `max_tokens=1` to obtain candidate scores at a masked
+answer position. Its sampled token is discarded, not fed back for an
+autoregressive rollout. The native scorer reads logits without sampling.
+`output_tokens` is preserved for compatibility, not changed to zero to reduce
+an estimated cost. Classification cost accounting is left to benchmark policy;
+there is no published hosted tariff. No reranking or cost adjustment is claimed.
+
+Validation: 31 unit tests passed. The built image also loaded the checkpoint's
+tokenizer, configuration, and remote-code model class with `--read-only`,
+`--network none`, a read-only checkpoint mount, writable `/tmp`, and a non-root
+UID. That targeted test does not constitute a new full GPU benchmark run.
+
+## Public-run evidence
 
 - [Pass 1 predictions](results/pass1.jsonl), [summary](results/pass1-summary.json).
 - [Pass 2 predictions](results/pass2.jsonl), [summary](results/pass2-summary.json).
